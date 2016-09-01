@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+</head>
+<style type="text/css">
+	.container {
+		width: 80%;
+		height: 600px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		margin: 0 auto;
+	}
+	.box {
+		width: 200px;
+		height: 200px;
+	}
+	.box div {
+		border: 3px black solid;
+		width: 100%;
+		color: #fff;
+		text-align: center;
+		position: absolute;
+		left: 0;
+		top: 0;
+		backface-visibility: hidden;
+	}
+ 	.f1 {
+ 		height: 100%;
+ 		background-color: yellow;
+ 		animation: 1s normal both running flipFront 1s;
+ 	}
+  	.f2 {
+ 		opacity: 1;
+		height: 100%;
+  		animation: 1s normal both running flipBack 1s;
+ 	}
+ 	.box1 .f2 {
+ 		background-color: green;
+ 	}
+  	.box2 .f2 {
+ 		background-color: red;
+ 	}
+  	.box3 .f2 {
+ 		background-color: blue;
+ 	}
+ 	.box1 {
+		order: 1;
+		animation: 1.5s mymove 2s;
+		position: relative;
+ 	}
+	.box2 {
+		order: 2;
+		/*animation: 1s mymove2 2s;*/
+		position: relative;
+		z-index: -2;
+	}
+	.box3 {
+		order: 3;
+		position: relative;
+		animation: 1.5s mymove3 2s;
+	}
+	@keyframes flipFront {
+		0% {
+			opacity: 1;
+			transform: rotateY(-180deg);
+		}
+		100% {
+			opacity: 1;
+			transform: rotateY(0deg);
+		}
+	}
+	@keyframes flipBack {
+		0% {
+			opacity: 1;
+			transform: rotateY(0deg);
+		}
+		100% {
+			opacity: 1;
+			transform: rotateY(-180deg);
+		}
+	}
+	@keyframes mymove {
+		0% {
+			left: 0;
+		}
+		15%, 45%, 65%, 80%, 90%  {
+			left: 33.33333%;
+		}
+		30%, 55%, 70%, 85%, 95% {
+			left: 50%;
+		}
+		100% {
+			left: 66.66666%;
+		}
+	}
+	@keyframes mymove2 {
+		from {
+			/*order: 2;*/
+			/*left: 10px;*/
+		}
+		to {
+			/*left: 900px;*/
+		}
+	}
+	@keyframes mymove3 {
+		0% {
+			left: 0;
+		}
+		15%, 45%, 65%, 80%, 90%  {
+			left: -33.33333%;
+		}
+		30%, 55%, 70%, 85%, 95% {
+			left: -50%;
+		}
+		100% {
+			left: -66.66666%;
+		}
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="box box1">
+			<div class="f2"></div>
+			<div class="f1"></div>
+		</div>
+		<div class="box box2">
+			<div class="f2"></div>
+			<div class="f1"></div>
+		</div>
+		<div class="box box3">
+			<div class="f2"></div>
+			<div class="f1"></div>			
+		</div>
+
+	</div>
+
+</body>
+
+</html>
