@@ -9,7 +9,7 @@
 
 原作者给的流程图：
 
-![原作者给的流程图](http://blog.qiniu.com/wp-content/uploads/2016/08/11.png =x200)
+![原作者给的流程图](./image/qiniu_0.png =x200)
 
 
 #### 1.采集
