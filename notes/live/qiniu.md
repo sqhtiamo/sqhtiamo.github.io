@@ -9,8 +9,7 @@
 
 原作者给的流程图：
 
-![原作者给的流程图](./image/qiniu_0.png =x200)
-
+<img src="./image/qiniu_0.png" height="200" alt="原作者给的流程图"/>
 
 #### 1.采集
 
