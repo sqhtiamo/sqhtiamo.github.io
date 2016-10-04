@@ -147,7 +147,25 @@
 	- Google 官方也开源了一个伟大的库[https://github.com/google/grafika](https://github.com/google/grafika) 
 	
 ### 5. 连麦
+<img src="./image/qiniu_3.png" height="300" alt="连麦流程"/>
 
+- 技术难点:
+	- 低延迟互动
+	- 音画同步
+	- 视频实时合成: 需要在客户端或者服务端将画面和声音实时合成，然后以低成本高品质的方式传输观众端
+- 思科或者 WebEx 的商用方案: 一不开源，二比较封闭，三成本比较高
+- WebRTC
+	- 通过 RTCPeerConnection API 管理，这个 API 包装了底层流管理和信令控制相关的细节
+		<img src="./image/qiniu_4.png" height="400" alt="webRTC原理"/>
+	- 可以每个点之间形成自组织网络的方式通信;也可以以 1 人为中心形成星型通信网络;还可以让大家都通过一个集中式的服务端进行通信。
+	<img src="./image/qiniu_5.png" width="600" alt="方实时通信"/>	
+	- 七牛直播云经过评估选择了以主播为中心形成星形通信网络，支持主播和多个观众之间的互动质量。
+	<img src="./image/qiniu_6.png" width="600" alt="webRTC原理"/>
+	- 同时，为了保证合成后的音视频实时传输到其他观众端，这里采用经过改造的 UDP 协议传输：
+		- 通过 UDP 降低传输延迟。
+		- 在 UDP 之上进行传输控制，保证用户互动体验 QoS。
+
+	
 参考:
 [《视频直播技术详解》系列之二：采集](http://blog.qiniu.com/archives/6713)
 
