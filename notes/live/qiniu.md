@@ -54,7 +54,7 @@
 - 社交直播下的聊天、点赞和弹幕的支持
 
 
-## 二《视频直播技术详解》系列之二：采集
+## 二、《视频直播技术详解》系列之二：采集
 
 
 参考:
@@ -92,12 +92,12 @@
 
 #### 2.1 摄像头采集
 - 手机上 ios/Android（>4.0.3） 前后摄像头
-- 专业摄像头：七牛云提供了兼容适合嵌入式系统的C语言采集模块的实现（https://github.com/pili-engineering/ipcam_sdk）（啥意思？驱动？or 接口？）
+- 专业摄像头：七牛云提供了兼容适合嵌入式系统的C语言采集模块的实现[https://github.com/pili-engineering/ipcam_sdk](https://github.com/pili-engineering/ipcam_sdk)（啥意思？驱动？or 接口？）
 
 #### 2.2 屏幕录制
 - iOS 9 以上的版本: 通过模拟一个 AirPlay 镜像连接到（当前 App）自身。
 - Android SDK: 实现了屏幕录制的功能
-- 电脑桌面: 开源的桌面推流工具 OBS 来进行屏幕录制和推流：https://obsproject.com/  
+- 电脑桌面: 开源的桌面推流工具 OBS 来进行屏幕录制和推流：[https://obsproject.com/](https://obsproject.com/)
 
 #### 2.3 视频文件
 - 将一个视频或者音频文件以直播流的形式实时传输
@@ -105,11 +105,48 @@
 #### 2.4 开放式设计（接口）
 - 只要采集源实现方遵循相应的接口，即可支持任意的采集源。
 
+## 三、《视频直播技术详解》系列之三：处理
 参考:
 [《视频直播技术详解》系列之三：处理](http://blog.qiniu.com/archives/6795)
 
 <img src="./image/qiniu_1.png" height="300" alt="原作者给的流程图"/>
 
+### 1. 开放式设计
+
+- 音频处理中具体包含混音、降噪和声音特效
+- 视频处理中包含美颜、水印、以及各种自定义滤镜
+- 自定义处理
+	- [iOS SDK](https://github.com/pili-engineering/PLMediaStreamingKit)
+	- [Android SDK](https://github.com/pili-engineering/PLDroidMediaStreaming)
+
+### 2. 美颜
+
+- 主要原理: "磨皮"+"美白"
+- 磨皮: 去躁。对图像中的噪点进行去除或者模糊化处理，常见的去噪算法有均值模糊、高斯模糊和中值滤波 + 人脸和皮肤检测技术。
+- 美颜接口(ios SDK)：
+	- 按照默认参数开启或关闭美颜:
+		-(void)setBeautifyModeOn:(BOOL)beautifyModeOn;
+	- 设置美颜程度，范围为 0 ~ 1:
+		-(void)setBeautify:(CGFloat)beautify;
+	- 设置美白程度，范围为 0 ~ 1:
+		-(void)setWhiten:(CGFloat)whiten;
+	- 设置红润程度，范围为 0 ~ 1:
+		-(void)setRedden:(CGFloat)redden; 
+
+### 3. 视频内嵌水印
+- 水印功能接口(ios SDK)
+	- 添加水印: 
+		-(void)setWaterMarkWithImage:(UIImage *)wateMarkImage position:(CGPoint)position;
+	- 移除水印:
+		-(void)clearWaterMark; 
+		
+### 4. 滤镜
+-  iOS 端可以考虑使用[GPUImage](https://github.com/BradLarson/GPUImage)这个库。内置了多达120多种常见的滤镜效果。 
+-  Android 
+	- 也有[GPUImage](https://github.com/CyberAgent/android-gpuimage)这个库的移植
+	- Google 官方也开源了一个伟大的库[https://github.com/google/grafika](https://github.com/google/grafika) 
+	
+### 5. 连麦
 
 参考:
 [《视频直播技术详解》系列之二：采集](http://blog.qiniu.com/archives/6713)
