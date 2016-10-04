@@ -158,6 +158,7 @@
 	- 通过 RTCPeerConnection API 管理，这个 API 包装了底层流管理和信令控制相关的细节
 		<img src="./image/qiniu_4.png" height="400" alt="webRTC原理"/>
 	- 可以每个点之间形成自组织网络的方式通信;也可以以 1 人为中心形成星型通信网络;还可以让大家都通过一个集中式的服务端进行通信。
+	
 	<img src="./image/qiniu_5.png" width="600" alt="方实时通信"/>	
 	- 七牛直播云经过评估选择了以主播为中心形成星形通信网络，支持主播和多个观众之间的互动质量。
 	<img src="./image/qiniu_6.png" width="600" alt="webRTC原理"/>
