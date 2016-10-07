@@ -17,3 +17,6 @@ command K+B
 3. 命令行
 sublime.log_commands(True)
 
+4. package
+git
+SyncSideBar
