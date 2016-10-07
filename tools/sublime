@@ -19,5 +19,11 @@ sublime.log_commands(True)
 
 4. package
 git
-SyncSideBar
+[
+	{ "keys": ["super+alt+g+a"], "command": "git_raw", "args": {"command": "git add -A" }},
+	{ "keys": ["super+alt+g+c"], "command": "git_commit"},
+	{ "keys": ["super+alt+g+p"], "command": "git_raw", "args": {"command": "git push" }},
+]
+
+SyncedSideBar
 
