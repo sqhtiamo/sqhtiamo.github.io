@@ -1,6 +1,6 @@
 1. tmux a
 
-2. ctrl+B [prefix]
+2. ctrl+B [ctrl+Bfix]
 
 3. 浏览历史
 
@@ -14,11 +14,16 @@ ctrl+B 1
 
 
 6. 分屏
-pre %
-pre "
+ctrl+B %
+ctrl+B "
 
 7. 分屏到单屏
-pre z
+ctrl+B z
 
 8. 控制分屏大小
-pre alt＋<-
+ctrl+B alt＋<-
+
+9. 多个tmux
+
+tmux new -s yuhang
+ctrl+B s
