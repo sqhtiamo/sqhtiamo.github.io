@@ -5,15 +5,48 @@
   
   <title>One Piece in FE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Cloughzhang的个人博客">
-<meta property="og:type" content="website">
+  <meta name="description" content="七牛视频直播学习笔记一、《视频直播技术详解》系列之一：开篇参考:《视频直播技术详解》系列之一：开篇
+1. 主要流程原作者给的流程图：
+
+1.1 采集
+iOS 系统因为软硬件种类不多，硬件适配性较好，所以比较简单。
+Android 则不同，市面上硬件机型非常多，难以做到一个库适配所有硬件。
+PC 端的采集也跟各种摄像头驱动有关，推荐使用目前市面上最好用的 PC 端开源免费软件 OBS。
+
+1.2 处">
+<meta property="og:type" content="article">
 <meta property="og:title" content="One Piece in FE">
-<meta property="og:url" content="https://sqhtiamo.github.io/blog/index.html">
+<meta property="og:url" content="https://sqhtiamo.github.io/blog/2016/10/13/notes/live/qiniu/index.html">
 <meta property="og:site_name" content="One Piece in FE">
-<meta property="og:description" content="Cloughzhang的个人博客">
+<meta property="og:description" content="七牛视频直播学习笔记一、《视频直播技术详解》系列之一：开篇参考:《视频直播技术详解》系列之一：开篇
+1. 主要流程原作者给的流程图：
+
+1.1 采集
+iOS 系统因为软硬件种类不多，硬件适配性较好，所以比较简单。
+Android 则不同，市面上硬件机型非常多，难以做到一个库适配所有硬件。
+PC 端的采集也跟各种摄像头驱动有关，推荐使用目前市面上最好用的 PC 端开源免费软件 OBS。
+
+1.2 处">
+<meta property="og:image" content="https://sqhtiamo.github.io/blog/./image/qiniu_0.png">
+<meta property="og:image" content="https://sqhtiamo.github.io/blog/./image/qiniu_2.png">
+<meta property="og:image" content="https://sqhtiamo.github.io/blog/./image/qiniu_1.png">
+<meta property="og:image" content="https://sqhtiamo.github.io/blog/./image/qiniu_3.png">
+<meta property="og:image" content="https://sqhtiamo.github.io/blog/./image/qiniu_4.png">
+<meta property="og:image" content="https://sqhtiamo.github.io/blog/./image/qiniu_5.png">
+<meta property="og:image" content="https://sqhtiamo.github.io/blog/./image/qiniu_6.png">
+<meta property="og:updated_time" content="2016-10-13T09:49:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="One Piece in FE">
-<meta name="twitter:description" content="Cloughzhang的个人博客">
+<meta name="twitter:description" content="七牛视频直播学习笔记一、《视频直播技术详解》系列之一：开篇参考:《视频直播技术详解》系列之一：开篇
+1. 主要流程原作者给的流程图：
+
+1.1 采集
+iOS 系统因为软硬件种类不多，硬件适配性较好，所以比较简单。
+Android 则不同，市面上硬件机型非常多，难以做到一个库适配所有硬件。
+PC 端的采集也跟各种摄像头驱动有关，推荐使用目前市面上最好用的 PC 端开源免费软件 OBS。
+
+1.2 处">
+<meta name="twitter:image" content="https://sqhtiamo.github.io/blog/./image/qiniu_0.png">
   
     <link rel="alternate" href="/atom.xml" title="One Piece in FE" type="application/atom+xml">
   
@@ -66,37 +99,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-notes/framework/polymer" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/public/2016/10/13/notes/framework/polymer/" class="article-date">
-  <time datetime="2016-10-13T09:49:20.000Z" itemprop="datePublished">2016-10-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Polymer"><a href="#Polymer" class="headerlink" title="Polymer"></a>Polymer</h1><h2 id="1-背景"><a href="#1-背景" class="headerlink" title="1. 背景"></a>1. 背景</h2><h2 id="2-兼容性"><a href="#2-兼容性" class="headerlink" title="2. 兼容性"></a>2. 兼容性</h2><h2 id="3-shadow-dom"><a href="#3-shadow-dom" class="headerlink" title="3. shadow-dom"></a>3. shadow-dom</h2><h2 id="4-安装"><a href="#4-安装" class="headerlink" title="4. 安装"></a>4. 安装</h2><h3 id="4-1-Install-polymer-cli"><a href="#4-1-Install-polymer-cli" class="headerlink" title="4.1 Install polymer-cli"></a>4.1 Install polymer-cli</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g polymer-cli</div></pre></td></tr></table></figure>
-<h3 id="4-2-Init"><a href="#4-2-Init" class="headerlink" title="4.2 Init"></a>4.2 Init</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mkdir my-app</div><div class="line">cd my-app</div><div class="line">polymer init starter-kit</div></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://sqhtiamo.github.io/blog/blog/public/2016/10/13/notes/framework/polymer/" data-id="ciu85ys450000zx2oajrl4625" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-notes/live/qiniu" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-notes/live/qiniu" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/blog/public/2016/10/13/notes/live/qiniu/" class="article-date">
   <time datetime="2016-10-13T09:49:20.000Z" itemprop="datePublished">2016-10-13</time>
@@ -272,87 +275,28 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-notes/packing/tree-shaking" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/public/2016/10/13/notes/packing/tree-shaking/" class="article-date">
-  <time datetime="2016-10-13T09:49:20.000Z" itemprop="datePublished">2016-10-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="tree-shaking"><a href="#tree-shaking" class="headerlink" title="tree-shaking"></a>tree-shaking</h1><h2 id="1-什么是tree-shaking"><a href="#1-什么是tree-shaking" class="headerlink" title="1. 什么是tree-shaking?"></a>1. 什么是tree-shaking?</h2><p>tree-shaking 由rollup.js提出的feature，使得js（ES2015）在打包的过程中，只需要引入需要用到的js部分，而不需要将整个js模块文件都打包。</p>
-<h2 id="2-webpack2如何做tree-shaking"><a href="#2-webpack2如何做tree-shaking" class="headerlink" title="2. webpack2如何做tree-shaking"></a>2. webpack2如何做tree-shaking</h2><p>两步：</p>
-<pre><code>- 去除所有没有被import引入的export；
-- 在minify的过程中，去除没有被用到的其它代码。
-</code></pre><p>参考：</p>
-<p><a href="http://www.2ality.com/2015/12/webpack-tree-shaking.html" target="_blank" rel="external">http://www.2ality.com/2015/12/webpack-tree-shaking.html</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://sqhtiamo.github.io/blog/blog/public/2016/10/13/notes/packing/tree-shaking/" data-id="ciu85ys4g0002zx2ofydihm82" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/public/2016/10/13/hello-world/" class="article-date">
-  <time datetime="2016-10-13T05:27:06.000Z" itemprop="datePublished">2016-10-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/blog/public/2016/10/13/notes/framework/polymer/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
+      <div class="article-nav-title">
         
+          (no title)
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/public/2016/10/13/hello-world/">Hello World</a>
-    </h1>
   
+    <a href="/blog/public/2016/10/13/notes/packing/tree-shaking/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://sqhtiamo.github.io/blog/blog/public/2016/10/13/hello-world/" data-id="ciu85r5ys0000rz2o3jr29578" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
 
 </section>
         
