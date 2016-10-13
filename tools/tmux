@@ -27,3 +27,23 @@ ctrl+B alt＋<-
 
 tmux new -s yuhang
 ctrl+B s
+
+10. tmux 配置
+- 新建文件 ~/.tmux.conf
+- 配置
+
+# 支持鼠标
+set -g mouse on
+
+# 已经废弃
+set -g mode-mouse on
+set -g mouse-resize-pane on
+set -g mouse-select-pane on
+set -g mouse-select-window on
+
+# 更改prefix键
+set -g prefix C-a
+
+- 保存
+prefix
+source-fille ~/.tmux.conf
