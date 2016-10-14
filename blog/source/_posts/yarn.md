@@ -19,7 +19,7 @@ yarn的[官网](https://yarnpkg.com/en/compare)给出如下数据（yarn VS npm�
 从warm cache, node_modules, Lockfile/Shrinkwarp 3个参数，8个维度进行比较。
 比较结果如下：
 
-{% asset_img example.jpg This is an example image %}
+{% asset_img yarn_vs_npm.jpg This is an example image %}
 
 <img src="./image/yarn_vs_npm.png" width="600" alt="yarn VS npm"/>
 
