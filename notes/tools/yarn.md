@@ -18,7 +18,29 @@ yarn的[官网](https://yarnpkg.com/en/compare)给出如下数据（yarn VS npm�
 
 ## 3. 安装
 
+#### 3.1 下载安装
 mac操作系统：
+- 用homebrew安装
+```
+brew update
+brew install yarn
+```
+- 用curl安装
+```
+curl -o- -L https://yarnpkg.com/install.sh | bash
+```
+- 用tarball安装
+
+```
+cd /opt
+wget https://yarnpkg.com/latest.tar.gz
+tar zvxf yarn-*.tar.gz
+```
+
+#### 3.2 环境变量修改：
+```
+export PATH="$HOME/.yarn/bin:$PATH
+```
 
 
 
@@ -28,5 +50,5 @@ mac操作系统：
 
 
 #### 参考：
-
+[官网](https://yarnpkg.com)
 
