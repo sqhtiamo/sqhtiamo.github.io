@@ -19,6 +19,7 @@ yarn的[官网](https://yarnpkg.com/en/compare)给出如下数据（yarn VS npm�
 
 <img src="/images/yarn_vs_npm.png" width="600" alt="yarn VS npm"/>
 
+![yarn VS npm](/images/yarn_vs_npm.png)
 大部分情况下，yarn远胜于npm。
 
 
