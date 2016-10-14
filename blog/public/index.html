@@ -55,9 +55,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://sqhtiamo.github.io/blog"></form>
@@ -68,25 +68,37 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-notes/framework/polymer" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-yarn" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/blog/public/2016/10/13/notes/framework/polymer/" class="article-date">
-  <time datetime="2016-10-13T09:49:20.000Z" itemprop="datePublished">2016-10-13</time>
+    <a href="/blog/public/2016/10/14/yarn/" class="article-date">
+  <time datetime="2016-10-14T06:33:30.000Z" itemprop="datePublished">2016-10-14</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/public/2016/10/14/yarn/">yarn</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Polymer"><a href="#Polymer" class="headerlink" title="Polymer"></a>Polymer</h1><h2 id="1-背景"><a href="#1-背景" class="headerlink" title="1. 背景"></a>1. 背景</h2><h2 id="2-兼容性"><a href="#2-兼容性" class="headerlink" title="2. 兼容性"></a>2. 兼容性</h2><h2 id="3-shadow-dom"><a href="#3-shadow-dom" class="headerlink" title="3. shadow-dom"></a>3. shadow-dom</h2><h2 id="4-安装"><a href="#4-安装" class="headerlink" title="4. 安装"></a>4. 安装</h2><h3 id="4-1-Install-polymer-cli"><a href="#4-1-Install-polymer-cli" class="headerlink" title="4.1 Install polymer-cli"></a>4.1 Install polymer-cli</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g polymer-cli</div></pre></td></tr></table></figure>
-<h3 id="4-2-Init"><a href="#4-2-Init" class="headerlink" title="4.2 Init"></a>4.2 Init</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mkdir my-app</div><div class="line">cd my-app</div><div class="line">polymer init starter-kit</div></pre></td></tr></table></figure>
-
+        <p>#yarn 初探</p>
+<h2 id="1-什么是yarn？"><a href="#1-什么是yarn？" class="headerlink" title="1. 什么是yarn？"></a>1. 什么是yarn？</h2><h2 id="2-yarn有什么好处？"><a href="#2-yarn有什么好处？" class="headerlink" title="2. yarn有什么好处？"></a>2. yarn有什么好处？</h2><h2 id="3-性能如何？"><a href="#3-性能如何？" class="headerlink" title="3. 性能如何？"></a>3. 性能如何？</h2><p>yarn的<a href="https://yarnpkg.com/en/compare" target="_blank" rel="external">官网</a>给出如下数据（yarn VS npm）：<br>从warm cache, node_modules, Lockfile/Shrinkwarp 3个参数，8个维度进行比较。<br>比较结果如下：</p>
+<p><img src="./image/yarn_vs_npm.png" width="600" alt="yarn VS npm"></p>
+<p>大部分情况下，yarn远胜于npm。</p>
+<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3. 安装"></a>3. 安装</h2><h2 id="4-使用"><a href="#4-使用" class="headerlink" title="4. 使用"></a>4. 使用</h2><h4 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h4>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://sqhtiamo.github.io/blog/blog/public/2016/10/13/notes/framework/polymer/" data-id="ciu85ys450000zx2oajrl4625" class="article-share-link">Partager</a>
+      <a data-url="https://sqhtiamo.github.io/blog/blog/public/2016/10/14/yarn/" data-id="ciu9fhci80000rk2of2lurury" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -266,7 +278,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://sqhtiamo.github.io/blog/blog/public/2016/10/13/notes/live/qiniu/" data-id="ciu85ys4b0001zx2ons402s08" class="article-share-link">Partager</a>
+      <a data-url="https://sqhtiamo.github.io/blog/blog/public/2016/10/13/notes/live/qiniu/" data-id="ciu9fhcjc0002rk2o5orslswh" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -298,7 +310,35 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://sqhtiamo.github.io/blog/blog/public/2016/10/13/notes/packing/tree-shaking/" data-id="ciu85ys4g0002zx2ofydihm82" class="article-share-link">Partager</a>
+      <a data-url="https://sqhtiamo.github.io/blog/blog/public/2016/10/13/notes/packing/tree-shaking/" data-id="ciu9fhcjg0003rk2oe9g59zqo" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-notes/framework/polymer" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/public/2016/10/13/notes/framework/polymer/" class="article-date">
+  <time datetime="2016-10-13T09:49:20.000Z" itemprop="datePublished">2016-10-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Polymer"><a href="#Polymer" class="headerlink" title="Polymer"></a>Polymer</h1><h2 id="1-背景"><a href="#1-背景" class="headerlink" title="1. 背景"></a>1. 背景</h2><h2 id="2-兼容性"><a href="#2-兼容性" class="headerlink" title="2. 兼容性"></a>2. 兼容性</h2><h2 id="3-shadow-dom"><a href="#3-shadow-dom" class="headerlink" title="3. shadow-dom"></a>3. shadow-dom</h2><h2 id="4-安装"><a href="#4-安装" class="headerlink" title="4. 安装"></a>4. 安装</h2><h3 id="4-1-Install-polymer-cli"><a href="#4-1-Install-polymer-cli" class="headerlink" title="4.1 Install polymer-cli"></a>4.1 Install polymer-cli</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g polymer-cli</div></pre></td></tr></table></figure>
+<h3 id="4-2-Init"><a href="#4-2-Init" class="headerlink" title="4.2 Init"></a>4.2 Init</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mkdir my-app</div><div class="line">cd my-app</div><div class="line">polymer init starter-kit</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://sqhtiamo.github.io/blog/blog/public/2016/10/13/notes/framework/polymer/" data-id="ciu9fhcjk0004rk2oqrmv7a79" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -343,7 +383,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://sqhtiamo.github.io/blog/blog/public/2016/10/13/hello-world/" data-id="ciu85r5ys0000rz2o3jr29578" class="article-share-link">Partager</a>
+      <a data-url="https://sqhtiamo.github.io/blog/blog/public/2016/10/13/hello-world/" data-id="ciu9fhcie0001rk2op1iq76n2" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -368,7 +408,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archieven</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/public/archives/2016/10/">October 2016</a></li></ul>
     </div>
@@ -378,12 +418,12 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recente berichten</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/blog/public/2016/10/13/notes/framework/polymer/">(no title)</a>
+            <a href="/blog/public/2016/10/14/yarn/">yarn</a>
           </li>
         
           <li>
@@ -392,6 +432,10 @@
         
           <li>
             <a href="/blog/public/2016/10/13/notes/packing/tree-shaking/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/blog/public/2016/10/13/notes/framework/polymer/">(no title)</a>
           </li>
         
           <li>
@@ -411,7 +455,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 Cloughzhang<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
