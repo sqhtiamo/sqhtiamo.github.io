@@ -11,7 +11,7 @@ yarn的[官网](https://yarnpkg.com/en/compare)给出如下数据（yarn VS npm�
 从warm cache, node_modules, Lockfile/Shrinkwarp 3个参数，8个维度进行比较。
 比较结果如下：
 
-<img src="./image/yarn_performace.png" width="800" alt="yarn performace"/>
+<img src="./image/yarn_performance.png" width="800" alt="yarn performace"/>
 
 大部分情况下，yarn远胜于npm。
 
