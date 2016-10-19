@@ -16,10 +16,10 @@
     }
     main {
         margin: 30px auto;
-        width: 964px;
-        height: 400px;
+        width: 900px;
+        height: 600px;
         perspective-origin: center;
-        perspective: 100px;
+        perspective: 700px;
     }
     .box {
         transform-style:preserve-3d;
@@ -48,27 +48,28 @@
     .face-2 {
         background: #2ecc71;
         transform-origin: 0% 0%;
-        transform: translateX(100%) rotateY(-60deg);
-    }
-    .face-3 {
-        background: #f1c40f;
-        transform-origin: 0 0;
-        /*transform:translateX(200%) rotateX(30deg);*/
+        transform: translateX(100%) rotateY(-90deg);
     }
     .face-4 {
+        background: #f1c40f;
+        transform-origin: 0 0;
+        transform: translateX(0%) rotateY(-90deg);
+    }
+    .face-3 {
         background: #7f8c8d;
         transform-origin: 0 0;
+        transform: translateZ(900px) rotateY(0deg);
         /*transform:translateX(50px) rotateX(-90deg);*/
     }
     .face-5 {
-        background: #2ecc71;
+        background: red;
         transform-origin: 0 0;
-        transform: translateX(100%) rotateY(-10deg);
+        transform: translateY(100%) rotateX(90deg);
     }
     .face-6 {
         background: #34495e;
         transform-origin: 0 0;
-        transform: translateX(0%) rotateY(-90deg);
+        transform: translateX(0%) rotateX(90deg);
     }
     .faces {
         animation: rotate 4s linear infinite ;
@@ -101,9 +102,9 @@
 		<section class="box">
 			<div class="face face-1">1</div>
 			<div class="face face-2">2</div>
-<!-- 			<div class="face face-3">3</div>
-			<div class="face face-4">4</div> -->
-			<!-- <div class="face face-5">5</div> -->
+            <div class="face face-3">3</div>
+			<div class="face face-4">4</div>
+			<div class="face face-5">5</div>
 			<div class="face face-6">6</div>
 		</section>
 	</main>
