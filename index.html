@@ -8,29 +8,42 @@
 	<style>
     header {
         background: white;
-        border-bottom: 1px solid #CCC;
+        /*border-bottom: 1px solid #CCC;*/
     }
     header .header-main {
         width: 964px;
         margin: 0 auto;
     }
     main {
-        margin: 30px auto;
-        width: 900px;
+        margin: auto auto;
+        width: 600px;
         height: 600px;
-        perspective-origin: center;
-        perspective: 700px;
+        /*perspective-origin: 0% 0%;*/
+        perspective: 150px;
+        perspective-origin: 50% 50% 0px;
     }
     .box {
         transform-style:preserve-3d;
         position:relative;
         width:100%;
         height:100%;
-        border:1px dashed #000;
+        /*border:1px dashed #000;*/
+        animation: rotate 10s infinite;
+        transform-origin: 50% 50% 150px;
+        /*transform: rotateX(90deg) rotateY(180deg) rotateZ(90deg);*/
+    }
+    @-webkit-keyframes rotate
+    {
+        from {
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        }
+        to {
+            transform: rotateX(360deg) rotateY(0deg) rotateZ(0deg);
+        }
     }
     .face {
-        width: 100%;
-        height: 100%;
+        width: 600px;
+        height: 600px;
         background: red;
         display: flex;
         align-items: center;
@@ -43,49 +56,36 @@
         background: #3498db;
         transform-origin: 0 0;
 
-        /*transform:translateX(50px) translateY(50px) translateZ(50px);*/
+        transform: translateZ(0px);
     }
     .face-2 {
         background: #2ecc71;
         transform-origin: 0% 0%;
-        transform: translateX(100%) rotateY(-90deg);
+        transform: translateZ(0px) translateX(100%) rotateY(-90deg);
     }
     .face-4 {
         background: #f1c40f;
         transform-origin: 0 0;
-        transform: translateX(0%) rotateY(-90deg);
+        transform: translateZ(0px) translateX(0%) rotateY(-90deg);
     }
     .face-3 {
         background: #7f8c8d;
         transform-origin: 0 0;
-        transform: translateZ(900px) rotateY(0deg);
+        transform: translateZ(600px) rotateY(0deg);
         /*transform:translateX(50px) rotateX(-90deg);*/
     }
     .face-5 {
         background: red;
         transform-origin: 0 0;
-        transform: translateY(100%) rotateX(90deg);
+        transform: translateZ(0px) translateY(100%) rotateX(90deg);
     }
     .face-6 {
         background: #34495e;
         transform-origin: 0 0;
-        transform: translateX(0%) rotateX(90deg);
-    }
-    .faces {
-        animation: rotate 4s linear infinite ;
+        transform: translateZ(0px) translateX(0%) rotateX(90deg);
     }
 
-    @keyframes rotate{
-        0%{
-            -webkit-transform:rotateY(0) rotateX(0);
-        }
-        50%{
-            -webkit-transform:rotateY(-359.9deg) rotateX(0);
-        }
-        100% {
-            -webkit-transform:rotateY(-359.9deg) rotateX(-359.9deg);
-        }
-    }
+
 	</style>
 
 </head>
@@ -113,7 +113,11 @@
 
 
 
+<script type="text/javascript">
 
+
+
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
