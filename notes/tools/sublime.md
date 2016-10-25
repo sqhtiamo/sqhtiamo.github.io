@@ -14,6 +14,7 @@ command ［上］/［下］
 command enter
 command L
 command K+B
+ctrl shift M 选中代码块
 ```
 
 ## 3. 命令行

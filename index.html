@@ -12,15 +12,15 @@
     }
     header .header-main {
         width: 964px;
-        margin: 0 auto;
+        margin: 200px auto;
     }
     main {
         margin: auto auto;
-        width: 600px;
-        height: 600px;
+        width: 200px;
+        height: 200px;
         /*perspective-origin: 0% 0%;*/
-        perspective: 150px;
-        perspective-origin: 50% 50% 0px;
+        perspective: 120px;
+        perspective-origin: 40% 65%;
     }
     .box {
         transform-style:preserve-3d;
@@ -28,9 +28,9 @@
         width:100%;
         height:100%;
         /*border:1px dashed #000;*/
-        animation: rotate 10s infinite;
-        transform-origin: 50% 50% 150px;
-        /*transform: rotateX(90deg) rotateY(180deg) rotateZ(90deg);*/
+        /*animation: rotate 1000s infinite;*/
+        transform-origin: 50% 50% 100px;
+        transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg);
     }
     @-webkit-keyframes rotate
     {
@@ -42,8 +42,10 @@
         }
     }
     .face {
-        width: 600px;
-        height: 600px;
+        transform-style: preserve-3d;
+
+        width: 200px;
+        height: 200px;
         background: red;
         display: flex;
         align-items: center;
@@ -71,7 +73,7 @@
     .face-3 {
         background: #7f8c8d;
         transform-origin: 0 0;
-        transform: translateZ(600px) rotateY(0deg);
+        transform: translateZ(200px) rotateY(0deg);
         /*transform:translateX(50px) rotateX(-90deg);*/
     }
     .face-5 {
