@@ -15,6 +15,7 @@ command enter
 command L
 command K+B
 ctrl shift M 选中代码块
+ctrl command G 选中相同的代码
 ```
 
 ## 3. 命令行
