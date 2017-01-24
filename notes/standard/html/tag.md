@@ -1,6 +1,59 @@
 ## <base>
 
 
-### href 
+### href
 
 ### target
+
+
+```
+enum DocumentReadyState { "loading", "interactive", "complete" };
+
+[OverrideBuiltins]
+partial /*sealed*/ interface Document {
+  // resource metadata management
+  [PutForwards=href, Unforgeable] readonly attribute Location? location;
+           attribute DOMString domain;
+  readonly attribute DOMString referrer;
+           attribute DOMString cookie;
+  readonly attribute DOMString lastModified;
+  readonly attribute DocumentReadyState readyState;
+
+  // DOM tree accessors
+  getter object (DOMString name);
+           attribute DOMString title;
+           attribute DOMString dir;
+           attribute HTMLElement? body;
+  readonly attribute HTMLHeadElement? head;
+  readonly attribute HTMLCollection images;
+  readonly attribute HTMLCollection embeds;
+  readonly attribute HTMLCollection plugins;
+  readonly attribute HTMLCollection links;
+  readonly attribute HTMLCollection forms;
+  readonly attribute HTMLCollection scripts;
+  NodeList getElementsByName(DOMString elementName);
+
+  // dynamic markup insertion
+  Document open(optional DOMString type = "text/html", optional DOMString replace = "");
+  WindowProxy open(DOMString url, DOMString name, DOMString features, optional boolean replace = false);
+  void close();
+  void write(DOMString... text);
+  void writeln(DOMString... text);
+
+  // user interaction
+  readonly attribute WindowProxy? defaultView;
+  readonly attribute Element? activeElement;
+  boolean hasFocus();
+           attribute DOMString designMode;
+  boolean execCommand(DOMString commandId, optional boolean showUI = false, optional DOMString value = "");
+  boolean queryCommandEnabled(DOMString commandId);
+  boolean queryCommandIndeterm(DOMString commandId);
+  boolean queryCommandState(DOMString commandId);
+  boolean queryCommandSupported(DOMString commandId);
+  DOMString queryCommandValue(DOMString commandId);
+
+  // special event handler IDL attributes that only apply to Document objects
+  [LenientThis] attribute EventHandler onreadystatechange;
+};
+Document implements GlobalEventHandlers;
+```
