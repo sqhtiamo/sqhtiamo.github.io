@@ -59,3 +59,32 @@ partial /*sealed*/ interface Document {
 };
 Document implements GlobalEventHandlers;
 ```
+## 11. Obsolete features
+
+### 11.1 Warnings
+
+- obsolete permitted DOCTYPE
+- border of <img> (use CSS instead)
+- language=JavaScript (use type="text/JavaScript" instead)
+- name
+- maxLength when input type="number"
+- size when input type="number"
+
+### 11.2 Non-conforming features
+
+- Element
+- Attribute
+
+### 11.3 Requirements for implementations
+
+- applet
+- marquee
+- frame
+- Application cache
+- Others
+
+
+## 12. IANA considerations
+```
+IANA:
+```
