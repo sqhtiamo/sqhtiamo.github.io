@@ -59,14 +59,17 @@ partial /*sealed*/ interface Document {
 };
 Document implements GlobalEventHandlers;
 ```
+
+## 7. scripts
+
 ## 11. Obsolete features
 
 ### 11.1 Warnings
 
 - obsolete permitted DOCTYPE
-- border of <img> (use CSS instead)
-- language=JavaScript (use type="text/JavaScript" instead)
-- name
+- border of <img> when value="0" [other situation is Non-conforming features] (use CSS instead)
+- language=JavaScript and no type="text/JavaScript"
+- name on <a> element and value is no empty String
 - maxLength when input type="number"
 - size when input type="number"
 
@@ -78,7 +81,7 @@ Document implements GlobalEventHandlers;
 ### 11.3 Requirements for implementations
 
 - applet
-- marquee
+- marquee (slides effect use CSS animation instead)
 - frame
 - Application cache
 - Others
