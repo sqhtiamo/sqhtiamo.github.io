@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>直采商城BOSS侧 前端技术分享</title>
+
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="MZhou">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <style>
+        .reveal h1,
+        .reveal h2,
+        .reveal h3,
+        .reveal h4,
+        .reveal h5,
+        .reveal h6 {
+            text-transform: capitalize;
+        }
+        .reveal strong {
+            font-size: 1.5em;
+        }
+        .reveal small {
+            display: inline;
+        }
+        .reveal section img {
+            background-color: #FFF;
+        }
+        .reveal blockquote {
+            text-align: left;
+        }
+        .reveal .demo {
+            position: relative;
+            padding-top: 50px;
+            width: 100%;
+            height: 300px;
+            color: #333;
+            text-align: left;
+            background-color: #FFF;
+            border: 1px solid #CCC;
+        }
+        .reveal .demo::before {
+            content: 'DEMO';
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 10px;
+            font-size: 0.5em;
+            background: #EEE;
+            border-bottom-right-radius: 5px;
+        }
+        .reveal .demo-block {
+            height: 100px;
+            line-height: 100px;
+            font-size: 36px;
+            color: #FFF;
+            background: #DA4453;
+        }
+        .reveal .demo-inline {
+            height: 100px;
+            color: #FFF;
+            background: #DA4453;
+        }
+        .reveal .demo-inline-block {
+            display: inline-block;
+            height: 100px;
+            color: #FFF;
+            background: #DA4453;
+        }
+        .reveal .demo-line {
+            margin: 10px 0;
+            height: 80px;
+            line-height: 80px;
+            color: #FFF;
+            background: #37BC9B;
+        }
+        .reveal .demo-line .demo-inline {
+            background: #E9573F;
+        }
+        .reveal .demo-box {
+            margin: 20px;
+            padding: 10px;
+            border: 5px dashed #333;
+        }
+        .reveal .demo-float-r,
+        .reveal .demo-float,
+        .reveal .demo-clear {
+            margin: 10px;
+            float: left;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            color: #FFF;
+            background: #DA4453;
+        }
+        .reveal .demo-float-r {
+            float: right;
+        }
+        .reveal .demo-clear {
+            float: none;
+            clear: left;
+            background: #4A89DC;
+        }
+        .reveal .demo-clearfix:before,
+        .reveal .demo-clearfix:after {
+            content: ' ';
+            display: table;
+        }
+        .reveal .demo-clearfix:after {
+            clear: both;
+        }
+        .reveal .demo-clearfix {
+            *zoom: 1;
+        }
+
+        .article h1 {
+            font-size: 32px;
+        }
+        .article img {
+            float: left;
+        }
+        .article p {
+            overflow: hidden;
+        }
+        </style>
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section data-markdown="./ppt.md"
+                    data-separator="^---"
+                    data-separator-vertical="^--"
+                    data-separator-notes="^Note:"></section>
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    {
+                        src: 'plugin/highlight/highlight.js',
+                        async: true,
+                        condition: function() {
+                            return true;
+                        },
+                        callback: function() {
+                            hljs.initHighlightingOnLoad();
+                        }
+                    },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
