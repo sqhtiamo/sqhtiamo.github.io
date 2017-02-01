@@ -84,7 +84,7 @@
 ### 个人分享(公司级分享)
 
  - [FE 101 - 从web历史发展看前端框架](https://github.com/sqhtiamo/sqhtiamo.github.io/tree/master/notes/101)
- - [2016年velocity参会有感](https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/notes/velocity/velocity%20summary.key)
+ - [2016年velocity参会有感](https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/notes/velocity/velocity%20summary.pdf)
  - [商城BOSS侧前端框架技术分享](https://github.com/sqhtiamo/sqhtiamo.github.io/tree/master/notes/boss-xmall)
  - [Hybrid APP 本地缓存方案预研](https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/notes/hybrid-app-cache/hybrid%20app%20cache.pdf)
 
