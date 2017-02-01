@@ -78,7 +78,7 @@
 
 ### 个人项目
  - [shangyang](https://github.com/lutaoact/shangyang)：一个基于微信公众号，以人传人的‘传销模式‘进行图片分享、用户报名报名参见的项目。主要是使用express+node-cavas，利用微信API进行后端开发。
- - [scott](https://coding.net/u/cagegong/p/scott/git/tree/master)：一个基于微信公众号的口语练习APP。主要调用微信sdk的录音接口和H5的音视频操作接口，使用react+redux+express+mongoose等进行开发。([微http://learnwithwind.com/](http://learnwithwind.com/))
+ - [scott](https://coding.net/u/cagegong/p/scott/git/tree/master)：一个基于微信公众号的口语练习APP。主要调用微信sdk的录音接口和H5的音视频操作接口，使用react+redux+express+mongoose等进行开发。([http://learnwithwind.com/](http://learnwithwind.com/))
  - [phantom-demo](https://github.com/Strawhat-in-FE/phantom-demo)：用phantomJS抓取页面，监控页面的变化（比如：微信审批进度）并及时用邮件通知相关人员。
 
 ### 个人分享(公司级分享)
