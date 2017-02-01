@@ -23,6 +23,7 @@
 该项目为主要负责整个项目前端基础框架构建、规范制定
 
 #### 微信商城项目
+我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
 
 
 #### 组内人才培养计划与团队管理
@@ -78,13 +79,13 @@
 
 ### 个人项目
  - [shangyang](https://github.com/lutaoact/shangyang)：一个基于微信公众号，以人传人的‘传销模式‘进行图片分享、用户报名报名参见的项目。主要是使用express+node-cavas，利用微信API进行后端开发。
- - [scott](https://coding.net/u/cagegong/p/scott/git/tree/master)：一个基于微信公众号的口语练习APP。主要调用微信sdk的录音接口和H5的音视频操作接口，使用react+redux+express+mongoose等进行开发。([http://learnwithwind.com/](http://learnwithwind.com/))
+ - [scott](https://coding.net/u/cagegong/p/scott/git/tree/master)：一个基于微信公众号的口语练习APP。主要调用微信sdk的录音接口和H5的音视频操作接口，使用react+redux+express+mongoose等进行开发。([微http://learnwithwind.com/](http://learnwithwind.com/))
  - [phantom-demo](https://github.com/Strawhat-in-FE/phantom-demo)：用phantomJS抓取页面，监控页面的变化（比如：微信审批进度）并及时用邮件通知相关人员。
 
 ### 个人分享(公司级分享)
 
  - [FE 101 - 从web历史发展看前端框架](https://github.com/sqhtiamo/sqhtiamo.github.io/tree/master/notes/101)
- - [2016年velocity参会有感](https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/notes/velocity/velocity%20summary.pdf)
+ - [2016年velocity参会有感](https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/notes/velocity/velocity%20summary.key)
  - [商城BOSS侧前端框架技术分享](https://github.com/sqhtiamo/sqhtiamo.github.io/tree/master/notes/boss-xmall)
  - [Hybrid APP 本地缓存方案预研](https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/notes/hybrid-app-cache/hybrid%20app%20cache.pdf)
 
