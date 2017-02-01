@@ -42,6 +42,7 @@
 
 - [STORE在线直销平台](https://store.b.qq.com)：基于框架机(通过node服务进行的前后端分离方案)和LBF.js(组内自研基于组件化前端框架)进行开发。
 - BOSS售中平台：基于EXTJS的SPA，内部运营系统。
+- [企点官网平台](https://qidian.qq.com)：和外包团队制定合作规范、合作开发的静态官网平台。
 - [BQQ官网平台](https://b.qq.com)：基于staticServer(Node的静态化工具)开发的官网平台。
 - EPD数据展示平台：后端YII框架、前端用highcharts做数据展示,由于项目特殊前后端开发均有前端一人完成
 
