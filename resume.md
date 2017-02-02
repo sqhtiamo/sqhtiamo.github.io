@@ -1,4 +1,4 @@
-# 张宇航的个人简历
+# [张宇航的个人简历](https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md)
 
 ## 联系方式
 
@@ -12,7 +12,6 @@
  - 硕士研究生/上海交通大学－无线网络与通信/2012-2015
  - 工作年限：2.5年
  - Github：[https://github.com/sqhtiamo](https://github.com/sqhtiamo)
- - 个人网站：[伟大航路](https://sqhtiamo.github.io/)[正在建设中]
 ---
 
 ## 工作经历
@@ -20,9 +19,12 @@
 ### 上海方付通商务服务有限公司(2016年6月~至今) － 高级前端开发工程师
 
 #### BOSS项目
-该项目为主要负责整个项目前端基础框架构建、规范制定
+该项目为直采商城的运营人员提供后台商品、运营活动等配置功能，包括秒杀、预售、商品SKU、订单系统、抽奖系统等。
+我主要负责整个项目前端基础框架构建(自己研发了一套融入了自己组件化、配置化思想的后台快速开发框架[bigMom](https://github.com/sqhtiamo/bigMom))、规范制定、业务开发等。
 
 #### 微信商城项目
+该项目为公司直采商城的C侧部分，是一套面向微信用户的垂直电商网站。
+我主要基于既有框架，负责相关业务的开发，包括订单系统、VIP用户系统、抽奖系统等。主要应用的技术是backboe和团队自研的MLBF框架，用node作为接入层作前后端分离，因此前端需要接手部分中台开发，如nginx接入、灰度用户筛选、微信权限认证等部分。
 
 
 #### 组内人才培养计划与团队管理
@@ -32,7 +34,7 @@
 - 制定组内code review规范和相关checklist
 - 搭建组内文档平台
 - 推进团队前端工程化进程以及工具集的推广
-- 制定组内人才彭要计划
+- 制定组内人才培养计划
 
 ### 腾讯科技有限公司－SNG企业平台部(2014年7月~2016年6月) － 前端开发工程师
 
@@ -75,6 +77,7 @@
 
  - [webpack-sftp-client](http://github.com/sqhtiamo/webpack-sftp-client)：用sftp上传的webpack插件以NPM包的形式进行发布，包括滴滴打车项目（DDFE）、方付通内部项目等其他公司均有使用，每周100＋下载量。([npm下载地址](https://www.npmjs.com/package/webpack-sftp-client))
  - [kaido](http://github.com/sqhtiamo/kaido)：供不会编码的人仅仅通过设置、拖拽等简单的页面功能生成H5动画页面。主要使用vue2.0(vuex + vue-router) + koa2.0 + mongoose等相关技术栈，进行全栈开发。
+ - [bigMom](http://github.com/sqhtiamo/bigMom)：基于angular框架和extJS的配置化思想，自己研发了一套新的配置化、组件化、适用于快速开发后台管理系统的一套框架。主要使用angular(1.0) + webpack 等相关技术栈，进行组件化开发。
  - [jira-shell](https://github.com/sqhtiamo/sqhtiamo.github.io/tree/master/notes/jira-shell)：用nodejs写的，以便使用者在终端快速使用jira进行任务流操作。在保证项目质量的前提下，提高开发效率。
 
 ### 个人项目
@@ -85,7 +88,7 @@
 ### 个人分享(公司级分享)
 
  - [FE 101 - 从web历史发展看前端框架](https://github.com/sqhtiamo/sqhtiamo.github.io/tree/master/notes/101)
- - [2016年velocity参会有感](https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/notes/velocity/velocity%20summary.key)
+ - [2016年velocity参会有感](https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/notes/velocity/velocity%20summary.pdf)
  - [商城BOSS侧前端框架技术分享](https://github.com/sqhtiamo/sqhtiamo.github.io/tree/master/notes/boss-xmall)
  - [Hybrid APP 本地缓存方案预研](https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/notes/hybrid-app-cache/hybrid%20app%20cache.pdf)
 
