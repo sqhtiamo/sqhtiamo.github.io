@@ -11,8 +11,8 @@
  - 本科/上海交通大学－电子与计算机工程/2008-2012
  - 硕士研究生/上海交通大学－无线网络与通信/2012-2015
  - 工作年限：2.5年
- - Github：[http://github.com/sqhtiamo](http://github.com/sqhtiamo)
-
+ - Github：[https://github.com/sqhtiamo](https://github.com/sqhtiamo)
+ - 个人网站：[伟大航路](https://sqhtiamo.github.io/)[正在建设中]
 ---
 
 ## 工作经历
