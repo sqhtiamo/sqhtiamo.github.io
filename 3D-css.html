@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zhangyuhang's Blog</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+
+	<style>
+    header {
+        background: white;
+        /*border-bottom: 1px solid #CCC;*/
+    }
+    header .header-main {
+        width: 964px;
+        margin: 200px auto;
+    }
+    main {
+        margin: auto auto;
+        width: 200px;
+        height: 200px;
+        /*perspective-origin: 0% 0%;*/
+        perspective: 120px;
+        perspective-origin: 40% 65%;
+    }
+    .box {
+        transform-style:preserve-3d;
+        position:relative;
+        width:100%;
+        height:100%;
+        /*border:1px dashed #000;*/
+        /*animation: rotate 1000s infinite;*/
+        transform-origin: 50% 50% 100px;
+        transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg);
+    }
+    @-webkit-keyframes rotate
+    {
+        from {
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        }
+        to {
+            transform: rotateX(360deg) rotateY(0deg) rotateZ(0deg);
+        }
+    }
+    .face {
+        transform-style: preserve-3d;
+
+        width: 200px;
+        height: 200px;
+        background: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 38px;
+        color: white;
+        position: absolute;
+    }
+    .face-1 {
+        background: #3498db;
+        transform-origin: 0 0;
+
+        transform: translateZ(0px);
+    }
+    .face-2 {
+        background: #2ecc71;
+        transform-origin: 0% 0%;
+        transform: translateZ(0px) translateX(100%) rotateY(-90deg);
+    }
+    .face-4 {
+        background: #f1c40f;
+        transform-origin: 0 0;
+        transform: translateZ(0px) translateX(0%) rotateY(-90deg);
+    }
+    .face-3 {
+        background: #7f8c8d;
+        transform-origin: 0 0;
+        transform: translateZ(200px) rotateY(0deg);
+        /*transform:translateX(50px) rotateX(-90deg);*/
+    }
+    .face-5 {
+        background: red;
+        transform-origin: 0 0;
+        transform: translateZ(0px) translateY(100%) rotateX(90deg);
+    }
+    .face-6 {
+        background: #34495e;
+        transform-origin: 0 0;
+        transform: translateZ(0px) translateX(0%) rotateX(90deg);
+    }
+
+
+	</style>
+
+</head>
+<body>
+	<header>
+		<div class="header-main">
+			<!-- <h1>张宇航的Blog</h1> -->
+            <h1>3D</h1>
+
+		</div>
+	</header>
+
+	<main>
+		<section class="box">
+			<div class="face face-1">1</div>
+			<div class="face face-2">2</div>
+            <div class="face face-3">3</div>
+			<div class="face face-4">4</div>
+			<div class="face face-5">5</div>
+			<div class="face face-6">6</div>
+		</section>
+	</main>
+</body>
+
+
+
+
+<script type="text/javascript">
+
+
+
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-85360363-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
