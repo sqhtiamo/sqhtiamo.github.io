@@ -39,34 +39,37 @@
         main {
             width: 1000px;
             margin: 30px auto;
+        }
+        main section{
+            width: 100%;
             display: -webkit-flex;
             display: flex;
             -webkit-justify-content: flex-start;
             justify-content: flex-start;
             flex-flow: row wrap;
         }
-        main .box {
+        main section .box {
             width: 310px;
             height: 200px;
             margin: 10px 6px;
             overflow: hidden;
             position: relative;
-            border: 2px solid #ddd;
+            border: 2px solid #eee;
             border-radius: 1px;
         }
-        main .box:hover {
+        main section .box:hover {
             border: 2px solid #ff6136;
         }
 
-        main .box figure img {
+        main section .box figure img {
             width: 100%;
             transition: all .5s ease-in-out;
         }
-        main .box:hover figure img {
+        main section .box:hover figure img {
             transform: scale(2);
             z-index: 1;
         }
-        main .box figure figcaption {
+        main section .box figure figcaption {
             position: absolute;
             bottom: 0;
             box-sizing: border-box;
@@ -74,11 +77,15 @@
             width: 100%;
             height: 56px;
             line-height: 20px;
-            font-size: 14px;
+            font-size: 12px;
             background: black;
             opacity: 0.7;
             color: white;
             padding: 8px 10px;
+        }
+        main section .box figure figcaption strong {
+            font-size: 16px;
+            display: block;
         }
         </style>
     </head>
@@ -86,67 +93,69 @@
         <header>
             <dl>
                 <dt><a class="current" href="./index.html">主页</a></dt>
-                <dt><a href="#">个人项目</a></dt>
+                <dt><a href="#project">个人项目</a></dt>
                 <dt><a href="#">个人博客</a></dt>
                 <dt><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">个人简历</a></dt>
             </dl>
         </header>
 
         <main>
-            <a class="box" target="_blank" href="https://github.com/sqhtiamo/kaido">
-                <figure>
-                    <figcaption>kaido平台 - 通过拖拽等简单功能生成H5动画页面</figcaption>
-                    <img src="./assets/images/kaido-intro.png" />
-                </figure>
-            </a>
-            <a class="box" target="_blank" href="https://github.com/sqhtiamo/kaido">
-                <figure>
-                    <figcaption>kaido平台 - 通过拖拽等简单功能生成H5动画页面</figcaption>
-                    <img src="./assets/images/kaido-intro.png" />
-                </figure>
-            </a>
-            <a class="box" target="_blank" href="https://github.com/sqhtiamo/kaido">
-                <figure>
-                    <figcaption>kaido平台 - 通过拖拽等简单功能生成H5动画页面</figcaption>
-                    <img src="./assets/images/kaido-intro.png" />
-                </figure>
-            </a>
-            <a class="box" target="_blank" href="https://github.com/sqhtiamo/kaido">
-                <figure>
-                    <figcaption>kaido平台 - 通过拖拽等简单功能生成H5动画页面</figcaption>
-                    <img src="./assets/images/kaido-intro.png" />
-                </figure>
-            </a>
-            <a class="box" target="_blank" href="https://github.com/sqhtiamo/kaido">
-                <figure>
-                    <figcaption>kaido平台 - 通过拖拽等简单功能生成H5动画页面</figcaption>
-                    <img src="./assets/images/kaido-intro.png" />
-                </figure>
-            </a>
-            <a class="box" target="_blank" href="https://github.com/sqhtiamo/kaido">
-                <figure>
-                    <figcaption>kaido平台 - 通过拖拽等简单功能生成H5动画页面</figcaption>
-                    <img src="./assets/images/kaido-intro.png" />
-                </figure>
-            </a>
-            <a class="box" target="_blank" href="https://github.com/sqhtiamo/kaido">
-                <figure>
-                    <figcaption>kaido平台 - 通过拖拽等简单功能生成H5动画页面</figcaption>
-                    <img src="./assets/images/kaido-intro.png" />
-                </figure>
-            </a>
-            <a class="box" target="_blank" href="https://github.com/sqhtiamo/kaido">
-                <figure>
-                    <figcaption>kaido平台 - 通过拖拽等简单功能生成H5动画页面</figcaption>
-                    <img src="./assets/images/kaido-intro.png" />
-                </figure>
-            </a>
-            <a class="box" target="_blank" href="https://github.com/sqhtiamo/kaido">
-                <figure>
-                    <figcaption>kaido平台 - 通过拖拽等简单功能生成H5动画页面</figcaption>
-                    <img src="./assets/images/kaido-intro.png" />
-                </figure>
-            </a>
+            <section id="project">
+                <a class="box" target="_blank" href="https://github.com/sqhtiamo/kaido">
+                    <figure>
+                        <figcaption><strong>Kaido</strong>通过拖拽等简单功能生成H5动画页面</figcaption>
+                        <img src="./assets/images/kaido-intro.png" />
+                    </figure>
+                </a>
+                <a class="box" target="_blank" href="https://github.com/sqhtiamo/webpack-sftp-client">
+                    <figure>
+                        <figcaption><strong>Webpack-Sftp-Client</strong>通过sftp将代码和资源上传到远端的webpack插件</figcaption>
+                        <img src="./assets/images/webpack-sftp-client-intro.png" />
+                    </figure>
+                </a>
+                <a class="box" target="_blank" href="https://github.com/sqhtiamo/bigMom">
+                    <figure>
+                        <figcaption><strong>BigMom</strong> 可配置、组件化、适用于快速开发后台管理系统的框架</figcaption>
+                        <img src="./assets/images/bigmom-intro.png" />
+                    </figure>
+                </a>
+                <a class="box" target="_blank" href="https://github.com/sqhtiamo/kaido">
+                    <figure>
+                        <figcaption>kaido平台 - 通过拖拽等简单功能生成H5动画页面</figcaption>
+                        <img src="./assets/images/kaido-intro.png" />
+                    </figure>
+                </a>
+                <a class="box" target="_blank" href="https://github.com/sqhtiamo/kaido">
+                    <figure>
+                        <figcaption>kaido平台 - 通过拖拽等简单功能生成H5动画页面</figcaption>
+                        <img src="./assets/images/kaido-intro.png" />
+                    </figure>
+                </a>
+                <a class="box" target="_blank" href="https://github.com/sqhtiamo/kaido">
+                    <figure>
+                        <figcaption>kaido平台 - 通过拖拽等简单功能生成H5动画页面</figcaption>
+                        <img src="./assets/images/kaido-intro.png" />
+                    </figure>
+                </a>
+                <a class="box" target="_blank" href="https://github.com/sqhtiamo/kaido">
+                    <figure>
+                        <figcaption>kaido平台 - 通过拖拽等简单功能生成H5动画页面</figcaption>
+                        <img src="./assets/images/kaido-intro.png" />
+                    </figure>
+                </a>
+                <a class="box" target="_blank" href="https://github.com/sqhtiamo/kaido">
+                    <figure>
+                        <figcaption>kaido平台 - 通过拖拽等简单功能生成H5动画页面</figcaption>
+                        <img src="./assets/images/kaido-intro.png" />
+                    </figure>
+                </a>
+                <a class="box" target="_blank" href="https://github.com/sqhtiamo/kaido">
+                    <figure>
+                        <figcaption>kaido平台 - 通过拖拽等简单功能生成H5动画页面</figcaption>
+                        <img src="./assets/images/kaido-intro.png" />
+                    </figure>
+                </a>
+            </section>
         </main>
     </body>
     <script>

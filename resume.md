@@ -78,7 +78,7 @@
 
 ### 开源项目
 
- - [webpack-sftp-client](http://github.com/sqhtiamo/webpack-sftp-client)：用sftp上传的webpack插件以NPM包的形式进行发布，包括滴滴打车项目（DDFE）、方付通内部项目等其他公司均有使用，每周100＋下载量。([npm下载地址](https://www.npmjs.com/package/webpack-sftp-client))
+ - [webpack-sftp-client](http://github.com/sqhtiamo/webpack-sftp-client)：用sftp上传的webpack插件，以NPM包的形式进行发布，包括滴滴打车项目（DDFE）、方付通内部项目等其他公司均有使用，每周100＋下载量。([npm下载地址](https://www.npmjs.com/package/webpack-sftp-client))
  - [kaido](http://github.com/sqhtiamo/kaido)：供不会编码的人仅仅通过设置、拖拽等简单的页面功能生成H5动画页面。主要使用vue2.0(vuex + vue-router) + koa2.0 + mongoose等相关技术栈，进行全栈开发。
  - [bigMom](http://github.com/sqhtiamo/bigMom)：基于angular框架和extJS的配置化思想，自己研发了一套新的配置化、组件化、适用于快速开发后台管理系统的一套框架。主要使用angular(1.0) + webpack 等相关技术栈，进行组件化开发。
  - [jira-shell](https://github.com/sqhtiamo/sqhtiamo.github.io/tree/master/notes/jira-shell)：用nodejs写的，以便使用者在终端快速使用jira进行任务流操作。在保证项目质量的前提下，提高开发效率。
