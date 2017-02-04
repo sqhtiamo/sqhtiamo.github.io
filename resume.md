@@ -78,13 +78,13 @@
 
 ### 开源项目
 
- - [webpack-sftp-client](http://github.com/sqhtiamo/webpack-sftp-client)：用sftp上传的webpack插件，以NPM包的形式进行发布，包括滴滴打车项目（DDFE）、方付通内部项目等其他公司均有使用，每周100＋下载量。([npm下载地址](https://www.npmjs.com/package/webpack-sftp-client))
+ - [webpack-sftp-client](http://github.com/sqhtiamo/webpack-sftp-client)：通过sftp上传的webpack插件，以NPM包的形式进行发布，包括滴滴打车项目（DDFE）、方付通内部项目等其他公司均有使用，每周100＋下载量。([npm下载地址](https://www.npmjs.com/package/webpack-sftp-client))
  - [kaido](http://github.com/sqhtiamo/kaido)：供不会编码的人仅仅通过设置、拖拽等简单的页面功能生成H5动画页面。主要使用vue2.0(vuex + vue-router) + koa2.0 + mongoose等相关技术栈，进行全栈开发。
  - [bigMom](http://github.com/sqhtiamo/bigMom)：基于angular框架和extJS的配置化思想，自己研发了一套新的配置化、组件化、适用于快速开发后台管理系统的一套框架。主要使用angular(1.0) + webpack 等相关技术栈，进行组件化开发。
  - [jira-shell](https://github.com/sqhtiamo/sqhtiamo.github.io/tree/master/notes/jira-shell)：用nodejs写的，以便使用者在终端快速使用jira进行任务流操作。在保证项目质量的前提下，提高开发效率。
 
 ### 个人项目
- - [shangyang](https://github.com/lutaoact/shangyang)：一个基于微信公众号，以人传人的‘传销模式‘进行图片分享、用户报名报名参见的项目。主要是使用express+node-cavas，利用微信API进行后端开发。
+ - [shangyang](https://github.com/lutaoact/shangyang)：一个基于微信公众号，以人传人的‘传销模式‘进行图片分享、用户报名参加的项目。主要是使用express+node-cavas，利用微信API进行后端开发。
  - [scott](https://coding.net/u/cagegong/p/scott/git/tree/master)：一个基于微信公众号的口语练习APP。主要调用微信sdk的录音接口和H5的音视频操作接口，使用react+redux+express+mongoose等进行开发。([http://learnwithwind.com/](http://learnwithwind.com/))
  - [phantom-demo](https://github.com/Strawhat-in-FE/phantom-demo)：用phantomJS抓取页面，监控页面的变化（比如：微信审批进度）并及时用邮件通知相关人员。
 
