@@ -30,7 +30,7 @@
             font-size: 16px;
         }
         header dl {
-            width: 980px;
+            width: 1000px;
             margin: 0 auto;
             text-align: center;
         }
@@ -58,7 +58,7 @@
         }
 
         main {
-            width: 980px;
+            width: 1000px;
             margin: 30px auto;
         }
         main section{
@@ -86,7 +86,7 @@
             width: 100%;
             transition: all .5s ease-in-out;
         }
-        main section8.box:hover figure img {
+        main section .box:hover figure img {
             transform: scale(1.2);
             z-index: 1;
         }
@@ -108,21 +108,13 @@
             font-size: 16px;
             display: block;
         }
-        @media screen and (max-width: 480px) {
-            html {
-                font-size: 30px;
-            }
-            body {
-                background-color: lightgreen;
-            }
-        }
         </style>
     </head>
     <body>
         <header>
             <dl>
                 <dt><a class="current" href="./index.html">主页</a></dt>
-                <dt><a href="./project.html">个人项目</a></dt>
+                <dt><a href="#project">个人项目</a></dt>
                 <dt><a href="#">学习笔记</a>
                     <ul>
                         <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">工作拾遗</a>
@@ -136,21 +128,14 @@
                     </ul>
                 </dt>
 
-                <dt><a href="#">个人博客</a>
-                    <ul>
-                        <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">个人文章</a>
-                        </li>
-                        <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">个人分享</a>
-                        </li>
-                    </ul>
-                </dt>
+                <dt><a href="#">个人博客</a></dt>
                 <dt><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">个人简历</a>
-                    <!-- <ul>
+                    <ul>
                         <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">工作时代</a>
                         </li>
                         <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">学生时代</a>
                         </li>
-                    </ul> -->
+                    </ul>
                 </dt>
             </dl>
         </header>
