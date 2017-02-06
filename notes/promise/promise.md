@@ -64,3 +64,27 @@ getInfo('test').then(function (info) {
     console.log(err)
 })
 ```
+
+### 4. Promise.all & Promise.race
+
+当参数数组中所有的promise对象都变为resolve的时候，该方法才会返回，新创建的promise则会使用这些promise的值。如果参数中的任何一个promise为reject的话，则整个Promise.all调用会立即终止，并返回一个reject的新的promise对象。
+
+```
+var p1 = Promise.resolve(1),
+    p2 = Promise.resolve(2),
+    p3 = Promise.resolve(3);
+Promise.all([p1, p2, p3]).then(function (results) {
+    console.log(results);  // [1, 2, 3]
+});
+```
+
+数组中的任何一个promise对象如果变为resolve或者reject的话，该函数就会返回，并使用这个promise对象的值进行resolve或者reject。
+
+```
+var p1 = Promise.resolve(1),
+    p2 = Promise.resolve(2),
+    p3 = Promise.resolve(3);
+Promise.race([p1, p2, p3]).then(function (value) {
+    console.log(value);  // 1
+});
+```
