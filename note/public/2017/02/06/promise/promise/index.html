@@ -15,7 +15,7 @@
 <meta property="og:description" content="参考：http://liubin.org/promises-book
 1. Promise.resolve &amp;amp; Promise.reject静态方法Promise.resolve(value) &amp;amp; Promise.reject(error)可以认为是new Promise()方法的快捷方式。
 12345Promise.resolve(value)new Promise(functi">
-<meta property="og:updated_time" content="2017-02-07T00:21:59.000Z">
+<meta property="og:updated_time" content="2017-02-07T05:08:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Promise">
 <meta name="twitter:description" content="参考：http://liubin.org/promises-book
@@ -161,7 +161,8 @@
 <body>
   <div id="container">
     <div id="wrap">
-      <header id="header">
+      
+<header id="header">
   <div id="banner"></div>
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
@@ -177,11 +178,11 @@
     <div id="header-inner" class="inner">
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
-        
+        <!-- 
           <a class="main-nav-link" href="/note/public/">Home</a>
         
           <a class="main-nav-link" href="/note/public/archives">Archives</a>
-        
+         -->
       </nav>
       <nav id="sub-nav">
         
@@ -192,6 +193,41 @@
       </div>
     </div>
   </div>
+</header>
+<header>
+    <dl>
+        <dt><a class="current" href="./index.html">主页</a></dt>
+        <dt><a href="./project.html">个人项目</a></dt>
+        <dt><a href="#">学习笔记</a>
+            <ul>
+                <li><a href="https://sqhtiamo.github.io/note/public/index.html" target="_blank">工作拾遗</a>
+                </li>
+                <li><a href="https://sqhtiamo.github.io/note/public/index.html" target="_blank">外文翻译</a>
+                </li>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">前端收藏夹</a>
+                </li>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">Demo演示</a>
+                </li>
+            </ul>
+        </dt>
+
+        <dt><a href="#">个人研究</a>
+            <ul>
+                <li><a href="https://sqhtiamo.github.io/note/public/index.html" target="_blank">个人文章</a>
+                </li>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">个人分享</a>
+                </li>
+            </ul>
+        </dt>
+        <dt><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">个人简历</a>
+            <!-- <ul>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">工作时代</a>
+                </li>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">学生时代</a>
+                </li>
+            </ul> -->
+        </dt>
+    </dl>
 </header>
 
       <div class="outer">
@@ -219,22 +255,22 @@
       
         <p>参考：<a href="http://liubin.org/promises-book" target="_blank" rel="external">http://liubin.org/promises-book</a></p>
 <h2 id="1-Promise-resolve-amp-Promise-reject"><a href="#1-Promise-resolve-amp-Promise-reject" class="headerlink" title="1. Promise.resolve &amp; Promise.reject"></a>1. Promise.resolve &amp; Promise.reject</h2><p>静态方法Promise.resolve(value) &amp; Promise.reject(error)可以认为是new Promise()方法的快捷方式。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Promise.resolve(value)</div><div class="line"></div><div class="line">new Promise(function(resolve)&#123;</div><div class="line">    resolve(value);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Promise.reject(new Error(&quot;出错了&quot;))</div><div class="line">new Promise(function(resolve,reject)&#123;</div><div class="line">    reject(new Error(&quot;出错了&quot;));</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Promise</span>.resolve(value)</div><div class="line"></div><div class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve</span>)</span>&#123;</div><div class="line">    resolve(value);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Promise</span>.reject(<span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">"出错了"</span>))</div><div class="line"></div><div class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve,reject</span>)</span>&#123;</div><div class="line">    reject(<span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">"出错了"</span>));</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <a id="more"></a>
 <h2 id="2-Thenable"><a href="#2-Thenable" class="headerlink" title="2. Thenable"></a>2. Thenable</h2><p>thenable指的是一个具有.then方法的对象，利用thenable对象原来具有的then方法，将thenable对象转换为promise对象。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var promise = Promise.resolve($.ajax(&apos;/json/comment.json&apos;)); // =&gt; promise对象</div><div class="line"></div><div class="line">promise.then(function(value)&#123;</div><div class="line">   console.log(value);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> promise = <span class="built_in">Promise</span>.resolve($.ajax(<span class="string">'/json/comment.json'</span>)); <span class="comment">// =&gt; promise对象</span></div><div class="line"></div><div class="line">promise.then(<span class="function"><span class="keyword">function</span>(<span class="params">value</span>)</span>&#123;</div><div class="line">   <span class="built_in">console</span>.log(value);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h2 id="3-Promise-catch"><a href="#3-Promise-catch" class="headerlink" title="3. Promise#catch"></a>3. Promise#catch</h2><p>Promise#catch只是promise.then(undefined, onRejected); 方法的一个别名而已</p>
 <h3 id="3-1-每次调用then都会返回一个新创建的promise对象"><a href="#3-1-每次调用then都会返回一个新创建的promise对象" class="headerlink" title="3.1 每次调用then都会返回一个新创建的promise对象"></a>3.1 每次调用then都会返回一个新创建的promise对象</h3><p><a href="http://taoofcode.net/promise-anti-patterns/" target="_blank" rel="external">Promise Anti-patterns</a></p>
 <h3 id="3-2-使用promise-then-onFulfilled-onRejected-，在onFulfilled中发生异常的话，在onRejected中是捕获不到这个异常的。"><a href="#3-2-使用promise-then-onFulfilled-onRejected-，在onFulfilled中发生异常的话，在onRejected中是捕获不到这个异常的。" class="headerlink" title="3.2 使用promise.then(onFulfilled, onRejected)，在onFulfilled中发生异常的话，在onRejected中是捕获不到这个异常的。"></a>3.2 使用promise.then(onFulfilled, onRejected)，在onFulfilled中发生异常的话，在onRejected中是捕获不到这个异常的。</h3><h3 id="3-3"><a href="#3-3" class="headerlink" title="3.3"></a>3.3</h3><ol>
 <li>同一个then里，resolve和reject函数不会同时进行。只执行最先出现的。</li>
 <li>一个错误被catch或then中的reject，则不会继续传递下去</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">var getInfo = function (info) &#123;</div><div class="line">    return new Promise(function (resolve, reject) &#123;</div><div class="line">        reject(111)</div><div class="line">        setTimeout(function () &#123;</div><div class="line">            console.log(resolve)</div><div class="line">            resolve(info)</div><div class="line">        &#125;, 3000)</div><div class="line">    &#125;)</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">getInfo(&apos;test&apos;).then(function (info) &#123;</div><div class="line">    console.log(info)</div><div class="line">&#125;, null).catch(function (err) &#123;</div><div class="line">    console.log(2)</div><div class="line">    console.log(err)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> getInfo = <span class="function"><span class="keyword">function</span> (<span class="params">info</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span> (<span class="params">resolve, reject</span>) </span>&#123;</div><div class="line">        reject(<span class="number">111</span>)</div><div class="line">        setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">            <span class="built_in">console</span>.log(resolve)</div><div class="line">            resolve(info)</div><div class="line">        &#125;, <span class="number">3000</span>)</div><div class="line">    &#125;)</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">getInfo(<span class="string">'test'</span>).then(<span class="function"><span class="keyword">function</span> (<span class="params">info</span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(info)</div><div class="line">&#125;, <span class="literal">null</span>).catch(<span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="number">2</span>)</div><div class="line">    <span class="built_in">console</span>.log(err)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 <h3 id="4-Promise-all-amp-Promise-race"><a href="#4-Promise-all-amp-Promise-race" class="headerlink" title="4. Promise.all &amp; Promise.race"></a>4. Promise.all &amp; Promise.race</h3><p>当参数数组中所有的promise对象都变为resolve的时候，该方法才会返回，新创建的promise则会使用这些promise的值。如果参数中的任何一个promise为reject的话，则整个Promise.all调用会立即终止，并返回一个reject的新的promise对象。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var p1 = Promise.resolve(1),</div><div class="line">    p2 = Promise.resolve(2),</div><div class="line">    p3 = Promise.resolve(3);</div><div class="line">Promise.all([p1, p2, p3]).then(function (results) &#123;</div><div class="line">    console.log(results);  // [1, 2, 3]</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> p1 = <span class="built_in">Promise</span>.resolve(<span class="number">1</span>),</div><div class="line">    p2 = <span class="built_in">Promise</span>.resolve(<span class="number">2</span>),</div><div class="line">    p3 = <span class="built_in">Promise</span>.resolve(<span class="number">3</span>);</div><div class="line"><span class="built_in">Promise</span>.all([p1, p2, p3]).then(<span class="function"><span class="keyword">function</span> (<span class="params">results</span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(results);  <span class="comment">// [1, 2, 3]</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <p>数组中的任何一个promise对象如果变为resolve或者reject的话，该函数就会返回，并使用这个promise对象的值进行resolve或者reject。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var p1 = Promise.resolve(1),</div><div class="line">    p2 = Promise.resolve(2),</div><div class="line">    p3 = Promise.resolve(3);</div><div class="line">Promise.race([p1, p2, p3]).then(function (value) &#123;</div><div class="line">    console.log(value);  // 1</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> p1 = <span class="built_in">Promise</span>.resolve(<span class="number">1</span>),</div><div class="line">    p2 = <span class="built_in">Promise</span>.resolve(<span class="number">2</span>),</div><div class="line">    p3 = <span class="built_in">Promise</span>.resolve(<span class="number">3</span>);</div><div class="line"><span class="built_in">Promise</span>.race([p1, p2, p3]).then(<span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(value);  <span class="comment">// 1</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 
       
     </div>

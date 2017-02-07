@@ -151,7 +151,8 @@
 <body>
   <div id="container">
     <div id="wrap">
-      <header id="header">
+      
+<header id="header">
   <div id="banner"></div>
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
@@ -167,11 +168,11 @@
     <div id="header-inner" class="inner">
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
-        
+        <!-- 
           <a class="main-nav-link" href="/note/public/">Home</a>
         
           <a class="main-nav-link" href="/note/public/archives">Archives</a>
-        
+         -->
       </nav>
       <nav id="sub-nav">
         
@@ -182,6 +183,41 @@
       </div>
     </div>
   </div>
+</header>
+<header>
+    <dl>
+        <dt><a class="current" href="./index.html">主页</a></dt>
+        <dt><a href="./project.html">个人项目</a></dt>
+        <dt><a href="#">学习笔记</a>
+            <ul>
+                <li><a href="https://sqhtiamo.github.io/note/public/index.html" target="_blank">工作拾遗</a>
+                </li>
+                <li><a href="https://sqhtiamo.github.io/note/public/index.html" target="_blank">外文翻译</a>
+                </li>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">前端收藏夹</a>
+                </li>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">Demo演示</a>
+                </li>
+            </ul>
+        </dt>
+
+        <dt><a href="#">个人研究</a>
+            <ul>
+                <li><a href="https://sqhtiamo.github.io/note/public/index.html" target="_blank">个人文章</a>
+                </li>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">个人分享</a>
+                </li>
+            </ul>
+        </dt>
+        <dt><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">个人简历</a>
+            <!-- <ul>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">工作时代</a>
+                </li>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">学生时代</a>
+                </li>
+            </ul> -->
+        </dt>
+    </dl>
 </header>
 
       <div class="outer">
@@ -211,8 +247,8 @@
       
         <p>参考：<a href="http://liubin.org/promises-book">http://liubin.org/promises-book</a></p>
 <h2 id="1-Promise-resolve-amp-Promise-reject"><a href="#1-Promise-resolve-amp-Promise-reject" class="headerlink" title="1. Promise.resolve &amp; Promise.reject"></a>1. Promise.resolve &amp; Promise.reject</h2><p>静态方法Promise.resolve(value) &amp; Promise.reject(error)可以认为是new Promise()方法的快捷方式。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Promise.resolve(value)</div><div class="line"></div><div class="line">new Promise(function(resolve)&#123;</div><div class="line">    resolve(value);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Promise.reject(new Error(&quot;出错了&quot;))</div><div class="line">new Promise(function(resolve,reject)&#123;</div><div class="line">    reject(new Error(&quot;出错了&quot;));</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Promise</span>.resolve(value)</div><div class="line"></div><div class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve</span>)</span>&#123;</div><div class="line">    resolve(value);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Promise</span>.reject(<span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">"出错了"</span>))</div><div class="line"></div><div class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve,reject</span>)</span>&#123;</div><div class="line">    reject(<span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">"出错了"</span>));</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
         
           <p class="article-more-link">
             <a href="/note/public/2017/02/06/promise/promise/#more">阅读全文</a>
