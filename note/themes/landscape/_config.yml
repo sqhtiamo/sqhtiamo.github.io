@@ -1,7 +1,7 @@
 # Header
 menu:
   Home: /
-  Archives: /archives
+# Archives: /archives
 # rss: /atom.xml
 
 # Content
@@ -19,7 +19,7 @@ widgets:
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
-# - category
+- category
 # - tagcloud
 # - archive
 
