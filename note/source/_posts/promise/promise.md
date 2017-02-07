@@ -20,6 +20,8 @@ new Promise(function(resolve,reject){
     reject(new Error("出错了"));
 });
 ```
+<!-- more -->
+
 
 ## 2. Thenable
 

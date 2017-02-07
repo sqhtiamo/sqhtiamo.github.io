@@ -15,7 +15,7 @@
 <meta property="og:description" content="参考：http://liubin.org/promises-book
 1. Promise.resolve &amp;amp; Promise.reject静态方法Promise.resolve(value) &amp;amp; Promise.reject(error)可以认为是new Promise()方法的快捷方式。
 12345Promise.resolve(value)new Promise(functi">
-<meta property="og:updated_time" content="2017-02-06T09:28:10.000Z">
+<meta property="og:updated_time" content="2017-02-07T00:21:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Promise">
 <meta name="twitter:description" content="参考：http://liubin.org/promises-book
@@ -28,6 +28,131 @@
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
+  <meta charset="utf-8">
+  <meta name="description" content="航海时代_张宇航_个人博客_前腾讯前端开发工程师_现上海方付通商务服务有限公司_最富有激情的前端开发工程师_zhangyuhang's blog" />
+  <meta name="keywords" content="航海时代,张宇航,个人博客,上海交大毕业生,腾讯前端开发工程师,上海方付通商务服务有限公司,最有激情的前端开发工程师,sqhtiamo,clougzhang,web前端开发,无线通信,智能家居" />
+  <style>
+  * {
+      margin: 0;
+      padding: 0;
+  }
+  body {
+      background: #FCFCFC;
+  }
+  a {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  a:hover,
+  a.current {
+      color: #FF6136;
+
+  }
+  header {
+      background: black;
+      color: white;
+      height: 50px;
+      font-size: 16px;
+  }
+  header dl {
+      width: 980px;
+      margin: 0 auto;
+      text-align: center;
+  }
+  header dl dt {
+      display: inline-block;
+      position: relative;
+      line-height: 50px;
+      margin: 0 20px;
+  }
+  header dl dt ul {
+      position: absolute;
+      top: 50px;
+      left: -10px;
+      background: black;
+      line-height: 30px;
+      box-sizing: border-box;
+      width: 140%;
+      z-index: 10;
+      opacity: 0.8;
+      padding-bottom: 5px;
+      display: none;
+  }
+  header dl dt:hover ul {
+      display: block;
+  }
+
+  main {
+      width: 980px;
+      margin: 30px auto;
+  }
+  main section{
+      width: 100%;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+      flex-flow: row wrap;
+  }
+  main section .box {
+      width: 310px;
+      height: 200px;
+      margin: 10px 6px;
+      overflow: hidden;
+      position: relative;
+      border: 2px solid #EEE;
+      border-radius: 1px;
+  }
+  main section .box:hover {
+      border: 2px solid #FF6136;
+  }
+
+  main section .box figure img {
+      width: 100%;
+      transition: all .5s ease-in-out;
+  }
+  main section8.box:hover figure img {
+      transform: scale(1.2);
+      z-index: 1;
+  }
+  main section .box figure figcaption {
+      position: absolute;
+      bottom: 0;
+      box-sizing: border-box;
+      z-index: 2;
+      width: 100%;
+      height: 56px;
+      line-height: 20px;
+      font-size: 12px;
+      background: black;
+      opacity: 0.7;
+      color: white;
+      padding: 8px 10px;
+  }
+  main section .box figure figcaption strong {
+      font-size: 16px;
+      display: block;
+  }
+  @media (max-width: 480px) {
+      html {
+          /*font-size: 20px;*/
+      }
+      main,
+      header dl {
+          width: 100%;
+      }
+      header dl dt {
+          margin: 0px 7px;
+      }
+      main section .box {
+          width: 80%;
+          height: inherit;
+          max-height: 200px;
+          margin: 10px auto;
+      }
+  }
+  </style>
   <link rel="stylesheet" href="/note/public/css/style.css">
   
 
@@ -96,6 +221,7 @@
 <h2 id="1-Promise-resolve-amp-Promise-reject"><a href="#1-Promise-resolve-amp-Promise-reject" class="headerlink" title="1. Promise.resolve &amp; Promise.reject"></a>1. Promise.resolve &amp; Promise.reject</h2><p>静态方法Promise.resolve(value) &amp; Promise.reject(error)可以认为是new Promise()方法的快捷方式。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Promise.resolve(value)</div><div class="line"></div><div class="line">new Promise(function(resolve)&#123;</div><div class="line">    resolve(value);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Promise.reject(new Error(&quot;出错了&quot;))</div><div class="line">new Promise(function(resolve,reject)&#123;</div><div class="line">    reject(new Error(&quot;出错了&quot;));</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <h2 id="2-Thenable"><a href="#2-Thenable" class="headerlink" title="2. Thenable"></a>2. Thenable</h2><p>thenable指的是一个具有.then方法的对象，利用thenable对象原来具有的then方法，将thenable对象转换为promise对象。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var promise = Promise.resolve($.ajax(&apos;/json/comment.json&apos;)); // =&gt; promise对象</div><div class="line"></div><div class="line">promise.then(function(value)&#123;</div><div class="line">   console.log(value);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h2 id="3-Promise-catch"><a href="#3-Promise-catch" class="headerlink" title="3. Promise#catch"></a>3. Promise#catch</h2><p>Promise#catch只是promise.then(undefined, onRejected); 方法的一个别名而已</p>
