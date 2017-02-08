@@ -133,10 +133,14 @@
   <link rel="canonical" href="http://sqhtiamo.github.io/note/public/2017/02/06/promise/promise/"/>
 
 <style>
-
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     background: #FCFCFC;
 }
+
 a {
     color: inherit;
     text-decoration: none;
@@ -153,6 +157,9 @@ header#custom {
     height: 50px;
     font-size: 16px;
 }
+header#custom a {
+    border-bottom: none;
+}
 header#custom dl {
     width: 980px;
     margin: 0 auto;
@@ -166,7 +173,7 @@ header#custom dl dt {
 }
 header#custom dl dt ul {
     position: absolute;
-    top: 50px;
+    top: 53px;
     left: -10px;
     background: black;
     line-height: 30px;
@@ -204,24 +211,29 @@ header#custom dl dt:hover ul {
 
 <header id="custom">
     <dl>
-        <dt><a class="current" href="./index.html">主页</a></dt>
-        <dt><a href="./project.html">个人项目</a></dt>
-        <dt><a href="#">学习笔记</a>
+        <dt><a class="current" href="/index.html">主页</a></dt>
+        <dt><a href="/project.html">个人项目</a>
+            <ul>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">开源项目</a>
+                </li>
+                <li><a href="/project.html" target="_blank">前端收藏夹</a>
+                </li>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">Demo演示</a>
+                </li>
+            </ul>
+        </dt>
+        <dt><a href="/note/public/index.html">学习笔记</a>
             <ul>
                 <li><a href="https://sqhtiamo.github.io/note/public/index.html" target="_blank">工作拾遗</a>
                 </li>
                 <li><a href="https://sqhtiamo.github.io/note/public/index.html" target="_blank">外文翻译</a>
-                </li>
-                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">前端收藏夹</a>
-                </li>
-                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">Demo演示</a>
                 </li>
             </ul>
         </dt>
 
         <dt><a href="#">个人研究</a>
             <ul>
-                <li><a href="https://sqhtiamo.github.io/note/public/index.html" target="_blank">个人文章</a>
+                <li><a href="/note/public/index.html" target="_blank">个人文章</a>
                 </li>
                 <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">个人分享</a>
                 </li>
@@ -495,9 +507,9 @@ header#custom dl dt:hover ul {
       
         <div class="post-tags">
           
-            <a href="/note/public/tags/javascript/" rel="tag"># javascript</a>
+            <a href="/note/public/public/tags/javascript/" rel="tag"># javascript</a>
           
-            <a href="/note/public/tags/promise/" rel="tag"># promise</a>
+            <a href="/note/public/public/tags/promise/" rel="tag"># promise</a>
           
         </div>
       

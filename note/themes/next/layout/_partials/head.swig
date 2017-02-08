@@ -112,10 +112,14 @@
   <link rel="canonical" href="{{ config.url }}/{{ page.canonical_path.replace('index.html', '') }}"/>
 {% endif %}
 <style>
-
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     background: #FCFCFC;
 }
+
 a {
     color: inherit;
     text-decoration: none;
@@ -132,6 +136,9 @@ header#custom {
     height: 50px;
     font-size: 16px;
 }
+header#custom a {
+    border-bottom: none;
+}
 header#custom dl {
     width: 980px;
     margin: 0 auto;
@@ -145,7 +152,7 @@ header#custom dl dt {
 }
 header#custom dl dt ul {
     position: absolute;
-    top: 50px;
+    top: 53px;
     left: -10px;
     background: black;
     line-height: 30px;
