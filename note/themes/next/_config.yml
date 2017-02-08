@@ -181,8 +181,8 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggler.
-  display: post
-  #display: always
+  # display: post
+  display: always
   #display: hide
   #display: remove
 
@@ -272,7 +272,7 @@ mathjax:
 #baidu_analytics:
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+duoshuo_shortname: sqhtiamo
 
 # Disqus
 #disqus_shortname:
@@ -492,7 +492,11 @@ vendors:
   # https://github.com/hustcc/canvas-nest.js
   canvas_nest:
 
-
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
 
 # Assets
 css: css
