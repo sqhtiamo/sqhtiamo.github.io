@@ -132,8 +132,164 @@
 
   <link rel="canonical" href="http://sqhtiamo.github.io/note/public/2017/02/06/promise/promise/"/>
 
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #FCFCFC;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover,
+a.current {
+    color: #FF6136;
 
+}
+header#custom {
+    background: black;
+    color: white;
+    height: 50px;
+    font-size: 16px;
+}
+header#custom dl {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+header#custom dl dt {
+    display: inline-block;
+    position: relative;
+    line-height: 50px;
+    margin: 0 20px;
+}
+header#custom dl dt ul {
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    background: black;
+    line-height: 30px;
+    box-sizing: border-box;
+    width: 140%;
+    z-index: 10;
+    opacity: 0.8;
+    padding-bottom: 5px;
+    display: none;
+}
+header#custom dl dt:hover ul {
+    display: block;
+}
 
+main {
+    width: 980px;
+    margin: 30px auto;
+}
+main section{
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+main section .box {
+    width: 310px;
+    height: 200px;
+    margin: 10px 6px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #EEE;
+    border-radius: 1px;
+}
+main section .box:hover {
+    border: 2px solid #FF6136;
+}
+
+main section .box figure img {
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+main section8.box:hover figure img {
+    transform: scale(1.2);
+    z-index: 1;
+}
+main section .box figure figcaption {
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    z-index: 2;
+    width: 100%;
+    height: 56px;
+    line-height: 20px;
+    font-size: 12px;
+    background: black;
+    opacity: 0.7;
+    color: white;
+    padding: 8px 10px;
+}
+main section .box figure figcaption strong {
+    font-size: 16px;
+    display: block;
+}
+@media (max-width: 480px) {
+    html {
+        /*font-size: 20px;*/
+    }
+    main,
+    header#custom dl {
+        width: 100%;
+    }
+    header#custom dl dt {
+        margin: 0px 7px;
+    }
+    main section .box {
+        width: 80%;
+        height: inherit;
+        max-height: 200px;
+        margin: 10px auto;
+    }
+}
+</style>
+
+<header id="custom">
+    <dl>
+        <dt><a class="current" href="./index.html">主页</a></dt>
+        <dt><a href="./project.html">个人项目</a></dt>
+        <dt><a href="#">学习笔记</a>
+            <ul>
+                <li><a href="https://sqhtiamo.github.io/note/public/index.html" target="_blank">工作拾遗</a>
+                </li>
+                <li><a href="https://sqhtiamo.github.io/note/public/index.html" target="_blank">外文翻译</a>
+                </li>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">前端收藏夹</a>
+                </li>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">Demo演示</a>
+                </li>
+            </ul>
+        </dt>
+
+        <dt><a href="#">个人研究</a>
+            <ul>
+                <li><a href="https://sqhtiamo.github.io/note/public/index.html" target="_blank">个人文章</a>
+                </li>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">个人分享</a>
+                </li>
+            </ul>
+        </dt>
+        <dt><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">个人简历</a>
+            <!-- <ul>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">工作时代</a>
+                </li>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">学生时代</a>
+                </li>
+            </ul> -->
+        </dt>
+    </dl>
+</header>
 
 
   <title> Promise | 伟大航路 </title>
@@ -165,7 +321,8 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
+      <div class="header-inner">
+<div class="site-meta ">
   
 
   <div class="custom-logo-site-title">
