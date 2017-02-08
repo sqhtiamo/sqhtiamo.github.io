@@ -47,10 +47,10 @@ Promise#catch只是promise.then(undefined, onRejected); 方法的一个别名而
 
 ### 3.2 使用promise.then(onFulfilled, onRejected)，在onFulfilled中发生异常的话，在onRejected中是捕获不到这个异常的。
 
-### 3.3
+### 3.3 resolve & reject
 
-1. 同一个then里，resolve和reject函数不会同时进行。只执行最先出现的。
-2. 一个错误被catch或then中的reject，则不会继续传递下去
+- 同一个then里，resolve和reject函数不会同时进行。只执行最先出现的。
+- 一个错误被catch或then中的reject，则不会继续传递下去
 
 ```javascript
 var getInfo = function (info) {
@@ -72,7 +72,7 @@ getInfo('test').then(function (info) {
 })
 ```
 
-### 4. Promise.all & Promise.race
+## 4. Promise.all & Promise.race
 
 当参数数组中所有的promise对象都变为resolve的时候，该方法才会返回，新创建的promise则会使用这些promise的值。如果参数中的任何一个promise为reject的话，则整个Promise.all调用会立即终止，并返回一个reject的新的promise对象。
 

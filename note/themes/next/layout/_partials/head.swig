@@ -152,7 +152,7 @@ header#custom dl dt {
 }
 header#custom dl dt ul {
     position: absolute;
-    top: 53px;
+    top: 50px;
     left: -10px;
     background: black;
     line-height: 30px;
@@ -160,6 +160,7 @@ header#custom dl dt ul {
     width: 140%;
     z-index: 10;
     opacity: 0.8;
+    padding-top: 3px;
     padding-bottom: 5px;
     display: none;
 }
