@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/note/public/2017/02/08/javascript/JS%20%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86/</loc>
+    <lastmod>2017-02-08T05:42:59.000Z</lastmod>
+    <data>
+        <display>
+        <title>JS 代码管理</title>
+        <pubTime>2017-02-08T05:42:00.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>最佳实践</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/note/public/2017/02/06/promise/promise/</loc>
+    <lastmod>2017-02-08T05:42:00.000Z</lastmod>
+    <data>
+        <display>
+        <title>Promise</title>
+        <pubTime>2017-02-06T03:15:00.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>promise</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+</urlset>
