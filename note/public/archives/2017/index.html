@@ -1,333 +1,536 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
+<!doctype html>
+
+
+
   
-  <title>归档: 2017 | 伟大航路</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/note/public/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/note/public/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/note/public/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/note/public/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta property="og:type" content="website">
 <meta property="og:title" content="伟大航路">
 <meta property="og:url" content="http://sqhtiamo.github.io/note/public/archives/2017/index.html">
 <meta property="og:site_name" content="伟大航路">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="伟大航路">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <meta charset="utf-8">
-  <meta name="description" content="航海时代_张宇航_个人博客_前腾讯前端开发工程师_现上海方付通商务服务有限公司_最富有激情的前端开发工程师_zhangyuhang's blog" />
-  <meta name="keywords" content="航海时代,张宇航,个人博客,上海交大毕业生,腾讯前端开发工程师,上海方付通商务服务有限公司,最有激情的前端开发工程师,sqhtiamo,clougzhang,web前端开发,无线通信,智能家居" />
-  <style>
-  * {
-      margin: 0;
-      padding: 0;
-  }
-  body {
-      background: #FCFCFC;
-  }
-  a {
-      color: inherit;
-      text-decoration: none;
-      cursor: pointer;
-  }
-  a:hover,
-  a.current {
-      color: #FF6136;
 
-  }
-  header {
-      background: black;
-      color: white;
-      height: 50px;
-      font-size: 16px;
-  }
-  header dl {
-      width: 980px;
-      margin: 0 auto;
-      text-align: center;
-  }
-  header dl dt {
-      display: inline-block;
-      position: relative;
-      line-height: 50px;
-      margin: 0 20px;
-  }
-  header dl dt ul {
-      position: absolute;
-      top: 50px;
-      left: -10px;
-      background: black;
-      line-height: 30px;
-      box-sizing: border-box;
-      width: 140%;
-      z-index: 10;
-      opacity: 0.8;
-      padding-bottom: 5px;
-      display: none;
-  }
-  header dl dt:hover ul {
-      display: block;
-  }
 
-  main {
-      width: 980px;
-      margin: 30px auto;
-  }
-  main section{
-      width: 100%;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-justify-content: flex-start;
-      justify-content: flex-start;
-      flex-flow: row wrap;
-  }
-  main section .box {
-      width: 310px;
-      height: 200px;
-      margin: 10px 6px;
-      overflow: hidden;
-      position: relative;
-      border: 2px solid #EEE;
-      border-radius: 1px;
-  }
-  main section .box:hover {
-      border: 2px solid #FF6136;
-  }
 
-  main section .box figure img {
-      width: 100%;
-      transition: all .5s ease-in-out;
-  }
-  main section8.box:hover figure img {
-      transform: scale(1.2);
-      z-index: 1;
-  }
-  main section .box figure figcaption {
-      position: absolute;
-      bottom: 0;
-      box-sizing: border-box;
-      z-index: 2;
-      width: 100%;
-      height: 56px;
-      line-height: 20px;
-      font-size: 12px;
-      background: black;
-      opacity: 0.7;
-      color: white;
-      padding: 8px 10px;
-  }
-  main section .box figure figcaption strong {
-      font-size: 16px;
-      display: block;
-  }
-  @media (max-width: 480px) {
-      html {
-          /*font-size: 20px;*/
-      }
-      main,
-      header dl {
-          width: 100%;
-      }
-      header dl dt {
-          margin: 0px 7px;
-      }
-      main section .box {
-          width: 80%;
-          height: inherit;
-          max-height: 200px;
-          margin: 10px auto;
-      }
-  }
-  </style>
-  <link rel="stylesheet" href="/note/public/css/style.css">
-  
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/note/public/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
 
+
+
+  <link rel="canonical" href="http://sqhtiamo.github.io/note/public/archives/2017/"/>
+
+
+
+
+
+  <title> Archive | 伟大航路 </title>
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      
-<header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/note/public/" id="logo">伟大航路</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/note/public/" id="subtitle">张宇航的个人网站</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        <!-- 
-          <a class="main-nav-link" href="/note/public/">Home</a>
-         -->
-      </nav>
-      <nav id="sub-nav">
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://sqhtiamo.github.io/note/public"></form>
-      </div>
-    </div>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left  page-archive  ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/note/public/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">伟大航路</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
   </div>
-</header>
-<header>
-    <dl>
-        <dt><a class="current" href="./index.html">主页</a></dt>
-        <dt><a href="./project.html">个人项目</a></dt>
-        <dt><a href="#">学习笔记</a>
-            <ul>
-                <li><a href="https://sqhtiamo.github.io/note/public/index.html" target="_blank">工作拾遗</a>
-                </li>
-                <li><a href="https://sqhtiamo.github.io/note/public/index.html" target="_blank">外文翻译</a>
-                </li>
-                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">前端收藏夹</a>
-                </li>
-                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">Demo演示</a>
-                </li>
-            </ul>
-        </dt>
-
-        <dt><a href="#">个人研究</a>
-            <ul>
-                <li><a href="https://sqhtiamo.github.io/note/public/index.html" target="_blank">个人文章</a>
-                </li>
-                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">个人分享</a>
-                </li>
-            </ul>
-        </dt>
-        <dt><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">个人简历</a>
-            <!-- <ul>
-                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">工作时代</a>
-                </li>
-                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">学生时代</a>
-                </li>
-            </ul> -->
-        </dt>
-    </dl>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-  
     
+      <p class="site-subtitle">张宇航的个人网站</p>
     
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
       
+        
+        <li class="menu-item menu-item-home">
+          <a href="/note/public/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/note/public/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/note/public/2017/02/06/promise/promise/" class="archive-article-date">
-  <time datetime="2017-02-06T09:28:10.000Z" itemprop="datePublished">2月 6</time>
-</a>
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/note/public/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/note/public/2017/02/06/promise/promise/">Promise</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-</section>
         
-          <aside id="sidebar">
-  
-    
+        <li class="menu-item menu-item-tags">
+          <a href="/note/public/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
 
+      
+    </ul>
   
-    
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/note/public/archives/2017/02/">二月 2017</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/note/public/2017/02/06/promise/promise/">Promise</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 cloughzhang<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/note/public/" class="mobile-nav-link">Home</a>
   
 </nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <section id="posts" class="posts-collapse">
+    <span class="archive-move-on"></span>
+
+    <span class="archive-page-counter">
+      
+      
+      
+        
+      
+      Um..! 1 post. Keep on posting.
+    </span>
+
     
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-85360363-1', 'auto');
-  ga('send', 'pageview');
+      
+      
+      
 
-</script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+      
+        
+        <div class="collection-title">
+          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+        </div>
+      
+      
+
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/note/public/2017/02/06/promise/promise/" itemprop="url">
+              
+                <span itemprop="name">Promise</span>
+              
+            </a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2017-02-06T11:15:00+08:00"
+              content="2017-02-06" >
+          02-06
+        </time>
+      </div>
+
+    </header>
+  </article>
 
 
-  <link rel="stylesheet" href="/note/public/fancybox/jquery.fancybox.css">
-  <script src="/note/public/fancybox/jquery.fancybox.pack.js"></script>
+
+    
+
+  </section>
+
+  
 
 
-<script src="/note/public/js/script.js"></script>
+          
+          </div>
+          
 
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
   </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/note/public/images/avatar.gif"
+               alt="cloughzhang" />
+          <p class="site-author-name" itemprop="name">cloughzhang</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/note/public/archives">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">categories</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/note/public/tags">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">cloughzhang</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/note/public/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/note/public/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/note/public/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/note/public/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/note/public/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/note/public/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/note/public/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/note/public/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/note/public/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
 </body>
 </html>

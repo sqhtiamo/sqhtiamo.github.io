@@ -1,5 +1,8 @@
 ---
 title: Promise
+date: 2017-02-06 11:15:00
+tags: [javascript, promise]
+categories: 工作拾遗
 ---
 参考：[http://liubin.org/promises-book](http://liubin.org/promises-book)
 
