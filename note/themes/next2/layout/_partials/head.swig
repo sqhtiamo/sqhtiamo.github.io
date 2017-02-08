@@ -1,0 +1,236 @@
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+{# #238, Disable Baidu tranformation #}
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+{% if theme.google_site_verification %}
+  <meta name="google-site-verification" content="{{ theme.google_site_verification }}" />
+{% endif %}
+
+
+{% if theme.yandex_site_verification %}
+  <meta name="yandex-verification" content="{{ theme.yandex_site_verification }}" />
+{% endif %}
+
+
+{% if theme.baidu_site_verification %}
+  <meta name="baidu-site-verification" content="{{ theme.baidu_site_verification }}" />
+{% endif %}
+
+
+{% if theme.qihu_site_verification %}
+  <meta name="360-site-verification" content="{{ theme.qihu_site_verification }}" />
+{% endif %}
+
+
+{% if theme.fancybox %}
+  {% set fancybox_css_uri = url_for(theme.vendors._internal + '/fancybox/source/jquery.fancybox.css?v=2.1.5') %}
+  {% if theme.vendors.fancybox_css %}
+    {% set fancybox_css_uri = theme.vendors.fancybox_css %}
+  {% endif %}
+  <link href="{{ fancybox_css_uri }}" rel="stylesheet" type="text/css" />
+{% endif %}
+
+{% include "./head/external-fonts.swig" %}
+
+{% set font_awesome_uri = url_for(theme.vendors._internal + '/font-awesome/css/font-awesome.min.css?v=4.6.2') %}
+{% if theme.vendors.fontawesome %}
+  {% set font_awesome_uri = theme.vendors.fontawesome %}
+{% endif %}
+<link href="{{ font_awesome_uri }}" rel="stylesheet" type="text/css" />
+
+<link href="{{ url_for(theme.css) }}/main.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
+
+{% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}" />
+{% elif page.tags and page.tags.length %}
+  <meta name="keywords" content="{% for tag in page.tags %}{{ tag.name }},{% endfor %}" />
+{% elif theme.keywords %}
+  <meta name="keywords" content="{{ theme.keywords }}" />
+{% endif %}
+
+
+{% if theme.rss === '' and config.feed and config.feed.path %}
+  {% set theme.rss = config.feed.path %}
+{% endif %}
+{% if theme.rss %}
+  <link rel="alternate" href="{{ url_for(theme.rss) }}" title="{{ config.title }}" type="application/atom+xml" />
+{% endif %}
+
+
+{% if theme.favicon %}
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for(theme.favicon) }}?v={{ theme.version }}" />
+{% endif %}
+
+
+{% if theme.facebook_sdk.enable and theme.facebook_sdk.webmaster %}
+  <meta property="fb:admins" content="{{ theme.facebook_sdk.fb_admin }}" />
+  <meta property="fb:app_id" content="{{ theme.facebook_sdk.app_id }}" />
+{% endif %}
+
+
+{{
+  open_graph({
+    twitter_id: theme.twitter,
+    google_plus: theme.google_plus,
+    fb_admins: theme.fb_admins,
+    fb_app_id: theme.fb_app_id
+  })
+}}
+
+
+{# Export some HEXO Configurations to Front-End #}
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '{{ theme.root }}',
+    scheme: '{{ theme.scheme }}',
+    sidebar: {{ theme.sidebar | json_encode }},
+    fancybox: {{ theme.fancybox }},
+    motion: {{ theme.use_motion }},
+    duoshuo: {
+      userId: '{{ theme.duoshuo_info.user_id | default() }}',
+      author: '{{ theme.duoshuo_info.admin_nickname | default(__('author'))}}'
+    },
+    algolia: {
+      applicationID: '{{ theme.algolia.applicationID }}',
+      apiKey: '{{ theme.algolia.apiKey }}',
+      indexName: '{{ theme.algolia.indexName }}',
+      hits: {{ theme.algolia_search.hits | json_encode }},
+      labels: {{ theme.algolia_search.labels | json_encode }}
+    }
+  };
+</script>
+
+{# Canonical, good for google search engine (SEO) : https://support.google.com/webmasters/answer/139066 #}
+{% if theme.canonical %}
+  <link rel="canonical" href="{{ config.url }}/{{ page.canonical_path.replace('index.html', '') }}"/>
+{% endif %}
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #FCFCFC;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover,
+a.current {
+    color: #FF6136;
+
+}
+header#custom {
+    background: black;
+    color: white;
+    height: 50px;
+    font-size: 16px;
+}
+header#custom dl {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+header#custom dl dt {
+    display: inline-block;
+    position: relative;
+    line-height: 50px;
+    margin: 0 20px;
+}
+header#custom dl dt ul {
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    background: black;
+    line-height: 30px;
+    box-sizing: border-box;
+    width: 140%;
+    z-index: 10;
+    opacity: 0.8;
+    padding-bottom: 5px;
+    display: none;
+}
+header#custom dl dt:hover ul {
+    display: block;
+}
+
+main {
+    width: 980px;
+    margin: 30px auto;
+}
+main section{
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+main section .box {
+    width: 310px;
+    height: 200px;
+    margin: 10px 6px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #EEE;
+    border-radius: 1px;
+}
+main section .box:hover {
+    border: 2px solid #FF6136;
+}
+
+main section .box figure img {
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+main section8.box:hover figure img {
+    transform: scale(1.2);
+    z-index: 1;
+}
+main section .box figure figcaption {
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    z-index: 2;
+    width: 100%;
+    height: 56px;
+    line-height: 20px;
+    font-size: 12px;
+    background: black;
+    opacity: 0.7;
+    color: white;
+    padding: 8px 10px;
+}
+main section .box figure figcaption strong {
+    font-size: 16px;
+    display: block;
+}
+@media (max-width: 480px) {
+    html {
+        /*font-size: 20px;*/
+    }
+    main,
+    header#custom dl {
+        width: 100%;
+    }
+    header#custom dl dt {
+        margin: 0px 7px;
+    }
+    main section .box {
+        width: 80%;
+        height: inherit;
+        max-height: 200px;
+        margin: 10px auto;
+    }
+}
+</style>
+{% include 'head/custom-head.swig' %}
