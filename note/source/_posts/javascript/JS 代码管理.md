@@ -1,5 +1,9 @@
-# JS 代码管理
-
+---
+title: JS 代码管理
+date: 2017-02-08 13:42:00
+tags: [javascript, 最佳实践]
+categories: 工作拾遗
+---
 ## 1. 编写「可读」代码的实践
 [淘宝 Fed 叶斋 http://taobaofed.org/blog/2017/01/05/writing-readable-code/](http://taobaofed.org/blog/2017/01/05/writing-readable-code/)
 
@@ -11,6 +15,8 @@
 对于集合来说：也可以加上 List（数组）或 Map（对象）后缀来显式表示出来
 
 对于函数来说：建议动＋宾＋补 如：fetchUserInfoAsync
+
+<!-- more -->
 
 ```
 monkey.eat(banana);  // the money eats a banana

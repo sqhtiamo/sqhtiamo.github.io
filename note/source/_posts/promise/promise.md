@@ -16,6 +16,7 @@ new Promise(function(resolve){
     resolve(value);
 });
 ```
+<!-- more -->
 
 ```javascript
 Promise.reject(new Error("出错了"))
@@ -24,7 +25,6 @@ new Promise(function(resolve,reject){
     reject(new Error("出错了"));
 });
 ```
-<!-- more -->
 
 
 ## 2. Thenable

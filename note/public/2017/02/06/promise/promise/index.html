@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -97,7 +97,7 @@
 <meta property="og:description" content="参考：http://liubin.org/promises-book
 1. Promise.resolve &amp;amp; Promise.reject静态方法Promise.resolve(value) &amp;amp; Promise.reject(error)可以认为是new Promise()方法的快捷方式。
 12345Promise.resolve(value)new Promise(functi">
-<meta property="og:updated_time" content="2017-02-08T05:29:15.000Z">
+<meta property="og:updated_time" content="2017-02-08T05:42:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Promise">
 <meta name="twitter:description" content="参考：http://liubin.org/promises-book
@@ -110,7 +110,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/note/public/',
-    scheme: 'Muse',
+    scheme: 'Mist',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -322,6 +322,16 @@ header#custom dl dt:hover ul {
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/note/public/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/note/public/archives" rel="section">
             
@@ -375,7 +385,7 @@ header#custom dl dt:hover ul {
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="cloughzhang">
     <meta itemprop="description" content="">
-    <meta itemprop="image" content="/note/public/images/avatar.gif">
+    <meta itemprop="image" content="/note/public/uploads/avatar.png">
   </span>
 
   <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -470,8 +480,8 @@ header#custom dl dt:hover ul {
         <p>参考：<a href="http://liubin.org/promises-book" target="_blank" rel="external">http://liubin.org/promises-book</a></p>
 <h2 id="1-Promise-resolve-amp-Promise-reject"><a href="#1-Promise-resolve-amp-Promise-reject" class="headerlink" title="1. Promise.resolve &amp; Promise.reject"></a>1. Promise.resolve &amp; Promise.reject</h2><p>静态方法Promise.resolve(value) &amp; Promise.reject(error)可以认为是new Promise()方法的快捷方式。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Promise</span>.resolve(value)</div><div class="line"></div><div class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve</span>)</span>&#123;</div><div class="line">    resolve(value);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Promise</span>.reject(<span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">"出错了"</span>))</div><div class="line"></div><div class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve,reject</span>)</span>&#123;</div><div class="line">    reject(<span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">"出错了"</span>));</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <a id="more"></a>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Promise</span>.reject(<span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">"出错了"</span>))</div><div class="line"></div><div class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve,reject</span>)</span>&#123;</div><div class="line">    reject(<span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">"出错了"</span>));</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h2 id="2-Thenable"><a href="#2-Thenable" class="headerlink" title="2. Thenable"></a>2. Thenable</h2><p>thenable指的是一个具有.then方法的对象，利用thenable对象原来具有的then方法，将thenable对象转换为promise对象。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> promise = <span class="built_in">Promise</span>.resolve($.ajax(<span class="string">'/json/comment.json'</span>)); <span class="comment">// =&gt; promise对象</span></div><div class="line"></div><div class="line">promise.then(<span class="function"><span class="keyword">function</span>(<span class="params">value</span>)</span>&#123;</div><div class="line">   <span class="built_in">console</span>.log(value);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h2 id="3-Promise-catch"><a href="#3-Promise-catch" class="headerlink" title="3. Promise#catch"></a>3. Promise#catch</h2><p>Promise#catch只是promise.then(undefined, onRejected); 方法的一个别名而已</p>
@@ -492,6 +502,11 @@ header#custom dl dt:hover ul {
     <div>
       
         
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/note/public/uploads/qrcode.jpeg" alt="cloughzhang wechat" style="width: 200px; max-width: 100%;"/>
+    <div></div>
+</div>
+
 
       
     </div>
@@ -519,6 +534,22 @@ header#custom dl dt:hover ul {
         
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/note/public/2017/02/08/javascript/JS 代码管理/" rel="prev" title="JS 代码管理">
+                JS 代码管理 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -575,17 +606,17 @@ header#custom dl dt:hover ul {
       <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/note/public/images/avatar.gif"
+               src="/note/public/uploads/avatar.png"
                alt="cloughzhang" />
           <p class="site-author-name" itemprop="name">cloughzhang</p>
-          <p class="site-description motion-element" itemprop="description"></p>
+          <p class="site-description motion-element" itemprop="description">做最有激情的前端开发工程师</p>
         </div>
         <nav class="site-state motion-element">
 
           
             <div class="site-state-item site-state-posts">
               <a href="/note/public/archives">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -593,17 +624,17 @@ header#custom dl dt:hover ul {
 
           
             <div class="site-state-item site-state-categories">
-              
+              <a href="/note/public/categories">
                 <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">分类</span>
-              
+              </a>
             </div>
           
 
           
             <div class="site-state-item site-state-tags">
               <a href="/note/public/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -674,7 +705,7 @@ header#custom dl dt:hover ul {
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
+    NexT.Mist
   </a>
 </div>
 
