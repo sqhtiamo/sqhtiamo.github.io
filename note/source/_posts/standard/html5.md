@@ -1,16 +1,13 @@
 ---
 title: html标准学习
 date: 2017-02-09 14:45:00
-tags: [standard, html, html5]
-categories: 外文翻译
+tags: [standard, html, html5, 前端]
+categories: 工作拾遗
 ---
 
-## DOM
-
-## <base>
-
+## 4. DOM
+## base
 ### href
-
 ### target
 
 <!-- more -->

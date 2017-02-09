@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://sqhtiamo.github.io/note/public/note/public/2017/02/09/standard/html5/</loc>
-    <lastmod>2017-02-09T11:22:24.000Z</lastmod>
+    <lastmod>2017-02-09T12:51:15.000Z</lastmod>
     <data>
         <display>
         <title>html标准学习</title>
@@ -16,6 +16,54 @@
         <tag>html</tag>
          
         <tag>html5</tag>
+         
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/note/public/2017/02/09/html5/tag/</loc>
+    <lastmod>2017-02-09T12:50:20.000Z</lastmod>
+    <data>
+        <display>
+        <title>HTMl5标签</title>
+        <pubTime>2017-02-09T12:45:00.000Z</pubTime>
+        
+        <tag>html5</tag>
+         
+        <tag>tag</tag>
+         
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="外文翻译" url="http://sqhtiamo.github.io/note/public/note/public/categories/interpret/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/note/public/2017/02/09/chrome/chrome56/</loc>
+    <lastmod>2017-02-09T12:49:58.000Z</lastmod>
+    <data>
+        <display>
+        <title>Chrome 56 Beta</title>
+        <pubTime>2017-02-09T12:47:00.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+        <tag>chrome</tag>
          
          
            
