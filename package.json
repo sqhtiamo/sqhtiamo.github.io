@@ -1,0 +1,27 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "zhangyuhangs's blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sqhtiamo/sqhtiamo.github.io.git"
+  },
+  "keywords": [
+    "website",
+    "blog",
+    "cloughzhang"
+  ],
+  "author": "cloughzhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sqhtiamo/sqhtiamo.github.io/issues"
+  },
+  "homepage": "https://github.com/sqhtiamo/sqhtiamo.github.io#readme",
+  "dependencies": {
+    "swig": "^1.4.2"
+  }
+}
