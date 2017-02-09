@@ -8,6 +8,7 @@ categories: 工作拾遗
 ## 1. 什么是tree-shaking?
 tree-shaking 由rollup.js提出的feature，使得js（ES2015）在打包的过程中，只需要引入需要用到的js部分，而不需要将整个js模块文件都打包。
 
+<!-- more -->
 ## 2. webpack2如何做tree-shaking
 
 两步：

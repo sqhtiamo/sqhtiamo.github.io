@@ -87,28 +87,16 @@
 
 
 
-<meta name="description" content="1. 什么是tree-shaking?tree-shaking 由rollup.js提出的feature，使得js（ES2015）在打包的过程中，只需要引入需要用到的js部分，而不需要将整个js模块文件都打包。
-2. webpack2如何做tree-shaking两步：
-- 去除所有没有被import引入的export；
-- 在minify的过程中，去除没有被用到的其它代码。
-参考http://w">
+<meta name="description" content="1. 什么是tree-shaking?tree-shaking 由rollup.js提出的feature，使得js（ES2015）在打包的过程中，只需要引入需要用到的js部分，而不需要将整个js模块文件都打包。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="tree-shaking介绍">
 <meta property="og:url" content="http://sqhtiamo.github.io/note/public/2017/02/09/webpack/tree-shaking/index.html">
 <meta property="og:site_name" content="伟大航路">
-<meta property="og:description" content="1. 什么是tree-shaking?tree-shaking 由rollup.js提出的feature，使得js（ES2015）在打包的过程中，只需要引入需要用到的js部分，而不需要将整个js模块文件都打包。
-2. webpack2如何做tree-shaking两步：
-- 去除所有没有被import引入的export；
-- 在minify的过程中，去除没有被用到的其它代码。
-参考http://w">
-<meta property="og:updated_time" content="2017-02-09T05:46:56.000Z">
+<meta property="og:description" content="1. 什么是tree-shaking?tree-shaking 由rollup.js提出的feature，使得js（ES2015）在打包的过程中，只需要引入需要用到的js部分，而不需要将整个js模块文件都打包。">
+<meta property="og:updated_time" content="2017-02-09T05:50:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tree-shaking介绍">
-<meta name="twitter:description" content="1. 什么是tree-shaking?tree-shaking 由rollup.js提出的feature，使得js（ES2015）在打包的过程中，只需要引入需要用到的js部分，而不需要将整个js模块文件都打包。
-2. webpack2如何做tree-shaking两步：
-- 去除所有没有被import引入的export；
-- 在minify的过程中，去除没有被用到的其它代码。
-参考http://w">
+<meta name="twitter:description" content="1. 什么是tree-shaking?tree-shaking 由rollup.js提出的feature，使得js（ES2015）在打包的过程中，只需要引入需要用到的js部分，而不需要将整个js模块文件都打包。">
 
 
 
@@ -517,6 +505,7 @@ header#custom dl dt:hover ul {
 
       
         <h2 id="1-什么是tree-shaking"><a href="#1-什么是tree-shaking" class="headerlink" title="1. 什么是tree-shaking?"></a>1. 什么是tree-shaking?</h2><p>tree-shaking 由rollup.js提出的feature，使得js（ES2015）在打包的过程中，只需要引入需要用到的js部分，而不需要将整个js模块文件都打包。</p>
+<a id="more"></a>
 <h2 id="2-webpack2如何做tree-shaking"><a href="#2-webpack2如何做tree-shaking" class="headerlink" title="2. webpack2如何做tree-shaking"></a>2. webpack2如何做tree-shaking</h2><p>两步：</p>
 <pre><code>- 去除所有没有被import引入的export；
 - 在minify的过程中，去除没有被用到的其它代码。
