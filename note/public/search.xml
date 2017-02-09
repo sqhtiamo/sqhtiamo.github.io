@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[tree-shaking介绍]]></title>
+      <url>%2Fnote%2Fpublic%2F2017%2F02%2F09%2Fwebpack%2Ftree-shaking%2F</url>
+      <content type="text"><![CDATA[1. 什么是tree-shaking?tree-shaking 由rollup.js提出的feature，使得js（ES2015）在打包的过程中，只需要引入需要用到的js部分，而不需要将整个js模块文件都打包。 2. webpack2如何做tree-shaking两步： - 去除所有没有被import引入的export； - 在minify的过程中，去除没有被用到的其它代码。 参考http://www.2ality.com/2015/12/webpack-tree-shaking.html]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Iterm2 Cheat Sheet]]></title>
       <url>%2Fnote%2Fpublic%2F2017%2F02%2F09%2Ftools%2Fiterm2%2F</url>
       <content type="text"><![CDATA[基本操作12345678910111213control + a: 到行首control + e: 行末control + f/b: 前进后退，相当于左右方向键，但是显然比移开手按方向键更快control + p: 上一条命令，相当于方向键上control + r: 搜索命令历史，这个大家都应该很熟悉了control + d: 删除当前字符control + h: 删除之前的字符control + w: 删除光标前的单词control + k: 删除到文本末尾control + t: 交换光标处文本control + u: 删除一行 + —/+/0: 调整字体大小⌘ + r:清屏，其实是滚到新的一屏，并没有清空。ctrl + l 也可以做到 参考http://hujiandong.com/2016/09/11/iterm2/]]></content>
