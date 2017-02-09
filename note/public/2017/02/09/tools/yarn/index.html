@@ -93,13 +93,13 @@
 <meta property="og:url" content="http://sqhtiamo.github.io/note/public/2017/02/09/tools/yarn/index.html">
 <meta property="og:site_name" content="伟大航路">
 <meta property="og:description" content="1. 什么是yarn？2. yarn有什么好处？3. 性能如何？yarn的官网给出如下数据（yarn VS npm）：从warm cache, node_modules, Lockfile/Shrinkwarp 3个参数，8个维度进行比较。比较结果如下：">
-<meta property="og:image" content="http://sqhtiamo.github.io/note/public/./image/yarn_performance.png">
-<meta property="og:image" content="http://sqhtiamo.github.io/note/public/./image/yarn_usage.png">
-<meta property="og:updated_time" content="2017-02-09T02:41:32.000Z">
+<meta property="og:image" content="http://sqhtiamo.github.io/note/public/./yarn_performance.png">
+<meta property="og:image" content="http://sqhtiamo.github.io/note/public/./yarn_usage.png">
+<meta property="og:updated_time" content="2017-02-09T05:06:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Yarn 基本介绍">
 <meta name="twitter:description" content="1. 什么是yarn？2. yarn有什么好处？3. 性能如何？yarn的官网给出如下数据（yarn VS npm）：从warm cache, node_modules, Lockfile/Shrinkwarp 3个参数，8个维度进行比较。比较结果如下：">
-<meta name="twitter:image" content="http://sqhtiamo.github.io/note/public/./image/yarn_performance.png">
+<meta name="twitter:image" content="http://sqhtiamo.github.io/note/public/./yarn_performance.png">
 
 
 
@@ -509,9 +509,9 @@ header#custom dl dt:hover ul {
       
         <h2 id="1-什么是yarn？"><a href="#1-什么是yarn？" class="headerlink" title="1. 什么是yarn？"></a>1. 什么是yarn？</h2><h2 id="2-yarn有什么好处？"><a href="#2-yarn有什么好处？" class="headerlink" title="2. yarn有什么好处？"></a>2. yarn有什么好处？</h2><h2 id="3-性能如何？"><a href="#3-性能如何？" class="headerlink" title="3. 性能如何？"></a>3. 性能如何？</h2><p>yarn的<a href="https://yarnpkg.com/en/compare" target="_blank" rel="external">官网</a>给出如下数据（yarn VS npm）：<br>从warm cache, node_modules, Lockfile/Shrinkwarp 3个参数，8个维度进行比较。<br>比较结果如下：</p>
 <a id="more"></a>
-<p><img src="./image/yarn_performance.png" width="800" alt="yarn performace"></p>
+<p><img src="./yarn_performance.png" width="800" alt="yarn performace"></p>
 <p>大部分情况下，yarn远胜于npm。</p>
-<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3. 安装"></a>3. 安装</h2><h4 id="3-1-下载安装"><a href="#3-1-下载安装" class="headerlink" title="3.1 下载安装"></a>3.1 下载安装</h4><p>mac操作系统：</p>
+<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3. 安装"></a>3. 安装</h2><h3 id="3-1-下载安装"><a href="#3-1-下载安装" class="headerlink" title="3.1 下载安装"></a>3.1 下载安装</h3><p>mac操作系统：</p>
 <ul>
 <li><p>用homebrew安装</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">brew update</div><div class="line">brew install yarn</div></pre></td></tr></table></figure>
@@ -523,9 +523,9 @@ header#custom dl dt:hover ul {
 </li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd /opt</div><div class="line">wget https://yarnpkg.com/latest.tar.gz</div><div class="line">tar zvxf yarn-*.tar.gz</div></pre></td></tr></table></figure>
-<h4 id="3-2-环境变量修改："><a href="#3-2-环境变量修改：" class="headerlink" title="3.2 环境变量修改："></a>3.2 环境变量修改：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">export PATH=&quot;$HOME/.yarn/bin:$PATH</div></pre></td></tr></table></figure>
-<h2 id="4-使用"><a href="#4-使用" class="headerlink" title="4. 使用"></a>4. 使用</h2><p><img src="./image/yarn_usage.png" width="800" alt="yarn usage"></p>
-<h4 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h4><p><a href="https://yarnpkg.com" target="_blank" rel="external">官网</a></p>
+<h3 id="3-2-环境变量修改："><a href="#3-2-环境变量修改：" class="headerlink" title="3.2 环境变量修改："></a>3.2 环境变量修改：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">export PATH=&quot;$HOME/.yarn/bin:$PATH</div></pre></td></tr></table></figure>
+<h2 id="4-使用"><a href="#4-使用" class="headerlink" title="4. 使用"></a>4. 使用</h2><p><img src="./yarn_usage.png" width="800" alt="yarn usage"></p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://yarnpkg.com" target="_blank" rel="external">官网</a></p>
 
       
     </div>
@@ -579,8 +579,8 @@ header#custom dl dt:hover ul {
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/note/public/2017/02/09/tools/tmux/" rel="prev" title="Tmux Cheat Sheet">
-                Tmux Cheat Sheet <i class="fa fa-chevron-right"></i>
+              <a href="/note/public/2017/02/09/tools/sublime/" rel="prev" title="Sublime Cheat Sheet">
+                Sublime Cheat Sheet <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -731,7 +731,7 @@ header#custom dl dt:hover ul {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-什么是yarn？"><span class="nav-text">1. 什么是yarn？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-yarn有什么好处？"><span class="nav-text">2. yarn有什么好处？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-性能如何？"><span class="nav-text">3. 性能如何？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-安装"><span class="nav-text">3. 安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-下载安装"><span class="nav-text">3.1 下载安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-环境变量修改："><span class="nav-text">3.2 环境变量修改：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-使用"><span class="nav-text">4. 使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#参考："><span class="nav-text">参考：</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-什么是yarn？"><span class="nav-text">1. 什么是yarn？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-yarn有什么好处？"><span class="nav-text">2. yarn有什么好处？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-性能如何？"><span class="nav-text">3. 性能如何？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-安装"><span class="nav-text">3. 安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-下载安装"><span class="nav-text">3.1 下载安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-环境变量修改："><span class="nav-text">3.2 环境变量修改：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-使用"><span class="nav-text">4. 使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>

@@ -16,15 +16,14 @@ yarn的[官网](https://yarnpkg.com/en/compare)给出如下数据（yarn VS npm�
 比较结果如下：
 
 <!-- more -->
-
-<img src="./image/yarn_performance.png" width="800" alt="yarn performace"/>
+<img src="./yarn_performance.png" width="800" alt="yarn performace"/>
 
 大部分情况下，yarn远胜于npm。
 
 
 ## 3. 安装
 
-#### 3.1 下载安装
+### 3.1 下载安装
 mac操作系统：
 - 用homebrew安装
 ```
@@ -43,7 +42,7 @@ wget https://yarnpkg.com/latest.tar.gz
 tar zvxf yarn-*.tar.gz
 ```
 
-#### 3.2 环境变量修改：
+### 3.2 环境变量修改：
 ```
 export PATH="$HOME/.yarn/bin:$PATH
 ```
@@ -52,7 +51,8 @@ export PATH="$HOME/.yarn/bin:$PATH
 
 ## 4. 使用
 
-<img src="./image/yarn_usage.png" width="800" alt="yarn usage"/>
+<img src="./yarn_usage.png" width="800" alt="yarn usage"/>
 
-#### 参考：
+## 参考
+
 [官网](https://yarnpkg.com)
