@@ -9,12 +9,11 @@ categories: 外文翻译
 
 ## <base>
 
-
 ### href
 
 ### target
 
-
+<!-- more -->
 ```
 enum DocumentReadyState { "loading", "interactive", "complete" };
 
@@ -74,7 +73,7 @@ Document implements GlobalEventHandlers;
 ### 11.1 Warnings
 
 - obsolete permitted DOCTYPE
-- border of <img> when value="0" [other situation is Non-conforming features] (use CSS instead)
+- border of 'img' when value="0" [other situation is Non-conforming features] (use CSS instead)
 - language=JavaScript and no type="text/JavaScript"
 - name on <a> element and value is no empty String
 - maxLength when input type="number"
