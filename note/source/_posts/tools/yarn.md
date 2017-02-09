@@ -51,7 +51,7 @@ export PATH="$HOME/.yarn/bin:$PATH
 
 ## 4. 使用
 
-<img src="./yarn_usage.png" width="800" alt="yarn usage"/>
+<img src="/yarn_usage.png" width="800" alt="yarn usage2"/>
 
 ## 参考
 
