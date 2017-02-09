@@ -10,16 +10,16 @@
 
     
     <entry>
-      <title><![CDATA[Tmux Cheat Sheet]]></title>
-      <url>%2Fnote%2Fpublic%2F2017%2F02%2F09%2Ftools%2Ftmux%2F</url>
-      <content type="text"><![CDATA[1. tmux a2. ctrl+B [ctrl+Bfix]3. 浏览历史ctrl+B [ 4. 新建ctrl+B C 5. 切换ctrl+B 1 6. 分屏ctrl+B %ctrl+B “ 7. 分屏到单屏ctrl+B z 8. 控制分屏大小ctrl+B alt＋&lt;- 9. 多个tmuxtmux new -s yuhangctrl+B s 10. tmux 配置 新建文件 ~/.tmux.conf 配置 1234567891011# 支持鼠标set -g mouse on# 已经废弃set -g mode-mouse onset -g mouse-resize-pane onset -g mouse-select-pane onset -g mouse-select-window on# 更改prefix键set -g prefix C-a 保存prefixsource-fille ~/.tmux.conf]]></content>
+      <title><![CDATA[Sublime Cheat Sheet]]></title>
+      <url>%2Fnote%2Fpublic%2F2017%2F02%2F09%2Ftools%2Fsublime%2F</url>
+      <content type="text"><![CDATA[1. 设置lnln /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl sublime 2. short-cuts2.1 Key Bindings - Default/User2.2 常用123456789option -&gt;/&lt;-option shift -&gt;/&lt;-command -&gt;/&lt;-command ［上］/［下］command entercommand Lcommand K+Bctrl shift M 选中代码块ctrl command G 选中相同的代码 3. 命令行sublime.log_commands(True) 4. package git 12345[ &#123; &quot;keys&quot;: [&quot;super+alt+g+a&quot;], &quot;command&quot;: &quot;git_raw&quot;, &quot;args&quot;: &#123;&quot;command&quot;: &quot;git add -A&quot; &#125;&#125;, &#123; &quot;keys&quot;: [&quot;super+alt+g+c&quot;], &quot;command&quot;: &quot;git_commit&quot;&#125;, &#123; &quot;keys&quot;: [&quot;super+alt+g+p&quot;], &quot;command&quot;: &quot;git_raw&quot;, &quot;args&quot;: &#123;&quot;command&quot;: &quot;git push&quot; &#125;&#125;,] SyncedSideBar]]></content>
     </entry>
 
     
     <entry>
-      <title><![CDATA[Sublime Cheat Sheet]]></title>
-      <url>%2Fnote%2Fpublic%2F2017%2F02%2F09%2Ftools%2Fsublime%2F</url>
-      <content type="text"><![CDATA[1. 设置lnln /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl sublime 2. short-cuts2.1 Key Bindings - Default/User2.2 常用123456789option -&gt;/&lt;-option shift -&gt;/&lt;-command -&gt;/&lt;-command ［上］/［下］command entercommand Lcommand K+Bctrl shift M 选中代码块ctrl command G 选中相同的代码 3. 命令行sublime.log_commands(True) 4. package git 12345[ &#123; &quot;keys&quot;: [&quot;super+alt+g+a&quot;], &quot;command&quot;: &quot;git_raw&quot;, &quot;args&quot;: &#123;&quot;command&quot;: &quot;git add -A&quot; &#125;&#125;, &#123; &quot;keys&quot;: [&quot;super+alt+g+c&quot;], &quot;command&quot;: &quot;git_commit&quot;&#125;, &#123; &quot;keys&quot;: [&quot;super+alt+g+p&quot;], &quot;command&quot;: &quot;git_raw&quot;, &quot;args&quot;: &#123;&quot;command&quot;: &quot;git push&quot; &#125;&#125;,] SyncedSideBar]]></content>
+      <title><![CDATA[Tmux Cheat Sheet]]></title>
+      <url>%2Fnote%2Fpublic%2F2017%2F02%2F09%2Ftools%2Ftmux%2F</url>
+      <content type="text"><![CDATA[1. tmux a2. ctrl+B [ctrl+Bfix]3. 浏览历史ctrl+B [ 4. 新建ctrl+B C 5. 切换ctrl+B 1 6. 分屏ctrl+B %ctrl+B “ 7. 分屏到单屏ctrl+B z 8. 控制分屏大小ctrl+B alt＋&lt;- 9. 多个tmuxtmux new -s yuhangctrl+B s 10. tmux 配置 新建文件 ~/.tmux.conf 配置 1234567891011# 支持鼠标set -g mouse on# 已经废弃set -g mode-mouse onset -g mouse-resize-pane onset -g mouse-select-pane onset -g mouse-select-window on# 更改prefix键set -g prefix C-a 保存prefixsource-fille ~/.tmux.conf]]></content>
     </entry>
 
     
