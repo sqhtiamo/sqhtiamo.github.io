@@ -16,18 +16,18 @@ Custom head.
         </dt>
         <dt><a class="current" href="/note/public/index.html">学习笔记</a>
             <ul>
-                <li><a href="https://sqhtiamo.github.io/note/public/index.html" target="_blank">工作拾遗</a>
+                <li><a href="/note/public/categories/work/index.html">工作拾遗</a>
                 </li>
-                <li><a href="https://sqhtiamo.github.io/note/public/index.html" target="_blank">外文翻译</a>
+                <li><a href="https://sqhtiamo.github.io/note/public/index.html">外文翻译</a>
                 </li>
             </ul>
         </dt>
 
         <dt><a href="#">个人研究</a>
             <ul>
-                <li><a href="/note/public/index.html" target="_blank">个人文章</a>
+                <li><a href="/note/public/categories/work/index.html">个人文章</a>
                 </li>
-                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">个人分享</a>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md">个人分享</a>
                 </li>
             </ul>
         </dt>

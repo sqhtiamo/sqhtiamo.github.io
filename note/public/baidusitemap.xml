@@ -4,18 +4,18 @@
 
     
   <url>
-    <loc>http://sqhtiamo.github.io/note/public/note/public/2017/02/09/webpack/tree-shaking/</loc>
-    <lastmod>2017-02-09T05:50:11.000Z</lastmod>
+    <loc>http://sqhtiamo.github.io/note/public/note/public/2017/02/09/live/qiniu/</loc>
+    <lastmod>2017-02-09T07:05:59.000Z</lastmod>
     <data>
         <display>
-        <title>tree-shaking介绍</title>
-        <pubTime>2017-02-09T05:46:00.000Z</pubTime>
+        <title>七牛视频直播学习笔记</title>
+        <pubTime>2017-02-09T06:26:00.000Z</pubTime>
         
-        <tag>tools</tag>
+        <tag>live</tag>
          
-        <tag>webpack</tag>
+        <tag>qiniu</tag>
          
-        <tag>tree-shaking</tag>
+        <tag>直播</tag>
          
          
            
@@ -29,7 +29,7 @@
     
   <url>
     <loc>http://sqhtiamo.github.io/note/public/note/public/2017/02/09/tools/yarn/</loc>
-    <lastmod>2017-02-09T05:36:12.000Z</lastmod>
+    <lastmod>2017-02-09T07:04:45.000Z</lastmod>
     <data>
         <display>
         <title>Yarn 基本介绍</title>
@@ -38,6 +38,56 @@
         <tag>tools</tag>
          
         <tag>yarn</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/note/public/2017/02/09/standard/html5/</loc>
+    <lastmod>2017-02-09T06:45:41.000Z</lastmod>
+    <data>
+        <display>
+        <title>html标准学习</title>
+        <pubTime>2017-02-09T06:45:00.000Z</pubTime>
+        
+        <tag>standard</tag>
+         
+        <tag>html</tag>
+         
+        <tag>html5</tag>
+         
+         
+           
+             
+              <breadCrumb title="外文翻译" url="http://sqhtiamo.github.io/note/public/note/public/categories/interpret/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/note/public/2017/02/09/webpack/tree-shaking/</loc>
+    <lastmod>2017-02-09T05:50:11.000Z</lastmod>
+    <data>
+        <display>
+        <title>tree-shaking介绍</title>
+        <pubTime>2017-02-09T05:46:00.000Z</pubTime>
+        
+        <tag>tools</tag>
+         
+        <tag>webpack</tag>
+         
+        <tag>tree-shaking</tag>
          
          
            

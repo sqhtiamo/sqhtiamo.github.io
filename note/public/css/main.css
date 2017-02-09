@@ -474,6 +474,9 @@ body {
     width: 900px;
   }
 }
+.main ul {
+  margin-left: 20px;
+}
 .footer {
   position: absolute;
   left: 0;
@@ -1705,7 +1708,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d2b636;
+  background: #ff8b01;
 }
 .links-of-blogroll {
   font-size: 13px;

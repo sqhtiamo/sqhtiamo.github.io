@@ -1,0 +1,1211 @@
+<!doctype html>
+
+
+
+
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="../../../../../lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="../../../../../lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="../../../../../css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="live,qiniu,直播," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="一、《视频直播技术详解》系列之一：开篇参考:《视频直播技术详解》系列之一：开篇
+1. 主要流程原作者给的流程图：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="七牛视频直播学习笔记">
+<meta property="og:url" content="http://sqhtiamo.github.io/note/public/2017/02/09/live/qiniu/index.html">
+<meta property="og:site_name" content="伟大航路">
+<meta property="og:description" content="一、《视频直播技术详解》系列之一：开篇参考:《视频直播技术详解》系列之一：开篇
+1. 主要流程原作者给的流程图：">
+<meta property="og:image" content="http://sqhtiamo.github.io/note/public/note/public/2017/02/09/live/qiniu/qiniu_0.png">
+<meta property="og:image" content="http://sqhtiamo.github.io/note/public/note/public/2017/02/09/live/qiniu/qiniu_2.png">
+<meta property="og:image" content="http://sqhtiamo.github.io/note/public/note/public/2017/02/09/live/qiniu/qiniu_1.png">
+<meta property="og:image" content="http://sqhtiamo.github.io/note/public/note/public/2017/02/09/live/qiniu/qiniu_3.png">
+<meta property="og:image" content="http://sqhtiamo.github.io/note/public/note/public/2017/02/09/live/qiniu/qiniu_4.png">
+<meta property="og:image" content="http://sqhtiamo.github.io/note/public/note/public/2017/02/09/live/qiniu/qiniu_5.png">
+<meta property="og:image" content="http://sqhtiamo.github.io/note/public/note/public/2017/02/09/live/qiniu/qiniu_6.png">
+<meta property="og:updated_time" content="2017-02-09T07:05:59.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="七牛视频直播学习笔记">
+<meta name="twitter:description" content="一、《视频直播技术详解》系列之一：开篇参考:《视频直播技术详解》系列之一：开篇
+1. 主要流程原作者给的流程图：">
+<meta name="twitter:image" content="http://sqhtiamo.github.io/note/public/note/public/2017/02/09/live/qiniu/qiniu_0.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/note/public/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://sqhtiamo.github.io/note/public/2017/02/09/live/qiniu/"/>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #FCFCFC;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover,
+a.current {
+    color: #FF6136;
+
+}
+header#custom {
+    background: black;
+    color: white;
+    height: 50px;
+    font-size: 16px;
+}
+header#custom a {
+    border-bottom: none;
+}
+header#custom dl {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+header#custom dl dt {
+    display: inline-block;
+    position: relative;
+    line-height: 50px;
+    margin: 0 20px;
+}
+header#custom dl dt ul {
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    background: black;
+    line-height: 30px;
+    box-sizing: border-box;
+    width: 140%;
+    z-index: 10;
+    opacity: 0.8;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    display: none;
+}
+header#custom dl dt:hover ul {
+    display: block;
+}
+
+
+@media (max-width: 480px) {
+    html {
+        /*font-size: 20px;*/
+    }
+    main,
+    header#custom dl {
+        width: 100%;
+    }
+    header#custom dl dt {
+        margin: 0px 7px;
+    }
+    main section .box {
+        width: 80%;
+        height: inherit;
+        max-height: 200px;
+        margin: 10px auto;
+    }
+}
+</style>
+
+<header id="custom">
+    <dl>
+        <dt><a href="/index.html">主页</a></dt>
+        <dt><a href="/project.html">个人项目</a>
+            <ul>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">开源项目</a>
+                </li>
+                <li><a href="/project.html" target="_blank">前端收藏夹</a>
+                </li>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">Demo演示</a>
+                </li>
+            </ul>
+        </dt>
+        <dt><a class="current" href="/note/public/index.html">学习笔记</a>
+            <ul>
+                <li><a href="/note/public/categories/work/index.html">工作拾遗</a>
+                </li>
+                <li><a href="https://sqhtiamo.github.io/note/public/index.html">外文翻译</a>
+                </li>
+            </ul>
+        </dt>
+
+        <dt><a href="#">个人研究</a>
+            <ul>
+                <li><a href="/note/public/categories/work/index.html">个人文章</a>
+                </li>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md">个人分享</a>
+                </li>
+            </ul>
+        </dt>
+        <dt><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">个人简历</a>
+            <!-- <ul>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">工作时代</a>
+                </li>
+                <li><a href="https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/resume.md" target="_blank">学生时代</a>
+                </li>
+            </ul> -->
+        </dt>
+    </dl>
+</header>
+
+
+  <title> 七牛视频直播学习笔记 | 伟大航路 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+<div class="site-meta ">
+
+
+  <div class="custom-logo-site-title">
+    <a href="/note/public/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">伟大航路</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+      <p class="site-subtitle">张宇航的个人网站</p>
+
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+
+
+
+    <ul id="menu" class="menu">
+
+
+        <li class="menu-item menu-item-home">
+          <a href="" rel="section">
+
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+
+            首页
+          </a>
+        </li>
+
+
+        <li class="menu-item menu-item-categories">
+          <a href="" rel="section">
+
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+
+            分类
+          </a>
+        </li>
+
+
+        <li class="menu-item menu-item-archives">
+          <a href="" rel="section">
+
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+
+            归档
+          </a>
+        </li>
+
+
+        <li class="menu-item menu-item-tags">
+          <a href="" rel="section">
+
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+
+            标签
+          </a>
+        </li>
+
+
+
+        <li class="menu-item menu-item-search">
+
+            <a href="javascript:;" class="popup-trigger">
+
+
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+
+            搜索
+          </a>
+        </li>
+
+    </ul>
+
+
+
+    <div class="site-search">
+
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+
+
+  <div id="posts" class="posts-expand">
+
+
+
+
+
+
+
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://sqhtiamo.github.io/note/public">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="cloughzhang">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="../../../../../uploads/avatar.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="伟大航路">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="伟大航路" src="">
+    </span>
+  </span>
+
+
+      <header class="post-header">
+
+
+
+          <h1 class="post-title" itemprop="name headline">
+
+
+
+                七牛视频直播学习笔记
+
+
+          </h1>
+
+
+        <div class="post-meta">
+          <span class="post-time">
+
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+
+                <span class="post-meta-item-text">发表于</span>
+
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-09T14:26:00+08:00">
+                2017-02-09
+              </time>
+
+
+
+
+
+          </span>
+
+
+            <span class="post-category" >
+
+              <span class="post-meta-divider">|</span>
+
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+
+                <span class="post-meta-item-text">分类于</span>
+
+
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="../../../../../categories/work/" itemprop="url" rel="index">
+                    <span itemprop="name">工作拾遗</span>
+                  </a>
+                </span>
+
+
+
+
+            </span>
+
+
+
+
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/09/live/qiniu/" itemprop="commentCount"></span>
+                </a>
+              </span>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </header>
+
+
+
+    <div class="post-body" itemprop="articleBody">
+
+
+
+
+
+        <h2 id="一、《视频直播技术详解》系列之一：开篇"><a href="#一、《视频直播技术详解》系列之一：开篇" class="headerlink" title="一、《视频直播技术详解》系列之一：开篇"></a>一、《视频直播技术详解》系列之一：开篇</h2><p>参考:<br><a href="http://blog.qiniu.com/archives/6606" target="_blank" rel="external">《视频直播技术详解》系列之一：开篇</a></p>
+<h3 id="1-主要流程"><a href="#1-主要流程" class="headerlink" title="1. 主要流程"></a>1. 主要流程</h3><p>原作者给的流程图：</p>
+<p><img src="/note/public/2017/02/09/live/qiniu/qiniu_0.png" height="200" alt="原作者给的流程图"></p>
+<a id="more"></a>
+<h4 id="1-1-采集"><a href="#1-1-采集" class="headerlink" title="1.1 采集"></a>1.1 采集</h4><ul>
+<li>iOS 系统因为软硬件种类不多，硬件适配性较好，所以比较简单。</li>
+<li>Android 则不同，市面上硬件机型非常多，难以做到一个库适配所有硬件。</li>
+<li>PC 端的采集也跟各种摄像头驱动有关，推荐使用目前市面上最好用的 PC 端开源免费软件 OBS。</li>
+</ul>
+<h4 id="1-2-处理"><a href="#1-2-处理" class="headerlink" title="1.2 处理"></a>1.2 处理</h4><ul>
+<li>视频处理如模糊效果、水印等也都是在这个环节做。</li>
+<li>iOS 端比较知名的是 GPUImage 这个库，提供了丰富端预处理效果，还可以基于这个库自己写算法实现更丰富端效果。</li>
+<li>Android 也有 GPUImage 这个库的移植，叫做 android-gpuimage。同时，Google 官方开源了一个伟大的库，覆盖了 Android 上面很多多媒体和图形图像相关的处理。(啥库？没说啊。。。)</li>
+</ul>
+<h4 id="1-3-编码"><a href="#1-3-编码" class="headerlink" title="1.3 编码"></a>1.3 编码</h4><ul>
+<li>处理硬件兼容性问题。（硬件兼容性？不懂。。。）</li>
+<li>在高 fps、低 bitrate 和音质画质之间找到平衡。<ul>
+<li>iOS 端硬件兼容性较好，可以直接采用硬编。</li>
+<li>Android 的硬编的支持则难得多，需要支持各种硬件机型，推荐使用软编。</li>
+</ul>
+</li>
+</ul>
+<h4 id="1-4-推流和传输"><a href="#1-4-推流和传输" class="headerlink" title="1.4 推流和传输"></a>1.4 推流和传输</h4><ul>
+<li>从主播端到服务端，从收流服务端到边缘节点，以及再从边缘节点到观众端。</li>
+<li>推流端和分发端理论上需要支持的并发用户数应该都是亿级的，<ul>
+<li>不过毕竟产生内容的推流端在少数对推流稳定性和速度的要求比播放端高很多</li>
+</ul>
+</li>
+<li>现在的CDN不靠谱<ul>
+<li>你能够借助CDN快速实现大规模的流分发</li>
+<li>但是稳定高速的推流上传可能还需要自己做很多工作</li>
+<li>七牛打造了一个直播专属的实时流网络</li>
+</ul>
+</li>
+</ul>
+<h4 id="1-5-转码"><a href="#1-5-转码" class="headerlink" title="1.5 转码"></a>1.5 转码</h4><ul>
+<li>转码成不同格式支持不同协议如 RTMP、HLS 和 FLV，一路转多路流来适配各种不同的网络状况和不同分辨率的终端设备。</li>
+<li>内容识别，如：鉴黄功能。</li>
+</ul>
+<h4 id="1-6-解码和渲染"><a href="#1-6-解码和渲染" class="headerlink" title="1.6 解码和渲染"></a>1.6 解码和渲染</h4><ul>
+<li>iOS 端的播放兼容性较好，在延迟可接受的情况下使用 HLS 协议是最好的选择 + RTMP 和 HLS 的播放器 SDK。</li>
+<li>Android 的硬件解码和编码一样也存在兼容性问题，目前比较好的开源播放器是基于 ffplay 的 ijkplayer + Android SDK。</li>
+</ul>
+<h4 id="1-7-直播场景化解决方案"><a href="#1-7-直播场景化解决方案" class="headerlink" title="1.7 直播场景化解决方案"></a>1.7 直播场景化解决方案</h4><ul>
+<li>社交直播下的聊天、点赞和弹幕的支持</li>
+</ul>
+<h2 id="二、《视频直播技术详解》系列之二：采集"><a href="#二、《视频直播技术详解》系列之二：采集" class="headerlink" title="二、《视频直播技术详解》系列之二：采集"></a>二、《视频直播技术详解》系列之二：采集</h2><p>参考:<br><a href="http://blog.qiniu.com/archives/6713" target="_blank" rel="external">《视频直播技术详解》系列之二：采集</a></p>
+<h3 id="1-采集内容"><a href="#1-采集内容" class="headerlink" title="1. 采集内容"></a>1. 采集内容</h3><h4 id="1-1-音频采集"><a href="#1-1-音频采集" class="headerlink" title="1.1 音频采集"></a>1.1 音频采集</h4><ul>
+<li>模拟信号 －&gt; PCM编码的原始数据（模拟变数字，采样、量化、编码） －&gt; 压缩数据</li>
+<li>常见的音频压缩格式有：MP3，AAC，OGG，WMA，Opus，FLAC，APE，m4a 和 AMR 等。</li>
+<li>挑战: 延时敏感、卡顿敏感、噪声消除（Denoise）、回声消除（AEC）、静音检测（VAD）和各种混音算法等。(这些是什么？需要好好恶补一下。。。)</li>
+<li>技术参数<ul>
+<li>采样率</li>
+<li>位宽：量化（16bit/32bit）</li>
+<li>声道数: 录制时的音源数量或回放时相应的扬声器数量</li>
+<li>音频帧: 音频数据是流式的，本身没有明确的一帧帧的概念。一般约定为2.5ms~60ms</li>
+<li>size ＝ 采样率（kHz）X 位宽（bit）X 声道数 X 帧长（ms）</li>
+</ul>
+</li>
+</ul>
+<h4 id="1-2-图像采集"><a href="#1-2-图像采集" class="headerlink" title="1.2 图像采集"></a>1.2 图像采集</h4><ul>
+<li>摄像头等设备拍摄成 YUV 编码的原始数据 -&gt; 编码压缩成 H.264 等格式</li>
+<li>常见的视频封装格式有：MP4、3GP、AVI、MKV、WMV、MPG、VOB、FLV、SWF、MOV、RMVB 和 WebM</li>
+<li>挑战: 设备兼容性差、延时敏感、卡顿敏感以及各种对图像的处理操作如美颜和水印等。</li>
+<li>技术参数<ul>
+<li>图像传输格式: 通用影像传输格式（Common Intermediate Format）是视讯会议（video conference）中常使用的影像传输格式。</li>
+<li>图像格式: 通常采用 YUV 格式存储原始数据信息，其中包含用 8 位表示的黑白图像灰度值，以及可由 RGB 三种色彩组合成的彩色图像。</li>
+<li>传输通道: 正常情况下只需1路通道，随着VR和AR技术的日渐成熟，为了拍摄一个完整的 360° 视频，可能需要通过不同角度拍摄，然后经过多通道传输后合成。</li>
+<li>分辨率: 视频采集卡能支持的最大点阵反映了其分辨率的性能。</li>
+<li>采样频率: 采样频率反映了采集卡处理图像的速度和能力。在进行高度图像采集时，需要注意采集卡的采样频率是否满足要求。</li>
+</ul>
+</li>
+<li>实际开发过程中可能很少能够关注采集环节中技术参数的控制，而是直接在 SDK 中将采集后的数据传递给下一个「处理」和「编码」环节。</li>
+</ul>
+<h3 id="2-采集源"><a href="#2-采集源" class="headerlink" title="2. 采集源"></a>2. 采集源</h3><p><img src="/note/public/2017/02/09/live/qiniu/qiniu_2.png" height="300" alt="采集源"></p>
+<h4 id="2-1-摄像头采集"><a href="#2-1-摄像头采集" class="headerlink" title="2.1 摄像头采集"></a>2.1 摄像头采集</h4><ul>
+<li>手机上 ios/Android（&gt;4.0.3） 前后摄像头</li>
+<li>专业摄像头：七牛云提供了兼容适合嵌入式系统的C语言采集模块的实现<a href="https://github.com/pili-engineering/ipcam_sdk" target="_blank" rel="external">https://github.com/pili-engineering/ipcam_sdk</a>（啥意思？驱动？or 接口？）</li>
+</ul>
+<h4 id="2-2-屏幕录制"><a href="#2-2-屏幕录制" class="headerlink" title="2.2 屏幕录制"></a>2.2 屏幕录制</h4><ul>
+<li>iOS 9 以上的版本: 通过模拟一个 AirPlay 镜像连接到（当前 App）自身。</li>
+<li>Android SDK: 实现了屏幕录制的功能</li>
+<li>电脑桌面: 开源的桌面推流工具 OBS 来进行屏幕录制和推流：<a href="https://obsproject.com/" target="_blank" rel="external">https://obsproject.com/</a></li>
+</ul>
+<h4 id="2-3-视频文件"><a href="#2-3-视频文件" class="headerlink" title="2.3 视频文件"></a>2.3 视频文件</h4><ul>
+<li>将一个视频或者音频文件以直播流的形式实时传输</li>
+</ul>
+<h4 id="2-4-开放式设计（接口）"><a href="#2-4-开放式设计（接口）" class="headerlink" title="2.4 开放式设计（接口）"></a>2.4 开放式设计（接口）</h4><ul>
+<li>只要采集源实现方遵循相应的接口，即可支持任意的采集源。</li>
+</ul>
+<h2 id="三、《视频直播技术详解》系列之三：处理"><a href="#三、《视频直播技术详解》系列之三：处理" class="headerlink" title="三、《视频直播技术详解》系列之三：处理"></a>三、《视频直播技术详解》系列之三：处理</h2><p>参考:<br><a href="http://blog.qiniu.com/archives/6795" target="_blank" rel="external">《视频直播技术详解》系列之三：处理</a></p>
+<p><img src="/note/public/2017/02/09/live/qiniu/qiniu_1.png" height="300" alt="原作者给的流程图"></p>
+<h3 id="1-开放式设计"><a href="#1-开放式设计" class="headerlink" title="1. 开放式设计"></a>1. 开放式设计</h3><ul>
+<li>音频处理中具体包含混音、降噪和声音特效</li>
+<li>视频处理中包含美颜、水印、以及各种自定义滤镜</li>
+<li>自定义处理<ul>
+<li><a href="https://github.com/pili-engineering/PLMediaStreamingKit" target="_blank" rel="external">iOS SDK</a></li>
+<li><a href="https://github.com/pili-engineering/PLDroidMediaStreaming" target="_blank" rel="external">Android SDK</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="2-美颜"><a href="#2-美颜" class="headerlink" title="2. 美颜"></a>2. 美颜</h3><ul>
+<li>主要原理: “磨皮”+”美白”</li>
+<li>磨皮: 去躁。对图像中的噪点进行去除或者模糊化处理，常见的去噪算法有均值模糊、高斯模糊和中值滤波 + 人脸和皮肤检测技术。</li>
+<li><p>美颜接口(ios SDK)：</p>
+<ul>
+<li><p>按照默认参数开启或关闭美颜:</p>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(<span class="keyword">void</span>)setBeautifyModeOn:(BOOL)beautifyModeOn;</div></pre></td></tr></table></figure>
+</li>
+<li><p>设置美颜程度，范围为 0 ~ 1:</p>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(<span class="keyword">void</span>)setBeautify:(CGFloat)beautify;</div></pre></td></tr></table></figure>
+</li>
+<li><p>设置美白程度，范围为 0 ~ 1:</p>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(<span class="keyword">void</span>)setWhiten:(CGFloat)whiten;</div></pre></td></tr></table></figure>
+</li>
+<li><p>设置红润程度，范围为 0 ~ 1:</p>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(<span class="keyword">void</span>)setRedden:(CGFloat)redden;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-视频内嵌水印"><a href="#3-视频内嵌水印" class="headerlink" title="3. 视频内嵌水印"></a>3. 视频内嵌水印</h3><ul>
+<li><p>水印功能接口(ios SDK)</p>
+<ul>
+<li><p>添加水印:</p>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(<span class="keyword">void</span>)setWaterMarkWithImage:(UIImage *)wateMarkImage position:(CGPoint)position;</div></pre></td></tr></table></figure>
+</li>
+<li><p>移除水印:</p>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(<span class="keyword">void</span>)clearWaterMark;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-滤镜"><a href="#4-滤镜" class="headerlink" title="4. 滤镜"></a>4. 滤镜</h3><ul>
+<li>iOS 端可以考虑使用<a href="https://github.com/BradLarson/GPUImage" target="_blank" rel="external">GPUImage</a>这个库。内置了多达120多种常见的滤镜效果。</li>
+<li>Android<ul>
+<li>也有<a href="https://github.com/CyberAgent/android-gpuimage" target="_blank" rel="external">GPUImage</a>这个库的移植</li>
+<li>Google 官方也开源了一个伟大的库<a href="https://github.com/google/grafika" target="_blank" rel="external">https://github.com/google/grafika</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="5-连麦"><a href="#5-连麦" class="headerlink" title="5. 连麦"></a>5. 连麦</h3><p><img src="/note/public/2017/02/09/live/qiniu/qiniu_3.png" height="300" alt="连麦流程"></p>
+<ul>
+<li>技术难点:<ul>
+<li>低延迟互动</li>
+<li>音画同步</li>
+<li>视频实时合成: 需要在客户端或者服务端将画面和声音实时合成，然后以低成本高品质的方式传输观众端</li>
+</ul>
+</li>
+<li>思科或者 WebEx 的商用方案: 一不开源，二比较封闭，三成本比较高</li>
+<li><p>WebRTC</p>
+<ul>
+<li>通过 RTCPeerConnection API 管理，这个 API 包装了底层流管理和信令控制相关的细节<br>  <img src="/note/public/2017/02/09/live/qiniu/qiniu_4.png" height="400" alt="webRTC原理"></li>
+<li><p>可以每个点之间形成自组织网络的方式通信;也可以以 1 人为中心形成星型通信网络;还可以让大家都通过一个集中式的服务端进行通信。</p>
+<p><img src="/note/public/2017/02/09/live/qiniu/qiniu_5.png" width="600" alt="方实时通信"></p>
+</li>
+<li>七牛直播云经过评估选择了以主播为中心形成星形通信网络，支持主播和多个观众之间的互动质量。<br><img src="/note/public/2017/02/09/live/qiniu/qiniu_6.png" width="600" alt="webRTC原理"></li>
+<li>同时，为了保证合成后的音视频实时传输到其他观众端，这里采用经过改造的 UDP 协议传输：<ul>
+<li>通过 UDP 降低传输延迟。</li>
+<li>在 UDP 之上进行传输控制，保证用户互动体验 QoS。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="四、《视频直播技术详解》之四：编码和封装"><a href="#四、《视频直播技术详解》之四：编码和封装" class="headerlink" title="四、《视频直播技术详解》之四：编码和封装"></a>四、《视频直播技术详解》之四：编码和封装</h2><p>参考:<br><a href="http://blog.qiniu.com/archives/6816" target="_blank" rel="external">《视频直播技术详解》之四：编码和封装</a></p>
+<h2 id="五、《视频直播技术详解》系列之五：推流和传输"><a href="#五、《视频直播技术详解》系列之五：推流和传输" class="headerlink" title="五、《视频直播技术详解》系列之五：推流和传输"></a>五、《视频直播技术详解》系列之五：推流和传输</h2><p>参考:<br><a href="http://blog.qiniu.com/archives/6914" target="_blank" rel="external">《视频直播技术详解》系列之五：推流和传输</a></p>
+<h2 id="六、《视频直播技术详解》系列之六：延迟优化"><a href="#六、《视频直播技术详解》系列之六：延迟优化" class="headerlink" title="六、《视频直播技术详解》系列之六：延迟优化"></a>六、《视频直播技术详解》系列之六：延迟优化</h2><p>参考:<br><a href="http://blog.qiniu.com/archives/6996" target="_blank" rel="external">《视频直播技术详解》系列之六：延迟优化</a></p>
+<h2 id="七、《视频直播技术详解》系列之七：现代播放器原理"><a href="#七、《视频直播技术详解》系列之七：现代播放器原理" class="headerlink" title="七、《视频直播技术详解》系列之七：现代播放器原理"></a>七、《视频直播技术详解》系列之七：现代播放器原理</h2><p>参考:<br><a href="http://blog.qiniu.com/archives/7040" target="_blank" rel="external">《视频直播技术详解》系列之七：现代播放器原理</a></p>
+
+
+    </div>
+
+    <div>
+
+
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/note/public/uploads/qrcode.jpeg" alt="cloughzhang wechat" style="width: 200px; max-width: 100%;"/>
+    <div></div>
+</div>
+
+
+
+    </div>
+
+    <div>
+
+
+
+
+    </div>
+
+
+    <footer class="post-footer">
+
+        <div class="post-tags">
+
+            <a href="../../../../../public/tags/live/" rel="tag"># live</a>
+
+            <a href="../../../../../public/tags/qiniu/" rel="tag"># qiniu</a>
+
+            <a href="../../../../../public/tags/直播/" rel="tag"># 直播</a>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+
+              <a href="../../webpack/tree-shaking/" rel="next" title="tree-shaking介绍">
+                <i class="fa fa-chevron-left"></i> tree-shaking介绍
+              </a>
+
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+
+              <a href="../../standard/html5/" rel="prev" title="html标准学习">
+                html标准学习 <i class="fa fa-chevron-right"></i>
+              </a>
+
+          </div>
+        </div>
+
+
+
+
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+    </div>
+  </div>
+
+
+          </div>
+
+
+
+
+  <div class="comments" id="comments">
+
+      <div class="ds-thread" data-thread-key="2017/02/09/live/qiniu/"
+           data-title="七牛视频直播学习笔记" data-url="http://sqhtiamo.github.io/note/public/note/public/2017/02/09/live/qiniu/">
+      </div>
+
+  </div>
+
+
+        </div>
+
+
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+
+
+
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="../../../../../uploads/avatar.png"
+               alt="cloughzhang" />
+          <p class="site-author-name" itemprop="name">cloughzhang</p>
+          <p class="site-description motion-element" itemprop="description">做最有激情的前端开发工程师</p>
+        </div>
+        <nav class="site-state motion-element">
+
+
+            <div class="site-state-item site-state-posts">
+              <a href="../../../../../archives">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+
+
+
+            <div class="site-state-item site-state-categories">
+              <a href="../../../../../categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+
+
+
+            <div class="site-state-item site-state-tags">
+              <a href="../../../../../tags">
+                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+
+
+        </nav>
+
+
+
+        <div class="links-of-author motion-element">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+      </section>
+
+
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+
+
+
+
+
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、《视频直播技术详解》系列之一：开篇"><span class="nav-text">一、《视频直播技术详解》系列之一：开篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-主要流程"><span class="nav-text">1. 主要流程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-采集"><span class="nav-text">1.1 采集</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-处理"><span class="nav-text">1.2 处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-编码"><span class="nav-text">1.3 编码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-推流和传输"><span class="nav-text">1.4 推流和传输</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5-转码"><span class="nav-text">1.5 转码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-6-解码和渲染"><span class="nav-text">1.6 解码和渲染</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-7-直播场景化解决方案"><span class="nav-text">1.7 直播场景化解决方案</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、《视频直播技术详解》系列之二：采集"><span class="nav-text">二、《视频直播技术详解》系列之二：采集</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-采集内容"><span class="nav-text">1. 采集内容</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-音频采集"><span class="nav-text">1.1 音频采集</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-图像采集"><span class="nav-text">1.2 图像采集</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-采集源"><span class="nav-text">2. 采集源</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-摄像头采集"><span class="nav-text">2.1 摄像头采集</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-屏幕录制"><span class="nav-text">2.2 屏幕录制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-视频文件"><span class="nav-text">2.3 视频文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-开放式设计（接口）"><span class="nav-text">2.4 开放式设计（接口）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、《视频直播技术详解》系列之三：处理"><span class="nav-text">三、《视频直播技术详解》系列之三：处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-开放式设计"><span class="nav-text">1. 开放式设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-美颜"><span class="nav-text">2. 美颜</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-视频内嵌水印"><span class="nav-text">3. 视频内嵌水印</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-滤镜"><span class="nav-text">4. 滤镜</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-连麦"><span class="nav-text">5. 连麦</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、《视频直播技术详解》之四：编码和封装"><span class="nav-text">四、《视频直播技术详解》之四：编码和封装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、《视频直播技术详解》系列之五：推流和传输"><span class="nav-text">五、《视频直播技术详解》系列之五：推流和传输</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六、《视频直播技术详解》系列之六：延迟优化"><span class="nav-text">六、《视频直播技术详解》系列之六：延迟优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#七、《视频直播技术详解》系列之七：现代播放器原理"><span class="nav-text">七、《视频直播技术详解》系列之七：现代播放器原理</span></a></li></ol></div>
+
+
+          </div>
+        </section>
+      <!--/noindex-->
+
+
+    </div>
+  </aside>
+
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+
+  &copy;
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">cloughzhang</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-85360363-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="../../../../../lib/jquery/index.js?v=2.1.3"></script>
+
+
+  <script type="text/javascript" src="../../../../../lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+
+  <script type="text/javascript" src="../../../../../lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+
+  <script type="text/javascript" src="../../../../../lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+
+  <script type="text/javascript" src="../../../../../lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  <script type="text/javascript" src="../../../../../lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+
+
+
+  <script type="text/javascript" src="../../../../../js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="../../../../../js/src/motion.js?v=5.1.0"></script>
+
+
+
+
+
+
+
+  <script type="text/javascript" src="../../../../../js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="../../../../../js/src/post-details.js?v=5.1.0"></script>
+
+
+
+
+
+
+  <script type="text/javascript" src="../../../../../js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"sqhtiamo"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+
+
+
+    <script src="../../../../../lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="../../../../../js/src/hook-duoshuo.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/note/public/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
