@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://sqhtiamo.github.io/note/public/note/public/2017/02/09/chrome/chrome56/</loc>
+    
+    <lastmod>2017-02-10T09:44:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://sqhtiamo.github.io/note/public/note/public/2017/02/10/chrome/web-component-v1/</loc>
     
     <lastmod>2017-02-10T06:38:19.000Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://sqhtiamo.github.io/note/public/note/public/2017/02/09/html5/tag/</loc>
     
     <lastmod>2017-02-09T12:50:20.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/note/public/2017/02/09/chrome/chrome56/</loc>
-    
-    <lastmod>2017-02-09T12:49:58.000Z</lastmod>
     
   </url>
   
