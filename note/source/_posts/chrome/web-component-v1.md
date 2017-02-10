@@ -9,16 +9,16 @@ categories: 外文翻译
 作者：[Taylor Savage](https://developers.google.com/web/resources/contributors#taylorsavage) (Taylor is a PM on the Chrome Team, focusing on Web Components and Polymer.)
 
 ## Web Components
-Ever wanted to build your own self-contained JavaScript component, that you can easily use across multiple projects or share with other developers regardless of what JavaScript framework they use? Web Components may be for you.
+你是否曾经想要构建一个可以跨多个项目使用的，跟框架无关的、可供其他开发者使用的js组件？Web Components可能适合你。
 
 <!-- more -->
-Web Components are a set of new web platform features that let you create your own HTML elements. Each new custom element can have a custom tag like <my-button>, and have all the goodness of built-in elements - custom elements can have properties and methods, fire and respond to events, and even have an encapsulated style and DOM trees to bring along their own look and feel.
+Web Components是一组web平台的新功能。它可以使你创建自己的HTML元素。每一个HTML元素都有一个自定义标签，如<my-button>，并且拥有所有和原生的内置标签一样的优点。自定义元素也同样拥有属性(properties)、方法(methods)、触发和响应事件(events)，甚至也可以拥有封装好的样式(styles)和DOM树。
 
-<img src="./image00.gif" alt="自定义标签"/>
+<img src="./image00.gif" alt="自定义元素"/>
 
-By providing a platform-based, low-level component model, Web Components let you build and share re-usable elements for everything from specialized buttons to complex views like datepickers. Because Web Components are built with platform API’s which include powerful encapsulation primitives, you can even use these components within other JavaScript libraries or frameworks as if they were standard DOM elements.
+通过提供一个基于平台的、底层的组件模型，Web Components可以使你搭建和分享一个可复用的任意元素，从定制化的按钮(button)到复杂的视图，如时间选择器(datepicker)。由于Web Components是通过平台的API实现的，它包含了功能强大的、封装好的原语句(primitives)，你甚至可以把这些自定义元素当作标准的DOM元素，在其他的JS类库和框架中使用。
 
-You may have heard of Web Components before - an early version of the Web Components spec - v0 - was shipped in Chrome 33.
+也许，你之前听说过Web Components的概念，它较早的一个版本(V0版本)曾在Chrome 33实现过。
 
 Today, thanks to broad collaboration between browser vendors, the next-generation of the Web Components spec - v1 - is gaining wide support. Chrome supports the two major specs that make up Web Components - Shadow DOM and Custom Elements - as of Chrome 53 and Chrome 54 respectively. Safari shipped support for Shadow DOM v1 in Safari 10, and has completed implementation of Custom Elements v1 in WebKit. Firefox is currently developing Shadow DOM and Custom Elements v1, and both Shadow DOM and Custom Elements are on the roadmap for Edge.
 
