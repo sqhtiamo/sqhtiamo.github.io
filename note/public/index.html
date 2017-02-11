@@ -398,6 +398,219 @@ header#custom dl dt:hover ul {
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://sqhtiamo.github.io/note/public/2017/02/11/chrome/media-notification/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="cloughzhang">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/note/public/uploads/avatar.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="伟大航路">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="伟大航路" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/note/public/2017/02/11/chrome/media-notification/" itemprop="url">
+                  定制化富媒体消息通知与处理播放列表
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-11T23:18:57+08:00">
+                2017-02-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/note/public/categories/interpret/" itemprop="url" rel="index">
+                    <span itemprop="name">外文翻译</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/note/public/2017/02/11/chrome/media-notification/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/11/chrome/media-notification/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>原文: <a href="https://developers.google.com/web/updates/2017/02/media-session" target="_blank" rel="external">https://developers.google.com/web/updates/2017/02/media-session</a><br>作者：<a href="https://developers.google.com/web/resources/contributors#beaufortfrancois" target="_blank" rel="external">François Beaufort</a> (Taylor is a PM on the Chrome Team, focusing on Web Components and Polymer.)</p>
+<p>With the brand new Media Session API, you can now customize media notifications by providing metadata for the media your web app is playing. It also allows you to handle media related events such as seeking or track changing which may come from notifications or media keys. Excited? Try out the official Media Session sample.</p>
+<p>The Media Session API is supported in Chrome 57 (beta in February 2017, stable in March 2017).</p>
+<p><img src="/note/public/2017/02/11/chrome/media-notification/tldr.png" alt=""><br>Photo by Michael Alø-Nielsen / CC BY 2.0</p>
+<h2 id="1-Gimme-what-I-want"><a href="#1-Gimme-what-I-want" class="headerlink" title="1. Gimme what I want"></a>1. Gimme what I want</h2><p>You already know about the Media Session API and are simply coming back to copy and paste with no shame some boilerplate code? So here it is.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (<span class="string">'mediaSession'</span> <span class="keyword">in</span> navigator) &#123;</div><div class="line"></div><div class="line">  navigator.mediaSession.metadata = <span class="keyword">new</span> MediaMetadata(&#123;</div><div class="line">    <span class="attr">title</span>: <span class="string">'Never Gonna Give You Up'</span>,</div><div class="line">    <span class="attr">artist</span>: <span class="string">'Rick Astley'</span>,</div><div class="line">    <span class="attr">album</span>: <span class="string">'Whenever You Need Somebody'</span>,</div><div class="line">    <span class="attr">artwork</span>: [</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/96x96'</span>,   <span class="attr">sizes</span>: <span class="string">'96x96'</span>,   <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/128x128'</span>, <span class="attr">sizes</span>: <span class="string">'128x128'</span>, <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/192x192'</span>, <span class="attr">sizes</span>: <span class="string">'192x192'</span>, <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/256x256'</span>, <span class="attr">sizes</span>: <span class="string">'256x256'</span>, <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/384x384'</span>, <span class="attr">sizes</span>: <span class="string">'384x384'</span>, <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/512x512'</span>, <span class="attr">sizes</span>: <span class="string">'512x512'</span>, <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">    ]</div><div class="line">  &#125;);</div><div class="line"></div><div class="line">  navigator.mediaSession.setActionHandler(<span class="string">'play'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;);</div><div class="line">  navigator.mediaSession.setActionHandler(<span class="string">'pause'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;);</div><div class="line">  navigator.mediaSession.setActionHandler(<span class="string">'seekbackward'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;);</div><div class="line">  navigator.mediaSession.setActionHandler(<span class="string">'seekforward'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;);</div><div class="line">  navigator.mediaSession.setActionHandler(<span class="string">'previoustrack'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;);</div><div class="line">  navigator.mediaSession.setActionHandler(<span class="string">'nexttrack'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="2-Get-into-the-code"><a href="#2-Get-into-the-code" class="headerlink" title="2. Get into the code"></a>2. Get into the code</h2><h3 id="2-1-Let’s-play-🎷"><a href="#2-1-Let’s-play-🎷" class="headerlink" title="2.1 Let’s play 🎷"></a>2.1 Let’s play 🎷</h3><p>Add a simple <audio> element to your web page and assign several media sources so that the browser can choose which one works best.</audio></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"audio.mp3"</span> <span class="attr">type</span>=<span class="string">"audio/mp3"</span>/&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"audio.ogg"</span> <span class="attr">type</span>=<span class="string">"audio/ogg"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>Note: I could have used a <video> element instead to showcase the Media Session API.</video></p>
+<p>As you may know, autoplay is disabled for audio elements on Chrome for Android which means we have to use the play() method of the audio element. This method must be triggered by a user gesture such as a touch or a mouse click. That means listening to pointerup, click, and touchend events. In other words, the user must click a button before your web app can actually make noise.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">playButton.addEventListener(<span class="string">'pointerup'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</div><div class="line">  <span class="keyword">let</span> audio = <span class="built_in">document</span>.querySelector(<span class="string">'audio'</span>);</div><div class="line"></div><div class="line">  <span class="comment">// User interacted with the page. Let's play audio...</span></div><div class="line">  audio.play()</div><div class="line">  .then(<span class="function"><span class="params">_</span> =&gt;</span> &#123; <span class="comment">/* Set up media session... */</span> &#125;)</div><div class="line">  .catch(<span class="function"><span class="params">error</span> =&gt;</span> &#123; <span class="built_in">console</span>.log(error) &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>Note: If the <audio> element has the controls attribute, you can simply set up the media session in the audio play event listener instead which occurs when user taps the “play” audio control.</audio></p>
+<p>If you don’t want to play audio right after the first interaction, I recommend you use the load() method of the audio element. This is one way for the browser to keep track of whether the user interacted with the element. Note that it may also help smooth the playback because the content will already be loaded.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> audio = <span class="built_in">document</span>.querySelector(<span class="string">'audio'</span>);</div><div class="line"></div><div class="line">welcomeButton.addEventListener(<span class="string">'pointerup'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</div><div class="line">  <span class="comment">// User interacted with the page. Let's load audio...</span></div><div class="line">  audio.load()</div><div class="line">  .then(<span class="function"><span class="params">_</span> =&gt;</span> &#123; <span class="comment">/* Show play button for instance... */</span> &#125;)</div><div class="line">  .catch(<span class="function"><span class="params">error</span> =&gt;</span> &#123; <span class="built_in">console</span>.log(error) &#125;);</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">// Later...</span></div><div class="line">playButton.addEventListener(<span class="string">'pointerup'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</div><div class="line">  audio.play()</div><div class="line">  .then(<span class="function"><span class="params">_</span> =&gt;</span> &#123; <span class="comment">/* Set up media session... */</span> &#125;)</div><div class="line">  .catch(<span class="function"><span class="params">error</span> =&gt;</span> &#123; <span class="built_in">console</span>.log(error) &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="2-2-Customize-the-notification"><a href="#2-2-Customize-the-notification" class="headerlink" title="2.2 Customize the notification"></a>2.2 Customize the notification</h3><p>When your web app is playing audio, you can already see a media notification sitting in the notification tray. On Android, Chrome does its best to show appropriate information by using the document’s title and the largest icon image it can find.</p>
+<p><img src="/note/public/2017/02/11/chrome/media-notification/without-media-session.png" alt=""><br>Without media session<br><img src="/note/public/2017/02/11/chrome/media-notification/with-media-session.png" alt=""><br>With media session</p>
+<h3 id="2-2-1-Set-metadata"><a href="#2-2-1-Set-metadata" class="headerlink" title="2.2.1 Set metadata"></a>2.2.1 Set metadata</h3><p>Let’s see how to customize this media notification by setting some media session metadata such as the title, artist, album name, and artwork with the Media Session API.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// When audio starts playing...</span></div><div class="line"><span class="keyword">if</span> (<span class="string">'mediaSession'</span> <span class="keyword">in</span> navigator) &#123;</div><div class="line"></div><div class="line">  navigator.mediaSession.metadata = <span class="keyword">new</span> MediaMetadata(&#123;</div><div class="line">    <span class="attr">title</span>: <span class="string">'Never Gonna Give You Up'</span>,</div><div class="line">    <span class="attr">artist</span>: <span class="string">'Rick Astley'</span>,</div><div class="line">    <span class="attr">album</span>: <span class="string">'Whenever You Need Somebody'</span>,</div><div class="line">    <span class="attr">artwork</span>: [</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/96x96'</span>,   <span class="attr">sizes</span>: <span class="string">'96x96'</span>,   <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/128x128'</span>, <span class="attr">sizes</span>: <span class="string">'128x128'</span>, <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/192x192'</span>, <span class="attr">sizes</span>: <span class="string">'192x192'</span>, <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/256x256'</span>, <span class="attr">sizes</span>: <span class="string">'256x256'</span>, <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/384x384'</span>, <span class="attr">sizes</span>: <span class="string">'384x384'</span>, <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/512x512'</span>, <span class="attr">sizes</span>: <span class="string">'512x512'</span>, <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">    ]</div><div class="line">  &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Once playback is done, you don’t have to “release” the media session as the notification will automatically disappear. Keep in mind that current navigator.mediaSession.metadata will be used when any playback starts. This is why you need to update it to make sure you’re always showing relevant information in the media notification.</p>
+<h3 id="2-2-2-Previous-track-next-track"><a href="#2-2-2-Previous-track-next-track" class="headerlink" title="2.2.2 Previous track / next track"></a>2.2.2 Previous track / next track</h3><p>If your web app provides a playlist, you may want to allow the user to navigate through your playlist directly from the media notification with some “Previous Track” and “Next Track” icons.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> audio = <span class="built_in">document</span>.createElement(<span class="string">'audio'</span>);</div><div class="line"></div><div class="line"><span class="keyword">let</span> playlist = [<span class="string">'audio1.mp3'</span>, <span class="string">'audio2.mp3'</span>, <span class="string">'audio3.mp3'</span>];</div><div class="line"><span class="keyword">let</span> index = <span class="number">0</span>;</div><div class="line"></div><div class="line">navigator.mediaSession.setActionHandler(<span class="string">'previoustrack'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="comment">// User clicked "Previous Track" media notification icon.</span></div><div class="line">  index = (index - <span class="number">1</span> + playlist.length) % playlist.length;</div><div class="line">  playAudio();</div><div class="line">&#125;);</div><div class="line"></div><div class="line">navigator.mediaSession.setActionHandler(<span class="string">'nexttrack'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="comment">// User clicked "Next Track" media notification icon.</span></div><div class="line">  index = (index + <span class="number">1</span>) % playlist.length;</div><div class="line">  playAudio();</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">playAudio</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  audio.src = playlist[index];</div><div class="line">  audio.play()</div><div class="line">  .then(<span class="function"><span class="params">_</span> =&gt;</span> &#123; <span class="comment">/* Set up media session... */</span> &#125;)</div><div class="line">  .catch(<span class="function"><span class="params">error</span> =&gt;</span> &#123; <span class="built_in">console</span>.log(error); &#125;);</div><div class="line">&#125;</div><div class="line"></div><div class="line">playButton.addEventListener(<span class="string">'pointerup'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</div><div class="line">  playAudio();</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>Note that media action handlers will persist. This is very similar to the event listener pattern except that handling an event means that the browser stops doing any default behaviour and uses this as a signal that your web app supports the media action. Hence, media action controls won’t be shown unless you set the proper action handler.</p>
+<p>By the way, unsetting a media action handler is as easy as assigning it to null.</p>
+<h3 id="2-2-3-Seek-backward-seek-forward"><a href="#2-2-3-Seek-backward-seek-forward" class="headerlink" title="2.2.3 Seek backward / seek forward"></a>2.2.3 Seek backward / seek forward</h3><p>The Media Session API allows you to show “Seek Backward” and “Seek Forward” media notification icons if you want to control the amount of time skipped.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> skipTime = <span class="number">10</span>; <span class="comment">// Time to skip in seconds</span></div><div class="line"></div><div class="line">navigator.mediaSession.setActionHandler(<span class="string">'seekbackward'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="comment">// User clicked "Seek Backward" media notification icon.</span></div><div class="line">  audio.currentTime = <span class="built_in">Math</span>.max(audio.currentTime - skipTime, <span class="number">0</span>);</div><div class="line">&#125;);</div><div class="line"></div><div class="line">navigator.mediaSession.setActionHandler(<span class="string">'seekforward'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="comment">// User clicked "Seek Forward" media notification icon.</span></div><div class="line">  audio.currentTime = <span class="built_in">Math</span>.min(audio.currentTime + skipTime, audio.duration);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="2-2-4-Play-pause"><a href="#2-2-4-Play-pause" class="headerlink" title="2.2.4 Play / pause"></a>2.2.4 Play / pause</h3><p>The “Play/Pause” icon is always shown in the media notification and the related events are handled automatically by the browser. If for some reason the default behaviour doesn’t work out, you can still handle “Play” and “Pause” media events.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">navigator.mediaSession.setActionHandler(<span class="string">'play'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="comment">// User clicked "Play" media notification icon.</span></div><div class="line">  <span class="comment">// Do something more than just playing current audio...</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line">navigator.mediaSession.setActionHandler(<span class="string">'pause'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="comment">// User clicked "Pause" media notification icon.</span></div><div class="line">  <span class="comment">// Do something more than just pausing current audio...</span></div><div class="line">&#125;);</div><div class="line">Note: The browser may consider that the web app is not playing media when files are seeking or loading. You can override <span class="keyword">this</span> behaviour by setting navigator.mediaSession.playbackState to <span class="string">"playing"</span> or <span class="string">"paused"</span>. This comes <span class="keyword">in</span> handy when you want to make sure your web app UI stays <span class="keyword">in</span> sync <span class="keyword">with</span> the media notification controls.</div></pre></td></tr></table></figure>
+<h3 id="3-Notifications-everywhere"><a href="#3-Notifications-everywhere" class="headerlink" title="3. Notifications everywhere"></a>3. Notifications everywhere</h3><p>The cool thing about the Media Session API is that the notification tray is not the only place where media metadata and controls are visible. The media notification is synced automagically to any paired wearable device. And it also shows up on lock screens.</p>
+<p><img src="/note/public/2017/02/11/chrome/media-notification/lock-screen.png" alt=""><br>Lock Screen - Photo by Michael Alø-Nielsen / CC BY 2.0<br><img src="/note/public/2017/02/11/chrome/media-notification/wear.png" alt=""><br>Wear Notification</p>
+<h3 id="4-Make-it-play-nice-offline"><a href="#4-Make-it-play-nice-offline" class="headerlink" title="4. Make it play nice offline"></a>4. Make it play nice offline</h3><p>I know what you’re thinking now… service worker to the rescue!</p>
+<p>True but first and foremost, you want to make sure all items in this checklist are checked:</p>
+<ul>
+<li>All media and artwork files are served with the appropriate Cache-Control HTTP header. This will allow the browser to cache and reuse previously fetched resources. See the Caching checklist.</li>
+<li>Make sure all media and artwork files are served with the Allow-Control-Allow-Origin: * HTTP header. This will allow third-party web apps to fetch and consume HTTP responses from your web server.</li>
+</ul>
+<h3 id="4-1-The-service-worker-caching-strategy"><a href="#4-1-The-service-worker-caching-strategy" class="headerlink" title="4.1 The service worker caching strategy"></a>4.1 The service worker caching strategy</h3><p>Regarding media files, I recommend a simple “Cache, falling back to network” strategy as illustrated by Jake Archibald.</p>
+<p>For artwork though, I’d be a little bit more specific and choose the approach below:</p>
+<ul>
+<li>If artwork is already in the cache, serve it from the cache</li>
+<li>Else fetch artwork from the network<ul>
+<li>If fetch is successful, add network artwork to the cache and serve it</li>
+<li>Else serve the fallback artwork from the cache</li>
+</ul>
+</li>
+</ul>
+<p>That way, media notifications will always have a nice artwork icon even when browser can’t fetch them. Here’s how you could implement this:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> FALLBACK_ARTWORK_URL = <span class="string">'fallbackArtwork.png'</span>;</div><div class="line"></div><div class="line">self.addEventListener(<span class="string">'install'</span>, event =&gt; &#123;</div><div class="line">  self.skipWaiting();</div><div class="line">  event.waitUntil(initArtworkCache());</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">initArtworkCache</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  caches.open(<span class="string">'artwork-cache-v1'</span>)</div><div class="line">  .then(<span class="function"><span class="params">cache</span> =&gt;</span> cache.add(FALLBACK_ARTWORK_URL));</div><div class="line">&#125;</div><div class="line"></div><div class="line">self.addEventListener(<span class="string">'fetch'</span>, event =&gt; &#123;</div><div class="line">  <span class="keyword">if</span> (<span class="regexp">/artwork-[0-9]+\.png$/</span>.test(event.request.url)) &#123;</div><div class="line">    event.respondWith(handleFetchArtwork(event.request));</div><div class="line">  &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">handleFetchArtwork</span>(<span class="params">request</span>) </span>&#123;</div><div class="line">  <span class="comment">// Return cache request if it's in the cache already, otherwise fetch</span></div><div class="line">  <span class="comment">// network artwork.</span></div><div class="line">  <span class="keyword">return</span> getCacheArtwork(request)</div><div class="line">  .then(<span class="function"><span class="params">cacheResponse</span> =&gt;</span> cacheResponse || getNetworkArtwork(request));</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getCacheArtwork</span>(<span class="params">request</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> caches.open(<span class="string">'artwork-cache-v1'</span>)</div><div class="line">  .then(<span class="function"><span class="params">cache</span> =&gt;</span> cache.match(request));</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getNetworkArtwork</span>(<span class="params">request</span>) </span>&#123;</div><div class="line">  <span class="comment">// Fetch network artwork.</span></div><div class="line">  <span class="keyword">return</span> fetch(request)</div><div class="line">  .then(<span class="function"><span class="params">networkResponse</span> =&gt;</span> &#123;</div><div class="line">    <span class="keyword">if</span> (networkResponse.status !== <span class="number">200</span>) &#123;</div><div class="line">      <span class="keyword">return</span> <span class="built_in">Promise</span>.reject(<span class="string">'Network artwork response is not valid'</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="comment">// Add artwork to the cache for later use and return network response.</span></div><div class="line">    addArtworkToCache(request, networkResponse.clone())</div><div class="line">    <span class="keyword">return</span> networkResponse;</div><div class="line">  &#125;)</div><div class="line">  .catch(<span class="function"><span class="params">error</span> =&gt;</span> &#123;</div><div class="line">    <span class="comment">// Return cached fallback artwork.</span></div><div class="line">    <span class="keyword">return</span> getCacheArtwork(<span class="keyword">new</span> Request(FALLBACK_ARTWORK_URL))</div><div class="line">  &#125;);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">addArtworkToCache</span>(<span class="params">request, response</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> caches.open(<span class="string">'artwork-cache-v1'</span>)</div><div class="line">  .then(<span class="function"><span class="params">cache</span> =&gt;</span> cache.put(request, response));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Caution: If you want your service worker to be able to intercept artwork network requests on the very first page load, you may want to call clients.claim() within your service worker once it’s activated.</p>
+<h3 id="4-2-Let-user-control-cache"><a href="#4-2-Let-user-control-cache" class="headerlink" title="4.2 Let user control cache"></a>4.2 Let user control cache</h3><p>As the user consumes content from your web app, media and artwork files may take a lot of space on their device. It is your responsibility to show how much cache is used and give users the ability to clear it. Thankfully for us, doing so is pretty easy with the Cache API.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Here's how I'd compute how much cache is used by artwork files...</span></div><div class="line">caches.open(<span class="string">'artwork-cache-v1'</span>)</div><div class="line">.then(<span class="function"><span class="params">cache</span> =&gt;</span> cache.matchAll())</div><div class="line">.then(<span class="function"><span class="params">responses</span> =&gt;</span> &#123;</div><div class="line">  <span class="keyword">let</span> cacheSize = <span class="number">0</span>;</div><div class="line">  <span class="keyword">let</span> blobQueue = <span class="built_in">Promise</span>.resolve();</div><div class="line"></div><div class="line">   responses.forEach(<span class="function"><span class="params">response</span> =&gt;</span> &#123;</div><div class="line">    <span class="keyword">let</span> responseSize = response.headers.get(<span class="string">'content-length'</span>);</div><div class="line">    <span class="keyword">if</span> (responseSize) &#123;</div><div class="line">      <span class="comment">// Use content-length HTTP header when possible.</span></div><div class="line">      cacheSize += <span class="built_in">Number</span>(responseSize);</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">      <span class="comment">// Otherwise, use the uncompressed blob size.</span></div><div class="line">      blobQueue = blobQueue.then(<span class="function"><span class="params">_</span> =&gt;</span> response.blob())</div><div class="line">          .then(<span class="function"><span class="params">blob</span> =&gt;</span> &#123; cacheSize += blob.size; blob.close(); &#125;);</div><div class="line">    &#125;</div><div class="line">  &#125;);</div><div class="line"></div><div class="line">  <span class="keyword">return</span> blobQueue.then(<span class="function"><span class="params">_</span> =&gt;</span> &#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'Artwork cache is about '</span> + cacheSize + <span class="string">' Bytes.'</span>);</div><div class="line">  &#125;);</div><div class="line">&#125;)</div><div class="line">.catch(<span class="function"><span class="params">error</span> =&gt;</span> &#123; <span class="built_in">console</span>.log(error); &#125;);</div><div class="line"></div><div class="line"><span class="comment">// And here's how to delete some artwork files...</span></div><div class="line"><span class="keyword">const</span> artworkFilesToDelete = [<span class="string">'artwork1.png'</span>, <span class="string">'artwork2.png'</span>, <span class="string">'artwork3.png'</span>];</div><div class="line"></div><div class="line">caches.open(<span class="string">'artwork-cache-v1'</span>)</div><div class="line">.then(<span class="function"><span class="params">cache</span> =&gt;</span> <span class="built_in">Promise</span>.all(artworkFilesToDelete.map(<span class="function"><span class="params">artwork</span> =&gt;</span> cache.delete(artwork))))</div><div class="line">.catch(<span class="function"><span class="params">error</span> =&gt;</span> &#123; <span class="built_in">console</span>.log(error); &#125;);</div></pre></td></tr></table></figure>
+<h1 id="5-Implementation-notes"><a href="#5-Implementation-notes" class="headerlink" title="5. Implementation notes"></a>5. Implementation notes</h1><ul>
+<li>Chrome for Android requests “full” audio focus to show media notifications only when the media file duration is at least 5 seconds.</li>
+<li>Notification artwork support blob URLs and data URLs.</li>
+<li>If no artwork is defined and there is an icon image at a desirable size, media notifications will use it.</li>
+<li>Notification artwork size in Chrome for Android is 512x512. For low-end devices, it is 256x256.</li>
+<li>Dismiss media notifications with audio.src = ‘’.</li>
+<li>As the Web Audio API doesn’t request Android Audio Focus for historical reasons, the only way to make it work with the Media Session API is to hook up an <audio> element as the input source to the Web Audio API. Hopefully, the proposed Web AudioFocus API will improve the situation in the near future.</audio></li>
+</ul>
+<h1 id="6-Support"><a href="#6-Support" class="headerlink" title="6. Support"></a>6. Support</h1><p>At the time of writing, Chrome for Android is the only platform that supports the Media Session API. More up-to-date information on browser implementation status can be found on Chrome Platform Status.</p>
+<h1 id="7-Samples-amp-demos"><a href="#7-Samples-amp-demos" class="headerlink" title="7. Samples &amp; demos"></a>7. Samples &amp; demos</h1><p>Check out our official Chrome Media Session sample featuring Jan Morgenstern’s work.<br><img src="/note/public/2017/02/11/chrome/media-notification/screenrecord.png"><br>视频地址：<a href="https://storage.googleapis.com/media-session/screenrecord.mp4" target="_blank" rel="external">https://storage.googleapis.com/media-session/screenrecord.mp4</a></p>
+<h1 id="8-Resources"><a href="#8-Resources" class="headerlink" title="8. Resources"></a>8. Resources</h1><p>Media Session Spec: <a href="https://wicg.github.io/mediasession" target="_blank" rel="external">https://wicg.github.io/mediasession</a><br>Spec Issues: <a href="https://github.com/WICG/mediasession/issues" target="_blank" rel="external">https://github.com/WICG/mediasession/issues</a><br>Chrome Bugs: <a href="https://crbug.com/?q=component:Internals%3EMedia%3ESession" target="_blank" rel="external">https://crbug.com/?q=component:Internals&gt;Media&gt;Session</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://sqhtiamo.github.io/note/public/2017/02/10/chrome/web-component-v1/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1812,163 +2025,6 @@ header#custom dl dt:hover ul {
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://sqhtiamo.github.io/note/public/2017/02/09/tools/yarn/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="cloughzhang">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/note/public/uploads/avatar.png">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="伟大航路">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="伟大航路" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/note/public/2017/02/09/tools/yarn/" itemprop="url">
-                  Yarn 基本介绍
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-09T10:31:46+08:00">
-                2017-02-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/note/public/categories/work/" itemprop="url" rel="index">
-                    <span itemprop="name">工作拾遗</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/note/public/2017/02/09/tools/yarn/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/09/tools/yarn/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="1-什么是yarn？"><a href="#1-什么是yarn？" class="headerlink" title="1. 什么是yarn？"></a>1. 什么是yarn？</h2><h2 id="2-yarn有什么好处？"><a href="#2-yarn有什么好处？" class="headerlink" title="2. yarn有什么好处？"></a>2. yarn有什么好处？</h2><h2 id="3-性能如何？"><a href="#3-性能如何？" class="headerlink" title="3. 性能如何？"></a>3. 性能如何？</h2><p>yarn的<a href="https://yarnpkg.com/en/compare">官网</a>给出如下数据（yarn VS npm）：<br>从warm cache, node_modules, Lockfile/Shrinkwarp 3个参数，8个维度进行比较。<br>比较结果如下：</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/note/public/2017/02/09/tools/yarn/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -2016,7 +2072,7 @@ header#custom dl dt:hover ul {
           
             <div class="site-state-item site-state-posts">
               <a href="/note/public/archives">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -2034,7 +2090,7 @@ header#custom dl dt:hover ul {
           
             <div class="site-state-item site-state-tags">
               <a href="/note/public/tags">
-                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
