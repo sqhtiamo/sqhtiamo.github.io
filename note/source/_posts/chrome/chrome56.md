@@ -24,7 +24,7 @@ categories: 外文翻译
 
 Web Bluetooth API使用的是GATT协议。该协议可以使你的app和灯泡、玩具、心率监控仪、LED显示器等设备通过几行js代码就可以进行通信。Web Bluetooth能够结合物理网络信标，进而更容易发现附近的设备。
 
-Francois has a great article on Updates, be sure to check out some of neat demos to go along with it. And be sure to check out the Web Bluetooth Community.
+Francois有一篇著名的文章发布在‘Updates’上, be sure to check out some of neat demos to go along with it. And be sure to check out the Web Bluetooth Community.
 
 ## 2. CSS position: sticky;
 

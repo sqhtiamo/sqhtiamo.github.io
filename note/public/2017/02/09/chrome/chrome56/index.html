@@ -87,25 +87,28 @@
 
 
 
-<meta name="description" content="原文:http://developers.googleblog.cn/2016/12/chrome-56-betanot-secure-css-position.html作者：Pete LePage (Pete is a Developer Advocate)
+<meta name="description" content="原文:https://developers.google.com/web/updates/2017/01/nic56作者：Pete LePage (Pete is a Developer Advocate)
 视频：https://youtu.be/F4DfGVbvRpY
 
-支持Web Bluetooth API，Web应用可以和附近的低耗能的蓝">
+支持Web Bluetooth API，Web应用可以和附近的低耗能的蓝牙设备进行通信
+‘position: sticky’回">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Chrome 56里的新东西">
 <meta property="og:url" content="http://sqhtiamo.github.io/2017/02/09/chrome/chrome56/index.html">
 <meta property="og:site_name" content="伟大航路">
-<meta property="og:description" content="原文:http://developers.googleblog.cn/2016/12/chrome-56-betanot-secure-css-position.html作者：Pete LePage (Pete is a Developer Advocate)
+<meta property="og:description" content="原文:https://developers.google.com/web/updates/2017/01/nic56作者：Pete LePage (Pete is a Developer Advocate)
 视频：https://youtu.be/F4DfGVbvRpY
 
-支持Web Bluetooth API，Web应用可以和附近的低耗能的蓝">
-<meta property="og:updated_time" content="2017-02-10T09:44:39.000Z">
+支持Web Bluetooth API，Web应用可以和附近的低耗能的蓝牙设备进行通信
+‘position: sticky’回">
+<meta property="og:updated_time" content="2017-02-11T11:18:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chrome 56里的新东西">
-<meta name="twitter:description" content="原文:http://developers.googleblog.cn/2016/12/chrome-56-betanot-secure-css-position.html作者：Pete LePage (Pete is a Developer Advocate)
+<meta name="twitter:description" content="原文:https://developers.google.com/web/updates/2017/01/nic56作者：Pete LePage (Pete is a Developer Advocate)
 视频：https://youtu.be/F4DfGVbvRpY
 
-支持Web Bluetooth API，Web应用可以和附近的低耗能的蓝">
+支持Web Bluetooth API，Web应用可以和附近的低耗能的蓝牙设备进行通信
+‘position: sticky’回">
 
 
 
@@ -513,7 +516,7 @@ header#custom dl dt:hover ul {
       
 
       
-        <p>原文:<br><a href="http://developers.googleblog.cn/2016/12/chrome-56-betanot-secure-css-position.html" target="_blank" rel="external">http://developers.googleblog.cn/2016/12/chrome-56-betanot-secure-css-position.html</a><br>作者：<a href="https://developers.google.cn/web/resources/contributors#petelepage" target="_blank" rel="external">Pete LePage</a> (Pete is a Developer Advocate)</p>
+        <p>原文:<br><a href="https://developers.google.com/web/updates/2017/01/nic56" target="_blank" rel="external">https://developers.google.com/web/updates/2017/01/nic56</a><br>作者：<a href="https://developers.google.cn/web/resources/contributors#petelepage" target="_blank" rel="external">Pete LePage</a> (Pete is a Developer Advocate)</p>
 <p>视频：<a href="https://youtu.be/F4DfGVbvRpY]" target="_blank" rel="external">https://youtu.be/F4DfGVbvRpY</a></p>
 <ul>
 <li>支持Web Bluetooth API，Web应用可以和附近的低耗能的蓝牙设备进行通信</li>
@@ -521,9 +524,9 @@ header#custom dl dt:hover ul {
 <li>对所有用户默认使用HTML5<a id="more"></a>
 <br><br>我是Pete LePage(原作者), 让我们深入地看看Chrome 56到底给开发者们带来了什么新东西。</li>
 </ul>
-<h2 id="1-Web-Bluetooth-API"><a href="#1-Web-Bluetooth-API" class="headerlink" title="1. Web Bluetooth API"></a>1. Web Bluetooth API</h2><p>Until now, the ability to interact with bluetooth devices has only been possible for native apps. With Chrome 56, your web apps can communicate with nearby Bluetooth Low Energy devices in a secure and private manner using the Web Bluetooth API.</p>
-<p>The Web Bluetooth API uses the GATT protocol, which enables your app to connect to devices such as light bulbs, toys, heart-rate monitors, LED displays and more with just a few lines of JavaScript. Web Bluetooth can also be combined with physical web beacons to discover and control nearby devices.</p>
-<p>Francois has a great article on Updates, be sure to check out some of neat demos to go along with it. And be sure to check out the Web Bluetooth Community.</p>
+<h2 id="1-Web-Bluetooth-API"><a href="#1-Web-Bluetooth-API" class="headerlink" title="1. Web Bluetooth API"></a>1. Web Bluetooth API</h2><p>到目前为止，和蓝牙设备的通信能力只限于本地应用(native app)。在Chrome 56中，你的Web应用也可以借助Web Bluetooth API和附近蓝牙低耗能设备进行安全、私密的通信。</p>
+<p>Web Bluetooth API使用的是GATT协议。该协议可以使你的app和灯泡、玩具、心率监控仪、LED显示器等设备通过几行js代码就可以进行通信。Web Bluetooth能够结合物理网络信标，进而更容易发现附近的设备。</p>
+<p>Francois有一篇著名的文章发布在‘Updates’上, be sure to check out some of neat demos to go along with it. And be sure to check out the Web Bluetooth Community.</p>
 <h2 id="2-CSS-position-sticky"><a href="#2-CSS-position-sticky" class="headerlink" title="2. CSS position: sticky;"></a>2. CSS position: sticky;</h2><p>Previously, building content headers that scrolled normally until sticking to the top of the viewport required listening to scroll events and switching an element’s position from relative to fixed at a specified threshold. It was difficult to synchronize, and often results in small visual jumps.</p>
 <p>Chrome now supports CSS position: sticky;, a new way to position elements.</p>
 <p>An element that is position sticky, starts relative; but becomes fixed, after the element reaches a certain scroll position.</p>
