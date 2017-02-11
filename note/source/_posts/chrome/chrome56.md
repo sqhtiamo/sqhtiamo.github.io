@@ -5,7 +5,7 @@ tags: [chrome, 前端]
 categories: 外文翻译
 ---
 原文:
-[http://developers.googleblog.cn/2016/12/chrome-56-betanot-secure-css-position.html](http://developers.googleblog.cn/2016/12/chrome-56-betanot-secure-css-position.html)
+[https://developers.google.com/web/updates/2017/01/nic56](https://developers.google.com/web/updates/2017/01/nic56)
 作者：[Pete LePage](https://developers.google.cn/web/resources/contributors#petelepage) (Pete is a Developer Advocate)
 
 视频：[https://youtu.be/F4DfGVbvRpY](https://youtu.be/F4DfGVbvRpY])
@@ -20,9 +20,9 @@ categories: 外文翻译
 
 ## 1. Web Bluetooth API
 
-Until now, the ability to interact with bluetooth devices has only been possible for native apps. With Chrome 56, your web apps can communicate with nearby Bluetooth Low Energy devices in a secure and private manner using the Web Bluetooth API.
+到目前为止，和蓝牙设备的通信能力只限于本地应用(native app)。在Chrome 56中，你的Web应用也可以借助Web Bluetooth API和附近蓝牙低耗能设备进行安全、私密的通信。
 
-The Web Bluetooth API uses the GATT protocol, which enables your app to connect to devices such as light bulbs, toys, heart-rate monitors, LED displays and more with just a few lines of JavaScript. Web Bluetooth can also be combined with physical web beacons to discover and control nearby devices.
+Web Bluetooth API使用的是GATT协议。该协议可以使你的app和灯泡、玩具、心率监控仪、LED显示器等设备通过几行js代码就可以进行通信。Web Bluetooth能够结合物理网络信标，进而更容易发现附近的设备。
 
 Francois has a great article on Updates, be sure to check out some of neat demos to go along with it. And be sure to check out the Web Bluetooth Community.
 
