@@ -12,6 +12,7 @@ With the brand new Media Session API, you can now customize media notifications 
 
 The Media Session API is supported in Chrome 57 (beta in February 2017, stable in March 2017).
 
+<!-- more -->
 <img src="./tldr.png" alt=""/>
 Photo by Michael Alø-Nielsen / CC BY 2.0
 
