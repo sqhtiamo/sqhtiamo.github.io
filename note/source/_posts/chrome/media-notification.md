@@ -10,11 +10,11 @@ categories: 外文翻译
 
 With the brand new Media Session API, you can now customize media notifications by providing metadata for the media your web app is playing. It also allows you to handle media related events such as seeking or track changing which may come from notifications or media keys. Excited? Try out the official Media Session sample.
 
-The Media Session API is supported in Chrome 57 (beta in February 2017, stable in March 2017).
+Chrome 57将对Media Session API提供支持。Chrome 57的beta版本将于2017年2月发布，而稳定版本将于2017年3月发布。
 
 <!-- more -->
 <img src="./tldr.png" alt=""/>
-Photo by Michael Alø-Nielsen / CC BY 2.0
+照片由Michael Alø-Nielsen提供
 
 ## 1. Gimme what I want
 

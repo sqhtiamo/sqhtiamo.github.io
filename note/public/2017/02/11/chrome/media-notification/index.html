@@ -71,7 +71,7 @@
 <link href="/note/public/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="chrome,前端,media，notification," />
+  <meta name="keywords" content="chrome,media，notification,前端," />
 
 
 
@@ -101,7 +101,7 @@ With the brand new Media Session AP">
 <meta property="og:image" content="http://sqhtiamo.github.io/note/public/2017/02/11/chrome/media-notification/lock-screen.png">
 <meta property="og:image" content="http://sqhtiamo.github.io/note/public/2017/02/11/chrome/media-notification/wear.png">
 <meta property="og:image" content="http://sqhtiamo.github.io/note/public/2017/02/11/chrome/media-notification/screenrecord.png">
-<meta property="og:updated_time" content="2017-02-11T15:42:22.000Z">
+<meta property="og:updated_time" content="2017-02-12T00:41:46.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="定制化富媒体消息通知与处理播放列表">
 <meta name="twitter:description" content="原文: https://developers.google.com/web/updates/2017/02/media-session作者：François Beaufort (Taylor is a PM on the Chrome Team, focusing on Web Components and Polymer.)
@@ -516,9 +516,9 @@ header#custom dl dt:hover ul {
       
         <p>原文: <a href="https://developers.google.com/web/updates/2017/02/media-session" target="_blank" rel="external">https://developers.google.com/web/updates/2017/02/media-session</a><br>作者：<a href="https://developers.google.com/web/resources/contributors#beaufortfrancois" target="_blank" rel="external">François Beaufort</a> (Taylor is a PM on the Chrome Team, focusing on Web Components and Polymer.)</p>
 <p>With the brand new Media Session API, you can now customize media notifications by providing metadata for the media your web app is playing. It also allows you to handle media related events such as seeking or track changing which may come from notifications or media keys. Excited? Try out the official Media Session sample.</p>
-<p>The Media Session API is supported in Chrome 57 (beta in February 2017, stable in March 2017).</p>
+<p>Chrome 57将对Media Session API提供支持。Chrome 57的beta版本将于2017年2月发布，而稳定版本将于2017年3月发布。</p>
 <a id="more"></a>
-<p><img src="/note/public/2017/02/11/chrome/media-notification/tldr.png" alt=""><br>Photo by Michael Alø-Nielsen / CC BY 2.0</p>
+<p><img src="/note/public/2017/02/11/chrome/media-notification/tldr.png" alt=""><br>照片由Michael Alø-Nielsen提供</p>
 <h2 id="1-Gimme-what-I-want"><a href="#1-Gimme-what-I-want" class="headerlink" title="1. Gimme what I want"></a>1. Gimme what I want</h2><p>You already know about the Media Session API and are simply coming back to copy and paste with no shame some boilerplate code? So here it is.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (<span class="string">'mediaSession'</span> <span class="keyword">in</span> navigator) &#123;</div><div class="line"></div><div class="line">  navigator.mediaSession.metadata = <span class="keyword">new</span> MediaMetadata(&#123;</div><div class="line">    <span class="attr">title</span>: <span class="string">'Never Gonna Give You Up'</span>,</div><div class="line">    <span class="attr">artist</span>: <span class="string">'Rick Astley'</span>,</div><div class="line">    <span class="attr">album</span>: <span class="string">'Whenever You Need Somebody'</span>,</div><div class="line">    <span class="attr">artwork</span>: [</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/96x96'</span>,   <span class="attr">sizes</span>: <span class="string">'96x96'</span>,   <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/128x128'</span>, <span class="attr">sizes</span>: <span class="string">'128x128'</span>, <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/192x192'</span>, <span class="attr">sizes</span>: <span class="string">'192x192'</span>, <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/256x256'</span>, <span class="attr">sizes</span>: <span class="string">'256x256'</span>, <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/384x384'</span>, <span class="attr">sizes</span>: <span class="string">'384x384'</span>, <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">      &#123; <span class="attr">src</span>: <span class="string">'https://dummyimage.com/512x512'</span>, <span class="attr">sizes</span>: <span class="string">'512x512'</span>, <span class="attr">type</span>: <span class="string">'image/png'</span> &#125;,</div><div class="line">    ]</div><div class="line">  &#125;);</div><div class="line"></div><div class="line">  navigator.mediaSession.setActionHandler(<span class="string">'play'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;);</div><div class="line">  navigator.mediaSession.setActionHandler(<span class="string">'pause'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;);</div><div class="line">  navigator.mediaSession.setActionHandler(<span class="string">'seekbackward'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;);</div><div class="line">  navigator.mediaSession.setActionHandler(<span class="string">'seekforward'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;);</div><div class="line">  navigator.mediaSession.setActionHandler(<span class="string">'previoustrack'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;);</div><div class="line">  navigator.mediaSession.setActionHandler(<span class="string">'nexttrack'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="2-Get-into-the-code"><a href="#2-Get-into-the-code" class="headerlink" title="2. Get into the code"></a>2. Get into the code</h2><h3 id="2-1-Let’s-play-🎷"><a href="#2-1-Let’s-play-🎷" class="headerlink" title="2.1 Let’s play 🎷"></a>2.1 Let’s play 🎷</h3><p>Add a simple <audio> element to your web page and assign several media sources so that the browser can choose which one works best.</audio></p>
@@ -606,9 +606,9 @@ header#custom dl dt:hover ul {
           
             <a href="/note/public/tags/chrome/" rel="tag"># chrome</a>
           
-            <a href="/note/public/tags/前端/" rel="tag"># 前端</a>
-          
             <a href="/note/public/tags/media，notification/" rel="tag"># media，notification</a>
+          
+            <a href="/note/public/tags/前端/" rel="tag"># 前端</a>
           
         </div>
       
