@@ -6,7 +6,7 @@
     "version": "3.2.2"
   },
   "scripts": {
-    "publish": "hexo clean;hexo g;cd ../tools;./submit.sh;cat urls.txt;git add -A;git commit -m 'add new post';git push"
+    "publish": "hexo clean;hexo g;cd ../tools;./submit.sh;git add -A;git commit -m 'add new post';git push"
   },
   "dependencies": {
     "hexo": "^3.2.0",
