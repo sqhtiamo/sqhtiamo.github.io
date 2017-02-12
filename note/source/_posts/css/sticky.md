@@ -40,7 +40,7 @@ h3 {
 
 视频：[https://youtu.be/2EmbqcTMqQw]https://youtu.be/2EmbqcTMqQw
 
-The previous example will fix the `<h3>` element at 10px from the top of the viewport. To fix it directly to the top of the viewport you would set the top attribute as top: 0px.
+The previous example will fix the 'h3' element at 10px from the top of the viewport. To fix it directly to the top of the viewport you would set the top attribute as top: 0px.
 
 Support for this feature is pretty strong. It is available on Chrome (yay), Firefox and Safari. Here are more details about position:sticky:
 
