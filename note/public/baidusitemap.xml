@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/13/chrome/chrome-dev-summit-2016-keynote/</loc>
+    <lastmod>2017-02-12T17:15:27.000Z</lastmod>
+    <data>
+        <display>
+        <title>2016年Chrome Dev Summit - Keynote</title>
+        <pubTime>2017-02-12T16:15:41.000Z</pubTime>
+        
+        <tag>chrome</tag>
+         
+        <tag>summit</tag>
+         
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://sqhtiamo.github.io/note/public/2017/02/11/chrome/media-notification/</loc>
     <lastmod>2017-02-12T12:49:09.000Z</lastmod>
     <data>
@@ -37,11 +61,11 @@
         
         <tag>chrome</tag>
          
+        <tag>前端</tag>
+         
         <tag>css</tag>
          
         <tag>sticky</tag>
-         
-        <tag>前端</tag>
          
          
            

@@ -71,7 +71,7 @@
 <link href="/note/public/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="前端,html5,standard,html," />
+  <meta name="keywords" content="chrome,summit,前端," />
 
 
 
@@ -87,16 +87,22 @@
 
 
 
-<meta name="description" content="4. DOMbasehreftarget">
+<meta name="description" content="0. Intro
+By Darin Fisher (VP of Chrome)
+2 billion chrome browsers">
 <meta property="og:type" content="article">
-<meta property="og:title" content="html标准学习">
-<meta property="og:url" content="http://sqhtiamo.github.io/2017/02/09/standard/html5/index.html">
+<meta property="og:title" content="2016年Chrome Dev Summit - Keynote">
+<meta property="og:url" content="http://sqhtiamo.github.io/2017/02/13/chrome/chrome-dev-summit-2016-keynote/index.html">
 <meta property="og:site_name" content="伟大航路">
-<meta property="og:description" content="4. DOMbasehreftarget">
-<meta property="og:updated_time" content="2017-02-09T12:51:15.000Z">
+<meta property="og:description" content="0. Intro
+By Darin Fisher (VP of Chrome)
+2 billion chrome browsers">
+<meta property="og:updated_time" content="2017-02-12T17:15:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="html标准学习">
-<meta name="twitter:description" content="4. DOMbasehreftarget">
+<meta name="twitter:title" content="2016年Chrome Dev Summit - Keynote">
+<meta name="twitter:description" content="0. Intro
+By Darin Fisher (VP of Chrome)
+2 billion chrome browsers">
 
 
 
@@ -124,7 +130,7 @@
 
 
 
-  <link rel="canonical" href="http://sqhtiamo.github.io/2017/02/09/standard/html5/"/>
+  <link rel="canonical" href="http://sqhtiamo.github.io/2017/02/13/chrome/chrome-dev-summit-2016-keynote/"/>
 
 <style>
 * {
@@ -246,7 +252,7 @@ header#custom dl dt:hover ul {
 </header>
 
 
-  <title> html标准学习 | 伟大航路 </title>
+  <title> 2016年Chrome Dev Summit - Keynote | 伟大航路 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -397,7 +403,7 @@ header#custom dl dt:hover ul {
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://sqhtiamo.github.io/note/public/2017/02/09/standard/html5/">
+  <link itemprop="mainEntityOfPage" href="http://sqhtiamo.github.io/note/public/2017/02/13/chrome/chrome-dev-summit-2016-keynote/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="cloughzhang">
@@ -421,7 +427,7 @@ header#custom dl dt:hover ul {
             
             
               
-                html标准学习
+                2016年Chrome Dev Summit - Keynote
               
             
           </h1>
@@ -436,8 +442,8 @@ header#custom dl dt:hover ul {
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-09T14:45:00+08:00">
-                2017-02-09
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-13T00:15:41+08:00">
+                2017-02-13
               </time>
             
 
@@ -477,8 +483,8 @@ header#custom dl dt:hover ul {
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/note/public/2017/02/09/standard/html5/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/09/standard/html5/" itemprop="commentCount"></span>
+                <a href="/note/public/2017/02/13/chrome/chrome-dev-summit-2016-keynote/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/13/chrome/chrome-dev-summit-2016-keynote/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -504,28 +510,91 @@ header#custom dl dt:hover ul {
       
 
       
-        <h2 id="4-DOM"><a href="#4-DOM" class="headerlink" title="4. DOM"></a>4. DOM</h2><h2 id="base"><a href="#base" class="headerlink" title="base"></a>base</h2><h3 id="href"><a href="#href" class="headerlink" title="href"></a>href</h3><h3 id="target"><a href="#target" class="headerlink" title="target"></a>target</h3><a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line">enum DocumentReadyState &#123; &quot;loading&quot;, &quot;interactive&quot;, &quot;complete&quot; &#125;;</div><div class="line"></div><div class="line">[OverrideBuiltins]</div><div class="line">partial /*sealed*/ interface Document &#123;</div><div class="line">  // resource metadata management</div><div class="line">  [PutForwards=href, Unforgeable] readonly attribute Location? location;</div><div class="line">           attribute DOMString domain;</div><div class="line">  readonly attribute DOMString referrer;</div><div class="line">           attribute DOMString cookie;</div><div class="line">  readonly attribute DOMString lastModified;</div><div class="line">  readonly attribute DocumentReadyState readyState;</div><div class="line"></div><div class="line">  // DOM tree accessors</div><div class="line">  getter object (DOMString name);</div><div class="line">           attribute DOMString title;</div><div class="line">           attribute DOMString dir;</div><div class="line">           attribute HTMLElement? body;</div><div class="line">  readonly attribute HTMLHeadElement? head;</div><div class="line">  readonly attribute HTMLCollection images;</div><div class="line">  readonly attribute HTMLCollection embeds;</div><div class="line">  readonly attribute HTMLCollection plugins;</div><div class="line">  readonly attribute HTMLCollection links;</div><div class="line">  readonly attribute HTMLCollection forms;</div><div class="line">  readonly attribute HTMLCollection scripts;</div><div class="line">  NodeList getElementsByName(DOMString elementName);</div><div class="line"></div><div class="line">  // dynamic markup insertion</div><div class="line">  Document open(optional DOMString type = &quot;text/html&quot;, optional DOMString replace = &quot;&quot;);</div><div class="line">  WindowProxy open(DOMString url, DOMString name, DOMString features, optional boolean replace = false);</div><div class="line">  void close();</div><div class="line">  void write(DOMString... text);</div><div class="line">  void writeln(DOMString... text);</div><div class="line"></div><div class="line">  // user interaction</div><div class="line">  readonly attribute WindowProxy? defaultView;</div><div class="line">  readonly attribute Element? activeElement;</div><div class="line">  boolean hasFocus();</div><div class="line">           attribute DOMString designMode;</div><div class="line">  boolean execCommand(DOMString commandId, optional boolean showUI = false, optional DOMString value = &quot;&quot;);</div><div class="line">  boolean queryCommandEnabled(DOMString commandId);</div><div class="line">  boolean queryCommandIndeterm(DOMString commandId);</div><div class="line">  boolean queryCommandState(DOMString commandId);</div><div class="line">  boolean queryCommandSupported(DOMString commandId);</div><div class="line">  DOMString queryCommandValue(DOMString commandId);</div><div class="line"></div><div class="line">  // special event handler IDL attributes that only apply to Document objects</div><div class="line">  [LenientThis] attribute EventHandler onreadystatechange;</div><div class="line">&#125;;</div><div class="line">Document implements GlobalEventHandlers;</div></pre></td></tr></table></figure>
-<h2 id="7-scripts"><a href="#7-scripts" class="headerlink" title="7. scripts"></a>7. scripts</h2><h2 id="11-Obsolete-features"><a href="#11-Obsolete-features" class="headerlink" title="11. Obsolete features"></a>11. Obsolete features</h2><h3 id="11-1-Warnings"><a href="#11-1-Warnings" class="headerlink" title="11.1 Warnings"></a>11.1 Warnings</h3><ul>
-<li>obsolete permitted DOCTYPE</li>
-<li>border of ‘img’ when value=”0” [other situation is Non-conforming features] (use CSS instead)</li>
-<li>language=JavaScript and no type=”text/JavaScript”</li>
-<li>name on <a> element and value is no empty String</a></li>
-<li>maxLength when input type=”number”</li>
-<li>size when input type=”number”</li>
+        <h2 id="0-Intro"><a href="#0-Intro" class="headerlink" title="0. Intro"></a>0. Intro</h2><ul>
+<li>By Darin Fisher (VP of Chrome)</li>
+<li>2 billion chrome browsers</li>
 </ul>
-<h3 id="11-2-Non-conforming-features"><a href="#11-2-Non-conforming-features" class="headerlink" title="11.2 Non-conforming features"></a>11.2 Non-conforming features</h3><ul>
-<li>Element</li>
-<li>Attribute</li>
+<a id="more"></a>
+<h2 id="1-Web-is-Reach"><a href="#1-Web-is-Reach" class="headerlink" title="1. Web is Reach"></a>1. Web is Reach</h2><ul>
+<li>Links (physical web)</li>
+<li>Polymon</li>
+<li>every tap lose 20% potential users</li>
+<li>mobile over desktop</li>
+<li>60% 2G</li>
 </ul>
-<h3 id="11-3-Requirements-for-implementations"><a href="#11-3-Requirements-for-implementations" class="headerlink" title="11.3 Requirements for implementations"></a>11.3 Requirements for implementations</h3><ul>
-<li>applet</li>
-<li>marquee (slides effect use CSS animation instead)</li>
-<li>frame</li>
-<li>Application cache</li>
-<li>Others</li>
+<h2 id="2-Web-is-World-Wide"><a href="#2-Web-is-World-Wide" class="headerlink" title="2. Web is World-Wide"></a>2. Web is World-Wide</h2><ul>
+<li>Internet Users<ul>
+<li>720 million in China</li>
+<li>30% growth in India in 2016</li>
+<li>65% (860 million) in India not yet online</li>
 </ul>
-<h2 id="12-IANA-considerations"><a href="#12-IANA-considerations" class="headerlink" title="12. IANA considerations"></a>12. IANA considerations</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">IANA:</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="3-PWA-Progressive-Web-App"><a href="#3-PWA-Progressive-Web-App" class="headerlink" title="3. PWA (Progressive Web App)"></a>3. PWA (Progressive Web App)</h2><h3 id="3-1-Demo"><a href="#3-1-Demo" class="headerlink" title="3.1 Demo"></a>3.1 Demo</h3><ul>
+<li>CNET demo<ul>
+<li>offline</li>
+</ul>
+</li>
+<li>Alibaba<ul>
+<li>76% higher conversions</li>
+<li>Single’s display</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-2-Reliable-Fast-Engaging"><a href="#3-2-Reliable-Fast-Engaging" class="headerlink" title="3.2 Reliable, Fast, Engaging"></a>3.2 Reliable, Fast, Engaging</h3><ul>
+<li><p>Service Worker API</p>
+<ul>
+<li>If you wound’t make eye contact with a stranger for the time it takes your web app to first paint, it’s too slow.     – Monica Dinosaurescu</li>
+<li>5 sec on 3G (http2 / Service Worker)</li>
+</ul>
+</li>
+<li><p>add to Home Screen</p>
+<ul>
+<li>4x more often (Alibaba)</li>
+<li>yields 48% more installs</li>
+<li>look and feel native across Android</li>
+</ul>
+</li>
+<li><p>Push Notifications</p>
+<ul>
+<li>18 billion push notifications sent daily</li>
+<li>50,000 domains using push</li>
+<li>Carnival example<ul>
+<li>24% opt-in rate</li>
+<li>40% open rate</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>seamless sign-in<ul>
+<li>-85% sign failure (AliExpress)</li>
+<li>+11% conversion (AliExpress)</li>
+<li>10% increase in desktop login (Pinterest)</li>
+</ul>
+</li>
+<li>Web Payment</li>
+</ul>
+<h2 id="4-Productivity"><a href="#4-Productivity" class="headerlink" title="4. Productivity"></a>4. Productivity</h2><p>How developers make web better</p>
+<ul>
+<li>Lighthouse</li>
+<li>Real-world Condition Testing (Dev Tools)</li>
+<li>Security &amp; Application Developer Tools</li>
+<li>Web Components &amp; Polymer<ul>
+<li>web components v1</li>
+<li>Polymer V2</li>
+<li>Polymer App Toolbox</li>
+<li>beta.webcomponents.org</li>
+</ul>
+</li>
+<li>AMP (accelerated mobile pages)</li>
+</ul>
+<h2 id="5-Predictability"><a href="#5-Predictability" class="headerlink" title="5. Predictability"></a>5. Predictability</h2><p>Improving the web for developers.</p>
+<p>The Web should ‘Just Work’ for developers.<br>Make whole web works, and collaborate with other browser vendor</p>
+<ul>
+<li>browser bug search</li>
+<li>PWA Roadshow</li>
+<li>web assemble, web GL, web VR/AR, IoT</li>
+</ul>
 
       
     </div>
@@ -554,13 +623,11 @@ header#custom dl dt:hover ul {
       
         <div class="post-tags">
           
+            <a href="/note/public/tags/chrome/" rel="tag"># chrome</a>
+          
+            <a href="/note/public/tags/summit/" rel="tag"># summit</a>
+          
             <a href="/note/public/tags/前端/" rel="tag"># 前端</a>
-          
-            <a href="/note/public/tags/html5/" rel="tag"># html5</a>
-          
-            <a href="/note/public/tags/standard/" rel="tag"># standard</a>
-          
-            <a href="/note/public/tags/html/" rel="tag"># html</a>
           
         </div>
       
@@ -573,8 +640,8 @@ header#custom dl dt:hover ul {
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/note/public/2017/02/09/live/qiniu/" rel="next" title="七牛视频直播学习笔记">
-                <i class="fa fa-chevron-left"></i> 七牛视频直播学习笔记
+              <a href="/note/public/2017/02/12/css/sticky/" rel="next" title="position sticky属性回归Chrome">
+                <i class="fa fa-chevron-left"></i> position sticky属性回归Chrome
               </a>
             
           </div>
@@ -582,10 +649,6 @@ header#custom dl dt:hover ul {
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/note/public/2017/02/09/html5/tag/" rel="prev" title="HTMl5标签">
-                HTMl5标签 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -634,8 +697,8 @@ header#custom dl dt:hover ul {
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/02/09/standard/html5/"
-           data-title="html标准学习" data-url="http://sqhtiamo.github.io/note/public/2017/02/09/standard/html5/">
+      <div class="ds-thread" data-thread-key="2017/02/13/chrome/chrome-dev-summit-2016-keynote/"
+           data-title="2016年Chrome Dev Summit - Keynote" data-url="http://sqhtiamo.github.io/note/public/2017/02/13/chrome/chrome-dev-summit-2016-keynote/">
       </div>
     
   </div>
@@ -735,7 +798,7 @@ header#custom dl dt:hover ul {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-DOM"><span class="nav-text">4. DOM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#base"><span class="nav-text">base</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#href"><span class="nav-text">href</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#target"><span class="nav-text">target</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-scripts"><span class="nav-text">7. scripts</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-Obsolete-features"><span class="nav-text">11. Obsolete features</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#11-1-Warnings"><span class="nav-text">11.1 Warnings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-2-Non-conforming-features"><span class="nav-text">11.2 Non-conforming features</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-3-Requirements-for-implementations"><span class="nav-text">11.3 Requirements for implementations</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-IANA-considerations"><span class="nav-text">12. IANA considerations</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0-Intro"><span class="nav-text">0. Intro</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Web-is-Reach"><span class="nav-text">1. Web is Reach</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Web-is-World-Wide"><span class="nav-text">2. Web is World-Wide</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-PWA-Progressive-Web-App"><span class="nav-text">3. PWA (Progressive Web App)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-Demo"><span class="nav-text">3.1 Demo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-Reliable-Fast-Engaging"><span class="nav-text">3.2 Reliable, Fast, Engaging</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Productivity"><span class="nav-text">4. Productivity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-Predictability"><span class="nav-text">5. Predictability</span></a></li></ol></div>
             
 
           </div>
