@@ -333,7 +333,7 @@ caches.open('artwork-cache-v1')
 .catch(error => { console.log(error); });
 ```
 
-# 5. Implementation notes
+## 5. Implementation notes
 
 - Chrome for Android requests "full" audio focus to show media notifications only when the media file duration is at least 5 seconds.
 - Notification artwork support blob URLs and data URLs.
@@ -342,17 +342,17 @@ caches.open('artwork-cache-v1')
 - Dismiss media notifications with audio.src = ''.
 - As the Web Audio API doesn't request Android Audio Focus for historical reasons, the only way to make it work with the Media Session API is to hook up an <audio> element as the input source to the Web Audio API. Hopefully, the proposed Web AudioFocus API will improve the situation in the near future.
 
-# 6. Support
+## 6. Support
 
 At the time of writing, Chrome for Android is the only platform that supports the Media Session API. More up-to-date information on browser implementation status can be found on Chrome Platform Status.
 
-# 7. Samples & demos
+## 7. Samples & demos
 
 Check out our official Chrome Media Session sample featuring Jan Morgenstern's work.
 <img src="./screenrecord.png">
 视频地址：[https://storage.googleapis.com/media-session/screenrecord.mp4](https://storage.googleapis.com/media-session/screenrecord.mp4)
 
-# 8. Resources
+## 8. Resources
 
 Media Session Spec: [https://wicg.github.io/mediasession](https://wicg.github.io/mediasession)
 Spec Issues: [https://github.com/WICG/mediasession/issues](https://github.com/WICG/mediasession/issues)

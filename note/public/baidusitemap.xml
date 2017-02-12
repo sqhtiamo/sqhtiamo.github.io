@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/11/chrome/media-notification/</loc>
+    <lastmod>2017-02-12T12:49:09.000Z</lastmod>
+    <data>
+        <display>
+        <title>定制化富媒体消息通知与处理播放列表</title>
+        <pubTime>2017-02-11T15:18:57.000Z</pubTime>
+        
+        <tag>chrome</tag>
+         
+        <tag>前端</tag>
+         
+        <tag>media，notification</tag>
+         
+         
+           
+             
+              <breadCrumb title="外文翻译" url="http://sqhtiamo.github.io/note/public/categories/interpret/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://sqhtiamo.github.io/note/public/2017/02/12/css/sticky/</loc>
     <lastmod>2017-02-12T12:10:43.000Z</lastmod>
     <data>
@@ -13,11 +37,11 @@
         
         <tag>chrome</tag>
          
+        <tag>前端</tag>
+         
         <tag>css</tag>
          
         <tag>sticky</tag>
-         
-        <tag>前端</tag>
          
          
            
@@ -40,30 +64,6 @@
         <tag>chrome</tag>
          
         <tag>前端</tag>
-         
-         
-           
-             
-              <breadCrumb title="外文翻译" url="http://sqhtiamo.github.io/note/public/categories/interpret/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/11/chrome/media-notification/</loc>
-    <lastmod>2017-02-12T00:53:25.000Z</lastmod>
-    <data>
-        <display>
-        <title>定制化富媒体消息通知与处理播放列表</title>
-        <pubTime>2017-02-11T15:18:57.000Z</pubTime>
-        
-        <tag>chrome</tag>
-         
-        <tag>前端</tag>
-         
-        <tag>media，notification</tag>
          
          
            
@@ -109,11 +109,11 @@
         
         <tag>前端</tag>
          
-        <tag>html5</tag>
-         
         <tag>standard</tag>
          
         <tag>html</tag>
+         
+        <tag>html5</tag>
          
          
            
@@ -135,9 +135,9 @@
         
         <tag>前端</tag>
          
-        <tag>tag</tag>
-         
         <tag>html5</tag>
+         
+        <tag>tag</tag>
          
          
            
