@@ -101,7 +101,7 @@
 
 支持Web Bluetooth API，Web应用可以和附近的低耗能的蓝牙设备进行通信
 ‘position: sticky’来">
-<meta property="og:updated_time" content="2017-02-11T15:19:37.000Z">
+<meta property="og:updated_time" content="2017-02-12T01:00:34.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chrome 56里的新东西">
 <meta name="twitter:description" content="原文:https://developers.google.com/web/updates/2017/01/nic56作者：Pete LePage (Pete is a Developer Advocate)
@@ -519,14 +519,14 @@ header#custom dl dt:hover ul {
         <p>原文:<br><a href="https://developers.google.com/web/updates/2017/01/nic56" target="_blank" rel="external">https://developers.google.com/web/updates/2017/01/nic56</a><br>作者：<a href="https://developers.google.cn/web/resources/contributors#petelepage" target="_blank" rel="external">Pete LePage</a> (Pete is a Developer Advocate)</p>
 <p>视频：<a href="https://youtu.be/F4DfGVbvRpY]" target="_blank" rel="external">https://youtu.be/F4DfGVbvRpY</a></p>
 <ul>
-<li>支持<a href="https://developers.google.com/web/updates/2017/01/nic56#webbluetooth" target="_blank" rel="external">Web Bluetooth API</a>，Web应用可以和附近的低耗能的蓝牙设备进行通信</li>
-<li><a href="https://developers.google.com/web/updates/2017/01/nic56#position-sticky" target="_blank" rel="external">‘position: sticky’</a>来了 - 他可以使所创建的元素正常滚动，直到黏到视口(viewport)的顶部。（译者注：代替之前监听scroll或者touchmove事件）</li>
-<li>对所有用户默认使用<a href="https://developers.google.com/web/updates/2017/01/nic56#html5-by-default" target="_blank" rel="external">HTML5</a><a id="more"></a>
+<li>支持<a href="#webbluetooth">Web Bluetooth API</a>，Web应用可以和附近的低耗能的蓝牙设备进行通信</li>
+<li><a href="#position-sticky">‘position: sticky’</a>来了 - 他可以使所创建的元素正常滚动，直到黏到视口(viewport)的顶部。（译者注：代替之前监听scroll或者touchmove事件）</li>
+<li>对所有用户默认使用<a href="#html5-by-default">HTML5</a><a id="more"></a>
 <br><br>我是Pete LePage(原作者), 让我们深入地看看Chrome 56到底给开发者们带来了什么新东西。</li>
 </ul>
 <h2 id="1-Web-Bluetooth-API"><a href="#1-Web-Bluetooth-API" class="headerlink" title="1. Web Bluetooth API"></a>1. Web Bluetooth API</h2><p>到目前为止，和蓝牙设备的通信能力只限于本地应用(native app)。在Chrome 56中，你的Web应用也可以借助<a href="https://webbluetoothcg.github.io/web-bluetooth/" target="_blank" rel="external">Web Bluetooth API</a>和附近蓝牙低耗能设备进行安全、私密的通信。</p>
 <p>Web Bluetooth API使用的是<a href="https://webbluetoothcg.github.io/web-bluetooth/" target="_blank" rel="external">GATT协议</a>。该协议可以使你的app和灯泡、玩具、心率监控仪、LED显示器等设备通过几行<a href="https://googlechrome.github.io/samples/web-bluetooth/" target="_blank" rel="external">js代码</a>就可以进行通信。Web Bluetooth能够结合物理网络信标，进而更容易发现附近的设备。</p>
-<p>Francois有一篇著名的<a href="https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web" target="_blank" rel="external">文章</a>发布在’Updates’上。你可以下载一些简单的<a href="https://github.com/WebBluetoothCG/demos" target="_blank" rel="external">demo</a>进行学习，同时你也可以关注<a href="https://plus.google.com/communities/108953318610326025178" target="_blank" rel="external">Web Bluetooth</a>社区。</p>
+<p>Francois有一篇著名的<a href="https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web" target="_blank" rel="external">文章</a>发布在’Updates’上。你可以下载一些简单的<a href="https://github.com/WebBluetoothCG/demos" target="_blank" rel="external">demo</a>进行学习，同时你也可以关注<a href="https://plus.google.com/communities/108953318610326025178" target="_blank" rel="external">Web Bluetooth社区</a>。</p>
 <h2 id="2-CSS-position-sticky"><a href="#2-CSS-position-sticky" class="headerlink" title="2. CSS position: sticky;"></a>2. CSS position: sticky;</h2><p>之前，想要实现头部内容随着页面正常滚动，直到粘在视口顶部这一效果，常常需要监听滚动事件并且在元素上设置relative或fixed属性。由于难以做到操作同步，因此经常会出现视觉上的小跳动。</p>
 <p>Chrome现在支持了CSS新特性 - <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position#Sticky_positioning" target="_blank" rel="external">‘position: sticky;’</a> - 一个新的元素定位属性。</p>
 <p>如果一个元素的position属性是sticky，那么它相当于开始的属性状态是relative，在元素滚动到一个特定位置时变成fixed状态。</p>

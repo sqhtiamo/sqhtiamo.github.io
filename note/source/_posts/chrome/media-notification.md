@@ -16,10 +16,11 @@ Chrome 57将对Media Session API提供支持。Chrome 57的beta版本将于2017�
 <img src="./tldr.png" alt=""/>
 照片由Michael Alø-Nielsen提供
 
-## 1. Gimme what I want
+## 1. 给我所想
 
 You already know about the Media Session API and are simply coming back to copy and paste with no shame some boilerplate code? So here it is.
 
+你或许已经听说过Media Session API，但也许只是来回复制和粘贴一些简单的样板代码，就像下面一样。
 ```Javascript
 if ('mediaSession' in navigator) {
 
@@ -46,11 +47,11 @@ if ('mediaSession' in navigator) {
 }
 ```
 
-## 2. Get into the code
+## 2. 看看代码
 
-### 2.1 Let's play 🎷
+### 2.1 开始播放 🎷
 
-Add a simple <audio> element to your web page and assign several media sources so that the browser can choose which one works best.
+在你的网页中添加audio标签和多个媒体资源，浏览器会从中选择最佳资源。
 
 ```HTML
 <audio controls>
@@ -59,7 +60,7 @@ Add a simple <audio> element to your web page and assign several media sources s
 </audio>
 ```
 
-Note: I could have used a <video> element instead to showcase the Media Session API.
+注意: 我也可以用<video>标签来展示Media Session API例子。
 
 As you may know, autoplay is disabled for audio elements on Chrome for Android which means we have to use the play() method of the audio element. This method must be triggered by a user gesture such as a touch or a mouse click. That means listening to pointerup, click, and touchend events. In other words, the user must click a button before your web app can actually make noise.
 
@@ -96,7 +97,7 @@ playButton.addEventListener('pointerup', function(event) {
 });
 ```
 
-### 2.2 Customize the notification
+### 2.2 定制化通知
 
 When your web app is playing audio, you can already see a media notification sitting in the notification tray. On Android, Chrome does its best to show appropriate information by using the document's title and the largest icon image it can find.
 

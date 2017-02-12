@@ -4,16 +4,14 @@
 
     
   <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/11/chrome/media-notification/</loc>
-    <lastmod>2017-02-12T00:41:46.000Z</lastmod>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/09/chrome/chrome56/</loc>
+    <lastmod>2017-02-12T01:00:34.000Z</lastmod>
     <data>
         <display>
-        <title>定制化富媒体消息通知与处理播放列表</title>
-        <pubTime>2017-02-11T15:18:57.000Z</pubTime>
+        <title>Chrome 56里的新东西</title>
+        <pubTime>2017-02-09T12:47:00.000Z</pubTime>
         
         <tag>chrome</tag>
-         
-        <tag>media，notification</tag>
          
         <tag>前端</tag>
          
@@ -28,16 +26,18 @@
 
     
   <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/09/chrome/chrome56/</loc>
-    <lastmod>2017-02-11T15:19:37.000Z</lastmod>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/11/chrome/media-notification/</loc>
+    <lastmod>2017-02-12T00:53:25.000Z</lastmod>
     <data>
         <display>
-        <title>Chrome 56里的新东西</title>
-        <pubTime>2017-02-09T12:47:00.000Z</pubTime>
+        <title>定制化富媒体消息通知与处理播放列表</title>
+        <pubTime>2017-02-11T15:18:57.000Z</pubTime>
         
         <tag>chrome</tag>
          
         <tag>前端</tag>
+         
+        <tag>media，notification</tag>
          
          
            

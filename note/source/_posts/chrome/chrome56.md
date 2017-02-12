@@ -10,9 +10,9 @@ categories: 外文翻译
 
 视频：[https://youtu.be/F4DfGVbvRpY](https://youtu.be/F4DfGVbvRpY])
 
-- 支持[Web Bluetooth API](https://developers.google.com/web/updates/2017/01/nic56#webbluetooth)，Web应用可以和附近的低耗能的蓝牙设备进行通信
-- ['position: sticky'](https://developers.google.com/web/updates/2017/01/nic56#position-sticky)来了 - 他可以使所创建的元素正常滚动，直到黏到视口(viewport)的顶部。（译者注：代替之前监听scroll或者touchmove事件）
-- 对所有用户默认使用[HTML5](https://developers.google.com/web/updates/2017/01/nic56#html5-by-default)
+- 支持[Web Bluetooth API](#webbluetooth)，Web应用可以和附近的低耗能的蓝牙设备进行通信
+- ['position: sticky'](#position-sticky)来了 - 他可以使所创建的元素正常滚动，直到黏到视口(viewport)的顶部。（译者注：代替之前监听scroll或者touchmove事件）
+- 对所有用户默认使用[HTML5](#html5-by-default)
 <!-- more -->
 <br/>
 我是Pete LePage(原作者), 让我们深入地看看Chrome 56到底给开发者们带来了什么新东西。
@@ -24,7 +24,7 @@ categories: 外文翻译
 
 Web Bluetooth API使用的是[GATT协议](https://webbluetoothcg.github.io/web-bluetooth/)。该协议可以使你的app和灯泡、玩具、心率监控仪、LED显示器等设备通过几行[js代码](https://googlechrome.github.io/samples/web-bluetooth/)就可以进行通信。Web Bluetooth能够结合物理网络信标，进而更容易发现附近的设备。
 
-Francois有一篇著名的[文章](https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web)发布在'Updates'上。你可以下载一些简单的[demo](https://github.com/WebBluetoothCG/demos)进行学习，同时你也可以关注[Web Bluetooth](https://plus.google.com/communities/108953318610326025178)社区。
+Francois有一篇著名的[文章](https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web)发布在'Updates'上。你可以下载一些简单的[demo](https://github.com/WebBluetoothCG/demos)进行学习，同时你也可以关注[Web Bluetooth社区](https://plus.google.com/communities/108953318610326025178)。
 
 ## 2. CSS position: sticky;
 
