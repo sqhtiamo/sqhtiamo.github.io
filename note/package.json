@@ -5,6 +5,9 @@
   "hexo": {
     "version": "3.2.2"
   },
+  "scripts": {
+    "publish": "hexo clean;hexo g;cd ../tools;./submit.sh;cat urls.txt;git add -A;git commit -m 'add new post';git push"
+  },
   "dependencies": {
     "hexo": "^3.2.0",
     "hexo-asset-image": "git+https://github.com/CodeFalling/hexo-asset-image.git",

@@ -1,6 +1,6 @@
 ---
-title: 'position:sticky'属性回归Chrome
-date: 2017-02-12 09:04:13
+title: position sticky属性回归Chrome
+date: 2017-02-12 09:04:14
 tags: [chrome, css, sticky, 前端]
 categories: 外文翻译
 ---
