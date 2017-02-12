@@ -1,7 +1,7 @@
 ---
 title: 2016年Chrome Dev Summit - Keynote
 date: 2017-02-13 00:15:41
-tags: [chrome, summit, 前端]
+tags: [chrome, conference, 前端]
 categories: 工作拾遗
 ---
 
