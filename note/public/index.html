@@ -669,24 +669,15 @@ header#custom dl dt:hover ul {
 
       
         
-          
-            <p>原文:<br><a href="https://developers.google.com/web/updates/2016/12/position-sticky" target="_blank" rel="external">https://developers.google.com/web/updates/2016/12/position-sticky</a><br>作者：<a href="https://developers.google.com/web/resources/contributors#paulkinlan" target="_blank" rel="external">Paul Kinlan</a> (Paul is a Developer Advocate)</p>
+          <p>原文:<br><a href="https://developers.google.com/web/updates/2016/12/position-sticky">https://developers.google.com/web/updates/2016/12/position-sticky</a><br>作者：<a href="https://developers.google.com/web/resources/contributors#paulkinlan">Paul Kinlan</a> (Paul is a Developer Advocate)</p>
 <p>Four years ago Eric Bidelman created a rather awesome blog post about the fact that position: sticky landed in WebKit, which at the time was the engine that powered Chrome (as well as many other browsers including Safari). One year later, and much to the consternation of web developers we removed position:sticky from Chrome because “the current implementation isn’t designed in a way that integrates well with the existing scrolling and compositing system”.</p>
-<p>We’ve always wanted to get it back in to Chrome as the bug stated, “Once we’ve got our scrolling and compositing house in order, we should return to position: sticky and implement the feature in a way that integrates well with the rest of the engine”. The meta bug tracking the implementation has been worked on since 2013.</p>
-<p>The great news is that as of Chrome 56 (currently beta as of December 2016, stable in Jan 2017) position: sticky is now back in Chrome.</p>
-<h2 id="What-is-position-sticky"><a href="#What-is-position-sticky" class="headerlink" title="What is position:sticky?"></a>What is position:sticky?</h2><p>It’s taken a little while to get here, so why am I excited about it?</p>
-<p>position:sticky is a CSS positioning attribute that allows you to fix an element to the viewport (i.e, anchor it to the top of the screen) but only when its parent is visible in the viewport and it is within the threshold value. When it is not fixed to the viewport, the element will act like it is position: relative. It is a very nice and simple addition to the platform that removes the need to use JavaScript in an onscroll event handler just to lock an element to the top of the viewport.</p>
-<p>This is what it looks like on my blog. It allows me to keep the current section’s header at the top of the screen whilst you read my rather long and laborious articles :\</p>
-<p>To implement this feature specify that the position attribute should have the value of sticky on the element that you want to be, er, stuck. Additionally, you can also add in the offset at where it needs to be stuck.</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">h3</span> &#123;</div><div class="line">  <span class="comment">/* Element will be 'fixed' when it ... */</span></div><div class="line">  <span class="attribute">position</span>: sticky;</div><div class="line">  <span class="comment">/* ... is 10px from the top of the viewport */</span></div><div class="line">  <span class="attribute">top</span>: <span class="number">10px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>视频：[<a href="https://youtu.be/2EmbqcTMqQw]https://youtu.be/2EmbqcTMqQw" target="_blank" rel="external">https://youtu.be/2EmbqcTMqQw]https://youtu.be/2EmbqcTMqQw</a><br>The previous example will fix the </p><h3> element at 10px from the top of the viewport. To fix it directly to the top of the viewport you would set the top attribute as top: 0px.<p></p>
-<p>Support for this feature is pretty strong. It is available on Chrome (yay), Firefox and Safari. Here are more details about position:sticky:</p>
-<ul>
-<li><a href="https://drafts.csswg.org/css-position/#sticky-pos" target="_blank" rel="external">Specification</a></li>
-<li><a href="https://developer.mozilla.org/en/docs/Web/CSS/position#Sticky_positioning" target="_blank" rel="external">MDN</a></li>
-</ul>
-</h3>
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/note/public/2017/02/12/css/sticky/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

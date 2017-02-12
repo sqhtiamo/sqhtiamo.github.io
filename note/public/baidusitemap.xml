@@ -4,6 +4,32 @@
 
     
   <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/12/css/sticky/</loc>
+    <lastmod>2017-02-12T17:28:51.000Z</lastmod>
+    <data>
+        <display>
+        <title>position sticky属性回归Chrome</title>
+        <pubTime>2017-02-12T01:04:14.000Z</pubTime>
+        
+        <tag>chrome</tag>
+         
+        <tag>前端</tag>
+         
+        <tag>css</tag>
+         
+        <tag>sticky</tag>
+         
+         
+           
+             
+              <breadCrumb title="外文翻译" url="http://sqhtiamo.github.io/note/public/categories/interpret/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://sqhtiamo.github.io/note/public/2017/02/13/chrome/chrome-dev-summit-2016-keynote/</loc>
     <lastmod>2017-02-12T17:15:27.000Z</lastmod>
     <data>
@@ -40,32 +66,6 @@
         <tag>前端</tag>
          
         <tag>media，notification</tag>
-         
-         
-           
-             
-              <breadCrumb title="外文翻译" url="http://sqhtiamo.github.io/note/public/categories/interpret/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/12/css/sticky/</loc>
-    <lastmod>2017-02-12T12:10:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>position sticky属性回归Chrome</title>
-        <pubTime>2017-02-12T01:04:14.000Z</pubTime>
-        
-        <tag>chrome</tag>
-         
-        <tag>前端</tag>
-         
-        <tag>css</tag>
-         
-        <tag>sticky</tag>
          
          
            

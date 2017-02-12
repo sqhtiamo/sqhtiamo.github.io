@@ -11,6 +11,7 @@ categories: 外文翻译
 
 Four years ago Eric Bidelman created a rather awesome blog post about the fact that position: sticky landed in WebKit, which at the time was the engine that powered Chrome (as well as many other browsers including Safari). One year later, and much to the consternation of web developers we removed position:sticky from Chrome because "the current implementation isn't designed in a way that integrates well with the existing scrolling and compositing system".
 
+<!-- more -->
 We've always wanted to get it back in to Chrome as the bug stated, "Once we've got our scrolling and compositing house in order, we should return to position: sticky and implement the feature in a way that integrates well with the rest of the engine". The meta bug tracking the implementation has been worked on since 2013.
 
 The great news is that as of Chrome 56 (currently beta as of December 2016, stable in Jan 2017) position: sticky is now back in Chrome.
@@ -38,7 +39,8 @@ h3 {
 ```
 
 视频：[https://youtu.be/2EmbqcTMqQw]https://youtu.be/2EmbqcTMqQw
-The previous example will fix the <h3> element at 10px from the top of the viewport. To fix it directly to the top of the viewport you would set the top attribute as top: 0px.
+
+The previous example will fix the `<h3>` element at 10px from the top of the viewport. To fix it directly to the top of the viewport you would set the top attribute as top: 0px.
 
 Support for this feature is pretty strong. It is available on Chrome (yay), Firefox and Safari. Here are more details about position:sticky:
 
