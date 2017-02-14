@@ -1,0 +1,549 @@
+when I come back I was like being born
+say i'm a product manager on the chrome
+team working on authentication as you
+heard earlier today in darren's keynote
+the purpose of progressive web is to
+improve user flaws to reduce friction
+and to create really engaging
+experiences and we've already giving you
+tools to solve issues around reliability
+or to create a plaque experiences by
+adding pws to the home screen and now we
+want to focus on two missing flows sign
+in and payments agni i'm going to start
+off and spend the next half hour by
+talking to you about how chrome is
+helping to remove friction from your
+sign and flows but making signing an
+easier in a simple and secure way but
+the first of a step of course is getting
+users signed up and we are no entering
+all your information long registration
+forms can be super frustrating like this
+is how it looks like each time when I
+enter my credentials on my phone and the
+stats also confirmed this about half of
+users would rather abundance service
+then go through another registration
+form so we have a huge opportunity here
+to reduce friction in your signup flow
+and then really drive growth and
+conversions and that crawl help you do
+this drama offers auto functionality
+that makes it easier for users to fill
+out these forms faster and easier but
+sometimes things are ambiguous like here
+it's unclear which of these fields
+represents the username the identifier
+is it the username or is it the email
+address
+it's unclear to the user it's anchored
+to the browser for sure but the best
+thing to do with ambiguity is to be
+explicit in an easy way to be explicit
+here is just to multiple forms with
+other complete attributes and then you
+can make sure that your forms were
+perfectly with password autofill and I
+promise you it will only take you a few
+minutes so now that we got your user
+signed at the question is how to keep
+them signed in
+maybe like this why not because they are
+ideas patterns
+the top you have to remember which of
+them used last time or if you used to
+username and password and then you have
+to remember which password you use so as
+you see a lot of things to remember and
+let me now ask you a quick question here
+how many people in this room have run
+into the experience that they create an
+account for her side and bam get this
+message that the account already exists
+yeah quite a few so as you can see it's
+full of friction and there's so many
+drop-off points along the way and also
+the steps again show this year according
+to a study ninety-two percent of users
+would rather leave aside then we set
+that login information if they forgot
+their passwords it's ninety two percent
+of people leaving just think about that
+and how much is assigned user verse to
+your business so again really huge
+opportunity to get all those users that
+are abundant in your sign and screens
+today to be signed in and become really
+against users if we just made things a
+bit easier for instance like this so
+when a user returns to your side it
+would be much dramatically better if
+they could just skip the sign and form
+and go straight to an engaging
+personalized experience and that means
+knowing who they are but the question is
+why is that so hard
+it's because sign and flows today are
+limited in ways that the browser is not
+so leveraging to position of the browser
+here is really the key because if a user
+is seemingly new to you they are not new
+to the browser and that's what we have
+focus on making signing in easier in a
+secure way through the browser and we do
+that with an API it really talking about
+today to collection management API but
+before we dive right into that let's
+assume for a moment that you have a
+really dedicated user and they found a
+way their way through all these
+possibilities and successfully signed
+into your side
+so are we done now look
+not quite yet because users typically
+don't stay sign and find that forever
+and like our native apps so there is a
+unique
+image that we are facing here on the web
+which other different texture faces and
+thread mother's just think about trust
+site scripting cra-cra csrf or click
+checking so session management on the
+web is really hard and as a result of
+that they are very different
+requirements for session management on
+the web and native and 11 interesting
+thing we can do with service workers is
+using to copper two tokens struggling
+and along with talking where we use the
+service worker had to refresh the short
+life token and if you're interested in
+learning more about this idea and just
+check out that blog post that's linked
+from here so as you can see there some
+Evans like this to explore for the long
+term but an easy way to handle this is
+using the credential management API it
+basically moves users from a state in
+which they are frequently automatically
+signed out into the state which they can
+be automatically signed back in what
+sounds good and it's a it's a web
+platform api standards-based and it
+allows the browser to facilitate the
+sign-in process with information it has
+started from the user and it does that
+in a frictionless fashion and also works
+across devices we ship this API earlier
+this year in chrome 51 and we announced
+at Google i/o and since launch we have
+seen a bunch of developers shipping it
+like you can see here and we want to
+start off now by looking at to common
+problems that we are trying to solve for
+this API so on some sides like
+e-commerce travel or new sites signing
+is off not required
+it's really nice it's really helpful but
+it's not necessary so on those sides the
+credential management API can
+automatically signed the user in right
+on the homepage and that's basically
+what you see here indicated with that
+small small blue button on the bottom of
+the screen the toast and and the USB
+Marta side in here right under homepage
+and as mentioned earlier we know that on
+on the web sessions often expire very
+frequently sometimes within a day
+sometimes even within an hour and 10
+minutes so that means on those sides
+basically every time you use the returns
+to decide they're in a sign out state
+and then it requires quite an education
+from the user to find a user menu click
+through a sign-in button and then be
+signed back in we know that more
+services can provide usually better and
+better experiences to use as if they're
+signed in but that's not always
+immediately clear to the user so they
+might not see the value proposition of
+signing in right away
+therefore it's dramatically better if
+you can just automatically sign them in
+right on your homepage like i mentioned
+by basically on any leaf page that the
+user might land on through a search and
+aliexpress for example in e-commerce
+side they have seen an eleven percent
+increase in conversion rates that means
+users who actually made a transaction
+and that's for users who signed in
+through the API in comparison with users
+who didn't sign in through the API and
+I've also seen some really really good
+to excellent provements like an
+eighty-five percent drop in sign and
+failure rate underwear or sixty percent
+decrease and time spent signing in now
+the Guardian has seen a forty-four
+percent increase in users signed in on
+two or more devices across chrome and
+Android night event and another common
+problem that we are trying to solve this
+API is that password managers today and
+not really a clipped well to remember
+your federated silence that means when
+you sign in for with facebook of a
+cougar and that means those users often
+create to placate accounts as you know
+because they just forgot that they
+already had an account and the
+credential management API can also help
+here because it can remember for the
+user is signed in with such a federated
+account pretentious is a website that
+offers federated sign-in options tool
+and they've seen a ten percent increase
+in desktop effective web logins for
+eligible user
+after ship the credential management API
+and I've also seen a three percent
+increase in user engagement now even if
+users switch between devices which is
+pretty common today and let's say the
+download the native app for your service
+they can seamlessly continue that signed
+inexperienced just they need to just
+beside into the same google account and
+requires password sing feature in chrome
+smart lock for passwords and if you want
+to enable is cross-platform experience
+for your users you can do the mapping
+between your website and your native app
+and then you can also use this markup
+for passwords ap is for your Android
+native app and with that let me hand
+over to agee who is now going to show
+you the credential management API in
+practice
+thanks Evan
+my name is AG of what I'm going to show
+you now is a creation management API in
+a demo with the website called
+partnership which we introduced at
+Google i/o this year
+let me get it
+so this is the partnership website
+imagine that i have just finished
+shopping experience for our guest
+checkout experience and I'm about to
+create an account so first thing I
+should do is to enter my email address
+so tough on it and now I see my email
+this pop up the nice thing about using
+this powder is a good component feature
+lets me to our use form over my email
+address that i have put into this
+brother in the past so i can just stop
+to enter my email address and enter a
+random password and sign up and now you
+see a pop-up at the bottom of the page
+asking me if I want to store the
+credential information it's nice so i
+can just save so now my brother remember
+my ID and password for me
+so what I'm going to show you now is a
+lot singing in action but you want to
+make this demo exciting what I'm going
+to do is to swap this device is a new
+one
+let's see what happens
+so as soon as I tap on this icon
+I'll be sending to the same website
+ok  2 3 boom i'm sending so what
+happened here is that the creditor
+information I have stored to the browser
+out to the other device were
+synchronized across my google account
+and propagated to this device and at
+first I landed on the same website the
+credential management API picked up the
+credential information and let me
+concentrate and me let me sign in but
+sometimes you might wanna keep side out
+in that case you can simply find out
+that way you won't be signing out for
+the future so this is 30 frictionless
+singing experience but if I talk about
+signing x-ray friction with singing
+experience you might imagine about
+created Logan's little logins are as
+having mentioned like Google sign-in or
+logging outfits with blogging or some
+other options we have like Microsoft
+Yahoo Twitter it have etc
+luckily we have a google singing option
+right here so let me try something
+so I thinking with a single tap what is
+new here is that if you look at the
+bottom of the page i see a similar
+pop-up show up so I can store my
+identity information to the problem like
+something mentioned so i can store
+federated login information to the
+browser so so far i have to account
+start to this process then what happens
+if I try to sign in
+let me say enough again and try to sign
+in by pressing the bottom and now what
+you see is a dialogue asking me
+to signing with a level two accounts so
+i can simply top of one of the top
+called them to get singing so this you
+might notice that i didn't type a single
+letter using a software keyboard
+this is really a frictionless singing
+experience so let's get back to the side
+so they are benefit of potential
+management API let me recap the first
+thing is it enables what singing teacher
+across devices and it also virtually
+enables a permanent station and it
+members favorited accounts for me and I
+could use a conscience sir to skip forms
+without typing a single later using
+software keyboard so i should say
+credential management API eliminated
+whole bunch of frictions from the
+singing experience right so how can you
+as a developer bring the similar
+experience to your own website so I'm
+going to dive into that the first thing
+you should do is to save credential
+information to the brother the forms
+such as sign up signing or change
+password is a great chance for a user to
+start the credential information to the
+product so there are few steps first
+interrupt the form submission then send
+the request to to the fiber using ajax
+then store the credential information
+and finally update UI using a profile
+before moving forward
+just make sure that your form is
+annotated well using the autocomplete
+attribute that we mentioned earlier with
+that when the user submits a form
+prevents default interrupted and prevent
+default and prevent it from to proceed
+to the next page
+why is that
+if the patient transition happens this
+will move to the next page which means
+that credential information you they
+have put into the previous page will be
+lost in the next page by making the
+first authentication call using ajax you
+can retain the credential information in
+the same page while verifying the
+authentication credential make sure to
+create our API on the server side which
+respond with ATP code with 204 for one
+so that it can respond with that correct
+correctly to tell their brother that
+authentication was successful or not
+responding with a profile information
+would be ideal
+so after the authentication you are you
+can store the credential now before
+doing so make sure that AP is available
+always keep in mind about the
+progressive enhancement to start the
+credential information associate
+password credentials object with the
+form element that you have created as an
+argument then call navigate without
+credentials that store if the API is not
+available you can just skip this step
+and for the profile mission to the next
+step was everything goes well you can
+update the UI or proceed to the
+personalized page and you're done then
+in cases where you have your website has
+a federally Logan's here here's what you
+should do so for the logins our
+submissions a concept of signing into a
+website using a third-party identity
+such as Google or Facebook Microsoft etc
+so fitted jeans are based on a standard
+protocol such as opportunity connect or
+earth there are two benefits of using it
+one is that users doesn't have to
+remember extra password to sign into
+your web your website and second is that
+in general users can sign into your way
+that just by want up there are few steps
+first authenticate the user with the
+identity provider then store the
+credential information and update the UI
+so obviously by tapping on the button
+kick-start the authentication flow so in
+order to authenticate the user using
+identity provider we should you should
+use kind of libraries provided by many
+different identity providers for Google
+we provide google singing facebook
+provide facebook loving now let me skip
+this step because it's quite complex and
+just assume that you get authenticated
+and got the profile mission so once the
+user is authenticated create instantiate
+an object called Heather the credential
+but in this case you're not storing ID
+and password
+instead you're storing identity of the
+users and into the identity provider and
+also a string that represents the
+identity provider itself name and icon
+URL our option then call number that
+credential not store the rest of the
+steps are similar to what i have
+mentioned in previous section so let me
+skip that and the most exciting part of
+using credential management API is all
+training for signing can happen anywhere
+on your website as long as the you you
+think it is appropriate for example top
+pages of course a good place to our use
+our training but some new faces such as
+news articles or item pages in
+e-commerce website is also a good place
+to enable or findings to this all you
+get
+first you get a credential information
+then authenticate the user and finally
+update the UI before getting a
+traditional make sure that the user is
+not already finding otherwise it doesn't
+make much sense right
+so in order to get a credential call
+navidad credential
+stop get by giving it a password and
+Federative as option as parameters you
+can get rich by the type of the
+credential information you want to get
+and by giving it a mediated to this will
+tell the brother that this is a hanging
+a call so it won't show any UI for a
+asking user to choose from and it will
+return
+undefined if the user has no a
+credential information or there are
+multiple credentials stored or the user
+is find out after the function is
+resolved you will just received a
+credential object but if that is
+undefined which means that what I mean
+didn't happen so you can just dismiss
+the whole process and pretend like as if
+nothing happened and if you did get a
+credential object just examining the
+type and run the authentication token
+authentication flow depending on the
+type of the a credential so they are
+essential flow is a similar with what I
+have described in previous sections and
+finally you can update the UI using a
+profile one tip I should note here is
+that if you did get a credential but
+failed to authenticate that is going to
+be a little bit trouble because the user
+sees the Bluebird popping up saying that
+the user is signing in but it failed
+if there are no sign of the failure user
+we confuse so you should show an error
+message in this case and when the user
+is signed out you should disable or
+finding to this all hang out user first
+then called number that credential not
+require user mediation this will turn
+off outstanding feature
+and finally when the user is trying to
+singing you can show account chooser so
+that user can select one of the accounts
+to our singing with this will also turn
+on of outstanding feature back long
+there are few steps again
+so first show the account chooser and
+once the user select one of the account
+you will receive a credential
+information then you can authenticate
+the user and updates of you i finally so
+most of the cases this is quite similar
+to what I have described for all
+training so by users explicit action
+such as had tapping on the sign-in
+button will show on let let their
+controller to show up by calling
+navigated our credentials not get but at
+this time with emitted all this will
+show an account chooser when the user
+has multiple organ stored or user is
+find out the rest of the steps are quite
+similar to hanging like i said but
+except one thing if the user didn't
+choose any of account or dismissed their
+culture that means that there is no
+account that the user intended to
+singing with which means that user wants
+to sign with other account right so you
+should show signing form so that user
+can enter the other credential
+information and let the user sign name
+and store another credential ok so i
+described a lot of complex stuff but we
+have document of this so you can just
+follow DDF CEO / credential management
+API to learn more about this API and we
+are working on the more in detail
+document so hopefully it can be
+published today or tomorrow i will tweet
+about it using the hashtag soul please
+watch out with that let me hand it back
+to something
+thanks agent you so we talked about
+session management and how to remove
+friction in your side and flows by using
+the credential management API that we
+should earlier this year but there's one
+thing we haven't talked about yet today
+and we'd love to hear your feedback on
+that and that's the account verification
+step during sign up and over your sign
+up for an account you typically have to
+to a very fine that account by digging
+up and we make the canonical
+verification link RBI copy-pasting a
+naughty p of one-time password from an
+SMS back into the site and what we for
+often heard from developers is that
+about twenty to thirty percent of their
+users drop off at this stage step just
+because it's not a thing that adds
+friction and android offers api's to
+help with this for native apps and those
+apps that are using these AP is have
+seen open forgot to go to continue with
+the slaves those have seen a higher
+conversion rates so we are now exploring
+whether we can bring something similar
+to crawl and end the rep and again we'd
+love to hear feedback on this problem in
+general either by other feedback form
+you can see here or just come and see us
+in person
+agni will be around looking forward to
+meeting you thanks
