@@ -13,11 +13,37 @@
         
         <tag>chrome</tag>
          
+        <tag>conference</tag>
+         
         <tag>前端</tag>
+         
+        <tag>pwa</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/14/chrome/chrome-dev-summit-2016-credential-management/</loc>
+    <lastmod>2017-02-14T15:35:51.000Z</lastmod>
+    <data>
+        <display>
+        <title>2016年Chrome Dev Summit - 证书管理</title>
+        <pubTime>2017-02-14T15:20:00.000Z</pubTime>
+        
+        <tag>chrome</tag>
          
         <tag>conference</tag>
          
-        <tag>pwa</tag>
+        <tag>前端</tag>
+         
+        <tag>credential</tag>
          
          
            
@@ -39,9 +65,9 @@
         
         <tag>chrome</tag>
          
-        <tag>前端</tag>
-         
         <tag>conference</tag>
+         
+        <tag>前端</tag>
          
          
            
@@ -89,9 +115,9 @@
         
         <tag>chrome</tag>
          
-        <tag>media，notification</tag>
-         
         <tag>前端</tag>
+         
+        <tag>media，notification</tag>
          
          
            

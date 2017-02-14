@@ -1,4 +1,5 @@
 http://sqhtiamo.github.io/note/public/2017/02/14/chrome/chrome-dev-summit-2016-pwa/
+http://sqhtiamo.github.io/note/public/2017/02/14/chrome/chrome-dev-summit-2016-credential-management/
 http://sqhtiamo.github.io/note/public/2017/02/13/chrome/chrome-dev-summit-2016-keynote/
 http://sqhtiamo.github.io/note/public/2017/02/12/css/sticky/
 http://sqhtiamo.github.io/note/public/2017/02/11/chrome/media-notification/
