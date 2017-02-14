@@ -3,9 +3,16 @@
   
     
     <entry>
+      <title><![CDATA[2016年Chrome Dev Summit - 搭建PWA]]></title>
+      <url>%2Fnote%2Fpublic%2F2017%2F02%2F14%2Fchrome%2Fchrome-dev-summit-2016-pwa%2F</url>
+      <content type="text"><![CDATA[By Thao Tran Flipkart － bring web back 1. What exactly is a PWA? Radically improving web user experiences (根本上提高用户体验)2. Buiding PWA is a journey BaselineBaseline PWA checklist Lighthouse: Open Source Tool Exemplary(典范)3. What’s the big deal?Alibaba exampleHousing.com]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[2016年Chrome Dev Summit - Keynote]]></title>
       <url>%2Fnote%2Fpublic%2F2017%2F02%2F13%2Fchrome%2Fchrome-dev-summit-2016-keynote%2F</url>
-      <content type="text"><![CDATA[0. Intro By Darin Fisher (VP of Chrome) 2 billion chrome browsers 1. Web is Reach Links (physical web) Polymon every tap lose 20% potential users mobile over desktop 60% 2G 2. Web is World-Wide Internet Users 720 million in China 30% growth in India in 2016 65% (860 million) in India not yet online 3. PWA (Progressive Web App)3.1 Demo CNET demo offline Alibaba 76% higher conversions Single’s display 3.2 Reliable, Fast, Engaging Service Worker API If you wound’t make eye contact with a stranger for the time it takes your web app to first paint, it’s too slow. – Monica Dinosaurescu 5 sec on 3G (http2 / Service Worker) add to Home Screen 4x more often (Alibaba) yields 48% more installs look and feel native across Android Push Notifications 18 billion push notifications sent daily 50,000 domains using push Carnival example 24% opt-in rate 40% open rate seamless sign-in -85% sign failure (AliExpress) +11% conversion (AliExpress) 10% increase in desktop login (Pinterest) Web Payment 4. ProductivityHow developers make web better Lighthouse Real-world Condition Testing (Dev Tools) Security &amp; Application Developer Tools Web Components &amp; Polymer web components v1 Polymer V2 Polymer App Toolbox beta.webcomponents.org AMP (accelerated mobile pages) 5. PredictabilityImproving the web for developers. The Web should ‘Just Work’ for developers.Make whole web works, and collaborate with other browser vendor browser bug search PWA Roadshow web assemble, web GL, web VR/AR, IoT]]></content>
+      <content type="text"><![CDATA[By Darin Fisher (VP of Chrome) 1. Web is Reach 2 billion chrome browsers Links (physical web) Polymon every tap lose 20% potential users mobile over desktop 60% 2G 2. Web is World-Wide Internet Users 720 million in China 30% growth in India in 2016 65% (860 million) in India not yet online 3. PWA (Progressive Web App)3.1 Demo CNET demo offline Alibaba 76% higher conversions Single’s display 3.2 Reliable, Fast, Engaging Service Worker API If you wound’t make eye contact with a stranger for the time it takes your web app to first paint, it’s too slow. – Monica Dinosaurescu 5 sec on 3G (http2 / Service Worker) add to Home Screen 4x more often (Alibaba) yields 48% more installs look and feel native across Android Push Notifications 18 billion push notifications sent daily 50,000 domains using push Carnival example 24% opt-in rate 40% open rate seamless sign-in -85% sign failure (AliExpress) +11% conversion (AliExpress) 10% increase in desktop login (Pinterest) Web Payment 4. ProductivityHow developers make web better Lighthouse Real-world Condition Testing (Dev Tools) Security &amp; Application Developer Tools Web Components &amp; Polymer web components v1 Polymer V2 Polymer App Toolbox beta.webcomponents.org AMP (accelerated mobile pages) 5. PredictabilityImproving the web for developers. The Web should ‘Just Work’ for developers.Make whole web works, and collaborate with other browser vendor browser bug search PWA Roadshow web assemble, web GL, web VR/AR, IoT]]></content>
     </entry>
 
     
@@ -73,16 +80,16 @@
 
     
     <entry>
-      <title><![CDATA[Tmux Cheat Sheet]]></title>
-      <url>%2Fnote%2Fpublic%2F2017%2F02%2F09%2Ftools%2Ftmux%2F</url>
-      <content type="text"><![CDATA[1. tmux a2. ctrl+B [ctrl+Bfix]3. 浏览历史ctrl+B [ 4. 新建ctrl+B C 5. 切换ctrl+B 1 6. 分屏ctrl+B %ctrl+B “ 7. 分屏到单屏ctrl+B z 8. 控制分屏大小ctrl+B alt＋&lt;- 9. 多个tmuxtmux new -s yuhangctrl+B s 10. tmux 配置 新建文件 ~/.tmux.conf 配置 1234567891011# 支持鼠标set -g mouse on# 已经废弃set -g mode-mouse onset -g mouse-resize-pane onset -g mouse-select-pane onset -g mouse-select-window on# 更改prefix键set -g prefix C-a 保存prefixsource-fille ~/.tmux.conf]]></content>
+      <title><![CDATA[Sublime Cheat Sheet]]></title>
+      <url>%2Fnote%2Fpublic%2F2017%2F02%2F09%2Ftools%2Fsublime%2F</url>
+      <content type="text"><![CDATA[1. 设置lnln /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl sublime 2. short-cuts2.1 Key Bindings - Default/User2.2 常用123456789option -&gt;/&lt;-option shift -&gt;/&lt;-command -&gt;/&lt;-command ［上］/［下］command entercommand Lcommand K+Bctrl shift M 选中代码块ctrl command G 选中相同的代码 3. 命令行sublime.log_commands(True) 4. package git 12345[ &#123; &quot;keys&quot;: [&quot;super+alt+g+a&quot;], &quot;command&quot;: &quot;git_raw&quot;, &quot;args&quot;: &#123;&quot;command&quot;: &quot;git add -A&quot; &#125;&#125;, &#123; &quot;keys&quot;: [&quot;super+alt+g+c&quot;], &quot;command&quot;: &quot;git_commit&quot;&#125;, &#123; &quot;keys&quot;: [&quot;super+alt+g+p&quot;], &quot;command&quot;: &quot;git_raw&quot;, &quot;args&quot;: &#123;&quot;command&quot;: &quot;git push&quot; &#125;&#125;,] SyncedSideBar]]></content>
     </entry>
 
     
     <entry>
-      <title><![CDATA[Sublime Cheat Sheet]]></title>
-      <url>%2Fnote%2Fpublic%2F2017%2F02%2F09%2Ftools%2Fsublime%2F</url>
-      <content type="text"><![CDATA[1. 设置lnln /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl sublime 2. short-cuts2.1 Key Bindings - Default/User2.2 常用123456789option -&gt;/&lt;-option shift -&gt;/&lt;-command -&gt;/&lt;-command ［上］/［下］command entercommand Lcommand K+Bctrl shift M 选中代码块ctrl command G 选中相同的代码 3. 命令行sublime.log_commands(True) 4. package git 12345[ &#123; &quot;keys&quot;: [&quot;super+alt+g+a&quot;], &quot;command&quot;: &quot;git_raw&quot;, &quot;args&quot;: &#123;&quot;command&quot;: &quot;git add -A&quot; &#125;&#125;, &#123; &quot;keys&quot;: [&quot;super+alt+g+c&quot;], &quot;command&quot;: &quot;git_commit&quot;&#125;, &#123; &quot;keys&quot;: [&quot;super+alt+g+p&quot;], &quot;command&quot;: &quot;git_raw&quot;, &quot;args&quot;: &#123;&quot;command&quot;: &quot;git push&quot; &#125;&#125;,] SyncedSideBar]]></content>
+      <title><![CDATA[Tmux Cheat Sheet]]></title>
+      <url>%2Fnote%2Fpublic%2F2017%2F02%2F09%2Ftools%2Ftmux%2F</url>
+      <content type="text"><![CDATA[1. tmux a2. ctrl+B [ctrl+Bfix]3. 浏览历史ctrl+B [ 4. 新建ctrl+B C 5. 切换ctrl+B 1 6. 分屏ctrl+B %ctrl+B “ 7. 分屏到单屏ctrl+B z 8. 控制分屏大小ctrl+B alt＋&lt;- 9. 多个tmuxtmux new -s yuhangctrl+B s 10. tmux 配置 新建文件 ~/.tmux.conf 配置 1234567891011# 支持鼠标set -g mouse on# 已经废弃set -g mode-mouse onset -g mouse-resize-pane onset -g mouse-select-pane onset -g mouse-select-window on# 更改prefix键set -g prefix C-a 保存prefixsource-fille ~/.tmux.conf]]></content>
     </entry>
 
     

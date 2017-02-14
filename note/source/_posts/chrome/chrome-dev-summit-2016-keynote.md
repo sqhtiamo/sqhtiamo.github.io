@@ -5,18 +5,16 @@ tags: [chrome, conference, 前端]
 categories: 工作拾遗
 ---
 
-## 0. Intro
-- By Darin Fisher (VP of Chrome)
-- 2 billion chrome browsers
+By Darin Fisher (VP of Chrome)
 
-<!-- more -->
 ## 1. Web is Reach
+- 2 billion chrome browsers
 - Links (physical web)
 - Polymon
 - every tap lose 20% potential users
 - mobile over desktop
 - 60% 2G
-
+<!-- more -->
 ## 2. Web is World-Wide
 - Internet Users
     - 720 million in China
