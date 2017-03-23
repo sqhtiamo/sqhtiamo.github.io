@@ -10,7 +10,7 @@
  - 张宇航/男/1989
  - 本科/上海交通大学－电子与计算机工程/2008-2012
  - 硕士研究生/上海交通大学－无线网络与通信/2012-2015
- - 工作年限：2.5年
+ - 工作年限：2年
  - Github：[https://github.com/sqhtiamo](https://github.com/sqhtiamo)
  - 个人网站：[https://sqhtiamo.github.io](https://sqhtiamo.github.io)
 
@@ -28,7 +28,7 @@
 #### 微信商城项目
 该项目为公司直采商城的C侧部分，是一套面向微信用户的垂直电商网站，如：在微信中打开：https://mp.52shangchao.com/xinghua/m/boutique/home/index。
 
-个人主要基于既有框架，负责相关业务的开发，包括订单系统、VIP用户系统、抽奖系统等。主要应用的技术是backbone和团队自研的MLBF框架，用node作为接入层作前后端分离，因此前端需要接手部分中台开发，如nginx接入、灰度用户筛选、微信权限认证等部分。
+个人主要基于既有框架，负责相关业务的开发，包括订单系统、VIP用户系统、抽奖系统等。主要应用的技术是backbone和团队自研的MLBF框架，用node作为接入层作前后端分离，因此前端需要接手部分中台开发工作，如nginx配置、node开发等。
 
 
 #### 组内人才培养计划与团队管理
@@ -92,7 +92,6 @@
 ### 个人分享(公司级分享)
 
  - [FE 101 - 从web历史发展看前端框架](https://github.com/sqhtiamo/sqhtiamo.github.io/tree/master/notes/101)
- - [2016年velocity参会有感](https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/notes/velocity/velocity%20summary.pdf)
  - [商城BOSS侧前端框架技术分享](https://github.com/sqhtiamo/sqhtiamo.github.io/tree/master/notes/boss-xmall)
  - [Hybrid APP 本地缓存方案预研](https://github.com/sqhtiamo/sqhtiamo.github.io/blob/master/notes/hybrid-app-cache/hybrid%20app%20cache.pdf)
 
