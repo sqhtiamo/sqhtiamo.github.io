@@ -1,3 +1,5 @@
+http://sqhtiamo.github.io/note/public/2017/04/29/javascript/rollup-1.开篇的故事/
+http://sqhtiamo.github.io/note/public/2017/02/08/javascript/JS 代码管理/
 http://sqhtiamo.github.io/note/public/2017/02/14/chrome/chrome-dev-summit-2016-pwa/
 http://sqhtiamo.github.io/note/public/2017/02/14/chrome/chrome-dev-summit-2016-credential-management/
 http://sqhtiamo.github.io/note/public/2017/02/13/chrome/chrome-dev-summit-2016-keynote/
@@ -15,5 +17,4 @@ http://sqhtiamo.github.io/note/public/2017/02/09/webpack/tree-shaking/
 http://sqhtiamo.github.io/note/public/2017/02/09/tools/tmux/
 http://sqhtiamo.github.io/note/public/2017/02/09/tools/iterm2/
 http://sqhtiamo.github.io/note/public/2017/02/09/tools/sublime/
-http://sqhtiamo.github.io/note/public/2017/02/08/javascript/JS 代码管理/
 http://sqhtiamo.github.io/note/public/2017/02/06/promise/promise/
