@@ -87,34 +87,16 @@
 
 
 
-<meta name="description" content="1. 编写「可读」代码的实践淘宝 Fed 叶斋 http://taobaofed.org/blog/2017/01/05/writing-readable-code/
-1.1 变量命名
-驼峰
-使用名词来命名对象，使用动词来命名函数
-
-对于集合来说：也可以加上 List（数组）或 Map（对象）后缀来显式表示出来
-对于函数来说：建议动＋宾＋补 如：fetchUserInfoAsync">
+<meta name="description" content="做最有激情的前端开发工程师">
 <meta property="og:type" content="article">
 <meta property="og:title" content="rollup - 1. 最开始的故事">
 <meta property="og:url" content="http://sqhtiamo.github.io/2017/04/29/javascript/rollup-1.开篇的故事/index.html">
 <meta property="og:site_name" content="伟大航路">
-<meta property="og:description" content="1. 编写「可读」代码的实践淘宝 Fed 叶斋 http://taobaofed.org/blog/2017/01/05/writing-readable-code/
-1.1 变量命名
-驼峰
-使用名词来命名对象，使用动词来命名函数
-
-对于集合来说：也可以加上 List（数组）或 Map（对象）后缀来显式表示出来
-对于函数来说：建议动＋宾＋补 如：fetchUserInfoAsync">
-<meta property="og:updated_time" content="2017-04-29T06:37:34.000Z">
+<meta property="og:description" content="做最有激情的前端开发工程师">
+<meta property="og:updated_time" content="2017-05-29T15:51:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="rollup - 1. 最开始的故事">
-<meta name="twitter:description" content="1. 编写「可读」代码的实践淘宝 Fed 叶斋 http://taobaofed.org/blog/2017/01/05/writing-readable-code/
-1.1 变量命名
-驼峰
-使用名词来命名对象，使用动词来命名函数
-
-对于集合来说：也可以加上 List（数组）或 Map（对象）后缀来显式表示出来
-对于函数来说：建议动＋宾＋补 如：fetchUserInfoAsync">
+<meta name="twitter:description" content="做最有激情的前端开发工程师">
 
 
 
@@ -522,37 +504,7 @@ header#custom dl dt:hover ul {
       
 
       
-        <h2 id="1-编写「可读」代码的实践"><a href="#1-编写「可读」代码的实践" class="headerlink" title="1. 编写「可读」代码的实践"></a>1. 编写「可读」代码的实践</h2><p><a href="http://taobaofed.org/blog/2017/01/05/writing-readable-code/" target="_blank" rel="external">淘宝 Fed 叶斋 http://taobaofed.org/blog/2017/01/05/writing-readable-code/</a></p>
-<h3 id="1-1-变量命名"><a href="#1-1-变量命名" class="headerlink" title="1.1 变量命名"></a>1.1 变量命名</h3><ul>
-<li>驼峰</li>
-<li>使用名词来命名对象，使用动词来命名函数</li>
-</ul>
-<p>对于集合来说：也可以加上 List（数组）或 Map（对象）后缀来显式表示出来</p>
-<p>对于函数来说：建议动＋宾＋补 如：fetchUserInfoAsync</p>
-<a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">monkey.eat(banana);  // the money eats a banana</div><div class="line">const apple = pick(tree);  // pick an apple from the tree</div></pre></td></tr></table></figure>
-<h4 id="1-1-1-命名的上下文"><a href="#1-1-1-命名的上下文" class="headerlink" title="1.1.1 命名的上下文"></a>1.1.1 命名的上下文</h4><p>变量的命名应与上下文相契合，同一个变量，在不同的上下文中，命名可以不同。</p>
-<p>不同上下文更应根据实际情况而定。</p>
-<h4 id="1-1-2-严格遵循一种命名规范的收益"><a href="#1-1-2-严格遵循一种命名规范的收益" class="headerlink" title="1.1.2 严格遵循一种命名规范的收益"></a>1.1.2 严格遵循一种命名规范的收益</h4><p>特定上下文中的特定含义只有一种命名方式，也就是说，只有一个名字。</p>
-<p>也就是说，命名规范后，对于一种场景，只有一个函数命名方式。</p>
-<p>（是否需要整理一个常用动词、名词list？）</p>
-<h3 id="1-2-分支结构"><a href="#1-2-分支结构" class="headerlink" title="1.2 分支结构"></a>1.2 分支结构</h3><p>大体认同，但是实践的时候，需要考虑很多特殊情况。</p>
-<h4 id="1-2-1-不好的做法：在分支中-return"><a href="#1-2-1-不好的做法：在分支中-return" class="headerlink" title="1.2.1 不好的做法：在分支中 return"></a>1.2.1 不好的做法：在分支中 return</h4><h4 id="1-2-2-不好的做法：多个条件复合"><a href="#1-2-2-不好的做法：多个条件复合" class="headerlink" title="1.2.2 不好的做法：多个条件复合"></a>1.2.2 不好的做法：多个条件复合</h4><h4 id="1-2-3-不好的做法：使用分支改变环境"><a href="#1-2-3-不好的做法：使用分支改变环境" class="headerlink" title="1.2.3 不好的做法：使用分支改变环境"></a>1.2.3 不好的做法：使用分支改变环境</h4><h3 id="1-3-函数"><a href="#1-3-函数" class="headerlink" title="1.3 函数"></a>1.3 函数</h3><h4 id="1-3-1-函数只做一件事情"><a href="#1-3-1-函数只做一件事情" class="headerlink" title="1.3.1 函数只做一件事情"></a>1.3.1 函数只做一件事情</h4><p>比如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">async function fetchUserInfo(id) &#123;</div><div class="line">  const isSingle = typeof idList === &apos;string&apos;;</div><div class="line">  const idList = isSingle ? [id] : id;</div><div class="line">  const result = await request.post(&apos;/api/userInfo&apos;, &#123;idList&#125;);</div><div class="line">  return isSingle ? result[0] : result;</div><div class="line">&#125;</div><div class="line"></div><div class="line">// 可以这样调用</div><div class="line">const userList = await fetchUserInfo([&apos;1011&apos;, &apos;1013&apos;]);</div><div class="line">// 也可以这样调用</div><div class="line">const user = await fetchUserInfo(&apos;1017&apos;);</div></pre></td></tr></table></figure></p>
-<p>可以修改为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">async function fetchMultipleUser(idList) &#123;</div><div class="line">  return await request.post(&apos;/api/users/&apos;, &#123;idList&#125;);</div><div class="line">&#125;</div><div class="line"></div><div class="line">async function fetchSingleUser(id) &#123;</div><div class="line">  return await fetchMultipleUser([id])[0];</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>那么，如何界定某个函数做的是不是一件事情？我的经验是这样：如果一个函数的参数仅仅包含输入数据（交给函数处理的数据），而没有混杂或暗含有指令（以某种约定的方式告诉函数该怎么处理数据），那么函数所做的应当就是一件事情。比如说，改良前的 fetchUserInfo 函数的参数是「多个用户的ID数组或单个用户的ID」，这个「或」字其实就暗含了某种指令。</p>
-<h4 id="1-3-2-函数应适当地处理异常"><a href="#1-3-2-函数应适当地处理异常" class="headerlink" title="1.3.2 函数应适当地处理异常"></a>1.3.2 函数应适当地处理异常</h4><p>注：</p>
-<ul>
-<li><ol>
-<li>有时候需要防御氏编程，保证系统正确，但是有时候同时也应该暴露其他接口的隐患</li>
-</ol>
-</li>
-<li><ol>
-<li>尝试用try throw代替短路分支的方式</li>
-</ol>
-</li>
-</ul>
-<h4 id="1-3-3-控制函数的副作用"><a href="#1-3-3-控制函数的副作用" class="headerlink" title="1.3.3 控制函数的副作用"></a>1.3.3 控制函数的副作用</h4><p>使用纯函数</p>
-<h4 id="1-3-4-非侵入性地改造函数"><a href="#1-3-4-非侵入性地改造函数" class="headerlink" title="1.3.4 非侵入性地改造函数"></a>1.3.4 非侵入性地改造函数</h4><h3 id="1-4-类的结构"><a href="#1-4-类的结构" class="headerlink" title="1.4 类的结构"></a>1.4 类的结构</h3><h4 id="1-4-1-避免滥用成员函数"><a href="#1-4-1-避免滥用成员函数" class="headerlink" title="1.4.1 避免滥用成员函数"></a>1.4.1 避免滥用成员函数</h4>
+        
       
     </div>
 
@@ -685,17 +637,8 @@ header#custom dl dt:hover ul {
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/note/public/uploads/avatar.png"
@@ -751,22 +694,6 @@ header#custom dl dt:hover ul {
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-编写「可读」代码的实践"><span class="nav-text">1. 编写「可读」代码的实践</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-变量命名"><span class="nav-text">1.1 变量命名</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-1-命名的上下文"><span class="nav-text">1.1.1 命名的上下文</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-2-严格遵循一种命名规范的收益"><span class="nav-text">1.1.2 严格遵循一种命名规范的收益</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-分支结构"><span class="nav-text">1.2 分支结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-1-不好的做法：在分支中-return"><span class="nav-text">1.2.1 不好的做法：在分支中 return</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-2-不好的做法：多个条件复合"><span class="nav-text">1.2.2 不好的做法：多个条件复合</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-3-不好的做法：使用分支改变环境"><span class="nav-text">1.2.3 不好的做法：使用分支改变环境</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-函数"><span class="nav-text">1.3 函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-1-函数只做一件事情"><span class="nav-text">1.3.1 函数只做一件事情</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-2-函数应适当地处理异常"><span class="nav-text">1.3.2 函数应适当地处理异常</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-3-控制函数的副作用"><span class="nav-text">1.3.3 控制函数的副作用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-4-非侵入性地改造函数"><span class="nav-text">1.3.4 非侵入性地改造函数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-类的结构"><span class="nav-text">1.4 类的结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-1-避免滥用成员函数"><span class="nav-text">1.4.1 避免滥用成员函数</span></a></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
     </div>

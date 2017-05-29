@@ -4,29 +4,8 @@
 
     
   <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/05/29/google2017IO/keynotes/</loc>
-    <lastmod>2017-05-29T15:50:12.000Z</lastmod>
-    <data>
-        <display>
-        <title>2017年5月Google I/O 2017 - keynote</title>
-        <pubTime>2017-05-29T15:20:00.000Z</pubTime>
-        
-        <tag>google I/O 2017</tag>
-         
-         
-           
-             
-              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
     <loc>http://sqhtiamo.github.io/note/public/2017/04/29/javascript/rollup-1.%E5%BC%80%E7%AF%87%E7%9A%84%E6%95%85%E4%BA%8B/</loc>
-    <lastmod>2017-04-29T06:37:34.000Z</lastmod>
+    <lastmod>2017-05-29T15:51:14.000Z</lastmod>
     <data>
         <display>
         <title>rollup - 1. 最开始的故事</title>
@@ -49,6 +28,27 @@
     </data>
     </url>
 
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/05/29/google2017IO/keynotes/</loc>
+    <lastmod>2017-05-29T15:50:12.000Z</lastmod>
+    <data>
+        <display>
+        <title>2017年5月Google I/O 2017 - keynote</title>
+        <pubTime>2017-05-29T15:20:00.000Z</pubTime>
+        
+        <tag>google I/O 2017</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://sqhtiamo.github.io/note/public/2017/02/08/javascript/JS%20%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86/</loc>
