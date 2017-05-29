@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[2017年5月Google I/O 2017 - keynote]]></title>
       <url>%2Fnote%2Fpublic%2F2017%2F05%2F29%2Fgoogle2017IO%2Fkeynotes%2F</url>
-      <content type="text"><![CDATA[By Thao Tran Flipkart － bring web back 1. What exactly is a PWA? Radically improving web user experiences (根本上提高用户体验)]]></content>
+      <content type="text"><![CDATA[By Thao Tran Flipkart － bring web back 1. What exactly is a PWA? Radically improving web user experiences (根本上提高用户体验) youtube上共计158个视频 https://www.youtube.com/watch?v=qmeAAp9rSVY&amp;list=PLOU2XLYxmsIKC8eODk_RNCWv3fBcLvMMy 主要视频 V8 引擎相关 V8, Advanced JavaScript, &amp; the Next Performance Frontier (Google I/O ‘17) （https://www.youtube.com/watch?v=EdFDJANJJLs）主要内容 trade off: fast start up VS peak perf low memory VS max optimization Ignition &amp; TurboFan (进化史) SpeedDOMmeter DevTools inspect node js coverage Web Assemble]]></content>
     </entry>
 
     
