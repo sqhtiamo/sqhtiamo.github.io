@@ -5,7 +5,20 @@ tags: [google I/O 2017]
 categories: 工作拾遗
 ---
 
-By Sundar Pichai (CEO) & Scott huffman（VP Engeneering, Assistant） & Valerie Nagard (PM, Assistant) & Rishi Chandra (VP, Home Products) & Anil Sabharwal (VP, photos) & Susan Wojcicki (CEO, YouTube) & Sarah Ali (Head of Living Room Products, YouTube) & Barbara Macdonald (PM, YouTube) & Dave Burke (VP Engeneering, Android), Stephanie Saad Cuthbertson (Director, PM, Android) & Sameer Samat (VP, Android and Play) & Clay Bavor (VP, Virual Reality)
+演讲者：
+- Sundar Pichai (CEO) 
+- Scott Huffman（VP Engeneering, Assistant） 
+- Valerie Nagard (PM, Assistant) 
+- Rishi Chandra (VP, Home Products) 
+- Anil Sabharwal (VP, Photos) 
+- Susan Wojcicki (CEO, YouTube) 
+- Sarah Ali (Head of Living Room Products, YouTube) 
+- Barbara Macdonald (PM, YouTube) 
+- Dave Burke (VP Engeneering, Android),
+- Stephanie Saad Cuthbertson (Director, PM, Android) 
+- Sameer Samat (VP, Android and Play) 
+- Clay Bavor (VP, Virual Reality)
+
 视频地址： https://www.youtube.com/watch?v=Y2VF8tmLFHw&spfreload=10#t=15.223129 （大约2小时）
 
 
@@ -147,6 +160,12 @@ no cables, no phone, no PC
 2017下半年发布
 
 ### 3.9.2 AR
+- Tango
+- 第二代：ASUS ZenFone AR
+- VPS - Visual Position Service
+![](VPS.png)
+- Google Expedition + AR
+![](AR.png)
 
 ## 4. 会议相关
 ### 4.1 分论坛数：400 events & 参与人数：7000 audience
