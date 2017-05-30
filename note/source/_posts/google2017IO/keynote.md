@@ -45,7 +45,7 @@ Google Search, Android, Chrome, Youtube, Map, Play, Mail
 - 每块板子4个芯片
 - 每块板子每秒可以处理 180 trillion floating point
 - 板子之间可以组合起来（64块板子组合起来一个TPU pod，每个pod可以处理11.5petaflops）
-![](TPU－pod.png)
+![](TPU-pod.png)
 - 命名其为Cloud TPU原因: through the Google Cloud Platform
 - 成为了Google Compute Engine
 
@@ -77,6 +77,8 @@ Actions on Google：
 - Proactive Assistance
 - Hands-Free Calling (例子：call mom)
 ![](google-home.png)
+- Entertainment (接入更多音视频服务平台)
+- Visual Response
 
 ## 4. 会议相关
 ### 4.1 分论坛数：400 events & 参与人数：7000 audience
