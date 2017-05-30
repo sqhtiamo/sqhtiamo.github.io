@@ -87,20 +87,19 @@
 
 
 
-<meta name="description" content="By Sundar Pichai (CEO)视频地址： https://www.youtube.com/watch?v=Y2VF8tmLFHw&amp;amp;spfreload=10#t=15.223129 （大约2小时）
-1. 回顾1.1 用户量（7大产品）：1 Billion+ for 7 productsGoogle Search, Android, Chrome, Youtube, Map, P">
+<meta name="description" content="By Sundar Pichai (CEO) &amp;amp; Scott huffman（VP Engeneering, Assistant） &amp;amp; Valerie Nagard (PM, Assistant) &amp;amp; Rishi Chandra (VP, Home Products)视频地址： https://www.youtube.com/watch?v=Y2VF8tmLFHw&amp;amp;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2017年5月Google I/O 2017 （一）- keynote">
 <meta property="og:url" content="http://sqhtiamo.github.io/2017/05/29/google2017IO/keynote/index.html">
 <meta property="og:site_name" content="伟大航路">
-<meta property="og:description" content="By Sundar Pichai (CEO)视频地址： https://www.youtube.com/watch?v=Y2VF8tmLFHw&amp;amp;spfreload=10#t=15.223129 （大约2小时）
-1. 回顾1.1 用户量（7大产品）：1 Billion+ for 7 productsGoogle Search, Android, Chrome, Youtube, Map, P">
+<meta property="og:description" content="By Sundar Pichai (CEO) &amp;amp; Scott huffman（VP Engeneering, Assistant） &amp;amp; Valerie Nagard (PM, Assistant) &amp;amp; Rishi Chandra (VP, Home Products)视频地址： https://www.youtube.com/watch?v=Y2VF8tmLFHw&amp;amp;">
 <meta property="og:image" content="http://sqhtiamo.github.io/note/public/2017/05/29/google2017IO/keynote/TPU.png">
-<meta property="og:updated_time" content="2017-05-30T07:13:11.000Z">
+<meta property="og:image" content="http://sqhtiamo.github.io/note/public/2017/05/29/google2017IO/keynote/TPU－pod.png">
+<meta property="og:image" content="http://sqhtiamo.github.io/note/public/2017/05/29/google2017IO/keynote/google-home.png">
+<meta property="og:updated_time" content="2017-05-30T08:24:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2017年5月Google I/O 2017 （一）- keynote">
-<meta name="twitter:description" content="By Sundar Pichai (CEO)视频地址： https://www.youtube.com/watch?v=Y2VF8tmLFHw&amp;amp;spfreload=10#t=15.223129 （大约2小时）
-1. 回顾1.1 用户量（7大产品）：1 Billion+ for 7 productsGoogle Search, Android, Chrome, Youtube, Map, P">
+<meta name="twitter:description" content="By Sundar Pichai (CEO) &amp;amp; Scott huffman（VP Engeneering, Assistant） &amp;amp; Valerie Nagard (PM, Assistant) &amp;amp; Rishi Chandra (VP, Home Products)视频地址： https://www.youtube.com/watch?v=Y2VF8tmLFHw&amp;amp;">
 <meta name="twitter:image" content="http://sqhtiamo.github.io/note/public/2017/05/29/google2017IO/keynote/TPU.png">
 
 
@@ -509,7 +508,7 @@ header#custom dl dt:hover ul {
       
 
       
-        <p>By Sundar Pichai (CEO)<br>视频地址： <a href="https://www.youtube.com/watch?v=Y2VF8tmLFHw&amp;spfreload=10#t=15.223129" target="_blank" rel="external">https://www.youtube.com/watch?v=Y2VF8tmLFHw&amp;spfreload=10#t=15.223129</a> （大约2小时）</p>
+        <p>By Sundar Pichai (CEO) &amp; Scott huffman（VP Engeneering, Assistant） &amp; Valerie Nagard (PM, Assistant) &amp; Rishi Chandra (VP, Home Products)<br>视频地址： <a href="https://www.youtube.com/watch?v=Y2VF8tmLFHw&amp;spfreload=10#t=15.223129" target="_blank" rel="external">https://www.youtube.com/watch?v=Y2VF8tmLFHw&amp;spfreload=10#t=15.223129</a> （大约2小时）</p>
 <h2 id="1-回顾"><a href="#1-回顾" class="headerlink" title="1. 回顾"></a>1. 回顾</h2><h2 id="1-1-用户量（7大产品）：1-Billion-for-7-products"><a href="#1-1-用户量（7大产品）：1-Billion-for-7-products" class="headerlink" title="1.1 用户量（7大产品）：1 Billion+ for 7 products"></a>1.1 用户量（7大产品）：1 Billion+ for 7 products</h2><p>Google Search, Android, Chrome, Youtube, Map, Play, Mail</p>
 <ul>
 <li>Youtube - 1 Billion hours / day </li>
@@ -544,8 +543,36 @@ header#custom dl dt:hover ul {
 </li>
 <li>每块板子4个芯片</li>
 <li>每块板子每秒可以处理 180 trillion floating point</li>
-<li>板子之间可以组合起来（64块板子组合起来一个TPU pod，每个pod可以处理11.5petaflops）</li>
-<li>成为了Google Cloud Engine</li>
+<li>板子之间可以组合起来（64块板子组合起来一个TPU pod，每个pod可以处理11.5petaflops）<br><img src="/note/public/2017/05/29/google2017IO/keynote/TPU－pod.png" alt=""></li>
+<li>命名其为Cloud TPU原因: through the Google Cloud Platform</li>
+<li>成为了Google Compute Engine</li>
+</ul>
+<h3 id="3-3-Google-ai"><a href="#3-3-Google-ai" class="headerlink" title="3.3 Google.ai"></a>3.3 Google.ai</h3><ul>
+<li>致力于3个领域：research, tools (tensorflow &amp; Cloud TPUs), applied AI</li>
+<li>research<ul>
+<li>autoML: Learning to learn (搭建一个神经网络系统去学习建造另一个更好的神经网络系统) (P.S. 举了一个盗梦空间的例子 LoL) <ul>
+<li>例子：health care &amp; pathology（病理学）诊断乳癌</li>
+<li>DNA Sequencing: identify遗传变异</li>
+<li>预测化学分子性质</li>
+<li>AutoDraw</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-4-Google-Assistant-By-Scott-Huffman"><a href="#3-4-Google-Assistant-By-Scott-Huffman" class="headerlink" title="3.4 Google Assistant (By Scott Huffman)"></a>3.4 Google Assistant (By Scott Huffman)</h3><p>A conversation with Google to get things done in your world</p>
+<ul>
+<li>Conversational<br>beyond the voice: 通过google lens识别图像，进行翻译和与语言处理，再和assistant进行对话（一个集成功能？）<br>例子：用google lens拍一个演唱会的牌子，assistant提示买票、加入日历等选项，并根据用户选择进行相应操作。</li>
+<li>Always Available<br>连接更多设备：手机、电视、智能家居系统、穿戴式系统、车载系统，还有。。。iphone；<br>提供多种语言；</li>
+<li>Ready to Help (By Valerie Nagard)<br>Actions on Google：<br>作为平台，提供第三方服务；<ul>
+<li>support transaction<br>例子：通过assistant点外卖付钱（不需要创建帐户、输入地址、绑卡等操作）</li>
+<li>support smart home</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-5-Google-Home-By-Rishi-Chandra"><a href="#3-5-Google-Home-By-Rishi-Chandra" class="headerlink" title="3.5 Google Home (By Rishi Chandra)"></a>3.5 Google Home (By Rishi Chandra)</h3><ul>
+<li>Proactive Assistance</li>
+<li>Hands-Free Calling (例子：call mom)<br><img src="/note/public/2017/05/29/google2017IO/keynote/google-home.png" alt=""></li>
 </ul>
 <h2 id="4-会议相关"><a href="#4-会议相关" class="headerlink" title="4. 会议相关"></a>4. 会议相关</h2><h3 id="4-1-分论坛数：400-events-amp-参与人数：7000-audience"><a href="#4-1-分论坛数：400-events-amp-参与人数：7000-audience" class="headerlink" title="4.1 分论坛数：400 events &amp; 参与人数：7000 audience"></a>4.1 分论坛数：400 events &amp; 参与人数：7000 audience</h3><h3 id="4-2-会议其他视频索引"><a href="#4-2-会议其他视频索引" class="headerlink" title="4.2 会议其他视频索引"></a>4.2 会议其他视频索引</h3><p>youtube上共计158个视频<br> <a href="https://www.youtube.com/watch?v=qmeAAp9rSVY&amp;list=PLOU2XLYxmsIKC8eODk_RNCWv3fBcLvMMy" target="_blank" rel="external">https://www.youtube.com/watch?v=qmeAAp9rSVY&amp;list=PLOU2XLYxmsIKC8eODk_RNCWv3fBcLvMMy</a></p>
 <p>主要视频</p>
@@ -766,7 +793,7 @@ header#custom dl dt:hover ul {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-回顾"><span class="nav-text">1. 回顾</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-用户量（7大产品）：1-Billion-for-7-products"><span class="nav-text">1.1 用户量（7大产品）：1 Billion+ for 7 products</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-核心理念：Mobile-First-To-AI-First-using-Machine-Learning"><span class="nav-text">2. 核心理念：Mobile First To AI First (using Machine Learning)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-例子：smart-reply"><span class="nav-text">2.2  例子：smart reply</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-交互方面："><span class="nav-text">2.1 交互方面：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-新产品-amp-新技术"><span class="nav-text">3. 新产品 & 新技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-Google-Lens"><span class="nav-text">3.1 Google Lens</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-Cloud-TPU-下一代TPUs-Tensor-Processing-Units"><span class="nav-text">3.2 Cloud TPU - 下一代TPUs (Tensor Processing Units)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-会议相关"><span class="nav-text">4. 会议相关</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-分论坛数：400-events-amp-参与人数：7000-audience"><span class="nav-text">4.1 分论坛数：400 events & 参与人数：7000 audience</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-会议其他视频索引"><span class="nav-text">4.2 会议其他视频索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-1-V8-引擎相关"><span class="nav-text">4.2.1 V8 引擎相关</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-回顾"><span class="nav-text">1. 回顾</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-用户量（7大产品）：1-Billion-for-7-products"><span class="nav-text">1.1 用户量（7大产品）：1 Billion+ for 7 products</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-核心理念：Mobile-First-To-AI-First-using-Machine-Learning"><span class="nav-text">2. 核心理念：Mobile First To AI First (using Machine Learning)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-例子：smart-reply"><span class="nav-text">2.2  例子：smart reply</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-交互方面："><span class="nav-text">2.1 交互方面：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-新产品-amp-新技术"><span class="nav-text">3. 新产品 & 新技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-Google-Lens"><span class="nav-text">3.1 Google Lens</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-Cloud-TPU-下一代TPUs-Tensor-Processing-Units"><span class="nav-text">3.2 Cloud TPU - 下一代TPUs (Tensor Processing Units)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-Google-ai"><span class="nav-text">3.3 Google.ai</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-Google-Assistant-By-Scott-Huffman"><span class="nav-text">3.4 Google Assistant (By Scott Huffman)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-Google-Home-By-Rishi-Chandra"><span class="nav-text">3.5 Google Home (By Rishi Chandra)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-会议相关"><span class="nav-text">4. 会议相关</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-分论坛数：400-events-amp-参与人数：7000-audience"><span class="nav-text">4.1 分论坛数：400 events & 参与人数：7000 audience</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-会议其他视频索引"><span class="nav-text">4.2 会议其他视频索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-1-V8-引擎相关"><span class="nav-text">4.2.1 V8 引擎相关</span></a></li></ol></li></ol></div>
             
 
           </div>

@@ -5,7 +5,7 @@ tags: [google I/O 2017]
 categories: 工作拾遗
 ---
 
-By Sundar Pichai (CEO)
+By Sundar Pichai (CEO) & Scott huffman（VP Engeneering, Assistant） & Valerie Nagard (PM, Assistant) & Rishi Chandra (VP, Home Products)
 视频地址： https://www.youtube.com/watch?v=Y2VF8tmLFHw&spfreload=10#t=15.223129 （大约2小时）
 
 
@@ -45,7 +45,38 @@ Google Search, Android, Chrome, Youtube, Map, Play, Mail
 - 每块板子4个芯片
 - 每块板子每秒可以处理 180 trillion floating point
 - 板子之间可以组合起来（64块板子组合起来一个TPU pod，每个pod可以处理11.5petaflops）
-- 成为了Google Cloud Engine
+![](TPU－pod.png)
+- 命名其为Cloud TPU原因: through the Google Cloud Platform
+- 成为了Google Compute Engine
+
+### 3.3 Google.ai
+- 致力于3个领域：research, tools (tensorflow & Cloud TPUs), applied AI
+- research
+    - autoML: Learning to learn (搭建一个神经网络系统去学习建造另一个更好的神经网络系统) (P.S. 举了一个盗梦空间的例子 LoL) 
+        - 例子：health care & pathology（病理学）诊断乳癌
+        - DNA Sequencing: identify遗传变异
+        - 预测化学分子性质
+        - AutoDraw
+
+### 3.4 Google Assistant (By Scott Huffman)
+A conversation with Google to get things done in your world
+- Conversational
+beyond the voice: 通过google lens识别图像，进行翻译和与语言处理，再和assistant进行对话（一个集成功能？）
+例子：用google lens拍一个演唱会的牌子，assistant提示买票、加入日历等选项，并根据用户选择进行相应操作。
+- Always Available
+连接更多设备：手机、电视、智能家居系统、穿戴式系统、车载系统，还有。。。iphone；
+提供多种语言；
+- Ready to Help (By Valerie Nagard)
+Actions on Google：
+作为平台，提供第三方服务；
+    - support transaction
+    例子：通过assistant点外卖付钱（不需要创建帐户、输入地址、绑卡等操作）
+    - support smart home
+
+### 3.5 Google Home (By Rishi Chandra)
+- Proactive Assistance
+- Hands-Free Calling (例子：call mom)
+![](google-home.png)
 
 ## 4. 会议相关
 ### 4.1 分论坛数：400 events & 参与人数：7000 audience
