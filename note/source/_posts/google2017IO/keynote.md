@@ -178,21 +178,13 @@ no cables, no phone, no PC
 ### 4.1 分论坛数：400 events & 参与人数：7000 audience
     
     
-### 4.2 会议其他视频索引
+### 4.2 其他会议视频索引
 youtube上共计158个视频
  https://www.youtube.com/watch?v=qmeAAp9rSVY&list=PLOU2XLYxmsIKC8eODk_RNCWv3fBcLvMMy
 
-主要视频
-### 4.2.1 V8 引擎相关
-- V8, Advanced JavaScript, & the Next Performance Frontier (Google I/O '17)
+主要视频分类:
+### 4.2.1 Chrome and Web at Google I/O 2017 (27个)
+https://www.youtube.com/playlist?list=PLNYkxOF6rcICniLJ2rfj0FexlA-9zmJJE
+#### 4.2.1.1 V8 引擎相关
+- ![V8, Advanced JavaScript, & the Next Performance Frontier (Google I/O '17)](./v8/)
  （https://www.youtube.com/watch?v=EdFDJANJJLs）
-主要内容
-    - trade off:
-        - fast start up VS peak perf
-        - low memory VS max optimization
-    - Ignition & TurboFan (进化史)
-    - SpeedDOMmeter
-    - DevTools
-        - inspect node
-        - js coverage
-    - Web Assemble
