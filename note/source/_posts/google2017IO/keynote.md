@@ -5,7 +5,7 @@ tags: [google I/O 2017]
 categories: 工作拾遗
 ---
 
-By Sundar Pichai (CEO) & Scott huffman（VP Engeneering, Assistant） & Valerie Nagard (PM, Assistant) & Rishi Chandra (VP, Home Products)
+By Sundar Pichai (CEO) & Scott huffman（VP Engeneering, Assistant） & Valerie Nagard (PM, Assistant) & Rishi Chandra (VP, Home Products) & Anil Sabharwal (VP, photos)
 视频地址： https://www.youtube.com/watch?v=Y2VF8tmLFHw&spfreload=10#t=15.223129 （大约2小时）
 
 
@@ -79,6 +79,15 @@ Actions on Google：
 ![](google-home.png)
 - Entertainment (接入更多音视频服务平台)
 - Visual Response
+    - 发送地图到手机
+    - 通过对话，连接TV显示日程、天气
+
+### 3.6 Google Photos (By Anil Sabharwal)
+- Suggested Sharing (识别朋友的脸，询问是否发送给对方)
+- Shared Libraries (识别出是拍摄了女儿的照片，自动共享给了妻子)
+- Photo Books (自动筛选、去重照片，并制作成相册)
+- 在照片中识别关键信息，并给出推荐操作（订票）
+
 
 ## 4. 会议相关
 ### 4.1 分论坛数：400 events & 参与人数：7000 audience
