@@ -148,8 +148,8 @@ GO configuration
 - Youtube GO - Offline Sharing
 - Multilingual (多语言)
 
-## 3.9 VR & AR (By Clay Bavor)
-### 3.9.1 VR
+### 3.9 VR & AR (By Clay Bavor)
+#### 3.9.1 VR
 - Daydream
 三星S8于这个夏天最先支持
 - Standalone VR
@@ -159,13 +159,20 @@ no cables, no phone, no PC
     - 与HTC(vive), Lenovo合作
 2017下半年发布
 
-### 3.9.2 AR
+#### 3.9.2 AR
 - Tango
 - 第二代：ASUS ZenFone AR
 - VPS - Visual Position Service
 ![](VPS.png)
 - Google Expedition + AR
 ![](AR.png)
+
+
+### 3.10 Tensorflow + everyone (By Sundar Pichai)
+一个17岁移民学生(Ab)通过tensorflow帮助医生诊断的故事。
+
+### 3.11 Google for jobs (By Sundar Pichai)
+![](google-job.png)
 
 ## 4. 会议相关
 ### 4.1 分论坛数：400 events & 参与人数：7000 audience
