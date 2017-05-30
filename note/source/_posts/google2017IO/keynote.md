@@ -184,7 +184,12 @@ youtube上共计158个视频
 
 主要视频分类:
 ### 4.2.1 Chrome and Web at Google I/O 2017 (27个)
+看了一下整个的播放列表标题，和web相关的内容主要包括：PWA, Web Component, Web Assembly, V8, Polymer, DevTools, Web VR, Web Payment, Angular, Web Payment, Security等等
 https://www.youtube.com/playlist?list=PLNYkxOF6rcICniLJ2rfj0FexlA-9zmJJE
 #### 4.2.1.1 V8 引擎相关
-- ![V8, Advanced JavaScript, & the Next Performance Frontier (Google I/O '17)](./v8/)
+[V8, Advanced JavaScript, & the Next Performance Frontier (Google I/O '17)](./v8/)
  （https://www.youtube.com/watch?v=EdFDJANJJLs）
+#### 4.2.1.1 web安全相关
+[Learn Web Security with Google (Google I/O '17)](./web-security/)
+（https://www.youtube.com/watch?v=EdFDJANJJLs）
+ ...
