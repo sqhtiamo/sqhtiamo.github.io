@@ -4,14 +4,16 @@
 
     
   <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/05/29/google2017IO/keynote/</loc>
-    <lastmod>2017-05-30T16:50:55.000Z</lastmod>
+    <loc>http://sqhtiamo.github.io/note/public/2017/05/30/google2017IO/V8/</loc>
+    <lastmod>2017-05-30T16:56:09.000Z</lastmod>
     <data>
         <display>
-        <title>2017年5月Google I/O 2017 （一）- keynote</title>
-        <pubTime>2017-05-29T15:20:00.000Z</pubTime>
+        <title>2017年5月Google I/O 2017 （二）- V8</title>
+        <pubTime>2017-05-30T15:50:00.000Z</pubTime>
         
         <tag>google I/O 2017</tag>
+         
+        <tag>V8</tag>
          
          
            
@@ -24,16 +26,36 @@
 
     
   <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/05/30/google2017IO/V8/</loc>
-    <lastmod>2017-05-30T16:38:43.000Z</lastmod>
+    <loc>http://sqhtiamo.github.io/note/public/2017/05/31/google2017IO/web-security/</loc>
+    <lastmod>2017-05-30T16:55:52.000Z</lastmod>
     <data>
         <display>
-        <title>2017年5月Google I/O 2017 （二）- V8</title>
-        <pubTime>2017-05-30T15:50:00.000Z</pubTime>
+        <title>2017年5月Google I/O 2017 （三）- web安全</title>
+        <pubTime>2017-05-30T16:30:00.000Z</pubTime>
         
         <tag>google I/O 2017</tag>
          
         <tag>V8</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/05/29/google2017IO/keynote/</loc>
+    <lastmod>2017-05-30T16:54:01.000Z</lastmod>
+    <data>
+        <display>
+        <title>2017年5月Google I/O 2017 （一）- keynote</title>
+        <pubTime>2017-05-29T15:20:00.000Z</pubTime>
+        
+        <tag>google I/O 2017</tag>
          
          
            

@@ -3,9 +3,16 @@
   
     
     <entry>
+      <title><![CDATA[2017年5月Google I/O 2017 （三）- web安全]]></title>
+      <url>%2Fnote%2Fpublic%2F2017%2F05%2F31%2Fgoogle2017IO%2Fweb-security%2F</url>
+      <content type="text"><![CDATA[Learn Web Security with Google (Google I/O ‘17)视频地址：https://www.youtube.com/watch?v=tgEIo7ZSkbQ&amp;index=12&amp;list=PLNYkxOF6rcICniLJ2rfj0FexlA-9zmJJE]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[2017年5月Google I/O 2017 （二）- V8]]></title>
       <url>%2Fnote%2Fpublic%2F2017%2F05%2F30%2Fgoogle2017IO%2FV8%2F</url>
-      <content type="text"><![CDATA[V8, Advanced JavaScript, &amp; the Next Performance Frontier (Google I/O ‘17) （https://www.youtube.com/watch?v=EdFDJANJJLs） 主要内容 - trade off: - fast start up VS peak perf - low memory VS max optimization - Ignition &amp; TurboFan (进化史) - SpeedDOMmeter - DevTools - inspect node - js coverage - Web Assemble]]></content>
+      <content type="text"><![CDATA[V8, Advanced JavaScript, &amp; the Next Performance Frontier (Google I/O ‘17)视频地址：https://www.youtube.com/watch?v=EdFDJANJJLs 主要内容 trade off: fast start up VS peak perf low memory VS max optimization Ignition &amp; TurboFan (进化史) SpeedDOMmeter DevTools inspect node js coverage Web Assemble]]></content>
     </entry>
 
     
