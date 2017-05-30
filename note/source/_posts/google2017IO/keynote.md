@@ -5,7 +5,7 @@ tags: [google I/O 2017]
 categories: 工作拾遗
 ---
 
-By Sundar Pichai (CEO) & Scott huffman（VP Engeneering, Assistant） & Valerie Nagard (PM, Assistant) & Rishi Chandra (VP, Home Products) & Anil Sabharwal (VP, photos) & Susan Wojcicki (CEO, YouTube) & Sarah Ali (Head of Living Room Products, YouTube) & Barbara Macdonald (PM, YouTube) & Dave Burke (VP Engeneering, Android)
+By Sundar Pichai (CEO) & Scott huffman（VP Engeneering, Assistant） & Valerie Nagard (PM, Assistant) & Rishi Chandra (VP, Home Products) & Anil Sabharwal (VP, photos) & Susan Wojcicki (CEO, YouTube) & Sarah Ali (Head of Living Room Products, YouTube) & Barbara Macdonald (PM, YouTube) & Dave Burke (VP Engeneering, Android), Stephanie Saad Cuthbertson (Director, PM, Android) & Sameer Samat (VP, Android and Play) & Clay Bavor (VP, Virual Reality)
 视频地址： https://www.youtube.com/watch?v=Y2VF8tmLFHw&spfreload=10#t=15.223129 （大约2小时）
 
 
@@ -103,16 +103,51 @@ YouTube 提供最大数据源、推荐系统、双向交互（语音控制）
     ![](youtube.png)
 
 ### 3.8 Android (By Dave Burke)
-- Android Wear 2.0, Android Auto, Android TV, Android Things, Chromebook, Google Play
-- Android O
+Android Wear 2.0, Android Auto, Android TV, Android Things, Chromebook, Google Play
+#### 3.8.1 Android O
+- 两方面提升：
     - Fluid Experiences
         - Picture-in-picture
         - Notification Dots
         - Autofill with Google
         - Smart Text Selection
         ![](smart-text-selection.png)
-    - Vitals
-    
+        - TensorflowLite
+    - Vitals (By Stephanie Saad Cuthbertson)
+    和重要性相关的四个方面：Batterylife, security, startup-time, stability
+        - Security Enhancements
+        Google Play Protect
+        - OS Optimizations
+        Twice as fast boot time
+        对后台运行系统做限制，省电、控制内存
+        - Developer Tools
+        Play Console Dashboards;
+        Android Studio Profilers
+- 新开发语言： Kotlin
+与jetBrains合作
+android.com/beta
+
+#### 3.8.2 Android Go (By Sameer Samat)
+一个轻量级Android平台
+OS + Apps + Play
+GO configuration
+- Data Management & Savings
+- Youtube GO - Offline Sharing
+- Multilingual (多语言)
+
+## 3.9 VR & AR (By Clay Bavor)
+### 3.9.1 VR
+- Daydream
+三星S8于这个夏天最先支持
+- Standalone VR
+![](standalone-vr.png)
+no cables, no phone, no PC
+    - World-Sense
+    - 与HTC(vive), Lenovo合作
+2017下半年发布
+
+### 3.9.2 AR
+
 ## 4. 会议相关
 ### 4.1 分论坛数：400 events & 参与人数：7000 audience
     
