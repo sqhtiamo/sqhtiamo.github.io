@@ -5,14 +5,14 @@ tags: [google I/O 2017]
 categories: 工作拾遗
 ---
 
-By Sundar Pichai (CEO) & Scott huffman（VP Engeneering, Assistant） & Valerie Nagard (PM, Assistant) & Rishi Chandra (VP, Home Products) & Anil Sabharwal (VP, photos)
+By Sundar Pichai (CEO) & Scott huffman（VP Engeneering, Assistant） & Valerie Nagard (PM, Assistant) & Rishi Chandra (VP, Home Products) & Anil Sabharwal (VP, photos) & Susan Wojcicki (CEO, YouTube) & Sarah Ali (Head of Living Room Products, YouTube) & Barbara Macdonald (PM, YouTube) & Dave Burke (VP Engeneering, Android)
 视频地址： https://www.youtube.com/watch?v=Y2VF8tmLFHw&spfreload=10#t=15.223129 （大约2小时）
 
 
 ## 1. 回顾
 ## 1.1 用户量（7大产品）：1 Billion+ for 7 products
-Google Search, Android, Chrome, Youtube, Map, Play, Mail
-- Youtube - 1 Billion hours / day 
+Google Search, Android, Chrome, YouTube, Map, Play, Mail
+- YouTube - 1 Billion hours / day 
 - Map - Navigate 1 Billion km / day
 - Google Drive - 800M+ Usrs, 3 Billion Objects / week (from 100M in 2013)
 - Photos - 500M+ Users, 1.2 Billion Photos/ day
@@ -86,9 +86,33 @@ Actions on Google：
 - Suggested Sharing (识别朋友的脸，询问是否发送给对方)
 - Shared Libraries (识别出是拍摄了女儿的照片，自动共享给了妻子)
 - Photo Books (自动筛选、去重照片，并制作成相册)
-- 在照片中识别关键信息，并给出推荐操作（订票）
+- 在照片中识别关键信息，并给出推荐操作（订票例子）
 
+### 3.7 YouTube (By Susan Wojcicki)
+- Everyone can upload and everyone can watch
+- Two way Conversation 
+举了一个professor用一个comment帮助一个生来没有手指的小孩，通过3D打印机，重获新生的故事。(e-Nable network)
+- On-Demand on any screen
+    - 60%的观看时间通过mobile设备
+    - 每年90%的增长速度在living room products
+- Living Room Product (By Sarah Ali)
+YouTube 提供最大数据源、推荐系统、双向交互（语音控制）
+    - 360deg in the living room
+- Super Chat (By Barbara Macdonald) (live stream直播)
+    - Super Chat API
+    ![](youtube.png)
 
+### 3.8 Android (By Dave Burke)
+- Android Wear 2.0, Android Auto, Android TV, Android Things, Chromebook, Google Play
+- Android O
+    - Fluid Experiences
+        - Picture-in-picture
+        - Notification Dots
+        - Autofill with Google
+        - Smart Text Selection
+        ![](smart-text-selection.png)
+    - Vitals
+    
 ## 4. 会议相关
 ### 4.1 分论坛数：400 events & 参与人数：7000 audience
     
