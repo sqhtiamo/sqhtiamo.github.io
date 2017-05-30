@@ -1,20 +1,24 @@
 ---
-title: 2017年5月Google I/O 2017 - keynote
+title: 2017年5月Google I/O 2017 （一）- keynote
 date: 2017-05-29 23:20:00
 tags: [google I/O 2017]
 categories: 工作拾遗
 ---
 
 By Sundar Pichai (CEO)
+视频地址： https://www.youtube.com/watch?v=Y2VF8tmLFHw&spfreload=10#t=15.223129 （大约2小时）
 
-- 分论坛数：400 events & 参与人数：7000 audience
-- 用户量（7大产品）：1 Billion+ for 7 products
-Google Search, Android, Chrome, Youtube, Map, Play, Mail
-    - Youtube - 1 Billion hours / day 
-    - Map - Navigate 1 Billion km / day
-    - Google Drive - 800M+ Usrs, 3 Billion Objects / week (from 100M in 2013)
-    - Photos - 500M+ Users, 1.2 Billion Photos/ day
-    - Android - 2 Billion
+
+- 回顾
+    通过数字回顾2016年获得的成绩
+    - 用户量（7大产品）：1 Billion+ for 7 products
+    Google Search, Android, Chrome, Youtube, Map, Play, Mail
+        - Youtube - 1 Billion hours / day 
+        - Map - Navigate 1 Billion km / day
+        - Google Drive - 800M+ Usrs, 3 Billion Objects / week (from 100M in 2013)
+        - Photos - 500M+ Users, 1.2 Billion Photos/ day
+        - Android - 2 Billion
+        
 - 核心理念：Mobile First To AI First (using Machine Learning)
     - 例子：smart reply
     - 交互方面：
@@ -29,6 +33,11 @@ Google Search, Android, Chrome, Youtube, Map, Play, Mail
     - 识别路由器后面的wifi名称和密码，并自动上网
     - 识别店铺，获取位置和相关信息
 
+- 会议相关
+    - 分论坛数：400 events & 参与人数：7000 audience
+    
+    
+- 会议其他视频索引
 youtube上共计158个视频
  https://www.youtube.com/watch?v=qmeAAp9rSVY&list=PLOU2XLYxmsIKC8eODk_RNCWv3fBcLvMMy
 
