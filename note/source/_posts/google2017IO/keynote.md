@@ -190,6 +190,6 @@ https://www.youtube.com/playlist?list=PLNYkxOF6rcICniLJ2rfj0FexlA-9zmJJE
 [V8, Advanced JavaScript, & the Next Performance Frontier (Google I/O '17)](https://sqhtiamo.github.io/note/public/2017/05/30/google2017IO/V8/)
  （https://www.youtube.com/watch?v=EdFDJANJJLs）
 #### 4.2.1.1 web安全相关
-[Learn Web Security with Google (Google I/O '17)](https://sqhtiamo.github.io/note/public/2017/05/31/google2017IO/V8/web-security)
+[Learn Web Security with Google (Google I/O '17)](https://sqhtiamo.github.io/note/public/2017/05/31/google2017IO/web-security/)
 （https://www.youtube.com/watch?v=EdFDJANJJLs）
  ...
