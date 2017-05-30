@@ -1,5 +1,5 @@
 ---
-title: HTMl5标签
+title: HTML5标签
 date: 2017-02-09 20:45:00
 tags: [tag, html5, 前端]
 categories: 外文翻译
@@ -7,12 +7,12 @@ categories: 外文翻译
 
 原文:
 [https://www.sitepoint.com/eight-html5-tags-you-might-not-know/?utm_source=frontendfocus&utm_medium=email](https://www.sitepoint.com/eight-html5-tags-you-might-not-know/?utm_source=frontendfocus&utm_medium=email)
-## 1.1 <mark>
+## 1.1 \<mark\>
 
 标记和当前用户的相关性，与strong区分，用黄色底标记出来
 
 <!-- more -->
-## 1.2 <small>
+## 1.2 \<small\>
 
 应用于footer、aside远离正文；用于不重要的补充说明
 

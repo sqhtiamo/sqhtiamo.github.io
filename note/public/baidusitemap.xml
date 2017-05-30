@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/09/html5/tag/</loc>
+    <lastmod>2017-05-30T17:00:04.000Z</lastmod>
+    <data>
+        <display>
+        <title>HTML5标签</title>
+        <pubTime>2017-02-09T12:45:00.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+        <tag>tag</tag>
+         
+        <tag>html5</tag>
+         
+         
+           
+             
+              <breadCrumb title="外文翻译" url="http://sqhtiamo.github.io/note/public/categories/interpret/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://sqhtiamo.github.io/note/public/2017/05/30/google2017IO/V8/</loc>
     <lastmod>2017-05-30T16:56:09.000Z</lastmod>
     <data>
@@ -308,30 +332,6 @@
            
              
               <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/09/html5/tag/</loc>
-    <lastmod>2017-02-09T12:50:20.000Z</lastmod>
-    <data>
-        <display>
-        <title>HTMl5标签</title>
-        <pubTime>2017-02-09T12:45:00.000Z</pubTime>
-        
-        <tag>前端</tag>
-         
-        <tag>tag</tag>
-         
-        <tag>html5</tag>
-         
-         
-           
-             
-              <breadCrumb title="外文翻译" url="http://sqhtiamo.github.io/note/public/categories/interpret/"/>
           
         </display>
     </data>
