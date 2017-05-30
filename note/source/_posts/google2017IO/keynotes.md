@@ -5,14 +5,29 @@ tags: [google I/O 2017]
 categories: 工作拾遗
 ---
 
-By Thao Tran
+By Sundar Pichai (CEO)
 
-Flipkart － bring web back
-
-## 1. What exactly is a PWA?
-
-
-
+- 分论坛数：400 events & 参与人数：7000 audience
+- 用户量（7大产品）：1 Billion+ for 7 products
+Google Search, Android, Chrome, Youtube, Map, Play, Mail
+    - Youtube - 1 Billion hours / day 
+    - Map - Navigate 1 Billion km / day
+    - Google Drive - 800M+ Usrs, 3 Billion Objects / week (from 100M in 2013)
+    - Photos - 500M+ Users, 1.2 Billion Photos/ day
+    - Android - 2 Billion
+- 核心理念：Mobile First To AI First (using Machine Learning)
+    - 例子：smart reply
+    - 交互方面：
+        - Mouse & Keyboard (PC时代)
+        - Multi-touch (手机时代) 
+        - Voice (语音识别 － 错词率：4.9%，可以识别房间中6个人)
+        - Vision (图像识别 － 错误率低于人类，Google Pixel)
+            - 通过图片（一张小男孩过生日的照片）识别出：小男孩、happy、party等关键词
+            - 自动去除人像前面的障碍物（铁丝网）
+- Google Lens
+    - 识别花朵
+    - 识别路由器后面的wifi名称和密码，并自动上网
+    - 识别店铺，获取位置和相关信息
 
 youtube上共计158个视频
  https://www.youtube.com/watch?v=qmeAAp9rSVY&list=PLOU2XLYxmsIKC8eODk_RNCWv3fBcLvMMy
