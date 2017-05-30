@@ -37,11 +37,15 @@ Google Search, Android, Chrome, Youtube, Map, Play, Mail
 - 识别店铺，获取位置和相关信息
 
 ### 3.2 Cloud TPU - 下一代TPUs (Tensor Processing Units)
+![](TPU.png)
 - powered Alpha Go
 - Training & Inference 
     - TPU更擅长推断
     - Cloud TPU 对训练和推断都做了优化
-- 4个芯片
+- 每块板子4个芯片
+- 每块板子每秒可以处理 180 trillion floating point
+- 板子之间可以组合起来（64块板子组合起来一个TPU pod，每个pod可以处理11.5petaflops）
+- 成为了Google Cloud Engine
 
 ## 4. 会议相关
 ### 4.1 分论坛数：400 events & 参与人数：7000 audience
