@@ -7,33 +7,33 @@ categories: 外文翻译
 
 原文:
 [https://www.sitepoint.com/eight-html5-tags-you-might-not-know/?utm_source=frontendfocus&utm_medium=email](https://www.sitepoint.com/eight-html5-tags-you-might-not-know/?utm_source=frontendfocus&utm_medium=email)
-## 1.1 '<mark>'
+## 1.1 'mark' Tag
 
 标记和当前用户的相关性，与strong区分，用黄色底标记出来
 
 <!-- more -->
-## 1.2 \<small\>
+## 1.2 'small' Tag
 
 应用于footer、aside远离正文；用于不重要的补充说明
 
-## 1.3 <q> <blockquote>
+## 1.3 'q'与'blockquote' Tag
 
 - q: 短的行内引用
 - blockquote: 大段引用
 
 注意和cite进行区分
 
-## 1.4 <ins> <del> <s>
+## 1.4 'ins'、'del'、's' Tag
 
 - 结合cite和datetime属性一起使用
 - s表示删除之后，还有新的更新代替
 
-## 1.5 <optgroup>
+## 1.5 'optgroup' Tag
 
 - label 只能看，不能选
 - disabled: 里面的options都不可选
 
-## 1.6 <datalist>
+## 1.6 'datalist' Tag
 
 结合input作multi－select
 ```
