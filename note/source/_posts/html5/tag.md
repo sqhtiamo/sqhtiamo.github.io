@@ -7,7 +7,7 @@ categories: 外文翻译
 
 原文:
 [https://www.sitepoint.com/eight-html5-tags-you-might-not-know/?utm_source=frontendfocus&utm_medium=email](https://www.sitepoint.com/eight-html5-tags-you-might-not-know/?utm_source=frontendfocus&utm_medium=email)
-## 1.1 \<mark\>
+## 1.1 '<mark>'
 
 标记和当前用户的相关性，与strong区分，用黄色底标记出来
 
