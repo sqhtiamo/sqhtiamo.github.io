@@ -82,7 +82,7 @@ categories: 工作拾遗
 - PWA 
 - Lighthouse: Performence展示更全
 
-### 2.4 Firebase (Ben Galbraith)
+### 2.4 Firebase (By Ben Galbraith)
 - Fabric + Firebase
 - Cloud Functions for Firebase
 - Firebase Hosting + Cloud Function
