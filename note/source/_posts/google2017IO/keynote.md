@@ -1,7 +1,7 @@
 ---
-title: 2017年5月Google I/O 2017 （一）- keynote
+title: Google I/O 2017 （一）- keynote
 date: 2017-05-29 23:20:00
-tags: [google I/O 2017]
+tags: [google I/O 2017, keynote]
 categories: 工作拾遗
 ---
 
@@ -183,13 +183,18 @@ youtube上共计158个视频
  https://www.youtube.com/watch?v=qmeAAp9rSVY&list=PLOU2XLYxmsIKC8eODk_RNCWv3fBcLvMMy
 
 主要视频分类:
-### 4.2.1 Chrome and Web at Google I/O 2017 (27个)
+### 4.2.1 Developer Keynote
+详见：[Google I/O 2017 （二）- Developer Keynote](https://sqhtiamo.github.io/note/public/2017/05/31/google2017IO/developer-keynote/)
+视频地址：https://www.youtube.com/watch?v=EtQ8Le8-zyo
+
+### 4.2.2 Chrome and Web at Google I/O 2017 (27个)
 看了一下整个的播放列表标题，和web相关的内容主要包括：PWA, Web Component, Web Assembly, V8, Polymer, DevTools, Web VR, Web Payment, Angular, Web Payment, Security等等
 https://www.youtube.com/playlist?list=PLNYkxOF6rcICniLJ2rfj0FexlA-9zmJJE
-#### 4.2.1.1 V8 引擎相关
-[V8, Advanced JavaScript, & the Next Performance Frontier (Google I/O '17)](https://sqhtiamo.github.io/note/public/2017/05/30/google2017IO/V8/)
- （https://www.youtube.com/watch?v=EdFDJANJJLs）
-#### 4.2.1.1 web安全相关
-[Learn Web Security with Google (Google I/O '17)](https://sqhtiamo.github.io/note/public/2017/05/31/google2017IO/web-security/)
-（https://www.youtube.com/watch?v=EdFDJANJJLs）
- ...
+#### 4.2.2.1 V8 引擎相关
+详见：[V8, Advanced JavaScript, & the Next Performance Frontier (Google I/O '17)](https://sqhtiamo.github.io/note/public/2017/05/30/google2017IO/V8/)
+视频地址：https://www.youtube.com/watch?v=EdFDJANJJLs
+#### 4.2.2.1 web安全相关
+详见：[Learn Web Security with Google (Google I/O '17)](https://sqhtiamo.github.io/note/public/2017/05/31/google2017IO/web-security/)
+视频地址：https://www.youtube.com/watch?v=EdFDJANJJLs
+
+ ... 未完待续
