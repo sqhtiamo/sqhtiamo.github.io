@@ -7,6 +7,7 @@ categories: 工作拾遗
 演讲者：
 - Taylor Savage (PM, Google)
 - Wendy Ginsberg (PM, Google)
+- Kevin Schaaf (SE, Google)
 
 Future, Faster: Unlock the Power of Web Components with Polymer (Google I/O '17)
 视频地址：https://www.youtube.com/watch?v=cuoZenpQveQ&list=PLNYkxOF6rcICniLJ2rfj0FexlA-9zmJJE&index=2

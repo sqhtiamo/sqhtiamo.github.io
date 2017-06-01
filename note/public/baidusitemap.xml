@@ -4,18 +4,16 @@
 
     
   <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/05/29/google2017IO/web-component-polymer/</loc>
-    <lastmod>2017-05-31T16:20:00.000Z</lastmod>
+    <loc>http://sqhtiamo.github.io/note/public/2017/05/31/google2017IO/developer-keynote/</loc>
+    <lastmod>2017-06-01T12:31:53.000Z</lastmod>
     <data>
         <display>
-        <title>Google I/O 2017 （三）- Polymer</title>
-        <pubTime>2017-05-29T15:20:00.000Z</pubTime>
+        <title>Google I/O 2017 （二）- Developer Keynote</title>
+        <pubTime>2017-05-31T05:37:00.000Z</pubTime>
         
         <tag>google I/O 2017</tag>
          
-        <tag>web Components</tag>
-         
-        <tag>Polymer</tag>
+        <tag>keynote</tag>
          
          
            
@@ -28,16 +26,18 @@
 
     
   <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/05/31/google2017IO/developer-keynote/</loc>
-    <lastmod>2017-05-31T07:46:09.000Z</lastmod>
+    <loc>http://sqhtiamo.github.io/note/public/2017/05/29/google2017IO/web-component-polymer/</loc>
+    <lastmod>2017-06-01T07:44:55.000Z</lastmod>
     <data>
         <display>
-        <title>Google I/O 2017 （二）- Developer Keynote</title>
-        <pubTime>2017-05-31T05:37:00.000Z</pubTime>
+        <title>Google I/O 2017 （三）- Polymer</title>
+        <pubTime>2017-05-29T15:20:00.000Z</pubTime>
         
         <tag>google I/O 2017</tag>
          
-        <tag>keynote</tag>
+        <tag>web Components</tag>
+         
+        <tag>Polymer</tag>
          
          
            
@@ -198,9 +198,9 @@
         
         <tag>chrome</tag>
          
-        <tag>conference</tag>
-         
         <tag>前端</tag>
+         
+        <tag>conference</tag>
          
         <tag>pwa</tag>
          
@@ -224,9 +224,9 @@
         
         <tag>chrome</tag>
          
-        <tag>conference</tag>
-         
         <tag>前端</tag>
+         
+        <tag>conference</tag>
          
         <tag>credential</tag>
          
@@ -250,9 +250,9 @@
         
         <tag>chrome</tag>
          
-        <tag>conference</tag>
-         
         <tag>前端</tag>
+         
+        <tag>conference</tag>
          
          
            
