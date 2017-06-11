@@ -29,6 +29,19 @@ Border可以是一个预定义的样式，也可以是一张图片。当border�
 
 ## 4. Rounded Corners圆角
 ### 4.1 Curve Radii
+这部分内容其实指的就是'border-radius'属性，支持border-top-left-radius, border-top-right-radius, border-bottom-right-radius, border-bottom-left-radius，当然同样支持border-radius这样的缩略写法（其值从左上顺时针匹配）。其值可以为具体的数值，也可以为百分比。其中，为具体数值时会有一个'大值问题'，即如果数值设的值大于width或height的50％时，表现和设短边的raius为50％时一致，具体请见张鑫旭的文章：[秋月何时了，CSS3 border-radius知多少?](http://www.zhangxinxu.com/wordpress/2015/11/css3-border-radius-tips/)
+
+例子：
+```
+border-radius: 2em 1em 4em / 0.5em 3em;
+```
+等效为
+```
+border-top-left-radius:     2em 0.5em;
+border-top-right-radius:    1em 3em;
+border-bottom-right-radius: 4em 0.5em;
+border-bottom-left-radius:  1em 3em;
+```
 ### 4.2 Corner Shaping
 ### 4.3 Corner Clipping
 ### 4.4 Color and Style Transitions
