@@ -71,7 +71,7 @@
 <link href="/note/public/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="前端,standard,html,html5," />
+  <meta name="keywords" content="前端,html5,standard,html," />
 
 
 
@@ -88,12 +88,14 @@
 
 
 <meta name="description" content="4. DOMbasehreftarget">
+<meta name="keywords" content="前端,html5,standard,html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="html标准学习">
 <meta property="og:url" content="http://sqhtiamo.github.io/2017/02/09/standard/html5/index.html">
 <meta property="og:site_name" content="伟大航路">
 <meta property="og:description" content="4. DOMbasehreftarget">
-<meta property="og:updated_time" content="2017-02-09T12:51:15.000Z">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-05T17:09:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="html标准学习">
 <meta name="twitter:description" content="4. DOMbasehreftarget">
@@ -505,7 +507,7 @@ header#custom dl dt:hover ul {
 
       
         <h2 id="4-DOM"><a href="#4-DOM" class="headerlink" title="4. DOM"></a>4. DOM</h2><h2 id="base"><a href="#base" class="headerlink" title="base"></a>base</h2><h3 id="href"><a href="#href" class="headerlink" title="href"></a>href</h3><h3 id="target"><a href="#target" class="headerlink" title="target"></a>target</h3><a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line">enum DocumentReadyState &#123; &quot;loading&quot;, &quot;interactive&quot;, &quot;complete&quot; &#125;;</div><div class="line"></div><div class="line">[OverrideBuiltins]</div><div class="line">partial /*sealed*/ interface Document &#123;</div><div class="line">  // resource metadata management</div><div class="line">  [PutForwards=href, Unforgeable] readonly attribute Location? location;</div><div class="line">           attribute DOMString domain;</div><div class="line">  readonly attribute DOMString referrer;</div><div class="line">           attribute DOMString cookie;</div><div class="line">  readonly attribute DOMString lastModified;</div><div class="line">  readonly attribute DocumentReadyState readyState;</div><div class="line"></div><div class="line">  // DOM tree accessors</div><div class="line">  getter object (DOMString name);</div><div class="line">           attribute DOMString title;</div><div class="line">           attribute DOMString dir;</div><div class="line">           attribute HTMLElement? body;</div><div class="line">  readonly attribute HTMLHeadElement? head;</div><div class="line">  readonly attribute HTMLCollection images;</div><div class="line">  readonly attribute HTMLCollection embeds;</div><div class="line">  readonly attribute HTMLCollection plugins;</div><div class="line">  readonly attribute HTMLCollection links;</div><div class="line">  readonly attribute HTMLCollection forms;</div><div class="line">  readonly attribute HTMLCollection scripts;</div><div class="line">  NodeList getElementsByName(DOMString elementName);</div><div class="line"></div><div class="line">  // dynamic markup insertion</div><div class="line">  Document open(optional DOMString type = &quot;text/html&quot;, optional DOMString replace = &quot;&quot;);</div><div class="line">  WindowProxy open(DOMString url, DOMString name, DOMString features, optional boolean replace = false);</div><div class="line">  void close();</div><div class="line">  void write(DOMString... text);</div><div class="line">  void writeln(DOMString... text);</div><div class="line"></div><div class="line">  // user interaction</div><div class="line">  readonly attribute WindowProxy? defaultView;</div><div class="line">  readonly attribute Element? activeElement;</div><div class="line">  boolean hasFocus();</div><div class="line">           attribute DOMString designMode;</div><div class="line">  boolean execCommand(DOMString commandId, optional boolean showUI = false, optional DOMString value = &quot;&quot;);</div><div class="line">  boolean queryCommandEnabled(DOMString commandId);</div><div class="line">  boolean queryCommandIndeterm(DOMString commandId);</div><div class="line">  boolean queryCommandState(DOMString commandId);</div><div class="line">  boolean queryCommandSupported(DOMString commandId);</div><div class="line">  DOMString queryCommandValue(DOMString commandId);</div><div class="line"></div><div class="line">  // special event handler IDL attributes that only apply to Document objects</div><div class="line">  [LenientThis] attribute EventHandler onreadystatechange;</div><div class="line">&#125;;</div><div class="line">Document implements GlobalEventHandlers;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">enum DocumentReadyState &#123; &quot;loading&quot;, &quot;interactive&quot;, &quot;complete&quot; &#125;;</span><br><span class="line"></span><br><span class="line">[OverrideBuiltins]</span><br><span class="line">partial /*sealed*/ interface Document &#123;</span><br><span class="line">  // resource metadata management</span><br><span class="line">  [PutForwards=href, Unforgeable] readonly attribute Location? location;</span><br><span class="line">           attribute DOMString domain;</span><br><span class="line">  readonly attribute DOMString referrer;</span><br><span class="line">           attribute DOMString cookie;</span><br><span class="line">  readonly attribute DOMString lastModified;</span><br><span class="line">  readonly attribute DocumentReadyState readyState;</span><br><span class="line"></span><br><span class="line">  // DOM tree accessors</span><br><span class="line">  getter object (DOMString name);</span><br><span class="line">           attribute DOMString title;</span><br><span class="line">           attribute DOMString dir;</span><br><span class="line">           attribute HTMLElement? body;</span><br><span class="line">  readonly attribute HTMLHeadElement? head;</span><br><span class="line">  readonly attribute HTMLCollection images;</span><br><span class="line">  readonly attribute HTMLCollection embeds;</span><br><span class="line">  readonly attribute HTMLCollection plugins;</span><br><span class="line">  readonly attribute HTMLCollection links;</span><br><span class="line">  readonly attribute HTMLCollection forms;</span><br><span class="line">  readonly attribute HTMLCollection scripts;</span><br><span class="line">  NodeList getElementsByName(DOMString elementName);</span><br><span class="line"></span><br><span class="line">  // dynamic markup insertion</span><br><span class="line">  Document open(optional DOMString type = &quot;text/html&quot;, optional DOMString replace = &quot;&quot;);</span><br><span class="line">  WindowProxy open(DOMString url, DOMString name, DOMString features, optional boolean replace = false);</span><br><span class="line">  void close();</span><br><span class="line">  void write(DOMString... text);</span><br><span class="line">  void writeln(DOMString... text);</span><br><span class="line"></span><br><span class="line">  // user interaction</span><br><span class="line">  readonly attribute WindowProxy? defaultView;</span><br><span class="line">  readonly attribute Element? activeElement;</span><br><span class="line">  boolean hasFocus();</span><br><span class="line">           attribute DOMString designMode;</span><br><span class="line">  boolean execCommand(DOMString commandId, optional boolean showUI = false, optional DOMString value = &quot;&quot;);</span><br><span class="line">  boolean queryCommandEnabled(DOMString commandId);</span><br><span class="line">  boolean queryCommandIndeterm(DOMString commandId);</span><br><span class="line">  boolean queryCommandState(DOMString commandId);</span><br><span class="line">  boolean queryCommandSupported(DOMString commandId);</span><br><span class="line">  DOMString queryCommandValue(DOMString commandId);</span><br><span class="line"></span><br><span class="line">  // special event handler IDL attributes that only apply to Document objects</span><br><span class="line">  [LenientThis] attribute EventHandler onreadystatechange;</span><br><span class="line">&#125;;</span><br><span class="line">Document implements GlobalEventHandlers;</span><br></pre></td></tr></table></figure>
 <h2 id="7-scripts"><a href="#7-scripts" class="headerlink" title="7. scripts"></a>7. scripts</h2><h2 id="11-Obsolete-features"><a href="#11-Obsolete-features" class="headerlink" title="11. Obsolete features"></a>11. Obsolete features</h2><h3 id="11-1-Warnings"><a href="#11-1-Warnings" class="headerlink" title="11.1 Warnings"></a>11.1 Warnings</h3><ul>
 <li>obsolete permitted DOCTYPE</li>
 <li>border of ‘img’ when value=”0” [other situation is Non-conforming features] (use CSS instead)</li>
@@ -525,7 +527,7 @@ header#custom dl dt:hover ul {
 <li>Application cache</li>
 <li>Others</li>
 </ul>
-<h2 id="12-IANA-considerations"><a href="#12-IANA-considerations" class="headerlink" title="12. IANA considerations"></a>12. IANA considerations</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">IANA:</div></pre></td></tr></table></figure>
+<h2 id="12-IANA-considerations"><a href="#12-IANA-considerations" class="headerlink" title="12. IANA considerations"></a>12. IANA considerations</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">IANA:</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -556,11 +558,11 @@ header#custom dl dt:hover ul {
           
             <a href="/note/public/tags/前端/" rel="tag"># 前端</a>
           
+            <a href="/note/public/tags/html5/" rel="tag"># html5</a>
+          
             <a href="/note/public/tags/standard/" rel="tag"># standard</a>
           
             <a href="/note/public/tags/html/" rel="tag"># html</a>
-          
-            <a href="/note/public/tags/html5/" rel="tag"># html5</a>
           
         </div>
       
@@ -583,7 +585,7 @@ header#custom dl dt:hover ul {
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/note/public/2017/02/09/html5/tag/" rel="prev" title="HTML5标签">
+              <a href="/note/public/2017/02/09/html5/tag2/" rel="prev" title="HTML5标签">
                 HTML5标签 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -635,7 +637,7 @@ header#custom dl dt:hover ul {
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2017/02/09/standard/html5/"
-           data-title="html标准学习" data-url="http://sqhtiamo.github.io/note/public/2017/02/09/standard/html5/">
+           data-title="html标准学习" data-url="http://sqhtiamo.github.io/2017/02/09/standard/html5/">
       </div>
     
   </div>
@@ -682,7 +684,7 @@ header#custom dl dt:hover ul {
           
             <div class="site-state-item site-state-posts">
               <a href="/note/public/archives">
-                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-count">25</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -756,7 +758,7 @@ header#custom dl dt:hover ul {
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

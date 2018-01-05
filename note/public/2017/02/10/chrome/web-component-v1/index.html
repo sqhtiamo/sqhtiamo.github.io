@@ -87,21 +87,20 @@
 
 
 
-<meta name="description" content="原文: https://developers.google.com/web/updates/2017/01/webcomponents-org作者：Taylor Savage (Taylor is a PM on the Chrome Team, focusing on Web Components and Polymer.)
-Web Components你是否曾经想要构建一个可以跨多个项目使用的">
+<meta name="description" content="原文: https://developers.google.com/web/updates/2017/01/webcomponents-org作者：Taylor Savage (Taylor is a PM on the Chrome Team, focusing on Web Components and Polymer.) Web Components你是否曾经想要构建一个可以跨多个项目使用的">
+<meta name="keywords" content="chrome,前端,web component">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web Components v1 - 下一代Web Component规范">
 <meta property="og:url" content="http://sqhtiamo.github.io/2017/02/10/chrome/web-component-v1/index.html">
 <meta property="og:site_name" content="伟大航路">
-<meta property="og:description" content="原文: https://developers.google.com/web/updates/2017/01/webcomponents-org作者：Taylor Savage (Taylor is a PM on the Chrome Team, focusing on Web Components and Polymer.)
-Web Components你是否曾经想要构建一个可以跨多个项目使用的">
+<meta property="og:description" content="原文: https://developers.google.com/web/updates/2017/01/webcomponents-org作者：Taylor Savage (Taylor is a PM on the Chrome Team, focusing on Web Components and Polymer.) Web Components你是否曾经想要构建一个可以跨多个项目使用的">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://sqhtiamo.github.io/note/public/2017/02/10/chrome/web-component-v1/image00.gif">
 <meta property="og:image" content="http://sqhtiamo.github.io/note/public/2017/02/10/chrome/web-component-v1/webcomponents.gif">
-<meta property="og:updated_time" content="2017-02-10T06:38:19.000Z">
+<meta property="og:updated_time" content="2018-01-05T17:09:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Web Components v1 - 下一代Web Component规范">
-<meta name="twitter:description" content="原文: https://developers.google.com/web/updates/2017/01/webcomponents-org作者：Taylor Savage (Taylor is a PM on the Chrome Team, focusing on Web Components and Polymer.)
-Web Components你是否曾经想要构建一个可以跨多个项目使用的">
+<meta name="twitter:description" content="原文: https://developers.google.com/web/updates/2017/01/webcomponents-org作者：Taylor Savage (Taylor is a PM on the Chrome Team, focusing on Web Components and Polymer.) Web Components你是否曾经想要构建一个可以跨多个项目使用的">
 <meta name="twitter:image" content="http://sqhtiamo.github.io/note/public/2017/02/10/chrome/web-component-v1/image00.gif">
 
 
@@ -510,21 +509,21 @@ header#custom dl dt:hover ul {
       
 
       
-        <p>原文: <a href="https://developers.google.com/web/updates/2017/01/webcomponents-org" target="_blank" rel="external">https://developers.google.com/web/updates/2017/01/webcomponents-org</a><br>作者：<a href="https://developers.google.com/web/resources/contributors#taylorsavage" target="_blank" rel="external">Taylor Savage</a> (Taylor is a PM on the Chrome Team, focusing on Web Components and Polymer.)</p>
+        <p>原文: <a href="https://developers.google.com/web/updates/2017/01/webcomponents-org" target="_blank" rel="noopener">https://developers.google.com/web/updates/2017/01/webcomponents-org</a><br>作者：<a href="https://developers.google.com/web/resources/contributors#taylorsavage" target="_blank" rel="noopener">Taylor Savage</a> (Taylor is a PM on the Chrome Team, focusing on Web Components and Polymer.)</p>
 <h2 id="Web-Components"><a href="#Web-Components" class="headerlink" title="Web Components"></a>Web Components</h2><p>你是否曾经想要构建一个可以跨多个项目使用的，跟框架无关的、可供其他开发者使用的js组件？Web Components可能适合你。</p>
 <a id="more"></a>
 <p>Web Components是一组web平台的新功能。它可以使你创建自己的HTML元素。每一个HTML元素都有一个自定义标签，如<my-button>，并且拥有所有和原生的内置标签一样的优点。自定义元素也同样拥有属性(properties)、方法(methods)、触发和响应事件(events)，甚至也可以拥有封装好的样式(styles)和DOM树。</my-button></p>
 <p><img src="/note/public/2017/02/10/chrome/web-component-v1/image00.gif" alt="自定义元素"></p>
 <p>通过提供一个基于平台的、底层的组件模型，Web Components可以使你搭建和分享一个可复用的任意元素，从定制化的按钮(button)到复杂的视图，如时间选择器(datepicker)。由于Web Components是通过平台的API实现的，它包含了功能强大的、封装好的原语句(primitives)，你甚至可以把这些自定义元素当作标准的DOM元素，在其他的JS类库和框架中使用。</p>
-<p>也许，你之前听说过Web Components的概念，它较早的一个版本(V0规范)曾在<a href="https://www.chromestatus.com/feature/4642138092470272" target="_blank" rel="external">Chrome 33实现过</a>。</p>
-<p>如今，多亏了浏览器厂商们的合作，下一代Web Components － v1规范，已经得到了广泛支持。Chrome已经在<a href="https://www.chromestatus.com/feature/4667415417847808" target="_blank" rel="external">53版本</a>和<a href="https://www.chromestatus.com/feature/4696261944934400" target="_blank" rel="external">54版本</a>分别支持了，Web Components规范中的2个主要部分 － <a href="https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom" target="_blank" rel="external">Shadow Dom</a>和<a href="https://developers.google.com/web/fundamentals/getting-started/primers/customelements" target="_blank" rel="external">Custom Elements</a>；Safari在10版本中，<a href="https://webkit.org/status/#feature-shadow-dom" target="_blank" rel="external">支持了Shadow DOM v1规范</a>并且完成了在<a href="https://webkit.org/blog/7027/introducing-custom-elements/" target="_blank" rel="external">Webkit内核中对Custom Elements v1规范的实现</a>；Firefox对<a href="https://platform-status.mozilla.org/#shadow-dom" target="_blank" rel="external">Shadow DOM</a>和<a href="https://platform-status.mozilla.org/#custom-elements" target="_blank" rel="external">Custom Elements v1</a>规范支持正在开发中；Edge也将对<a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/shadowdom/" target="_blank" rel="external">Shadow DOM</a>和<a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/customelements/" target="_blank" rel="external">Custom Elements</a>支持规划到他们的开发roadmap中。</p>
+<p>也许，你之前听说过Web Components的概念，它较早的一个版本(V0规范)曾在<a href="https://www.chromestatus.com/feature/4642138092470272" target="_blank" rel="noopener">Chrome 33实现过</a>。</p>
+<p>如今，多亏了浏览器厂商们的合作，下一代Web Components － v1规范，已经得到了广泛支持。Chrome已经在<a href="https://www.chromestatus.com/feature/4667415417847808" target="_blank" rel="noopener">53版本</a>和<a href="https://www.chromestatus.com/feature/4696261944934400" target="_blank" rel="noopener">54版本</a>分别支持了，Web Components规范中的2个主要部分 － <a href="https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom" target="_blank" rel="noopener">Shadow Dom</a>和<a href="https://developers.google.com/web/fundamentals/getting-started/primers/customelements" target="_blank" rel="noopener">Custom Elements</a>；Safari在10版本中，<a href="https://webkit.org/status/#feature-shadow-dom" target="_blank" rel="noopener">支持了Shadow DOM v1规范</a>并且完成了在<a href="https://webkit.org/blog/7027/introducing-custom-elements/" target="_blank" rel="noopener">Webkit内核中对Custom Elements v1规范的实现</a>；Firefox对<a href="https://platform-status.mozilla.org/#shadow-dom" target="_blank" rel="noopener">Shadow DOM</a>和<a href="https://platform-status.mozilla.org/#custom-elements" target="_blank" rel="noopener">Custom Elements v1</a>规范支持正在开发中；Edge也将对<a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/shadowdom/" target="_blank" rel="noopener">Shadow DOM</a>和<a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/customelements/" target="_blank" rel="noopener">Custom Elements</a>支持规划到他们的开发roadmap中。</p>
 <p>通过v1规范在浏览器中的实现，你只需要借助ES6的语法，创建一个继承(extends)自HTMLElement的新元素(class)，并将它在浏览器中进行注册，你就可以成功地定义了一个新的自定义元素。例如：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyElement</span> <span class="keyword">extends</span> <span class="title">HTMLElement</span> </span>&#123;...&#125;</div><div class="line"><span class="built_in">window</span>.customElements.define(<span class="string">'my-element'</span>, MyElement);</div></pre></td></tr></table></figure>
-<p>新版本的V1规范已经十分强大。我们整理出了<a href="https://developers.google.com/web/fundamentals/getting-started/primers/customelements" target="_blank" rel="external">Custom Elements V1</a>和<a href="https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom" target="_blank" rel="external">Shadow Dom V1</a>的教程，以便你能更好的上手使用。</p>
-<h2 id="webcomponents-org"><a href="#webcomponents-org" class="headerlink" title="webcomponents.org"></a>webcomponents.org</h2><p>Web Component社区也同样的在蓬勃发展。我们兴奋地看到了一个基于web component社区的网站 － <a href="https://www.webcomponents.org/" target="_blank" rel="external">webcomponents.org</a>的发布。该网站已经集成了一个目录，可供开发者们贡献自己的自定义元素。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyElement</span> <span class="keyword">extends</span> <span class="title">HTMLElement</span> </span>&#123;...&#125;</span><br><span class="line"><span class="built_in">window</span>.customElements.define(<span class="string">'my-element'</span>, MyElement);</span><br></pre></td></tr></table></figure>
+<p>新版本的V1规范已经十分强大。我们整理出了<a href="https://developers.google.com/web/fundamentals/getting-started/primers/customelements" target="_blank" rel="noopener">Custom Elements V1</a>和<a href="https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom" target="_blank" rel="noopener">Shadow Dom V1</a>的教程，以便你能更好的上手使用。</p>
+<h2 id="webcomponents-org"><a href="#webcomponents-org" class="headerlink" title="webcomponents.org"></a>webcomponents.org</h2><p>Web Component社区也同样的在蓬勃发展。我们兴奋地看到了一个基于web component社区的网站 － <a href="https://www.webcomponents.org/" target="_blank" rel="noopener">webcomponents.org</a>的发布。该网站已经集成了一个目录，可供开发者们贡献自己的自定义元素。</p>
 <p><img src="/note/public/2017/02/10/chrome/web-component-v1/webcomponents.gif" alt="webcomponents.org"></p>
-<p>webcomponents.org包含了<a href="https://www.webcomponents.org/specs" target="_blank" rel="external">Web Components规范</a>, 来自<a href="https://www.webcomponents.org/community" target="_blank" rel="external">Web Components社区</a>的更新情况, 开源项目的<a href="https://www.webcomponents.org/element/PolymerElements/paper-button" target="_blank" rel="external">相关文档</a>和由其他开发者们贡献的<a href="https://www.webcomponents.org/collection/PolymerElements/paper-elements" target="_blank" rel="external">自定义元素</a>。</p>
-<p>现在，你可以通过类库的方式(如：谷歌的<a href="https://www.polymer-project.org/1.0/" target="_blank" rel="external">Polymer框架</a>)，或者直接通过底层的Web Component API，开始构建你的第一个自定义元素，然后把它<a href="https://www.webcomponents.org/publish" target="_blank" rel="external">发布</a>到webcomponents.org上。</p>
+<p>webcomponents.org包含了<a href="https://www.webcomponents.org/specs" target="_blank" rel="noopener">Web Components规范</a>, 来自<a href="https://www.webcomponents.org/community" target="_blank" rel="noopener">Web Components社区</a>的更新情况, 开源项目的<a href="https://www.webcomponents.org/element/PolymerElements/paper-button" target="_blank" rel="noopener">相关文档</a>和由其他开发者们贡献的<a href="https://www.webcomponents.org/collection/PolymerElements/paper-elements" target="_blank" rel="noopener">自定义元素</a>。</p>
+<p>现在，你可以通过类库的方式(如：谷歌的<a href="https://www.polymer-project.org/1.0/" target="_blank" rel="noopener">Polymer框架</a>)，或者直接通过底层的Web Component API，开始构建你的第一个自定义元素，然后把它<a href="https://www.webcomponents.org/publish" target="_blank" rel="noopener">发布</a>到webcomponents.org上。</p>
 <p>祝您在组件化之路上，玩的开心！</p>
 
       
@@ -633,7 +632,7 @@ header#custom dl dt:hover ul {
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2017/02/10/chrome/web-component-v1/"
-           data-title="Web Components v1 - 下一代Web Component规范" data-url="http://sqhtiamo.github.io/note/public/2017/02/10/chrome/web-component-v1/">
+           data-title="Web Components v1 - 下一代Web Component规范" data-url="http://sqhtiamo.github.io/2017/02/10/chrome/web-component-v1/">
       </div>
     
   </div>
@@ -680,7 +679,7 @@ header#custom dl dt:hover ul {
           
             <div class="site-state-item site-state-posts">
               <a href="/note/public/archives">
-                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-count">25</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -754,7 +753,7 @@ header#custom dl dt:hover ul {
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

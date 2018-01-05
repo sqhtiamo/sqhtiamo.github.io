@@ -87,19 +87,18 @@
 
 
 
-<meta name="description" content="CSS标准详解系列主要根据现行的CSS规范，对一些CSS标准中的一些细节进行解释和学习，以此提高自己，并希望能够给大家带来帮助。文中的例子，主要来源于自己在当前主流浏览器（chrome、safari、firefox）中的尝试以及对各位大神文章的参考（会明确指出来源）。由于自己才疏学浅，文中不免会出现不少纰漏，请各位不吝赐教。如有问题请联系作者sqhtiamo@163.com。
-1. 介绍本系列第一">
+<meta name="description" content="CSS标准详解系列主要根据现行的CSS规范，对一些CSS标准中的一些细节进行解释和学习，以此提高自己，并希望能够给大家带来帮助。文中的例子，主要来源于自己在当前主流浏览器（chrome、safari、firefox）中的尝试以及对各位大神文章的参考（会明确指出来源）。由于自己才疏学浅，文中不免会出现不少纰漏，请各位不吝赐教。如有问题请联系作者sqhtiamo@163.com。 1. 介绍本系列第一">
+<meta name="keywords" content="前端,css,background,border,spec">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS标准详解系列 一、 CSS Backgrounds and Borders Module">
 <meta property="og:url" content="http://sqhtiamo.github.io/2017/06/10/css/Background & Border in CSS/index.html">
 <meta property="og:site_name" content="伟大航路">
-<meta property="og:description" content="CSS标准详解系列主要根据现行的CSS规范，对一些CSS标准中的一些细节进行解释和学习，以此提高自己，并希望能够给大家带来帮助。文中的例子，主要来源于自己在当前主流浏览器（chrome、safari、firefox）中的尝试以及对各位大神文章的参考（会明确指出来源）。由于自己才疏学浅，文中不免会出现不少纰漏，请各位不吝赐教。如有问题请联系作者sqhtiamo@163.com。
-1. 介绍本系列第一">
-<meta property="og:updated_time" content="2017-06-11T12:18:23.000Z">
+<meta property="og:description" content="CSS标准详解系列主要根据现行的CSS规范，对一些CSS标准中的一些细节进行解释和学习，以此提高自己，并希望能够给大家带来帮助。文中的例子，主要来源于自己在当前主流浏览器（chrome、safari、firefox）中的尝试以及对各位大神文章的参考（会明确指出来源）。由于自己才疏学浅，文中不免会出现不少纰漏，请各位不吝赐教。如有问题请联系作者sqhtiamo@163.com。 1. 介绍本系列第一">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-05T17:09:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS标准详解系列 一、 CSS Backgrounds and Borders Module">
-<meta name="twitter:description" content="CSS标准详解系列主要根据现行的CSS规范，对一些CSS标准中的一些细节进行解释和学习，以此提高自己，并希望能够给大家带来帮助。文中的例子，主要来源于自己在当前主流浏览器（chrome、safari、firefox）中的尝试以及对各位大神文章的参考（会明确指出来源）。由于自己才疏学浅，文中不免会出现不少纰漏，请各位不吝赐教。如有问题请联系作者sqhtiamo@163.com。
-1. 介绍本系列第一">
+<meta name="twitter:description" content="CSS标准详解系列主要根据现行的CSS规范，对一些CSS标准中的一些细节进行解释和学习，以此提高自己，并希望能够给大家带来帮助。文中的例子，主要来源于自己在当前主流浏览器（chrome、safari、firefox）中的尝试以及对各位大神文章的参考（会明确指出来源）。由于自己才疏学浅，文中不免会出现不少纰漏，请各位不吝赐教。如有问题请联系作者sqhtiamo@163.com。 1. 介绍本系列第一">
 
 
 
@@ -507,15 +506,15 @@ header#custom dl dt:hover ul {
       
 
       
-        <p>CSS标准详解系列主要根据现行的CSS<a href="https://www.w3.org/Style/CSS/current-work" target="_blank" rel="external">规范</a>，对一些CSS标准中的一些细节进行解释和学习，以此提高自己，并希望能够给大家带来帮助。文中的例子，主要来源于自己在当前主流浏览器（chrome、safari、firefox）中的尝试以及对各位大神文章的参考（会明确指出来源）。由于自己才疏学浅，文中不免会出现不少纰漏，请各位不吝赐教。如有问题请联系作者sqhtiamo@163.com。</p>
+        <p>CSS标准详解系列主要根据现行的CSS<a href="https://www.w3.org/Style/CSS/current-work" target="_blank" rel="noopener">规范</a>，对一些CSS标准中的一些细节进行解释和学习，以此提高自己，并希望能够给大家带来帮助。文中的例子，主要来源于自己在当前主流浏览器（chrome、safari、firefox）中的尝试以及对各位大神文章的参考（会明确指出来源）。由于自己才疏学浅，文中不免会出现不少纰漏，请各位不吝赐教。如有问题请联系作者sqhtiamo@163.com。</p>
 <h2 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1. 介绍"></a>1. 介绍</h2><p>本系列第一章为：CSS Backgrounds and Borders Module，该模块为CSS标准中stable状态下的第一个模块，现在的阶段是CR（在2014年9月就进入该阶段），下一阶段为PR。在大部分现代浏览器中已经实现，并且完成度也是很高的。</p>
-<p>该模块(<a href="https://www.w3.org/TR/css3-background" target="_blank" rel="external">https://www.w3.org/TR/css3-background</a>)核心内容有5个部分分别为Backgrounds、Borders、Rounded Corners、Border Images、Miscellaneous Effects。其中Miscellaneous Effects主要包括的内容为：’box-shadow’属性。<br><a id="more"></a></p>
+<p>该模块(<a href="https://www.w3.org/TR/css3-background" target="_blank" rel="noopener">https://www.w3.org/TR/css3-background</a>)核心内容有5个部分分别为Backgrounds、Borders、Rounded Corners、Border Images、Miscellaneous Effects。其中Miscellaneous Effects主要包括的内容为：’box-shadow’属性。<br><a id="more"></a></p>
 <h2 id="2-Backgrounds"><a href="#2-Backgrounds" class="headerlink" title="2. Backgrounds"></a>2. Backgrounds</h2><p>每个盒子的背景层为全透明（默认值）、被一种颜色(a color?)填充、或被一张或多张图片填充。</p>
 <h2 id="3-Borders"><a href="#3-Borders" class="headerlink" title="3. Borders"></a>3. Borders</h2><p>有关borders的部分较为简单，大部分属性（除了border-image）都是在CSS1时，就进入了标准。</p>
 <p>Border可以是一个预定义的样式，也可以是一张图片。当border为一个预定义样式时，可以定义的属性有’border-style’, ‘border-color’, ‘border-width’；当border为图片时，详见第5部分。</p>
-<h3 id="3-1-Line-Colors"><a href="#3-1-Line-Colors" class="headerlink" title="3.1 Line Colors"></a>3.1 Line Colors</h3><h3 id="3-2-Line-Patterns"><a href="#3-2-Line-Patterns" class="headerlink" title="3.2 Line Patterns:"></a>3.2 Line Patterns:</h3><h3 id="3-3-Line-Thickness"><a href="#3-3-Line-Thickness" class="headerlink" title="3.3 Line Thickness"></a>3.3 Line Thickness</h3><h3 id="3-4-Border-Shorthand-Properties"><a href="#3-4-Border-Shorthand-Properties" class="headerlink" title="3.4 Border Shorthand Properties"></a>3.4 Border Shorthand Properties</h3><h2 id="4-Rounded-Corners圆角"><a href="#4-Rounded-Corners圆角" class="headerlink" title="4. Rounded Corners圆角"></a>4. Rounded Corners圆角</h2><h3 id="4-1-Curve-Radii"><a href="#4-1-Curve-Radii" class="headerlink" title="4.1 Curve Radii"></a>4.1 Curve Radii</h3><p>这部分内容其实指的就是’border-radius’属性，支持border-top-left-radius, border-top-right-radius, border-bottom-right-radius, border-bottom-left-radius，当然同样支持border-radius这样的缩略写法（其值从左上顺时针匹配）。其值可以为具体的数值，也可以为百分比。其中，为具体数值时会有一个’大值问题’，即如果数值设的值大于width或height的50％时，表现和设短边的raius为50％时一致，具体请见张鑫旭的文章：<a href="http://www.zhangxinxu.com/wordpress/2015/11/css3-border-radius-tips/" target="_blank" rel="external">秋月何时了，CSS3 border-radius知多少?</a></p>
-<p>例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">border-radius: 2em 1em 4em / 0.5em 3em;</div></pre></td></tr></table></figure></p>
-<p>等效为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">border-top-left-radius:     2em 0.5em;</div><div class="line">border-top-right-radius:    1em 3em;</div><div class="line">border-bottom-right-radius: 4em 0.5em;</div><div class="line">border-bottom-left-radius:  1em 3em;</div></pre></td></tr></table></figure></p>
+<h3 id="3-1-Line-Colors"><a href="#3-1-Line-Colors" class="headerlink" title="3.1 Line Colors"></a>3.1 Line Colors</h3><h3 id="3-2-Line-Patterns"><a href="#3-2-Line-Patterns" class="headerlink" title="3.2 Line Patterns:"></a>3.2 Line Patterns:</h3><h3 id="3-3-Line-Thickness"><a href="#3-3-Line-Thickness" class="headerlink" title="3.3 Line Thickness"></a>3.3 Line Thickness</h3><h3 id="3-4-Border-Shorthand-Properties"><a href="#3-4-Border-Shorthand-Properties" class="headerlink" title="3.4 Border Shorthand Properties"></a>3.4 Border Shorthand Properties</h3><h2 id="4-Rounded-Corners圆角"><a href="#4-Rounded-Corners圆角" class="headerlink" title="4. Rounded Corners圆角"></a>4. Rounded Corners圆角</h2><h3 id="4-1-Curve-Radii"><a href="#4-1-Curve-Radii" class="headerlink" title="4.1 Curve Radii"></a>4.1 Curve Radii</h3><p>这部分内容其实指的就是’border-radius’属性，支持border-top-left-radius, border-top-right-radius, border-bottom-right-radius, border-bottom-left-radius，当然同样支持border-radius这样的缩略写法（其值从左上顺时针匹配）。其值可以为具体的数值，也可以为百分比。其中，为具体数值时会有一个’大值问题’，即如果数值设的值大于width或height的50％时，表现和设短边的raius为50％时一致，具体请见张鑫旭的文章：<a href="http://www.zhangxinxu.com/wordpress/2015/11/css3-border-radius-tips/" target="_blank" rel="noopener">秋月何时了，CSS3 border-radius知多少?</a></p>
+<p>例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">border-radius: 2em 1em 4em / 0.5em 3em;</span><br></pre></td></tr></table></figure></p>
+<p>等效为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">border-top-left-radius:     2em 0.5em;</span><br><span class="line">border-top-right-radius:    1em 3em;</span><br><span class="line">border-bottom-right-radius: 4em 0.5em;</span><br><span class="line">border-bottom-left-radius:  1em 3em;</span><br></pre></td></tr></table></figure></p>
 <h3 id="4-2-Corner-Shaping"><a href="#4-2-Corner-Shaping" class="headerlink" title="4.2 Corner Shaping"></a>4.2 Corner Shaping</h3><h3 id="4-3-Corner-Clipping"><a href="#4-3-Corner-Clipping" class="headerlink" title="4.3 Corner Clipping"></a>4.3 Corner Clipping</h3><h3 id="4-4-Color-and-Style-Transitions"><a href="#4-4-Color-and-Style-Transitions" class="headerlink" title="4.4 Color and Style Transitions"></a>4.4 Color and Style Transitions</h3><h3 id="4-5-Overlapping-Curves"><a href="#4-5-Overlapping-Curves" class="headerlink" title="4.5 Overlapping Curves"></a>4.5 Overlapping Curves</h3><h3 id="4-6-Effect-on-Tables"><a href="#4-6-Effect-on-Tables" class="headerlink" title="4.6 Effect on Tables"></a>4.6 Effect on Tables</h3><h2 id="5-Border-Images"><a href="#5-Border-Images" class="headerlink" title="5. Border Images"></a>5. Border Images</h2><h2 id="6-Miscellaneous-Effects"><a href="#6-Miscellaneous-Effects" class="headerlink" title="6. Miscellaneous Effects"></a>6. Miscellaneous Effects</h2><p>这部分主要讲的是box-shadow属性。之前也涉及了’box-decoration-break’属性，现在也被移到了CSS Fragmentation Module标准中去。<br>6.1. Drop Shadows</p>
 
       
@@ -624,7 +623,7 @@ header#custom dl dt:hover ul {
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2017/06/10/css/Background & Border in CSS/"
-           data-title="CSS标准详解系列 一、 CSS Backgrounds and Borders Module" data-url="http://sqhtiamo.github.io/note/public/2017/06/10/css/Background & Border in CSS/">
+           data-title="CSS标准详解系列 一、 CSS Backgrounds and Borders Module" data-url="http://sqhtiamo.github.io/2017/06/10/css/Background & Border in CSS/">
       </div>
     
   </div>
@@ -671,7 +670,7 @@ header#custom dl dt:hover ul {
           
             <div class="site-state-item site-state-posts">
               <a href="/note/public/archives">
-                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-count">25</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -745,7 +744,7 @@ header#custom dl dt:hover ul {
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

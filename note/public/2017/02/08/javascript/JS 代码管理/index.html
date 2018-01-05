@@ -87,34 +87,18 @@
 
 
 
-<meta name="description" content="1. 编写「可读」代码的实践淘宝 Fed 叶斋 http://taobaofed.org/blog/2017/01/05/writing-readable-code/
-1.1 变量命名
-驼峰
-使用名词来命名对象，使用动词来命名函数
-
-对于集合来说：也可以加上 List（数组）或 Map（对象）后缀来显式表示出来
-对于函数来说：建议动＋宾＋补 如：fetchUserInfoAsync">
+<meta name="description" content="1. 编写「可读」代码的实践淘宝 Fed 叶斋 http://taobaofed.org/blog/2017/01/05/writing-readable-code/ 1.1 变量命名 驼峰 使用名词来命名对象，使用动词来命名函数  对于集合来说：也可以加上 List（数组）或 Map（对象）后缀来显式表示出来 对于函数来说：建议动＋宾＋补 如：fetchUserInfoAsync">
+<meta name="keywords" content="javascript,最佳实践">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JS 代码管理">
 <meta property="og:url" content="http://sqhtiamo.github.io/2017/02/08/javascript/JS 代码管理/index.html">
 <meta property="og:site_name" content="伟大航路">
-<meta property="og:description" content="1. 编写「可读」代码的实践淘宝 Fed 叶斋 http://taobaofed.org/blog/2017/01/05/writing-readable-code/
-1.1 变量命名
-驼峰
-使用名词来命名对象，使用动词来命名函数
-
-对于集合来说：也可以加上 List（数组）或 Map（对象）后缀来显式表示出来
-对于函数来说：建议动＋宾＋补 如：fetchUserInfoAsync">
-<meta property="og:updated_time" content="2017-04-29T06:35:14.000Z">
+<meta property="og:description" content="1. 编写「可读」代码的实践淘宝 Fed 叶斋 http://taobaofed.org/blog/2017/01/05/writing-readable-code/ 1.1 变量命名 驼峰 使用名词来命名对象，使用动词来命名函数  对于集合来说：也可以加上 List（数组）或 Map（对象）后缀来显式表示出来 对于函数来说：建议动＋宾＋补 如：fetchUserInfoAsync">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-05T17:09:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS 代码管理">
-<meta name="twitter:description" content="1. 编写「可读」代码的实践淘宝 Fed 叶斋 http://taobaofed.org/blog/2017/01/05/writing-readable-code/
-1.1 变量命名
-驼峰
-使用名词来命名对象，使用动词来命名函数
-
-对于集合来说：也可以加上 List（数组）或 Map（对象）后缀来显式表示出来
-对于函数来说：建议动＋宾＋补 如：fetchUserInfoAsync">
+<meta name="twitter:description" content="1. 编写「可读」代码的实践淘宝 Fed 叶斋 http://taobaofed.org/blog/2017/01/05/writing-readable-code/ 1.1 变量命名 驼峰 使用名词来命名对象，使用动词来命名函数  对于集合来说：也可以加上 List（数组）或 Map（对象）后缀来显式表示出来 对于函数来说：建议动＋宾＋补 如：fetchUserInfoAsync">
 
 
 
@@ -522,7 +506,7 @@ header#custom dl dt:hover ul {
       
 
       
-        <h2 id="1-编写「可读」代码的实践"><a href="#1-编写「可读」代码的实践" class="headerlink" title="1. 编写「可读」代码的实践"></a>1. 编写「可读」代码的实践</h2><p><a href="http://taobaofed.org/blog/2017/01/05/writing-readable-code/" target="_blank" rel="external">淘宝 Fed 叶斋 http://taobaofed.org/blog/2017/01/05/writing-readable-code/</a></p>
+        <h2 id="1-编写「可读」代码的实践"><a href="#1-编写「可读」代码的实践" class="headerlink" title="1. 编写「可读」代码的实践"></a>1. 编写「可读」代码的实践</h2><p><a href="http://taobaofed.org/blog/2017/01/05/writing-readable-code/" target="_blank" rel="noopener">淘宝 Fed 叶斋 http://taobaofed.org/blog/2017/01/05/writing-readable-code/</a></p>
 <h3 id="1-1-变量命名"><a href="#1-1-变量命名" class="headerlink" title="1.1 变量命名"></a>1.1 变量命名</h3><ul>
 <li>驼峰</li>
 <li>使用名词来命名对象，使用动词来命名函数</li>
@@ -530,15 +514,15 @@ header#custom dl dt:hover ul {
 <p>对于集合来说：也可以加上 List（数组）或 Map（对象）后缀来显式表示出来</p>
 <p>对于函数来说：建议动＋宾＋补 如：fetchUserInfoAsync</p>
 <a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">monkey.eat(banana);  // the money eats a banana</div><div class="line">const apple = pick(tree);  // pick an apple from the tree</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">monkey.eat(banana);  // the money eats a banana</span><br><span class="line">const apple = pick(tree);  // pick an apple from the tree</span><br></pre></td></tr></table></figure>
 <h4 id="1-1-1-命名的上下文"><a href="#1-1-1-命名的上下文" class="headerlink" title="1.1.1 命名的上下文"></a>1.1.1 命名的上下文</h4><p>变量的命名应与上下文相契合，同一个变量，在不同的上下文中，命名可以不同。</p>
 <p>不同上下文更应根据实际情况而定。</p>
 <h4 id="1-1-2-严格遵循一种命名规范的收益"><a href="#1-1-2-严格遵循一种命名规范的收益" class="headerlink" title="1.1.2 严格遵循一种命名规范的收益"></a>1.1.2 严格遵循一种命名规范的收益</h4><p>特定上下文中的特定含义只有一种命名方式，也就是说，只有一个名字。</p>
 <p>也就是说，命名规范后，对于一种场景，只有一个函数命名方式。</p>
 <p>（是否需要整理一个常用动词、名词list？）</p>
 <h3 id="1-2-分支结构"><a href="#1-2-分支结构" class="headerlink" title="1.2 分支结构"></a>1.2 分支结构</h3><p>大体认同，但是实践的时候，需要考虑很多特殊情况。</p>
-<h4 id="1-2-1-不好的做法：在分支中-return"><a href="#1-2-1-不好的做法：在分支中-return" class="headerlink" title="1.2.1 不好的做法：在分支中 return"></a>1.2.1 不好的做法：在分支中 return</h4><h4 id="1-2-2-不好的做法：多个条件复合"><a href="#1-2-2-不好的做法：多个条件复合" class="headerlink" title="1.2.2 不好的做法：多个条件复合"></a>1.2.2 不好的做法：多个条件复合</h4><h4 id="1-2-3-不好的做法：使用分支改变环境"><a href="#1-2-3-不好的做法：使用分支改变环境" class="headerlink" title="1.2.3 不好的做法：使用分支改变环境"></a>1.2.3 不好的做法：使用分支改变环境</h4><h3 id="1-3-函数"><a href="#1-3-函数" class="headerlink" title="1.3 函数"></a>1.3 函数</h3><h4 id="1-3-1-函数只做一件事情"><a href="#1-3-1-函数只做一件事情" class="headerlink" title="1.3.1 函数只做一件事情"></a>1.3.1 函数只做一件事情</h4><p>比如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">async function fetchUserInfo(id) &#123;</div><div class="line">  const isSingle = typeof idList === &apos;string&apos;;</div><div class="line">  const idList = isSingle ? [id] : id;</div><div class="line">  const result = await request.post(&apos;/api/userInfo&apos;, &#123;idList&#125;);</div><div class="line">  return isSingle ? result[0] : result;</div><div class="line">&#125;</div><div class="line"></div><div class="line">// 可以这样调用</div><div class="line">const userList = await fetchUserInfo([&apos;1011&apos;, &apos;1013&apos;]);</div><div class="line">// 也可以这样调用</div><div class="line">const user = await fetchUserInfo(&apos;1017&apos;);</div></pre></td></tr></table></figure></p>
-<p>可以修改为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">async function fetchMultipleUser(idList) &#123;</div><div class="line">  return await request.post(&apos;/api/users/&apos;, &#123;idList&#125;);</div><div class="line">&#125;</div><div class="line"></div><div class="line">async function fetchSingleUser(id) &#123;</div><div class="line">  return await fetchMultipleUser([id])[0];</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="1-2-1-不好的做法：在分支中-return"><a href="#1-2-1-不好的做法：在分支中-return" class="headerlink" title="1.2.1 不好的做法：在分支中 return"></a>1.2.1 不好的做法：在分支中 return</h4><h4 id="1-2-2-不好的做法：多个条件复合"><a href="#1-2-2-不好的做法：多个条件复合" class="headerlink" title="1.2.2 不好的做法：多个条件复合"></a>1.2.2 不好的做法：多个条件复合</h4><h4 id="1-2-3-不好的做法：使用分支改变环境"><a href="#1-2-3-不好的做法：使用分支改变环境" class="headerlink" title="1.2.3 不好的做法：使用分支改变环境"></a>1.2.3 不好的做法：使用分支改变环境</h4><h3 id="1-3-函数"><a href="#1-3-函数" class="headerlink" title="1.3 函数"></a>1.3 函数</h3><h4 id="1-3-1-函数只做一件事情"><a href="#1-3-1-函数只做一件事情" class="headerlink" title="1.3.1 函数只做一件事情"></a>1.3.1 函数只做一件事情</h4><p>比如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">async function fetchUserInfo(id) &#123;</span><br><span class="line">  const isSingle = typeof idList === &apos;string&apos;;</span><br><span class="line">  const idList = isSingle ? [id] : id;</span><br><span class="line">  const result = await request.post(&apos;/api/userInfo&apos;, &#123;idList&#125;);</span><br><span class="line">  return isSingle ? result[0] : result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 可以这样调用</span><br><span class="line">const userList = await fetchUserInfo([&apos;1011&apos;, &apos;1013&apos;]);</span><br><span class="line">// 也可以这样调用</span><br><span class="line">const user = await fetchUserInfo(&apos;1017&apos;);</span><br></pre></td></tr></table></figure></p>
+<p>可以修改为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">async function fetchMultipleUser(idList) &#123;</span><br><span class="line">  return await request.post(&apos;/api/users/&apos;, &#123;idList&#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">async function fetchSingleUser(id) &#123;</span><br><span class="line">  return await fetchMultipleUser([id])[0];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>那么，如何界定某个函数做的是不是一件事情？我的经验是这样：如果一个函数的参数仅仅包含输入数据（交给函数处理的数据），而没有混杂或暗含有指令（以某种约定的方式告诉函数该怎么处理数据），那么函数所做的应当就是一件事情。比如说，改良前的 fetchUserInfo 函数的参数是「多个用户的ID数组或单个用户的ID」，这个「或」字其实就暗含了某种指令。</p>
 <h4 id="1-3-2-函数应适当地处理异常"><a href="#1-3-2-函数应适当地处理异常" class="headerlink" title="1.3.2 函数应适当地处理异常"></a>1.3.2 函数应适当地处理异常</h4><p>注：</p>
 <ul>
@@ -657,7 +641,7 @@ header#custom dl dt:hover ul {
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2017/02/08/javascript/JS 代码管理/"
-           data-title="JS 代码管理" data-url="http://sqhtiamo.github.io/note/public/2017/02/08/javascript/JS 代码管理/">
+           data-title="JS 代码管理" data-url="http://sqhtiamo.github.io/2017/02/08/javascript/JS 代码管理/">
       </div>
     
   </div>
@@ -704,7 +688,7 @@ header#custom dl dt:hover ul {
           
             <div class="site-state-item site-state-posts">
               <a href="/note/public/archives">
-                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-count">25</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -778,7 +762,7 @@ header#custom dl dt:hover ul {
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

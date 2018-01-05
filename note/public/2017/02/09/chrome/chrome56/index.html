@@ -87,28 +87,18 @@
 
 
 
-<meta name="description" content="原文:https://developers.google.com/web/updates/2017/01/nic56作者：Pete LePage (Pete is a Developer Advocate)
-视频：https://youtu.be/F4DfGVbvRpY
-
-支持Web Bluetooth API，Web应用可以和附近的低耗能的蓝牙设备进行通信
-‘position: sticky’来">
+<meta name="description" content="原文:https://developers.google.com/web/updates/2017/01/nic56作者：Pete LePage (Pete is a Developer Advocate) 视频：https://youtu.be/F4DfGVbvRpY  支持Web Bluetooth API，Web应用可以和附近的低耗能的蓝牙设备进行通信 ‘position: sticky’来">
+<meta name="keywords" content="chrome,前端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Chrome 56里的新东西">
 <meta property="og:url" content="http://sqhtiamo.github.io/2017/02/09/chrome/chrome56/index.html">
 <meta property="og:site_name" content="伟大航路">
-<meta property="og:description" content="原文:https://developers.google.com/web/updates/2017/01/nic56作者：Pete LePage (Pete is a Developer Advocate)
-视频：https://youtu.be/F4DfGVbvRpY
-
-支持Web Bluetooth API，Web应用可以和附近的低耗能的蓝牙设备进行通信
-‘position: sticky’来">
-<meta property="og:updated_time" content="2017-02-12T01:00:34.000Z">
+<meta property="og:description" content="原文:https://developers.google.com/web/updates/2017/01/nic56作者：Pete LePage (Pete is a Developer Advocate) 视频：https://youtu.be/F4DfGVbvRpY  支持Web Bluetooth API，Web应用可以和附近的低耗能的蓝牙设备进行通信 ‘position: sticky’来">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-05T17:09:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chrome 56里的新东西">
-<meta name="twitter:description" content="原文:https://developers.google.com/web/updates/2017/01/nic56作者：Pete LePage (Pete is a Developer Advocate)
-视频：https://youtu.be/F4DfGVbvRpY
-
-支持Web Bluetooth API，Web应用可以和附近的低耗能的蓝牙设备进行通信
-‘position: sticky’来">
+<meta name="twitter:description" content="原文:https://developers.google.com/web/updates/2017/01/nic56作者：Pete LePage (Pete is a Developer Advocate) 视频：https://youtu.be/F4DfGVbvRpY  支持Web Bluetooth API，Web应用可以和附近的低耗能的蓝牙设备进行通信 ‘position: sticky’来">
 
 
 
@@ -516,32 +506,32 @@ header#custom dl dt:hover ul {
       
 
       
-        <p>原文:<br><a href="https://developers.google.com/web/updates/2017/01/nic56" target="_blank" rel="external">https://developers.google.com/web/updates/2017/01/nic56</a><br>作者：<a href="https://developers.google.cn/web/resources/contributors#petelepage" target="_blank" rel="external">Pete LePage</a> (Pete is a Developer Advocate)</p>
-<p>视频：<a href="https://youtu.be/F4DfGVbvRpY]" target="_blank" rel="external">https://youtu.be/F4DfGVbvRpY</a></p>
+        <p>原文:<br><a href="https://developers.google.com/web/updates/2017/01/nic56" target="_blank" rel="noopener">https://developers.google.com/web/updates/2017/01/nic56</a><br>作者：<a href="https://developers.google.cn/web/resources/contributors#petelepage" target="_blank" rel="noopener">Pete LePage</a> (Pete is a Developer Advocate)</p>
+<p>视频：<a href="https://youtu.be/F4DfGVbvRpY]" target="_blank" rel="noopener">https://youtu.be/F4DfGVbvRpY</a></p>
 <ul>
 <li>支持<a href="#webbluetooth">Web Bluetooth API</a>，Web应用可以和附近的低耗能的蓝牙设备进行通信</li>
 <li><a href="#position-sticky">‘position: sticky’</a>来了 - 他可以使所创建的元素正常滚动，直到黏到视口(viewport)的顶部。（译者注：代替之前监听scroll或者touchmove事件）</li>
 <li>对所有用户默认使用<a href="#html5-by-default">HTML5</a><a id="more"></a>
 <br><br>我是Pete LePage(原作者), 让我们深入地看看Chrome 56到底给开发者们带来了什么新东西。</li>
 </ul>
-<h2 id="1-Web-Bluetooth-API"><a href="#1-Web-Bluetooth-API" class="headerlink" title="1. Web Bluetooth API"></a>1. Web Bluetooth API</h2><p>到目前为止，和蓝牙设备的通信能力只限于本地应用(native app)。在Chrome 56中，你的Web应用也可以借助<a href="https://webbluetoothcg.github.io/web-bluetooth/" target="_blank" rel="external">Web Bluetooth API</a>和附近蓝牙低耗能设备进行安全、私密的通信。</p>
-<p>Web Bluetooth API使用的是<a href="https://webbluetoothcg.github.io/web-bluetooth/" target="_blank" rel="external">GATT协议</a>。该协议可以使你的app和灯泡、玩具、心率监控仪、LED显示器等设备通过几行<a href="https://googlechrome.github.io/samples/web-bluetooth/" target="_blank" rel="external">js代码</a>就可以进行通信。Web Bluetooth能够结合物理网络信标，进而更容易发现附近的设备。</p>
-<p>Francois有一篇著名的<a href="https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web" target="_blank" rel="external">文章</a>发布在’Updates’上。你可以下载一些简单的<a href="https://github.com/WebBluetoothCG/demos" target="_blank" rel="external">demo</a>进行学习，同时你也可以关注<a href="https://plus.google.com/communities/108953318610326025178" target="_blank" rel="external">Web Bluetooth社区</a>。</p>
+<h2 id="1-Web-Bluetooth-API"><a href="#1-Web-Bluetooth-API" class="headerlink" title="1. Web Bluetooth API"></a>1. Web Bluetooth API</h2><p>到目前为止，和蓝牙设备的通信能力只限于本地应用(native app)。在Chrome 56中，你的Web应用也可以借助<a href="https://webbluetoothcg.github.io/web-bluetooth/" target="_blank" rel="noopener">Web Bluetooth API</a>和附近蓝牙低耗能设备进行安全、私密的通信。</p>
+<p>Web Bluetooth API使用的是<a href="https://webbluetoothcg.github.io/web-bluetooth/" target="_blank" rel="noopener">GATT协议</a>。该协议可以使你的app和灯泡、玩具、心率监控仪、LED显示器等设备通过几行<a href="https://googlechrome.github.io/samples/web-bluetooth/" target="_blank" rel="noopener">js代码</a>就可以进行通信。Web Bluetooth能够结合物理网络信标，进而更容易发现附近的设备。</p>
+<p>Francois有一篇著名的<a href="https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web" target="_blank" rel="noopener">文章</a>发布在’Updates’上。你可以下载一些简单的<a href="https://github.com/WebBluetoothCG/demos" target="_blank" rel="noopener">demo</a>进行学习，同时你也可以关注<a href="https://plus.google.com/communities/108953318610326025178" target="_blank" rel="noopener">Web Bluetooth社区</a>。</p>
 <h2 id="2-CSS-position-sticky"><a href="#2-CSS-position-sticky" class="headerlink" title="2. CSS position: sticky;"></a>2. CSS position: sticky;</h2><p>之前，想要实现头部内容随着页面正常滚动，直到粘在视口顶部这一效果，常常需要监听滚动事件并且在元素上设置relative或fixed属性。由于难以做到操作同步，因此经常会出现视觉上的小跳动。</p>
-<p>Chrome现在支持了CSS新特性 - <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position#Sticky_positioning" target="_blank" rel="external">‘position: sticky;’</a> - 一个新的元素定位属性。</p>
+<p>Chrome现在支持了CSS新特性 - <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position#Sticky_positioning" target="_blank" rel="noopener">‘position: sticky;’</a> - 一个新的元素定位属性。</p>
 <p>如果一个元素的position属性是sticky，那么它相当于开始的属性状态是relative，在元素滚动到一个特定位置时变成fixed状态。</p>
 <p>使用时，只需要简单地将元素的position属性值设置为sticky，并设置一个何时进行属性变换临界位置值即可。如下：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">h3</span> &#123;</div><div class="line">  <span class="comment">/* Element will be 'fixed' when it ... */</span></div><div class="line">  <span class="attribute">position</span>: sticky;</div><div class="line">  <span class="comment">/* ... is 10px from the top of the viewport */</span></div><div class="line">  <span class="attribute">top</span>: <span class="number">10px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>Paul Kinlan在’Updates’发布过一篇关于这个属性的<a href="https://developers.google.com/web/updates/2016/12/position-sticky" target="_blank" rel="external">文章</a>。</p>
-<h2 id="3-默认使用HTML5"><a href="#3-默认使用HTML5" class="headerlink" title="3.默认使用HTML5"></a>3.默认使用HTML5</h2><p>去年8月，我们宣布我们将<a href="https://blog.google/products/chrome/flash-and-chrome/" target="_blank" rel="external">默认使用HTML5</a>，进而给用户提供更安全、更高效的体验。这个改变使得Chrome将不使用adobe flash播放器，除非用户在特定的网站需要观看flash内容，最终所有的网站都需要用户授权来在网页上运行flash。</p>
-<p>在Chrome 56中，<a href="https://blog.google/products/chrome/flash-and-chrome/" target="_blank" rel="external">默认使用HTML5已经对所有用户开启</a>，这意味着那些用户之前没有访问过的网站需要引导用户授权来运行flash。</p>
-<p>你可以查看更多关于如何引导用户授权运行flash<a href="https://sites.google.com/a/chromium.org/dev/flash-roadmap#TOC-HTML5-By-Default-Target:-Chrome-55---Dec-2016-" target="_blank" rel="external">细节</a>和如何检测你的flash网站的<a href="https://sites.google.com/a/chromium.org/dev/flash-roadmap#TOC-Developer-Recommendations" target="_blank" rel="external">建议</a>。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h3</span> &#123;</span><br><span class="line">  <span class="comment">/* Element will be 'fixed' when it ... */</span></span><br><span class="line">  <span class="attribute">position</span>: sticky;</span><br><span class="line">  <span class="comment">/* ... is 10px from the top of the viewport */</span></span><br><span class="line">  <span class="attribute">top</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Paul Kinlan在’Updates’发布过一篇关于这个属性的<a href="https://developers.google.com/web/updates/2016/12/position-sticky" target="_blank" rel="noopener">文章</a>。</p>
+<h2 id="3-默认使用HTML5"><a href="#3-默认使用HTML5" class="headerlink" title="3.默认使用HTML5"></a>3.默认使用HTML5</h2><p>去年8月，我们宣布我们将<a href="https://blog.google/products/chrome/flash-and-chrome/" target="_blank" rel="noopener">默认使用HTML5</a>，进而给用户提供更安全、更高效的体验。这个改变使得Chrome将不使用adobe flash播放器，除非用户在特定的网站需要观看flash内容，最终所有的网站都需要用户授权来在网页上运行flash。</p>
+<p>在Chrome 56中，<a href="https://blog.google/products/chrome/flash-and-chrome/" target="_blank" rel="noopener">默认使用HTML5已经对所有用户开启</a>，这意味着那些用户之前没有访问过的网站需要引导用户授权来运行flash。</p>
+<p>你可以查看更多关于如何引导用户授权运行flash<a href="https://sites.google.com/a/chromium.org/dev/flash-roadmap#TOC-HTML5-By-Default-Target:-Chrome-55---Dec-2016-" target="_blank" rel="noopener">细节</a>和如何检测你的flash网站的<a href="https://sites.google.com/a/chromium.org/dev/flash-roadmap#TOC-Developer-Recommendations" target="_blank" rel="noopener">建议</a>。</p>
 <h2 id="4-其他"><a href="#4-其他" class="headerlink" title="4. 其他"></a>4. 其他</h2><p>当然，还有很多其他的更新。</p>
-<p><a href="https://developers.google.com/web/fundamentals/vr/" target="_blank" rel="external">WebVR</a>的初始测试版本已经可以使用；<br><a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/" target="_blank" rel="external">WebGL 2.0 API</a>已经可以使用；<br>支付请求API新增大量<a href="https://docs.google.com/document/d/1I8ha1ySrPWhx80EB4CVPmThkD4ILFM017AfOA5gEFg4/preview" target="_blank" rel="external">新特性</a>。</p>
-<p>如果你想持续关注Chrome的最新进展，你可以在订阅他们的<a href="https://github.com/jpchase/OriginTrials/blob/gh-pages/developer-guide.md" target="_blank" rel="external">github</a>、关注<a href="https://twitter.com/chromiumdev" target="_blank" rel="external">@ChromiumDev</a>的Twitter，同时你也可以观看Chrome开发者大会的<a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIBTs2KPy1E6tIYaWoFcG3uj" target="_blank" rel="external">视频</a>，进一步关注Chrome小组的正在研究的炫酷新特性。</p>
+<p><a href="https://developers.google.com/web/fundamentals/vr/" target="_blank" rel="noopener">WebVR</a>的初始测试版本已经可以使用；<br><a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/" target="_blank" rel="noopener">WebGL 2.0 API</a>已经可以使用；<br>支付请求API新增大量<a href="https://docs.google.com/document/d/1I8ha1ySrPWhx80EB4CVPmThkD4ILFM017AfOA5gEFg4/preview" target="_blank" rel="noopener">新特性</a>。</p>
+<p>如果你想持续关注Chrome的最新进展，你可以在订阅他们的<a href="https://github.com/jpchase/OriginTrials/blob/gh-pages/developer-guide.md" target="_blank" rel="noopener">github</a>、关注<a href="https://twitter.com/chromiumdev" target="_blank" rel="noopener">@ChromiumDev</a>的Twitter，同时你也可以观看Chrome开发者大会的<a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIBTs2KPy1E6tIYaWoFcG3uj" target="_blank" rel="noopener">视频</a>，进一步关注Chrome小组的正在研究的炫酷新特性。</p>
 <p>我是Pete LePage，马上Chrome 57又要发布了。到时候，我还会在这里告诉你们‘Chrome里的新东西’！</p>
-<h2 id="5-译者补充："><a href="#5-译者补充：" class="headerlink" title="5. 译者补充："></a>5. 译者补充：</h2><h2 id="5-1-HTTP-密码和信用卡页面的“Not-Secure”警告"><a href="#5-1-HTTP-密码和信用卡页面的“Not-Secure”警告" class="headerlink" title="5.1. HTTP 密码和信用卡页面的“Not Secure”警告"></a>5.1. HTTP 密码和信用卡页面的“Not Secure”警告</h2><h2 id="5-2-网络蓝牙"><a href="#5-2-网络蓝牙" class="headerlink" title="5.2. 网络蓝牙"></a>5.2. 网络蓝牙</h2><p><a href="https://webbluetoothcg.github.io/web-bluetooth/" target="_blank" rel="external">Web Bluetooth API</a></p>
-<h2 id="5-3-CSS-position-sticky"><a href="#5-3-CSS-position-sticky" class="headerlink" title="5.3. CSS position: sticky"></a>5.3. CSS position: sticky</h2><h2 id="5-4-Referrer-Policy"><a href="#5-4-Referrer-Policy" class="headerlink" title="5.4. Referrer-Policy"></a>5.4. Referrer-Policy</h2><p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy</a></p>
+<h2 id="5-译者补充："><a href="#5-译者补充：" class="headerlink" title="5. 译者补充："></a>5. 译者补充：</h2><h2 id="5-1-HTTP-密码和信用卡页面的“Not-Secure”警告"><a href="#5-1-HTTP-密码和信用卡页面的“Not-Secure”警告" class="headerlink" title="5.1. HTTP 密码和信用卡页面的“Not Secure”警告"></a>5.1. HTTP 密码和信用卡页面的“Not Secure”警告</h2><h2 id="5-2-网络蓝牙"><a href="#5-2-网络蓝牙" class="headerlink" title="5.2. 网络蓝牙"></a>5.2. 网络蓝牙</h2><p><a href="https://webbluetoothcg.github.io/web-bluetooth/" target="_blank" rel="noopener">Web Bluetooth API</a></p>
+<h2 id="5-3-CSS-position-sticky"><a href="#5-3-CSS-position-sticky" class="headerlink" title="5.3. CSS position: sticky"></a>5.3. CSS position: sticky</h2><h2 id="5-4-Referrer-Policy"><a href="#5-4-Referrer-Policy" class="headerlink" title="5.4. Referrer-Policy"></a>5.4. Referrer-Policy</h2><p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy</a></p>
 
       
     </div>
@@ -647,7 +637,7 @@ header#custom dl dt:hover ul {
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2017/02/09/chrome/chrome56/"
-           data-title="Chrome 56里的新东西" data-url="http://sqhtiamo.github.io/note/public/2017/02/09/chrome/chrome56/">
+           data-title="Chrome 56里的新东西" data-url="http://sqhtiamo.github.io/2017/02/09/chrome/chrome56/">
       </div>
     
   </div>
@@ -694,7 +684,7 @@ header#custom dl dt:hover ul {
           
             <div class="site-state-item site-state-posts">
               <a href="/note/public/archives">
-                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-count">25</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -768,7 +758,7 @@ header#custom dl dt:hover ul {
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

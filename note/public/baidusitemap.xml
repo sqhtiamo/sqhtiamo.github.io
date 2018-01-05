@@ -4,8 +4,150 @@
 
     
   <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/09/html5/tag2/</loc>
+    <lastmod>2018-01-05T17:17:31.000Z</lastmod>
+    <data>
+        <display>
+        <title>HTML5标签</title>
+        <pubTime>2017-02-09T12:45:00.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+        <tag>tag</tag>
+         
+        <tag>html5</tag>
+         
+         
+           
+             
+              <breadCrumb title="外文翻译" url="http://sqhtiamo.github.io/note/public/categories/interpret/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/05/31/google2017IO/web-security/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>2017年5月Google I/O 2017 （三）- web安全</title>
+        <pubTime>2017-05-30T16:30:00.000Z</pubTime>
+        
+        <tag>google I/O 2017</tag>
+         
+        <tag>V8</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/09/chrome/chrome56/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>Chrome 56里的新东西</title>
+        <pubTime>2017-02-09T12:47:00.000Z</pubTime>
+        
+        <tag>chrome</tag>
+         
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="外文翻译" url="http://sqhtiamo.github.io/note/public/categories/interpret/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/14/chrome/chrome-dev-summit-2016-pwa/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>2016年Chrome Dev Summit - 搭建PWA</title>
+        <pubTime>2017-02-14T14:30:52.000Z</pubTime>
+        
+        <tag>chrome</tag>
+         
+        <tag>conference</tag>
+         
+        <tag>前端</tag>
+         
+        <tag>pwa</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/11/chrome/media-notification/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>定制化富媒体消息通知与处理播放列表</title>
+        <pubTime>2017-02-11T15:18:57.000Z</pubTime>
+        
+        <tag>chrome</tag>
+         
+        <tag>前端</tag>
+         
+        <tag>media，notification</tag>
+         
+         
+           
+             
+              <breadCrumb title="外文翻译" url="http://sqhtiamo.github.io/note/public/categories/interpret/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/10/chrome/web-component-v1/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>Web Components v1 - 下一代Web Component规范</title>
+        <pubTime>2017-02-10T03:19:31.000Z</pubTime>
+        
+        <tag>chrome</tag>
+         
+        <tag>前端</tag>
+         
+        <tag>web component</tag>
+         
+         
+           
+             
+              <breadCrumb title="外文翻译" url="http://sqhtiamo.github.io/note/public/categories/interpret/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://sqhtiamo.github.io/note/public/2017/06/10/css/Background%20&%20Border%20in%20CSS/</loc>
-    <lastmod>2017-06-11T12:18:23.000Z</lastmod>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
     <data>
         <display>
         <title>CSS标准详解系列 一、 CSS Backgrounds and Borders Module</title>
@@ -32,76 +174,8 @@
 
     
   <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/05/31/google2017IO/developer-keynote/</loc>
-    <lastmod>2017-06-01T12:31:53.000Z</lastmod>
-    <data>
-        <display>
-        <title>Google I/O 2017 （二）- Developer Keynote</title>
-        <pubTime>2017-05-31T05:37:00.000Z</pubTime>
-        
-        <tag>google I/O 2017</tag>
-         
-        <tag>keynote</tag>
-         
-         
-           
-             
-              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/05/29/google2017IO/web-component-polymer/</loc>
-    <lastmod>2017-06-01T07:44:55.000Z</lastmod>
-    <data>
-        <display>
-        <title>Google I/O 2017 （三）- Polymer</title>
-        <pubTime>2017-05-29T15:20:00.000Z</pubTime>
-        
-        <tag>google I/O 2017</tag>
-         
-        <tag>web Components</tag>
-         
-        <tag>Polymer</tag>
-         
-         
-           
-             
-              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/05/29/google2017IO/keynote/</loc>
-    <lastmod>2017-05-31T06:10:03.000Z</lastmod>
-    <data>
-        <display>
-        <title>Google I/O 2017 （一）- Keynote</title>
-        <pubTime>2017-05-29T15:20:00.000Z</pubTime>
-        
-        <tag>google I/O 2017</tag>
-         
-        <tag>keynote</tag>
-         
-         
-           
-             
-              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://sqhtiamo.github.io/note/public/2017/05/30/google2017IO/V8/</loc>
-    <lastmod>2017-05-31T05:42:34.000Z</lastmod>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
     <data>
         <display>
         <title>Google I/O 2017 - V8引擎</title>
@@ -122,179 +196,8 @@
 
     
   <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/09/html5/tag/</loc>
-    <lastmod>2017-05-30T17:05:53.000Z</lastmod>
-    <data>
-        <display>
-        <title>HTML5标签</title>
-        <pubTime>2017-02-09T12:45:00.000Z</pubTime>
-        
-        <tag>前端</tag>
-         
-        <tag>html5</tag>
-         
-        <tag>tag</tag>
-         
-         
-           
-             
-              <breadCrumb title="外文翻译" url="http://sqhtiamo.github.io/note/public/categories/interpret/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/05/31/google2017IO/web-security/</loc>
-    <lastmod>2017-05-30T16:55:52.000Z</lastmod>
-    <data>
-        <display>
-        <title>2017年5月Google I/O 2017 （三）- web安全</title>
-        <pubTime>2017-05-30T16:30:00.000Z</pubTime>
-        
-        <tag>google I/O 2017</tag>
-         
-        <tag>V8</tag>
-         
-         
-           
-             
-              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/04/29/javascript/rollup-1.%E5%BC%80%E7%AF%87%E7%9A%84%E6%95%85%E4%BA%8B/</loc>
-    <lastmod>2017-05-29T15:51:14.000Z</lastmod>
-    <data>
-        <display>
-        <title>rollup - 1. 最开始的故事</title>
-        <pubTime>2017-04-29T06:46:00.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-        <tag>打包</tag>
-         
-        <tag>rollup</tag>
-         
-        <tag>源码解析</tag>
-         
-         
-           
-             
-              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/08/javascript/JS%20%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86/</loc>
-    <lastmod>2017-04-29T06:35:14.000Z</lastmod>
-    <data>
-        <display>
-        <title>JS 代码管理</title>
-        <pubTime>2017-02-08T05:42:00.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-        <tag>最佳实践</tag>
-         
-         
-           
-             
-              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/14/chrome/chrome-dev-summit-2016-pwa/</loc>
-    <lastmod>2017-02-14T15:41:51.000Z</lastmod>
-    <data>
-        <display>
-        <title>2016年Chrome Dev Summit - 搭建PWA</title>
-        <pubTime>2017-02-14T14:30:52.000Z</pubTime>
-        
-        <tag>chrome</tag>
-         
-        <tag>conference</tag>
-         
-        <tag>前端</tag>
-         
-        <tag>pwa</tag>
-         
-         
-           
-             
-              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/14/chrome/chrome-dev-summit-2016-credential-management/</loc>
-    <lastmod>2017-02-14T15:35:51.000Z</lastmod>
-    <data>
-        <display>
-        <title>2016年Chrome Dev Summit - 证书管理</title>
-        <pubTime>2017-02-14T15:20:00.000Z</pubTime>
-        
-        <tag>chrome</tag>
-         
-        <tag>conference</tag>
-         
-        <tag>前端</tag>
-         
-        <tag>credential</tag>
-         
-         
-           
-             
-              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/13/chrome/chrome-dev-summit-2016-keynote/</loc>
-    <lastmod>2017-02-14T14:34:27.000Z</lastmod>
-    <data>
-        <display>
-        <title>2016年Chrome Dev Summit - Keynote</title>
-        <pubTime>2017-02-12T16:15:41.000Z</pubTime>
-        
-        <tag>chrome</tag>
-         
-        <tag>conference</tag>
-         
-        <tag>前端</tag>
-         
-         
-           
-             
-              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://sqhtiamo.github.io/note/public/2017/02/12/css/sticky/</loc>
-    <lastmod>2017-02-12T17:30:02.000Z</lastmod>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
     <data>
         <display>
         <title>position sticky属性回归Chrome</title>
@@ -319,23 +222,21 @@
 
     
   <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/11/chrome/media-notification/</loc>
-    <lastmod>2017-02-12T12:49:09.000Z</lastmod>
+    <loc>http://sqhtiamo.github.io/note/public/2017/05/31/google2017IO/developer-keynote/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
     <data>
         <display>
-        <title>定制化富媒体消息通知与处理播放列表</title>
-        <pubTime>2017-02-11T15:18:57.000Z</pubTime>
+        <title>Google I/O 2017 （二）- Developer Keynote</title>
+        <pubTime>2017-05-31T05:37:00.000Z</pubTime>
         
-        <tag>chrome</tag>
+        <tag>google I/O 2017</tag>
          
-        <tag>前端</tag>
-         
-        <tag>media，notification</tag>
+        <tag>keynote</tag>
          
          
            
              
-              <breadCrumb title="外文翻译" url="http://sqhtiamo.github.io/note/public/categories/interpret/"/>
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
           
         </display>
     </data>
@@ -343,66 +244,162 @@
 
     
   <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/09/chrome/chrome56/</loc>
-    <lastmod>2017-02-12T01:00:34.000Z</lastmod>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/09/html5/tag/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
     <data>
         <display>
-        <title>Chrome 56里的新东西</title>
-        <pubTime>2017-02-09T12:47:00.000Z</pubTime>
-        
-        <tag>chrome</tag>
-         
-        <tag>前端</tag>
-         
-         
-           
-             
-              <breadCrumb title="外文翻译" url="http://sqhtiamo.github.io/note/public/categories/interpret/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/10/chrome/web-component-v1/</loc>
-    <lastmod>2017-02-10T06:38:19.000Z</lastmod>
-    <data>
-        <display>
-        <title>Web Components v1 - 下一代Web Component规范</title>
-        <pubTime>2017-02-10T03:19:31.000Z</pubTime>
-        
-        <tag>chrome</tag>
-         
-        <tag>前端</tag>
-         
-        <tag>web component</tag>
-         
-         
-           
-             
-              <breadCrumb title="外文翻译" url="http://sqhtiamo.github.io/note/public/categories/interpret/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/09/standard/html5/</loc>
-    <lastmod>2017-02-09T12:51:15.000Z</lastmod>
-    <data>
-        <display>
-        <title>html标准学习</title>
-        <pubTime>2017-02-09T06:45:00.000Z</pubTime>
+        <title>HTML5标签</title>
+        <pubTime>2017-02-09T12:45:00.000Z</pubTime>
         
         <tag>前端</tag>
          
-        <tag>standard</tag>
-         
-        <tag>html</tag>
+        <tag>tag</tag>
          
         <tag>html5</tag>
+         
+         
+           
+             
+              <breadCrumb title="外文翻译" url="http://sqhtiamo.github.io/note/public/categories/interpret/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/13/chrome/chrome-dev-summit-2016-keynote/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>2016年Chrome Dev Summit - Keynote</title>
+        <pubTime>2017-02-12T16:15:41.000Z</pubTime>
+        
+        <tag>chrome</tag>
+         
+        <tag>conference</tag>
+         
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/05/29/google2017IO/keynote/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>Google I/O 2017 （一）- Keynote</title>
+        <pubTime>2017-05-29T15:20:00.000Z</pubTime>
+        
+        <tag>google I/O 2017</tag>
+         
+        <tag>keynote</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/05/29/google2017IO/web-component-polymer/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>Google I/O 2017 （三）- Polymer</title>
+        <pubTime>2017-05-29T15:20:00.000Z</pubTime>
+        
+        <tag>google I/O 2017</tag>
+         
+        <tag>web Components</tag>
+         
+        <tag>Polymer</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/14/chrome/chrome-dev-summit-2016-credential-management/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>2016年Chrome Dev Summit - 证书管理</title>
+        <pubTime>2017-02-14T15:20:00.000Z</pubTime>
+        
+        <tag>chrome</tag>
+         
+        <tag>conference</tag>
+         
+        <tag>前端</tag>
+         
+        <tag>credential</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/08/javascript/JS%20%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>JS 代码管理</title>
+        <pubTime>2017-02-08T05:42:00.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>最佳实践</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/04/29/javascript/rollup-1.%E5%BC%80%E7%AF%87%E7%9A%84%E6%95%85%E4%BA%8B/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>rollup - 1. 最开始的故事</title>
+        <pubTime>2017-04-29T06:46:00.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>打包</tag>
+         
+        <tag>rollup</tag>
+         
+        <tag>源码解析</tag>
          
          
            
@@ -416,7 +413,7 @@
     
   <url>
     <loc>http://sqhtiamo.github.io/note/public/2017/02/09/live/qiniu/</loc>
-    <lastmod>2017-02-09T07:05:59.000Z</lastmod>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
     <data>
         <display>
         <title>七牛视频直播学习笔记</title>
@@ -439,8 +436,122 @@
 
     
   <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/06/promise/promise/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>Promise</title>
+        <pubTime>2017-02-06T03:15:00.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>promise</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/09/tools/iterm2/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>Iterm2 Cheat Sheet</title>
+        <pubTime>2017-02-09T02:39:00.000Z</pubTime>
+        
+        <tag>tools</tag>
+         
+        <tag>iterm2</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/09/standard/html5/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>html标准学习</title>
+        <pubTime>2017-02-09T06:45:00.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+        <tag>html5</tag>
+         
+        <tag>standard</tag>
+         
+        <tag>html</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/09/tools/sublime/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>Sublime Cheat Sheet</title>
+        <pubTime>2017-02-09T02:38:00.000Z</pubTime>
+        
+        <tag>tools</tag>
+         
+        <tag>tmux</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqhtiamo.github.io/note/public/2017/02/09/tools/tmux/</loc>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>Tmux Cheat Sheet</title>
+        <pubTime>2017-02-09T02:38:00.000Z</pubTime>
+        
+        <tag>tools</tag>
+         
+        <tag>tmux</tag>
+         
+         
+           
+             
+              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://sqhtiamo.github.io/note/public/2017/02/09/tools/yarn/</loc>
-    <lastmod>2017-02-09T07:04:45.000Z</lastmod>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
     <data>
         <display>
         <title>Yarn 基本介绍</title>
@@ -460,11 +571,9 @@
     </url>
 
     
-    
-    
   <url>
     <loc>http://sqhtiamo.github.io/note/public/2017/02/09/webpack/tree-shaking/</loc>
-    <lastmod>2017-02-09T05:50:11.000Z</lastmod>
+    <lastmod>2018-01-05T17:09:48.000Z</lastmod>
     <data>
         <display>
         <title>tree-shaking介绍</title>
@@ -486,91 +595,6 @@
     </url>
 
     
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/09/tools/tmux/</loc>
-    <lastmod>2017-02-09T02:42:08.000Z</lastmod>
-    <data>
-        <display>
-        <title>Tmux Cheat Sheet</title>
-        <pubTime>2017-02-09T02:38:00.000Z</pubTime>
-        
-        <tag>tools</tag>
-         
-        <tag>tmux</tag>
-         
-         
-           
-             
-              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/09/tools/iterm2/</loc>
-    <lastmod>2017-02-09T02:41:48.000Z</lastmod>
-    <data>
-        <display>
-        <title>Iterm2 Cheat Sheet</title>
-        <pubTime>2017-02-09T02:39:00.000Z</pubTime>
-        
-        <tag>tools</tag>
-         
-        <tag>iterm2</tag>
-         
-         
-           
-             
-              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/09/tools/sublime/</loc>
-    <lastmod>2017-02-09T02:41:37.000Z</lastmod>
-    <data>
-        <display>
-        <title>Sublime Cheat Sheet</title>
-        <pubTime>2017-02-09T02:38:00.000Z</pubTime>
-        
-        <tag>tools</tag>
-         
-        <tag>tmux</tag>
-         
-         
-           
-             
-              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sqhtiamo.github.io/note/public/2017/02/06/promise/promise/</loc>
-    <lastmod>2017-02-08T05:42:00.000Z</lastmod>
-    <data>
-        <display>
-        <title>Promise</title>
-        <pubTime>2017-02-06T03:15:00.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-        <tag>promise</tag>
-         
-         
-           
-             
-              <breadCrumb title="工作拾遗" url="http://sqhtiamo.github.io/note/public/categories/work/"/>
-          
-        </display>
-    </data>
-    </url>
-
 </urlset>
